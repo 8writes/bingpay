@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useState } from "react";
+import { useEffect } from "react";
 import styles from "./heroSection.module.css";
 import { Space_Grotesk, Quicksand } from "next/font/google";
 
@@ -16,16 +18,45 @@ const quicksand = Quicksand({
 });
 
 export default function HeroSection() {
-  const { ref, inView } = useInView({ threshold: 0.5 });
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const [hasLoaded, setHasLoaded] = useState(false);
+  const isAnimating = !hasLoaded;
 
-  const FadeInRight = {
-    visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: 100 },
-  };
+  useEffect(() => {
+    if (inView) {
+      setHasLoaded(true);
+    }
+  }, [isAnimating]);
 
   const FadeInUp = {
-    visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: 50 },
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+  const FadeInRight = {
+    hidden: {
+      opacity: 0,
+      x: 100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
@@ -48,41 +79,59 @@ export default function HeroSection() {
                 </span>
               </p>
             </div>
-            <div className={styles.heroSocials}>
-              <div>
-                {" "}
-                <a href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}>
-                  <Image
-                    src="/app-store.svg"
-                    width={135}
-                    height={135}
-                    alt="App Store Image"
-                  />
-                </a>
+            <motion.div
+              ref={ref}
+              initial="hidden"
+              animate={isAnimating ? "visible" : "hidden"}
+              variants={FadeInUp}
+            >
+              <div className={styles.heroSocials}>
+                <div>
+                  {" "}
+                  <a
+                    href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}
+                  >
+                    <Image
+                      src="/app-store.svg"
+                      width={135}
+                      height={135}
+                      alt="App Store Image"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={
+                      "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
+                    }
+                  >
+                    <Image
+                      src="/google-play.svg"
+                      width={150}
+                      height={150}
+                      alt="App Store Image"
+                    />
+                  </a>
+                </div>{" "}
               </div>
-              <div>
-                <a
-                  href={
-                    "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
-                  }
-                >
-                  <Image
-                    src="/google-play.svg"
-                    width={150}
-                    height={150}
-                    alt="App Store Image"
-                  />
-                </a>
-              </div>
-            </div>
+            </motion.div>
           </div>
+
           <div className={styles.heroImage}>
-            <Image
-              src="/bing-hero.png"
-              width={650}
-              height={650}
-              alt="Bingpay Logo"
-            />
+            {" "}
+            <motion.div
+              ref={ref}
+              initial="hidden"
+              animate={isAnimating ? "visible" : "hidden"}
+              variants={FadeInRight}
+            >
+              <Image
+                src="/bing-hero.png"
+                width={650}
+                height={650}
+                alt="Bingpay Logo"
+              />{" "}
+            </motion.div>
           </div>
         </div>
       </section>
