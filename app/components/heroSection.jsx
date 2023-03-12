@@ -96,6 +96,7 @@ export default function HeroSection() {
                       width={135}
                       height={135}
                       alt="App Store Image"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -109,7 +110,8 @@ export default function HeroSection() {
                       src="/google-play.svg"
                       width={150}
                       height={150}
-                      alt="App Store Image"
+                      alt="Google-play Store Image"
+                      loading="lazy"
                     />
                   </a>
                 </div>{" "}
@@ -130,6 +132,7 @@ export default function HeroSection() {
                 width={650}
                 height={650}
                 alt="Bingpay Logo"
+                loading="lazy"
               />{" "}
             </motion.div>
           </div>

@@ -33,14 +33,13 @@ export default function mobileNav() {
         <div>
           <Image
             src="/logo-dark.webp"
-            width={130}
-            height={130}
+            width={120}
+            height={120}
             alt="Bingpay Logo"
+            loading="lazy"
           />
         </div>
-        <div className={styles.mobileNavLinks}>
-         
-        </div>
+        <div className={styles.mobileNavLinks}></div>
       </section>
     </div>
   );
