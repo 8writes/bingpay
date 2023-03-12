@@ -1,6 +1,7 @@
 /* MAIN STYLING DESIGN     */
 .heroSection {
   width: 100%;
+  background-color: white;
 }
 
 .heroBg {
@@ -41,7 +42,7 @@
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
   .heroSection {
-    padding: 10vh 5px 0 5px;
+    padding: 10vh 0 0 0;
   }
 
   .heroBg {
@@ -75,7 +76,7 @@
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
   .heroSection {
-    padding: 5vh 5px 0 5px;
+    padding: 5vh 0 0 0;
   }
 
   .heroBg {
@@ -109,7 +110,7 @@
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
   .heroSection {
-    padding: 5vh 5px 0 5px;
+    padding: 5vh 0 0 0;
   }
 
   .heroBg {
@@ -142,7 +143,7 @@
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
   .heroSection {
-    padding: 10vh 10px 0 10px;
+    padding: 10vh 0 0 0;
   }
 
   .heroBg {
@@ -238,6 +239,6 @@
   }
 
   .heroImage {
-    padding: 0 0 50px 0;
+    padding: 20px 0 50px 0;
   }
 }

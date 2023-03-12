@@ -2,7 +2,6 @@
 import HeroSection from "./components/heroSection";
 import MobileNav from "./components/mobileNav";
 import NavBar from "./components/navBar";
-import Services from "./components/services";
 import { PageWrapper } from "./page-wrapper";
 
 
@@ -13,7 +12,6 @@ export default function Home() {
         <NavBar />
         <MobileNav />
         <HeroSection />
-        <Services />
       </PageWrapper>
     </main>
   );
