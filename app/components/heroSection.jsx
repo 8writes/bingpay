@@ -32,8 +32,7 @@ export default function HeroSection() {
     <div className={`${space_grotesk.variable} ${quicksand.variable}`}>
       <section className={styles.heroSection}>
         <div className={styles.heroBg}>
-        <div className={styles.heroLeft}>
-          
+          <div className={styles.heroLeft}>
             <div>
               <h1>
                 <span>
@@ -44,8 +43,8 @@ export default function HeroSection() {
 
               <p>
                 <span>
-                  Pay bills, purchase International and local phone refills, gift cards
-                   all in one app.
+                  Pay bills, purchase International and local phone refills,
+                  gift cards all in one app.
                 </span>
               </p>
             </div>
