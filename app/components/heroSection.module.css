@@ -75,7 +75,7 @@
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
   .heroSection {
-    padding: 10vh 5px 0 5px;
+    padding: 5vh 5px 0 5px;
   }
 
   .heroBg {
@@ -109,7 +109,7 @@
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
   .heroSection {
-    padding: 10vh 5px 0 5px;
+    padding: 5vh 5px 0 5px;
   }
 
   .heroBg {
