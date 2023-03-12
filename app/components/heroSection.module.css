@@ -1,0 +1,227 @@
+/* MAIN STYLING DESIGN     */
+.heroSection {
+  width: 100%;
+}
+
+.heroBg {
+  background-color: rgb(249, 247, 252);
+  display: flex;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.heroSection h1 {
+  font-weight: 900;
+  line-height: normal;
+  font-family: var(--font-space_grotesk);
+}
+
+.heroSection p {
+  font-weight: 600;
+  line-height: normal;
+  font-family: var(--font-quicksand);
+}
+
+.heroLeft {
+  display: grid;
+  flex: 1 1 0%;
+  width: fit-content;
+}
+
+.heroSocials {
+  display: flex;
+  gap: 10px;
+  height: 10vh;
+}
+
+/* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
+@media (max-width: 373px) {
+  .heroSection {
+    padding: 10vh 5px 0 5px;
+  }
+
+  .heroBg {
+    padding: 0 5px 0 5px;
+  }
+
+  .heroSection h1 {
+    font-size: 8.5vw;
+  }
+
+  .heroSection p {
+    padding: 30px 0 0 0;
+    font-size: 11px;
+  }
+
+  .heroLeft {
+    margin: 15vh 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 30px 0 40px 0;
+  }
+
+  .heroImage {
+    padding: 40px 0 30px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
+@media (min-width: 374px) {
+  .heroSection {
+    padding: 10vh 5px 0 5px;
+  }
+
+  .heroBg {
+    padding: 0 5px 0 5px;
+  }
+
+  .heroSection p {
+    font-size: 13px;
+    padding: 30px 0 0 0;
+  }
+
+  .heroSection h1 {
+    font-size: 8.5vw;
+  }
+
+  .heroLeft {
+    margin: 15vh 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 30px 0 40px 0;
+  }
+
+  .heroImage {
+    padding: 40px 0 30px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
+@media (min-width: 425px) {
+  .heroSection {
+    padding: 10vh 5px 0 5px;
+  }
+
+  .heroBg {
+    padding: 0 10px 0 10px;
+  }
+
+  .heroSection p {
+    font-size: 15px;
+  }
+
+  .heroSection h1 {
+    font-size: 8vw;
+  }
+
+  .heroLeft {
+    margin: 15vh 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 30px 0 40px 0;
+  }
+
+  .heroImage {
+    padding: 40px 0 30px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
+@media (min-width: 768px) {
+  .heroSection {
+    padding: 10vh 10px 0 10px;
+  }
+
+  .heroBg {
+    padding: 0 50px 0 50px;
+  }
+
+  .heroSection p {
+    font-size: 20px;
+  }
+
+  .heroSection h1 {
+    font-size: 7.5vw;
+  }
+
+  .heroLeft {
+    margin: 15vh 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 30px 0 30px 0;
+  }
+
+  .heroImage {
+    padding: 50px 0 20px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
+@media (min-width: 1024px) {
+  .heroSection {
+    padding: 10vh 5px 0 5px;
+  }
+
+  .heroBg {
+    padding: 0 10px 0 10px;
+  }
+
+  .heroSection p {
+    font-size: 16px;
+  }
+
+  .heroSection h1 {
+    font-size: 4.8vw;
+  }
+
+  .heroLeft {
+    width: 40vw;
+    margin: 10vh 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 30px 0 30px 0;
+  }
+  .heroImage {
+    width: 45vw;
+    padding: 50px 0 20px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
+@media (min-width: 1440px) {
+  .heroSection {
+    padding: 13vh 14px 0 14px;
+  }
+
+  .heroBg {
+    padding: 0 100px 0 100px;
+  }
+
+  .heroSection p {
+    font-size: 20px;
+  }
+
+  .heroSection h1 {
+    font-size: 3.9vw;
+  }
+
+  .heroLeft {
+    padding: 50px 0 0 0;
+    margin: 15vh 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 10px 0 10px 0;
+  }
+
+  .heroImage {
+    width: 39vw;
+    padding: 50px 0 20px 0;
+  }
+}
