@@ -44,7 +44,7 @@ export default function HeroSection() {
 
               <p>
                 <span>
-                  Pay bills, send mobile top-ups, purchase gift cards and trade digital assets,
+                  Pay bills, purchase International and local phone refills and gift cards
                    all in one app.
                 </span>
               </p>
