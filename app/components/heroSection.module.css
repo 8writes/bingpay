@@ -27,12 +27,14 @@
   display: grid;
   flex: 1 1 0%;
   width: fit-content;
+  height: fit-content;
 }
 
 .heroSocials {
   display: flex;
   gap: 10px;
   height: 10vh;
+  width: fit-content;
 }
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
@@ -46,12 +48,12 @@
   }
 
   .heroSection h1 {
-    font-size: 8.5vw;
+    font-size: 8.7vw;
   }
 
   .heroSection p {
     padding: 30px 0 0 0;
-    font-size: 11px;
+    font-size: 0.8em;
   }
 
   .heroLeft {
@@ -59,11 +61,11 @@
   }
 
   .heroSocials {
-    padding: 30px 0 40px 0;
+    padding: 50px 0 50px 0;
   }
 
   .heroImage {
-    padding: 40px 0 30px 0;
+    padding: 50px 0 50px 0;
   }
 }
 
@@ -78,12 +80,12 @@
   }
 
   .heroSection p {
-    font-size: 13px;
+    font-size: 1em;
     padding: 30px 0 0 0;
   }
 
   .heroSection h1 {
-    font-size: 8.5vw;
+    font-size: 9vw;
   }
 
   .heroLeft {
@@ -91,11 +93,11 @@
   }
 
   .heroSocials {
-    padding: 30px 0 40px 0;
+    padding: 50px 0 50px 0;
   }
 
   .heroImage {
-    padding: 40px 0 30px 0;
+    padding: 50px 0 50px 0;
   }
 }
 
@@ -110,11 +112,11 @@
   }
 
   .heroSection p {
-    font-size: 15px;
+    font-size: 1.1em;
   }
 
   .heroSection h1 {
-    font-size: 8vw;
+    font-size: 8.7vw;
   }
 
   .heroLeft {
@@ -122,11 +124,11 @@
   }
 
   .heroSocials {
-    padding: 30px 0 40px 0;
+    padding: 50px 0 50px 0;
   }
 
   .heroImage {
-    padding: 40px 0 30px 0;
+    padding: 50px 0 50px 0;
   }
 }
 
@@ -141,7 +143,8 @@
   }
 
   .heroSection p {
-    font-size: 20px;
+    font-size: 1.3em;
+    width: 70vw;
   }
 
   .heroSection h1 {
@@ -153,11 +156,11 @@
   }
 
   .heroSocials {
-    padding: 30px 0 30px 0;
+    padding: 50px 0 50px 0;
   }
 
   .heroImage {
-    padding: 50px 0 20px 0;
+    padding: 50px 0 50px 0;
   }
 }
 
@@ -168,15 +171,16 @@
   }
 
   .heroBg {
-    padding: 0 10px 0 10px;
+    padding: 0 20px 0 20px;
   }
 
   .heroSection p {
-    font-size: 16px;
+    font-size: 1.2em;
+    width: 45vw;
   }
 
   .heroSection h1 {
-    font-size: 4.8vw;
+    font-size: 4.7vw;
   }
 
   .heroLeft {
@@ -185,11 +189,11 @@
   }
 
   .heroSocials {
-    padding: 30px 0 30px 0;
+    padding: 70px 0 50px 0;
   }
   .heroImage {
     width: 45vw;
-    padding: 50px 0 20px 0;
+    padding: 50px 0 50px 0;
   }
 }
 
@@ -204,11 +208,12 @@
   }
 
   .heroSection p {
-    font-size: 20px;
+    font-size: 1.3em;
+    width: 35vw;
   }
 
   .heroSection h1 {
-    font-size: 3.9vw;
+    font-size: 3.8vw;
   }
 
   .heroLeft {
@@ -217,11 +222,11 @@
   }
 
   .heroSocials {
-    padding: 10px 0 10px 0;
+    padding: 70px 0 50px 0;
   }
 
   .heroImage {
     width: 39vw;
-    padding: 50px 0 20px 0;
+    padding: 50px 0 50px 0;
   }
 }

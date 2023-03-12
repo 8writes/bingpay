@@ -44,10 +44,8 @@ export default function HeroSection() {
 
               <p>
                 <span>
-                  Join millions of users globally to pay bills, send mobile{" "}
-                  <br></br>
-                  top-ups, purchase gift cards and trade digital assets,
-                  <br></br> all in one app.
+                  Pay bills, send mobile top-ups, purchase gift cards and trade digital assets,
+                   all in one app.
                 </span>
               </p>
             </div>
