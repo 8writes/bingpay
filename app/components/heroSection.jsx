@@ -44,7 +44,7 @@ export default function HeroSection() {
 
               <p>
                 <span>
-                  Pay bills, purchase International and local phone refills and gift cards
+                  Pay bills, purchase International and local phone refills, gift cards
                    all in one app.
                 </span>
               </p>
