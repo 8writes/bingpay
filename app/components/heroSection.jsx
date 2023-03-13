@@ -68,7 +68,7 @@ export default function HeroSection() {
               <h1>
                 <span>
                   Your one stop app for <br></br> everyday{" "}
-                  <span className="text-pink-600">payments.</span>
+                  <span className="">payments.</span>
                 </span>
               </h1>
 

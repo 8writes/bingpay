@@ -39,15 +39,15 @@ export default function NavBar() {
           />
         </div>
         <div className={styles.navLinks}>
-          <span>
+          <span className={styles.Links}>
             {" "}
             <Link href="/">Business</Link>
           </span>
-          <span>
+          <span className={styles.Links}>
             {" "}
             <Link href="/">About</Link>
           </span>
-          <span>
+          <span className={styles.Links}>
             {" "}
             <Link href="/">Support</Link>
           </span>
