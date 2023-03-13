@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./mobileNav.module.css";
@@ -20,11 +21,6 @@ export default function mobileNav() {
       }
     };
 
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   return (
@@ -44,45 +40,79 @@ export default function mobileNav() {
             src="/mobile-menu-opn.svg"
             width={35}
             height={35}
-            alt="Bingpay Logo"
+            alt="Open"
             loading="lazy"
           />
         </div>
       </section>
       <div className={`menu ${showMenu ? "show" : ""}`}>
-        <div className="menu-body">
-          <div className="menu-nav">
-            <div style={{ padding: "6px" }}>
-              <Image
-                src="/logo-dark.webp"
-                width={90}
-                height={90}
-                alt="Bingpay Logo"
-                loading="lazy"
-              />
-            </div>
+        <div className="menu-nav">
+          <div style={{ padding: "6px" }}>
+            <Image
+              src="/logo-dark.webp"
+              width={90}
+              height={90}
+              alt="Bingpay Logo"
+              loading="lazy"
+            />
+          </div>
 
-            <div
-              style={{ padding: "6px" }}
-              onClick={() => setShowMenu(!showMenu)}
-            >
-              <Image
-                src="/mobile-menu-cls.svg"
-                width={20}
-                height={20}
-                alt="Bingpay Logo"
-                loading="lazy"
-              />
+          <div
+            style={{ padding: "6px" }}
+            onClick={() => setShowMenu(!showMenu)}
+          >
+            <Image
+              src="/mobile-menu-cls.svg"
+              width={20}
+              height={20}
+              alt="Close"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div className="menu-body">
+          <div>
+            <ul>
+              <li>Business</li>
+              <li>About</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div>
+            <div className={styles.heroSocials}>
+              <div>
+                {" "}
+                <a href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}>
+                  <Image
+                    src="/app-store.svg"
+                    width={135}
+                    height={135}
+                    alt="App Store Image"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <div>
+                <a
+                  href={
+                    "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
+                  }
+                >
+                  <Image
+                    src="/google-play.svg"
+                    width={150}
+                    height={150}
+                    alt="Google-play Store Image"
+                    loading="lazy"
+                  />
+                </a>
+              </div>{" "}
             </div>
           </div>
-          <ul>
-            <li>Menu Item 1</li>
-            <li>Menu Item 2</li>
-            <li>Menu Item 3</li>
-          </ul>
         </div>
       </div>
       <style jsx>{`
+     
         .menu {
           display: none;
         }
@@ -95,15 +125,17 @@ export default function mobileNav() {
           height: 100vh;
           justify-content: space-between;
           padding: 15px 30px 15px 10px;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-duration: 300ms;
         }
         .menu-nav {
           display: flex;
           justify-content: space-between;
+          padding: 0 0 16px 0;
         }
         .menu-body {
           display: grid;
+          padding: 30px 0 30px 0;
+          gap: 50px;
+          border-top: 2px solid #f4eded9c;
         }
         ul {
           list-style: none;
@@ -113,8 +145,12 @@ export default function mobileNav() {
 
         li {
           padding: 10px;
-          background-color: #eee;
+          white-space: nowrap;
+          color: #761b60;
           margin-bottom: 5px;
+          font-size: large;
+          font-weight: 800;
+          font-family: var(--font-quicksand);
         }
       `}</style>
     </div>
