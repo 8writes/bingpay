@@ -16,14 +16,14 @@
 .heroSection h1 {
   font-weight: 900;
   line-height: normal;
-  color: #9e2283;
+  color: #761b60;
   font-family: var(--font-space_grotesk);
 }
 
 .heroSection p {
   font-weight: 700;
   line-height: normal;
-  color: rgba(0, 0, 0, 0.803);
+  color: rgba(25, 24, 24, 0.842);
   font-family: var(--font-quicksand);
 }
 
