@@ -71,7 +71,7 @@ export default function mobileNav() {
           </div>
         </div>
         <div className="menu-body">
-          <div>
+          <div className="menu-links">
             <ul>
               <li>Business</li>
               <li>About</li>
@@ -112,7 +112,6 @@ export default function mobileNav() {
         </div>
       </div>
       <style jsx>{`
-     
         .menu {
           display: none;
         }
@@ -132,6 +131,9 @@ export default function mobileNav() {
           padding: 0 0 16px 0;
         }
         .menu-body {
+          max-width: 500px;
+          margin-left: auto;
+          margin-right: auto;
           display: grid;
           padding: 30px 0 30px 0;
           gap: 50px;
@@ -151,6 +153,12 @@ export default function mobileNav() {
           font-size: large;
           font-weight: 800;
           font-family: var(--font-quicksand);
+        }
+
+        @media (min-width: 1024px) {
+          .menu.show {
+            display: none;
+          }
         }
       `}</style>
     </div>
