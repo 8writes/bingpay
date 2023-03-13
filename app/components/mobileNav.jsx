@@ -11,23 +11,6 @@ const quicksand = Quicksand({
 });
 
 export default function mobileNav() {
-  useEffect(() => {
-    const mobileNav = document.querySelector(`.${styles.mobileNav}`);
-    const menuShow = document.querySelector(".menu.show");
-    // Add or remove the "mobileScrollNav" class based on the scroll position
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        mobileNav.classList.add(styles.mobileScrollNav);
-      } else {
-        mobileNav.classList.remove(styles.mobileScrollNav);
-      }
-    };
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
@@ -50,8 +33,8 @@ export default function mobileNav() {
         <div style={{ padding: "6px" }}>
           <Image
             src="/logo-dark.webp"
-            width={100}
-            height={100}
+            width={90}
+            height={90}
             alt="Bingpay Logo"
             loading="lazy"
           />
@@ -72,8 +55,8 @@ export default function mobileNav() {
             <div style={{ padding: "6px" }}>
               <Image
                 src="/logo-dark.webp"
-                width={100}
-                height={100}
+                width={90}
+                height={90}
                 alt="Bingpay Logo"
                 loading="lazy"
               />
@@ -108,9 +91,10 @@ export default function mobileNav() {
           position: fixed;
           display: block;
           background-color: white;
-          width: 100%;
+          width: 100vw;
+          height: 100vh;
           justify-content: space-between;
-          padding: 20px 30px 20px 20px;
+          padding: 15px 30px 15px 10px;
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-duration: 300ms;
         }

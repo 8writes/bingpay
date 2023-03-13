@@ -4,15 +4,8 @@
   background-color: white;
   width: 100%;
   justify-content: space-between;
-  padding: 20px 30px 20px 20px;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
-}
-
-.mobileScrollNav {
-  justify-content: space-between;
-  padding: 16px 25px 14px 18px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.101), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+  padding: 15px 30px 15px 10px;
+  box-shadow: 0 0px 8px 0 rgba(230, 230, 230, 0.493), 0 6px 20px 0 rgba(214, 212, 212, 0.572);
 }
 
 @media (min-width: 1024px) {
