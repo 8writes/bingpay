@@ -124,7 +124,7 @@ export default function mobileNav() {
           width: 100vw;
           height: 100vh;
           justify-content: space-between;
-          padding: 15px 30px 15px 10px;
+          padding: 18px 30px 18px 10px;
         }
         .menu-nav {
           display: flex;
