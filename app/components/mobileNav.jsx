@@ -13,6 +13,7 @@ const quicksand = Quicksand({
 export default function mobileNav() {
   useEffect(() => {
     const mobileNav = document.querySelector(`.${styles.mobileNav}`);
+    const menuShow = document.querySelector(".menu.show");
     // Add or remove the "mobileScrollNav" class based on the scroll position
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -26,6 +27,7 @@ export default function mobileNav() {
       document.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
@@ -45,7 +47,7 @@ export default function mobileNav() {
   return (
     <div className={`${quicksand.variable}`}>
       <section className={styles.mobileNav}>
-        <div>
+        <div style={{ padding: "6px" }}>
           <Image
             src="/logo-dark.webp"
             width={100}
@@ -55,14 +57,82 @@ export default function mobileNav() {
           />
         </div>
         <div onClick={() => setShowMenu(!showMenu)}>
-          <svg width="30" height="30" viewBox="0 0 20 20">
-            <path
-              fill="#B71D95"
-              d="M3 18h18v-2H3v2zm0-5h15v-2H3v2zm0-7v2h18V6H3z"
-            />
-          </svg>
+          <Image
+            src="/mobile-menu-opn.svg"
+            width={35}
+            height={35}
+            alt="Bingpay Logo"
+            loading="lazy"
+          />
         </div>
       </section>
+      <div className={`menu ${showMenu ? "show" : ""}`}>
+        <div className="menu-body">
+          <div className="menu-nav">
+            <div style={{ padding: "6px" }}>
+              <Image
+                src="/logo-dark.webp"
+                width={100}
+                height={100}
+                alt="Bingpay Logo"
+                loading="lazy"
+              />
+            </div>
+
+            <div
+              style={{ padding: "6px" }}
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              <Image
+                src="/mobile-menu-cls.svg"
+                width={20}
+                height={20}
+                alt="Bingpay Logo"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <ul>
+            <li>Menu Item 1</li>
+            <li>Menu Item 2</li>
+            <li>Menu Item 3</li>
+          </ul>
+        </div>
+      </div>
+      <style jsx>{`
+        .menu {
+          display: none;
+        }
+
+        .menu.show {
+          position: fixed;
+          display: block;
+          background-color: white;
+          width: 100%;
+          justify-content: space-between;
+          padding: 20px 30px 20px 20px;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 300ms;
+        }
+        .menu-nav {
+          display: flex;
+          justify-content: space-between;
+        }
+        .menu-body {
+          display: grid;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        li {
+          padding: 10px;
+          background-color: #eee;
+          margin-bottom: 5px;
+        }
+      `}</style>
     </div>
   );
 }
