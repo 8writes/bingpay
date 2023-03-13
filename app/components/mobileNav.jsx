@@ -3,6 +3,8 @@ import Link from "next/link";
 import logoDark from "/public/logo-dark.webp";
 import GooglePlay from "/public/google-play.svg";
 import AppStore from "/public/app-store.svg";
+import OpenNav from "/public/mobile-menu-opn.svg";
+import CloseNav from "/public/mobile-menu-cls.svg";
 import styles from "./mobileNav.module.css";
 import { useState, useEffect } from "react";
 import { Quicksand } from "next/font/google";
@@ -30,7 +32,7 @@ export default function mobileNav() {
         <div style={{ padding: "6px" }}>
           <Image
             src={logoDark}
-            alt="Picture of the author"
+            alt="Bingpay Logo"
             width={120}
             height={120}
             // blurDataURL="data:..." automatically provided
@@ -39,11 +41,12 @@ export default function mobileNav() {
         </div>
         <div onClick={() => setShowMenu(!showMenu)}>
           <Image
-            src="/mobile-menu-opn.svg"
+            src={OpenNav}
+            alt="Open Nav"
             width={35}
             height={35}
-            alt="Open"
-            loading="lazy"
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
           />
         </div>
       </section>
@@ -52,7 +55,7 @@ export default function mobileNav() {
           <div style={{ padding: "6px" }}>
             <Image
               src={logoDark}
-              alt="Picture of the author"
+              alt="Bingpay Logo"
               width={120}
               height={120}
               // blurDataURL="data:..." automatically provided
@@ -65,11 +68,12 @@ export default function mobileNav() {
             onClick={() => setShowMenu(!showMenu)}
           >
             <Image
-              src="/mobile-menu-cls.svg"
+              src={CloseNav}
+              alt="Close Nav"
               width={20}
               height={20}
-              alt="Close"
-              loading="lazy"
+              // blurDataURL="data:..." automatically provided
+              // placeholder="blur" // Optional blur-up while loading
             />
           </div>
         </div>
@@ -89,8 +93,8 @@ export default function mobileNav() {
                   <Image
                     src={AppStore}
                     alt="App Store"
-                    width={135}
-                    height={135}
+                    width={146}
+                    height={146}
                     // blurDataURL="data:..." automatically provided
                     // placeholder="blur" // Optional blur-up while loading
                   />{" "}
@@ -105,8 +109,8 @@ export default function mobileNav() {
                   <Image
                     src={GooglePlay}
                     alt="Google Play"
-                    width={150}
-                    height={150}
+                    width={160}
+                    height={160}
                     // blurDataURL="data:..." automatically provided
                     // placeholder="blur" // Optional blur-up while loading
                   />{" "}

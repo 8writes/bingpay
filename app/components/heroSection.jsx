@@ -97,8 +97,8 @@ export default function HeroSection() {
                     <Image
                       src={AppStore}
                       alt="Picture of the author"
-                      width={135}
-                      height={135}
+                      width={146}
+                      height={146}
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />{" "}
@@ -113,8 +113,8 @@ export default function HeroSection() {
                     <Image
                       src={GooglePlay}
                       alt="Picture of the author"
-                      width={150}
-                      height={150}
+                      width={160}
+                      height={160}
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />{" "}
