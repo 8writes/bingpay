@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./mobileNav.module.css";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Quicksand } from "next/font/google";
 
 const quicksand = Quicksand({
@@ -26,6 +26,21 @@ export default function mobileNav() {
       document.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setShowMenu(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className={`${quicksand.variable}`}>
@@ -33,13 +48,20 @@ export default function mobileNav() {
         <div>
           <Image
             src="/logo-dark.webp"
-            width={120}
-            height={120}
+            width={100}
+            height={100}
             alt="Bingpay Logo"
             loading="lazy"
           />
         </div>
-        <div className={styles.mobileNavLinks}></div>
+        <div onClick={() => setShowMenu(!showMenu)}>
+          <svg width="30" height="30" viewBox="0 0 20 20">
+            <path
+              fill="#B71D95"
+              d="M3 18h18v-2H3v2zm0-5h15v-2H3v2zm0-7v2h18V6H3z"
+            />
+          </svg>
+        </div>
       </section>
     </div>
   );

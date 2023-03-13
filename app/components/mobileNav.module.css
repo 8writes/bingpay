@@ -1,21 +1,25 @@
 .mobileNav {
   position: fixed;
+  display: flex;
   background-color: white;
   width: 100%;
-  padding: 20px 14px 20px 14px;
+  justify-content: space-between;
+  padding: 20px 30px 20px 20px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+}
+.mobileNav img {
+  padding: 6px 0 0 0;
 }
 
 .mobileScrollNav {
   justify-content: space-between;
-  padding: 14px 10px 14px 10px;
+  padding: 16px 25px 14px 18px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.101), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
 }
 
-
-@media (min-width: 768px) { 
-    .mobileNav{
-      display: none;
-    }
- }
+@media (min-width: 1024px) {
+  .mobileNav {
+    display: none;
+  }
+}
