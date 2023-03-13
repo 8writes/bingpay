@@ -35,7 +35,7 @@ export default function NavBar() {
           <Image
             src={logoDark}
             alt="Picture of the author"
-             width={120} 
+            width={120}
             height={120}
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading

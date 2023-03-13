@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Roboto_Mono, Space_Grotesk} from "next/font/google";
+import { Roboto_Mono, Space_Grotesk } from "next/font/google";
 
 const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
@@ -13,12 +13,11 @@ const space_grotesk = Space_Grotesk({
   display: "swap",
 });
 
-
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${roboto_mono.variable, space_grotesk.variable}`}
+      className={`${(roboto_mono.variable, space_grotesk.variable)}`}
     >
       <body>{children}</body>
     </html>
