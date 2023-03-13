@@ -4,6 +4,9 @@ import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import { useEffect } from "react";
 import styles from "./heroSection.module.css";
+import BingHero from "/public/bing-hero.png";
+import GooglePlay from "/public/google-play.svg";
+import AppStore from "/public/app-store.svg";
 import { Space_Grotesk, Quicksand } from "next/font/google";
 
 const space_grotesk = Space_Grotesk({
@@ -92,12 +95,13 @@ export default function HeroSection() {
                     href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}
                   >
                     <Image
-                      src="/app-store.svg"
+                      src={AppStore}
+                      alt="Picture of the author"
                       width={135}
                       height={135}
-                      alt="App Store Image"
-                      loading="lazy"
-                    />
+                      // blurDataURL="data:..." automatically provided
+                      // placeholder="blur" // Optional blur-up while loading
+                    />{" "}
                   </a>
                 </div>
                 <div>
@@ -107,12 +111,13 @@ export default function HeroSection() {
                     }
                   >
                     <Image
-                      src="/google-play.svg"
+                      src={GooglePlay}
+                      alt="Picture of the author"
                       width={150}
                       height={150}
-                      alt="Google-play Store Image"
-                      loading="lazy"
-                    />
+                      // blurDataURL="data:..." automatically provided
+                      // placeholder="blur" // Optional blur-up while loading
+                    />{" "}
                   </a>
                 </div>{" "}
               </div>
@@ -128,11 +133,12 @@ export default function HeroSection() {
               variants={FadeInRight}
             >
               <Image
-                src="/bing-hero.png"
+                src={BingHero}
+                alt="Picture of the author"
                 width={650}
                 height={650}
-                alt="Bingpay Logo"
-                loading="lazy"
+                // blurDataURL="data:..." automatically provided
+                // placeholder="blur" // Optional blur-up while loading
               />{" "}
             </motion.div>
           </div>

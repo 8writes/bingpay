@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logoDark from "/public/logo-dark.webp";
 import Link from "next/link";
 import styles from "./navBar.module.css";
 import { useEffect } from "react";
@@ -32,10 +33,12 @@ export default function NavBar() {
       <section className={styles.navBar}>
         <div>
           <Image
-            src="/logo-dark.webp"
-            width={130}
-            height={130}
-            alt="Bingpay Logo"
+            src={logoDark}
+            alt="Picture of the author"
+             width={120} 
+            height={120}
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
           />
         </div>
         <div className={styles.navLinks}>
