@@ -8,6 +8,7 @@ import CloseNav from "/public/mobile-menu-cls.svg";
 import styles from "./mobileNav.module.css";
 import { useState, useEffect } from "react";
 import { Quicksand } from "next/font/google";
+import "./mobileNavMenu.css";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -17,14 +18,6 @@ const quicksand = Quicksand({
 
 export default function mobileNav() {
   const [showMenu, setShowMenu] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        setShowMenu(false);
-      }
-    };
-  }, []);
 
   return (
     <div className={`${quicksand.variable}`}>
@@ -64,6 +57,7 @@ export default function mobileNav() {
           </div>
 
           <div
+            className="enable-scroll"
             style={{ padding: "6px" }}
             onClick={() => setShowMenu(!showMenu)}
           >
@@ -120,56 +114,6 @@ export default function mobileNav() {
           </div>
         </div>
       </div>
-      <style jsx>{`
-        .menu {
-          display: none;
-        }
-
-        .menu.show {
-          position: fixed;
-          display: block;
-          background-color: white;
-          width: 100vw;
-          height: 100vh;
-          justify-content: space-between;
-          padding: 18px 30px 18px 10px;
-        }
-        .menu-nav {
-          display: flex;
-          justify-content: space-between;
-          padding: 0 0 16px 0;
-        }
-        .menu-body {
-          max-width: 500px;
-          margin-left: auto;
-          margin-right: auto;
-          display: grid;
-          padding: 30px 0 30px 0;
-          gap: 50px;
-          border-top: 2px solid #f4eded9c;
-        }
-        ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-        }
-
-        li {
-          padding: 10px;
-          white-space: nowrap;
-          color: #761b60;
-          margin-bottom: 5px;
-          font-size: large;
-          font-weight: 800;
-          font-family: var(--font-quicksand);
-        }
-
-        @media (min-width: 1024px) {
-          .menu.show {
-            display: none;
-          }
-        }
-      `}</style>
     </div>
   );
 }
