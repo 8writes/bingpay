@@ -3,11 +3,11 @@ import logoDark from "/public/logo-dark.webp";
 import Link from "next/link";
 import styles from "./navBar.module.css";
 import { useEffect } from "react";
-import { Quicksand } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
-const quicksand = Quicksand({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-quicksand",
+  variable: "--font-montserrat",
   display: "swap",
 });
 
@@ -29,33 +29,35 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className={`${quicksand.variable}`}>
-      <section className={styles.navBar}>
-        <div>
-          <Image
-            src={logoDark}
-            alt="Picture of the author"
-            width={120}
-            height={120}
-            // blurDataURL="data:..." automatically provided
-            // placeholder="blur" // Optional blur-up while loading
-          />
-        </div>
-        <div className={styles.navLinks}>
-          <span className={styles.Links}>
-            {" "}
-            <Link href="/">Business</Link>
-          </span>
-          <span className={styles.Links}>
-            {" "}
-            <Link href="/">About</Link>
-          </span>
-          <span className={styles.Links}>
-            {" "}
-            <Link href="/">Support</Link>
-          </span>
-        </div>
-      </section>
+    <div>
+      <div className={`${montserrat.variable}`}>
+        <section className={styles.navBar}>
+          <div>
+            <Image
+              src={logoDark}
+              alt="Picture of the author"
+              width={120}
+              height={120}
+              // blurDataURL="data:..." automatically provided
+              // placeholder="blur" // Optional blur-up while loading
+            />
+          </div>
+          <div className={styles.navLinks}>
+            <span className={styles.Links}>
+              {" "}
+              <Link href="/">Business</Link>
+            </span>
+            <span className={styles.Links}>
+              {" "}
+              <Link href="/">About</Link>
+            </span>
+            <span className={styles.Links}>
+              {" "}
+              <Link href="/">Support</Link>
+            </span>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

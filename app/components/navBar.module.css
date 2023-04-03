@@ -11,17 +11,17 @@
 .scrollNav {
   width: 100%;
   justify-content: space-between;
-  padding: 25px 110px 25px 110px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.101), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 0px 8px 0 rgba(211, 210, 210, 0.427),
+    0 6px 20px 0 rgba(221, 221, 221, 0.757);
 }
 
 .navLinks {
   display: flex;
   gap: 40px;
   font-size: large;
-  font-weight: 800;
+  font-weight: 600;
   color: #761b60;
-  font-family: var(--font-quicksand);
+  font-family: var(--font-montserrat);
 }
 
 .Links {

@@ -1,6 +1,5 @@
 .menu {
   display: none;
-  overflow: hidden;
 }
 
 .menu.show {
@@ -23,7 +22,6 @@
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  overflow-y: hidden;
   display: grid;
   padding: 30px 0 30px 0;
   gap: 50px;

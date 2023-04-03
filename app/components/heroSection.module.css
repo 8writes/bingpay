@@ -16,15 +16,15 @@
 .heroSection h1 {
   font-weight: 900;
   line-height: normal;
-  color: #761b60;
+  color: #761b60;  
   font-family: var(--font-space_grotesk);
 }
 
 .heroSection p {
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
   color: rgba(25, 24, 24, 0.842);
-  font-family: var(--font-quicksand);
+  font-family: var(--font-montserrat);
 }
 
 .heroLeft {
@@ -213,7 +213,7 @@
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   .heroSection {
-    padding: 13vh 14px 0 14px;
+    padding: 12vh 14px 0 14px;
   }
 
   .heroBg {
@@ -231,8 +231,7 @@
   }
 
   .heroLeft {
-    padding: 40px 0 0 0;
-    margin: 20vh 0 0 0;
+    padding: 10vh 0 0 0;
   }
 
   .heroSocials {

@@ -20,31 +20,9 @@ export default function mobileNav() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className={`${quicksand.variable}`}>
-      <section className={styles.mobileNav}>
-        <div style={{ padding: "6px" }}>
-          <Image
-            src={logoDark}
-            alt="Bingpay Logo"
-            width={120}
-            height={120}
-            // blurDataURL="data:..." automatically provided
-            // placeholder="blur" // Optional blur-up while loading
-          />
-        </div>
-        <div onClick={() => setShowMenu(!showMenu)}>
-          <Image
-            src={OpenNav}
-            alt="Open Nav"
-            width={35}
-            height={35}
-            // blurDataURL="data:..." automatically provided
-            // placeholder="blur" // Optional blur-up while loading
-          />
-        </div>
-      </section>
-      <div className={`menu ${showMenu ? "show" : ""}`}>
-        <div className="menu-nav">
+    <div>
+      <div className={`${quicksand.variable}`}>
+        <section className={styles.mobileNav}>
           <div style={{ padding: "6px" }}>
             <Image
               src={logoDark}
@@ -55,61 +33,87 @@ export default function mobileNav() {
               // placeholder="blur" // Optional blur-up while loading
             />
           </div>
-
-          <div
-            className="enable-scroll"
-            style={{ padding: "6px" }}
-            onClick={() => setShowMenu(!showMenu)}
-          >
+          <div onClick={() => setShowMenu(!showMenu)}>
             <Image
-              src={CloseNav}
-              alt="Close Nav"
-              width={20}
-              height={20}
+              src={OpenNav}
+              alt="Open Nav"
+              width={35}
+              height={35}
               // blurDataURL="data:..." automatically provided
               // placeholder="blur" // Optional blur-up while loading
             />
           </div>
-        </div>
-        <div className="menu-body">
-          <div className="menu-links">
-            <ul>
-              <li>Business</li>
-              <li>About</li>
-              <li>Support</li>
-            </ul>
+        </section>
+        <div className={`menu ${showMenu ? "show" : ""}`}>
+          <div className="menu-nav">
+            <div style={{ padding: "6px" }}>
+              <Image
+                src={logoDark}
+                alt="Bingpay Logo"
+                width={120}
+                height={120}
+                // blurDataURL="data:..." automatically provided
+                // placeholder="blur" // Optional blur-up while loading
+              />
+            </div>
+
+            <div
+              className="enable-scroll"
+              style={{ padding: "6px" }}
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              <Image
+                src={CloseNav}
+                alt="Close Nav"
+                width={20}
+                height={20}
+                // blurDataURL="data:..." automatically provided
+                // placeholder="blur" // Optional blur-up while loading
+              />
+            </div>
           </div>
-          <div>
-            <div className={styles.heroSocials}>
-              <div>
-                {" "}
-                <a href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}>
-                  <Image
-                    src={AppStore}
-                    alt="App Store"
-                    width={146}
-                    height={146}
-                    // blurDataURL="data:..." automatically provided
-                    // placeholder="blur" // Optional blur-up while loading
-                  />{" "}
-                </a>
+          <div className="menu-body">
+            <div className="menu-links">
+              <ul>
+                <li>Business</li>
+                <li>About</li>
+                <li>Support</li>
+              </ul>
+            </div>
+            <div>
+              <div className={styles.heroSocials}>
+                <div>
+                  {" "}
+                  <a
+                    href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}
+                  >
+                    <Image
+                      src={AppStore}
+                      alt="App Store"
+                      width={146}
+                      height={146}
+                      // blurDataURL="data:..." automatically provided
+                      // placeholder="blur" // Optional blur-up while loading
+                    />{" "}
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={
+                      "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
+                    }
+                  >
+                    <Image
+                      src={GooglePlay}
+                      alt="Google Play"
+                      width={160}
+                      height={160}
+                      // blurDataURL="data:..." automatically provided
+                      // placeholder="blur" // Optional blur-up while loading
+                    />{" "}
+                  </a>
+                </div>{" "}
               </div>
-              <div>
-                <a
-                  href={
-                    "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
-                  }
-                >
-                  <Image
-                    src={GooglePlay}
-                    alt="Google Play"
-                    width={160}
-                    height={160}
-                    // blurDataURL="data:..." automatically provided
-                    // placeholder="blur" // Optional blur-up while loading
-                  />{" "}
-                </a>
-              </div>{" "}
             </div>
           </div>
         </div>
