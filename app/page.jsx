@@ -1,5 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
+import Services from "./components/services.jsx";
 
 const NavBar = dynamic(() => import("./components/navBar.jsx"), { ssr: false });
 const MobileNav = dynamic(() => import("./components/mobileNav.jsx"), {
@@ -15,6 +16,7 @@ export default function Home() {
       <NavBar />
       <MobileNav />
       <HeroSection />
+      <Services />
     </main>
   );
 }

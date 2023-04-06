@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logoDark from "/public/logo-dark.webp";
+import downArrow from "/public/down-arrow.svg";
 import Link from "next/link";
 import styles from "./navBar.module.css";
 import { useEffect } from "react";
@@ -49,11 +50,31 @@ export default function NavBar() {
             </span>
             <span className={styles.Links}>
               {" "}
-              <Link href="/">About</Link>
+              <Link href="/">Company</Link>
+              <Image
+                src={downArrow}
+                alt=""
+                width={13}
+                height={13}
+                // blurDataURL="data:..." automatically provided
+                // placeholder="blur" // Optional blur-up while loading
+              />
+            </span>
+            <span className={styles.Links}>
+              {" "}
+              <Link href="/">Developers</Link>
             </span>
             <span className={styles.Links}>
               {" "}
               <Link href="/">Support</Link>
+              <Image
+                src={downArrow}
+                alt=""
+                width={13}
+                height={13}
+                // blurDataURL="data:..." automatically provided
+                // placeholder="blur" // Optional blur-up while loading
+              />
             </span>
           </div>
         </section>

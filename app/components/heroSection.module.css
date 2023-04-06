@@ -213,7 +213,7 @@
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   .heroSection {
-    padding: 12vh 14px 0 14px;
+    padding: 10.7vh 14px 30px 14px;
   }
 
   .heroBg {
@@ -222,7 +222,7 @@
   }
 
   .heroSection p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     width: 35vw;
   }
 

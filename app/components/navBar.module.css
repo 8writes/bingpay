@@ -3,33 +3,37 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 30px 130px 30px 120px;
+  padding: 27px 120px 22px 120px;
   background-color: white;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
+
 .scrollNav {
   width: 100%;
   justify-content: space-between;
-  box-shadow: 0 0px 8px 0 rgba(211, 210, 210, 0.427),
-    0 6px 20px 0 rgba(221, 221, 221, 0.757);
+  box-shadow: 40px 0px 0px 0px rgba(214, 212, 216, 0.501),
+    0 6px 20px 0 rgba(202, 201, 206, 0.535);
 }
 
 .navLinks {
   display: flex;
   gap: 40px;
-  font-size: large;
+  font-size: medium;
   font-weight: 600;
   color: #761b60;
   font-family: var(--font-montserrat);
 }
 
 .Links {
+  display: flex;
   cursor: pointer;
   position: relative;
   white-space: nowrap;
+  gap: 5px;
+  padding: 0 0 3.5px 0;
 }
-
+  /*
 .Links::before,
 .Links::after {
   position: absolute;
@@ -43,7 +47,7 @@
 
 .Links::before {
   content: "";
-  /* show by default */
+ show by default 
 }
 .Links::before {
   transform-origin: 100% 50%;
@@ -70,7 +74,7 @@
   transform: scale3d(1, 1, 1);
   transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
 }
-
+*/
 @media (max-width: 1024px) {
   .navBar {
     display: none;
