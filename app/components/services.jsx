@@ -38,7 +38,7 @@ export default function Services() {
           <span>
             <p>
               Bingpay unlocks possibilities of making payments for millions of
-              goods and services in one app.
+              goods and services.
             </p>
           </span>
         </section>
