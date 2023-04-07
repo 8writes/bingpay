@@ -75,7 +75,7 @@
   transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
 }
 */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .navBar {
     display: none;
   }

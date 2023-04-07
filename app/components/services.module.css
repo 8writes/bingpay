@@ -29,7 +29,7 @@
   text-align: center;
   gap: 60px;
   margin: 0 auto;
-  padding: 50px 0 50px 0;
+  padding: 50px 5px 50px 5px;
 }
 
 .servicesListGrid {
@@ -72,17 +72,43 @@
   }
   
   .serviceIntro p {
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 0 5px 0 5px;
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
+  .serviceIntro {
+    padding: 50px 0 30px 0;
+  }
+
+  .serviceIntro h1 {
+    font-size: 3.5em;
+    padding: 0 0 10px 0;
+  }
+
+  .serviceIntro p {
+    font-size: 1.1em;
+     width: 95vw;
+  }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
+  .serviceIntro {
+    padding: 50px 0 30px 0;
+  }
+
+  .serviceIntro h1 {
+    font-size: 3.5em;
+    padding: 0 0 10px 0;
+  }
+
+  .serviceIntro p {
+    font-size: 1.1em;
+    width: 70vw;
+  }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
