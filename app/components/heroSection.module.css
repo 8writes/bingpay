@@ -5,7 +5,7 @@
 }
 
 .heroBg {
-  background-color: rgba(230, 226, 238, 0.726);
+  background-color: rgba(245, 245, 245, 0.828);
   display: flex;
   justify-content: center;
   border-radius: 10px;
@@ -145,7 +145,7 @@
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
   .heroSection {
-    padding: 8  vh 0 0 0;
+    padding: 8vh 0 0 0;
   }
 
   .heroBg {
