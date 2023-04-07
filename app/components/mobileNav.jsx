@@ -17,6 +17,22 @@ const quicksand = Quicksand({
 });
 
 export default function mobileNav() {
+  useEffect(() => {
+    const navBar = document.querySelector(`.${styles.mobileNav}`);
+    // Add or remove the "scrollMobileNav" class based on the scroll position
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        navBar.classList.add(styles.scrollMobileNav);
+      } else {
+        navBar.classList.remove(styles.scrollMobileNav);
+      }
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const [showMenu, setShowMenu] = useState(false);
 
   return (

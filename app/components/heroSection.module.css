@@ -43,8 +43,8 @@
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
-  .heroSection {
-    padding: 10vh 0 0 0;
+   .heroSection {
+    padding: 13.3vh 0 0 0;
   }
 
   .heroBg {
@@ -78,7 +78,7 @@
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
   .heroSection {
-    padding: 5vh 0 0 0;
+     padding: 13.3vh 0 0 0;
   }
 
   .heroBg {
@@ -112,7 +112,7 @@
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
   .heroSection {
-    padding: 5vh 0 0 0;
+    padding: 13.3vh 0 0 0;
   }
 
   .heroBg {
@@ -145,7 +145,7 @@
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
   .heroSection {
-    padding: 10vh 0 0 0;
+     padding: 13.3vh 0 0 0;
   }
 
   .heroBg {
@@ -178,7 +178,7 @@
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
   .heroSection {
-    padding: 10vh 5px 0 5px;
+     padding: 13.3vh 0 0 0;
   }
 
   .heroBg {

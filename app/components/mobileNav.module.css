@@ -5,8 +5,13 @@
   width: 100%;
   justify-content: space-between;
   padding: 18px 30px 18px 10px;
-box-shadow: 0 0px 8px 0 rgba(211, 210, 210, 0.427),
-    0 6px 20px 0 rgba(221, 221, 221, 0.757); 
+}
+
+.scrollMobileNav {
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 40px 0px 0px 0px rgba(214, 212, 216, 0.501),
+    0 6px 20px 0 rgba(202, 201, 206, 0.535);
 }
 
 .heroSocials {
