@@ -1,0 +1,87 @@
+.business {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  background-color: white;
+  padding: 100px 0 100px 0;
+  margin: 0 auto;
+}
+
+.businessContext {
+  display: grid;
+  max-width: 30vw;
+  height: 50vh;
+  padding: 70px 0 0 0;
+  line-height: 2;
+}
+
+.intro {
+  background-color: rgb(233, 238, 244);
+  font-family: var(--font-space_grotesk);
+  font-weight: 500;
+  color: #4b494b;
+  border-radius: 20px;
+  padding: 0 0 0 10px;
+  width: 14vw;
+  height: 4.5vh;
+}
+.heading {
+  font-size: 2em;
+  font-weight: 900;
+  font-family: var(--font-space_grotesk);
+  line-height: normal;
+  color: #761b60;
+  padding: 20px 0 20px 0;
+}
+
+.businessContext p {
+  font-weight: 500;
+  font-size: 1em;
+  padding: 0 0 20px 0;
+  font-family: var(--font-space_grotesk);
+}
+.btn button {
+  font-size: 1em;
+  width: 14.5vw;
+  background-color: rgb(184, 30, 148);
+  color: white;
+  padding: 5px;
+  border-radius: 30px;
+  font-family: var(--font-space_grotesk);
+}
+
+.btn button:hover {
+  background-color: rgb(139, 70, 123);
+  color: white;
+}
+
+/* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
+@media (max-width: 373px) {
+
+ }
+
+/* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
+@media (min-width: 374px) {
+
+ }
+
+/* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
+@media (min-width: 425px) {
+
+}
+
+/* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
+@media (min-width: 768px) {
+
+  }
+
+/* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
+@media (min-width: 1024px) {
+
+ }
+
+/* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
+@media (min-width: 1440px) {
+
+ }

@@ -21,6 +21,22 @@
   width: fit-content;
 }
 
+.navLinks {
+  display: grid;
+  gap: 40px;
+  font-size: medium;
+  font-weight: 600;
+  color: #761b60;
+  font-family: var(--font-montserrat);
+}
+
+.Links {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  gap: 5px;
+}
+
 @media (min-width: 1024px) {
   .mobileNav {
     display: none;

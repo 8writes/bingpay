@@ -9,6 +9,7 @@ import styles from "./mobileNav.module.css";
 import { useState, useEffect } from "react";
 import { Quicksand } from "next/font/google";
 import "./mobileNavMenu.css";
+import downArrow from "/public/down-arrow.svg";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -89,12 +90,39 @@ export default function mobileNav() {
             </div>
           </div>
           <div className="menu-body">
-            <div className="menu-links">
-              <ul>
-                <li>Business</li>
-                <li>About</li>
-                <li>Support</li>
-              </ul>
+            <div className={styles.navLinks}>
+              <span className={styles.Links}>
+                {" "}
+                <Link href="/">Business</Link>
+              </span>
+              <span className={styles.Links}>
+                {" "}
+                <Link href="/">Company</Link>
+                <Image
+                  src={downArrow}
+                  alt=""
+                  width={12}
+                  height={12}
+                  // blurDataURL="data:..." automatically provided
+                  // placeholder="blur" // Optional blur-up while loading
+                />
+              </span>
+              <span className={styles.Links}>
+                {" "}
+                <Link href="/">Developers</Link>
+              </span>
+              <span className={styles.Links}>
+                {" "}
+                <Link href="/">Support</Link>
+                <Image
+                  src={downArrow}
+                  alt=""
+                  width={12}
+                  height={12}
+                  // blurDataURL="data:..." automatically provided
+                  // placeholder="blur" // Optional blur-up while loading
+                />
+              </span>
             </div>
             <div>
               <div className={styles.heroSocials}>
