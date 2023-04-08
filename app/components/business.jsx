@@ -6,6 +6,9 @@ export default function Business() {
   return (
     <div>
       <section className={styles.business}>
+        <span className={styles.introMobile}>
+          <h1>Bingpay for Business 💸</h1>
+        </span>
         <div>
           <Image
             src={Merchant}
