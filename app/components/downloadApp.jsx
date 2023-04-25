@@ -66,7 +66,7 @@ export default function DownloadApp() {
             </div>{" "}
           </span>
         </div>
-        <div>
+        <div className={styles.downloadImg}>
           <Image
             src={Merchant}
             alt="App Store"
