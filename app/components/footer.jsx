@@ -50,7 +50,7 @@ export default function Footer() {
           <div className={styles.footerList}>
             <h1>Contact Us</h1>
             <ul>
-              <li>11 Ada George Road, Port Hacourt, NG 500027</li>
+              <li>11 Ada George Road, <br></br> Port Hacourt, NG 500027</li>
               <li>hello@bingpay.ng</li>
             </ul>
           </div>
