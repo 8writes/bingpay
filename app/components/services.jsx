@@ -17,78 +17,70 @@ const space_grotesk = Space_Grotesk({
 });
 
 export default function Services() {
+
   const FadeInUp = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: -50 },
   };
 
-  const [ref1, inView1] = useInView();
-  const [ref2, inView2] = useInView();
-  const [ref3, inView3] = useInView();
+  const [ref1, inView1] = useInView({ threshold: 0 });
+  const [ref2, inView2] = useInView({ threshold: 0 });
+  const [ref3, inView3] = useInView({ threshold: 0 });
 
   return (
     <div>
-        <section className={`${styles.services} ${space_grotesk.variable}`}>
-          <motion.section
-            ref={ref1}
-            initial="hidden"
-            animate={inView1 ? "visible" : "hidden"}
-            exit="exit"
-            variants={FadeInUp}
-            transition={{ duration: 0.5 }}
-          >
-            <section className={styles.serviceIntro}>
+      <section className={`${styles.services} ${space_grotesk.variable}`}>
+        <motion.section
+          ref={ref1}
+          initial="hidden"
+          animate={inView1 ? "visible" : "hidden"}
+          exit="exit"
+          variants={FadeInUp}
+          transition={{ duration: 0.5 }}
+        >
+          <section className={styles.serviceIntro}>
+            <div>
+              <h1>Value for your money</h1>
+            </div>
+            <div>
+              <p>
+                Bingpay unlocks possibilities of making payments for millions of
+                goods and services.
+              </p>
+            </div>
+          </section>
+        </motion.section>{" "}
+        <motion.section
+          ref={ref2}
+          initial="hidden"
+          animate={inView2 ? "visible" : "hidden"}
+          exit="exit"
+          variants={FadeInUp}
+          transition={{ duration: 0.5 }}
+        >
+          <section className={styles.servicesList}>
+            <div className={styles.servicesListGrid}>
               <div>
-                <h1>Value for your money</h1>
+                <Image
+                  src={list}
+                  alt="list"
+                  width={50}
+                  height={0}
+                  // blurDataURL="data:..." automatically provided
+                  // placeholder="blur" // Optional blur-up while loading
+                />
+              </div>
+              <div>
+                <h1>Utility Bills</h1>
               </div>
               <div>
                 <p>
-                  Bingpay unlocks possibilities of making payments for millions
-                  of goods and services.
+                  Pay Electricity bills, Internet bundles & Cable TV
+                  subscriptions on bingpay.
                 </p>
               </div>
-            </section>
-          </motion.section>
-          <section className={styles.servicesList}>
-            <motion.section
-              ref={ref2}
-              initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
-              exit="exit"
-              variants={FadeInUp}
-              transition={{ duration: 0.5 }}
-            >
-              <div className={styles.servicesListGrid}>
-                <div>
-                  <Image
-                    src={list}
-                    alt="list"
-                    width={50}
-                    height={0}
-                    // blurDataURL="data:..." automatically provided
-                    // placeholder="blur" // Optional blur-up while loading
-                  />
-                </div>
-                <div>
-                  <h1>Utility Bills</h1>
-                </div>
-                <div>
-                  <p>
-                    Pay Electricity bills, Internet bundles & Cable TV
-                    subscriptions on bingpay.
-                  </p>
-                </div>
-              </div>
-            </motion.section>
-            <motion.section
-              ref={ref2}
-              initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
-              exit="exit"
-              variants={FadeInUp}
-              transition={{ duration: 0.5 }}
-            >
+            </div>
               <div className={styles.servicesListGrid}>
                 <div>
                   <Image
@@ -110,15 +102,6 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </motion.section>
-            <motion.section
-              ref={ref2}
-              initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
-              exit="exit"
-              variants={FadeInUp}
-              transition={{ duration: 0.5 }}
-            >
               <div className={styles.servicesListGrid}>
                 <div>
                   <Image
@@ -139,16 +122,18 @@ export default function Services() {
                     bingpay app.
                   </p>
                 </div>
-              </div>
-            </motion.section>
-            <motion.section
-              ref={ref3}
-              initial="hidden"
-              animate={inView3 ? "visible" : "hidden"}
-              exit="exit"
-              variants={FadeInUp}
-              transition={{ duration: 0.5 }}
-            >
+            </div>
+          </section>
+          </motion.section>
+           <motion.section
+          ref={ref3}
+          initial="hidden"
+          animate={inView3 ? "visible" : "hidden"}
+          exit="exit"
+          variants={FadeInUp}
+          transition={{ duration: 0.5 }}
+        >
+          <section className={styles.servicesList}>
               <div className={styles.servicesListGrid}>
                 <div>
                   <Image
@@ -170,15 +155,6 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </motion.section>
-            <motion.section
-              ref={ref3}
-              initial="hidden"
-              animate={inView3 ? "visible" : "hidden"}
-              exit="exit"
-              variants={FadeInUp}
-              transition={{ duration: 0.5 }}
-            >
               <div className={styles.servicesListGrid}>
                 <div>
                   <Image
@@ -200,15 +176,6 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </motion.section>
-            <motion.section
-              ref={ref3}
-              initial="hidden"
-              animate={inView3 ? "visible" : "hidden"}
-              exit="exit"
-              variants={FadeInUp}
-              transition={{ duration: 0.5 }}
-            >
               <div className={styles.servicesListGrid}>
                 <div>
                   <Image
@@ -230,8 +197,8 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </motion.section>
-          </section>
+            </section>
+        </motion.section>
         </section>
     </div>
   );

@@ -5,32 +5,36 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export default function Business() {
-  const { ref, inView } = useInView({ threshold: 0.5 });
+  const FadeInLeft = {
+    hidden: { opacity: 0, x: 50 },
+    visible: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: -50 },
+  };
 
   const FadeInRight = {
+    hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: 100 },
+    exit: { opacity: 0, x: 50 },
   };
 
-  const FadeInLeft = {
-    visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: -100 },
-  };
+  const [ref1, inView1] = useInView({ threshold: 0 });
+  const [ref2, inView2] = useInView({ threshold: 0 });
 
   return (
     <div>
       <div className={styles.bg}>
         <section className={styles.business}>
-          <span className={styles.introMobile}>
-            <h1>Bingpay for Business 💸</h1>
-          </span>
           <motion.div
-            ref={ref}
+            ref={ref1}
             initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={FadeInLeft}
+            animate={inView1 ? "visible" : "hidden"}
+            exit="exit"
+            variants={FadeInRight}
             transition={{ duration: 0.5 }}
           >
+            <span className={styles.introMobile}>
+              <h1>Bingpay for Business 💸</h1>
+            </span>
             <div>
               <Image
                 src={Merchant}
@@ -40,16 +44,18 @@ export default function Business() {
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />{" "}
-            </div>
+            </div>{" "}
           </motion.div>
-          <motion.div
-            ref={ref}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={FadeInRight}
-            transition={{ duration: 0.5 }}
-          >
-            <div className={styles.businessContext}>
+
+          <div className={styles.businessContext}>
+            <motion.div
+              ref={ref2}
+              initial="hidden"
+              animate={inView2 ? "visible" : "hidden"}
+              exit="exit"
+              variants={FadeInLeft}
+              transition={{ duration: 0.5 }}
+            >
               <span className={styles.intro}>
                 <h1>Bingpay for Business 💸</h1>
               </span>
@@ -64,8 +70,8 @@ export default function Business() {
               <span className={styles.btn}>
                 <button>Join Waitlist</button>
               </span>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </section>
       </div>
     </div>
