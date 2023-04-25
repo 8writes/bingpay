@@ -3,10 +3,11 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 27px 120px 22px 120px;
+  padding: 27px 150px 22px 120px;
   background-color: white;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+  z-index: 999;
 }
 
 .scrollNav {
@@ -19,9 +20,9 @@
 .navLinks {
   display: flex;
   gap: 40px;
-  font-size: medium;
+  font-size: 0.9em;
   font-weight: 600;
-  color: #761b60;
+  color: rgb(184, 30, 148);
   font-family: var(--font-montserrat);
 }
 
@@ -33,7 +34,49 @@
   gap: 5px;
   padding: 0 0 3.5px 0;
 }
-  /*
+
+.Links:hover .dropContent {
+  display: block;
+}
+
+.Links:hover .dropBg {
+  display: block;
+}
+
+.dropContent {
+  display: none;
+  background-color: white;
+  min-width: 160px;
+  margin: 5px 10px 10px 0px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 5px 5px 0px rgba(159, 159, 159, 0.2);
+  z-index: 3;
+  padding: 20px 0 0 0;
+}
+
+.dropContent ul li {
+  color: rgb(16, 16, 16);
+  padding: 1px 10px 16px 20px;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 400;
+  display: block;
+}
+
+.dropBg {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  padding: 20px 0 0 0;
+  top: 30px;
+  left: 0;
+  width: 10vw;
+  cursor: default;
+}
+.Links img{
+  padding: 0 0 5.5px 0;
+}
+/*
 .Links::before,
 .Links::after {
   position: absolute;

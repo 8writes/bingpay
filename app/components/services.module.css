@@ -1,6 +1,8 @@
 .services {
   background-color: white;
+  font-family: var(--font-space_grotesk);
 }
+
 .serviceIntro {
   display: grid;
   justify-content: center;
@@ -11,15 +13,13 @@
 .serviceIntro h1 {
   font-weight: 900;
   line-height: normal;
-  color: #761b60;
-  font-family: var(--font-space_grotesk);
+  color: rgb(184, 30, 148);
 }
 
 .serviceIntro p {
   font-weight: 500;
   line-height: normal;
   color: #4b494b;
-  font-family: var(--font-space_grotesk);
 }
 
 .servicesList {
@@ -29,7 +29,6 @@
   text-align: center;
   gap: 60px;
   margin: 0 auto;
-  padding: 50px 5px 50px 5px;
 }
 
 .servicesListGrid {
@@ -42,38 +41,44 @@
 .servicesListGrid h1 {
   font-size: large;
   font-weight: 500;
-  font-family: var(--font-space_grotesk);
 }
 
 .servicesListGrid p {
   font-weight: 500;
-  font-family: var(--font-space_grotesk);
+  color: #4b494b;
 }
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
-   .serviceIntro h1 {
+  .serviceIntro h1 {
     font-size: 2.2em;
     padding: 30px 0 10px 0;
   }
-  
+
   .serviceIntro p {
     font-size: 1em;
     padding: 0 5px 0 5px;
   }
 
+  .servicesList {
+    padding: 50px 5px 50px 5px;
+  }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
-   .serviceIntro h1 {
+  .serviceIntro h1 {
     font-size: 2.7em;
     padding: 30px 0 10px 0;
   }
-  
+
   .serviceIntro p {
     font-size: 1.1em;
     padding: 0 5px 0 5px;
+  }
+
+  .servicesList {
+    padding: 50px 5px 50px 5px;
   }
 }
 
@@ -90,7 +95,11 @@
 
   .serviceIntro p {
     font-size: 1.1em;
-     width: 95vw;
+    width: 95vw;
+  }
+
+  .servicesList {
+    padding: 50px 5px 50px 5px;
   }
 }
 
@@ -109,6 +118,10 @@
     font-size: 1.1em;
     width: 70vw;
   }
+
+  .servicesList {
+    padding: 50px 5px 50px 5px;
+  }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
@@ -117,8 +130,11 @@
 
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
+  .services {
+    padding: 30px 0 50px 0;
+  }
   .serviceIntro {
-    padding: 50px 0 30px 0;
+    padding: 50px 0 50px 0;
   }
 
   .serviceIntro h1 {
@@ -130,7 +146,9 @@
     font-size: 1.1em;
     width: 35vw;
   }
+
   .servicesList {
     max-width: 80vw;
+    padding: 50px 5px 50px 5px;
   }
 }

@@ -5,7 +5,7 @@
 }
 
 .heroBg {
-  background-color: rgba(245, 245, 245, 0.828);
+  background-color: rgb(244,242,251);
   display: flex;
   justify-content: center;
   border-radius: 10px;
@@ -16,7 +16,7 @@
 .heroSection h1 {
   font-weight: 900;
   line-height: normal;
-  color: #761b60;  
+  color: rgb(184,30,148);
   font-family: var(--font-space_grotesk);
 }
 
@@ -43,7 +43,7 @@
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
-   .heroSection {
+  .heroSection {
     padding: 1vh 0 0 0;
   }
 
@@ -78,7 +78,7 @@
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
   .heroSection {
-     padding: 1vh 0 0 0;
+    padding: 1vh 0 0 0;
   }
 
   .heroBg {
@@ -112,7 +112,7 @@
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
   .heroSection {
-     padding: 1vh 0 0 0;
+    padding: 1vh 0 0 0;
   }
 
   .heroBg {
@@ -236,7 +236,7 @@
 
   .heroSocials {
     margin: 0 0 0 0;
-    padding: 70px 0 50px 0;
+    padding: 70px 0 50px 0; 
   }
 
   .heroImage {

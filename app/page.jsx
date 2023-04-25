@@ -2,6 +2,7 @@
 import dynamic from "next/dynamic";
 import Services from "./components/services.jsx";
 import Business from "./components/business.jsx";
+import Footer from "./components/footer.jsx";
 
 const NavBar = dynamic(() => import("./components/navBar.jsx"), { ssr: false });
 const MobileNav = dynamic(() => import("./components/mobileNav.jsx"), {
@@ -19,6 +20,7 @@ export default function Home() {
       <HeroSection />
       <Services />
       <Business />
+      <Footer />
     </main>
   );
 }

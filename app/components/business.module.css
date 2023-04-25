@@ -2,7 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(244,242,251);
+}
+
+.bg{
+    background-color: white;
 }
 
 .businessContext {
@@ -11,7 +15,7 @@
 
 .intro {
   display: none;
-  background-color: rgb(233, 238, 244);
+  background-color: rgb(252, 251, 254);
   font-family: var(--font-space_grotesk);
   font-weight: 500;
   color: #4b494b;
@@ -20,7 +24,7 @@
 
 .introMobile {
   display: none;
-  background-color: rgb(233, 238, 244);
+  background-color: rgb(252,251,254);
   font-family: var(--font-space_grotesk);
   font-weight: 500;
   color: #4b494b;
@@ -31,7 +35,7 @@
   font-weight: 900;
   font-family: var(--font-space_grotesk);
   line-height: normal;
-  color: #761b60;
+  color: rgb(184,30,148);
 }
 
 .businessContext p {
@@ -41,14 +45,9 @@
 }
 
 .btn button {
-  background-color: rgb(184, 30, 148);
+  background-color: rgb(184,30,148);
   color: white;
   font-family: var(--font-space_grotesk);
-}
-
-.btn button:hover {
-  background-color: rgb(139, 70, 123);
-  color: white;
 }
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
@@ -56,7 +55,6 @@
   .business {
     padding: 40px 10px 100px 10px;
     margin: 0 auto;
-    background-color: rgb(245, 245, 245);
   }
 
   .businessContext {
@@ -108,7 +106,6 @@
   .business {
     padding: 40px 10px 100px 10px;
     margin: 0 auto;
-    background-color: rgb(245, 245, 245);
   }
 
   .businessContext {
@@ -160,7 +157,6 @@
   .business {
     padding: 40px 10px 100px 10px;
     margin: 0 auto;
-    background-color: rgb(245, 245, 245);
   }
 
   .businessContext {
@@ -212,7 +208,6 @@
   .business {
     padding: 40px 10px 100px 10px;
     margin: 0 auto;
-    background-color: rgb(245, 245, 245);
   }
 
   .businessContext {
@@ -264,7 +259,6 @@
   .business {
     padding: 40px 10px 100px 10px;
     margin: 0 auto;
-    background-color: rgb(245, 245, 245);
   }
 
   .businessContext {
@@ -314,20 +308,21 @@
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   .business {
-    padding: 100px 0 100px 0;
+    padding: 100px 0 300px 0;
     gap: 100px;
   }
 
   .businessContext {
     max-width: 30vw;
     height: 50vh;
-    padding: 50px 0 0 0;
+    padding: 0px 0 0 0;
     text-align: start;
   }
 
   .intro {
     display: inline-block;
     padding: 5px 0 5px 20px;
+    margin: 10px 0 10px 0;
     width: 16vw;
     font-size: 1em;
   }
@@ -338,18 +333,24 @@
 
   .heading {
     padding: 20px 0 20px 0;
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .businessContext p {
     font-size: 1em;
-    padding: 0 0 20px 0;
   }
 
   .btn button {
+    background-color: rgb(184,30,148);
     padding: 10px 0 10px 0;
     width: 14.5vw;
+    margin: 5px 0 5px 0;
     border-radius: 30px;
     font-size: 1em;
   }
+  
+.btn button:hover {
+  background-color: rgb(139, 70, 123);
+  color: white;
+}
 }

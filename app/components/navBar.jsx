@@ -36,7 +36,7 @@ export default function NavBar() {
           <div>
             <Image
               src={logoDark}
-              alt="Picture of the author"
+              alt="Bingpay logo"
               width={120}
               height={120}
               // blurDataURL="data:..." automatically provided
@@ -54,11 +54,26 @@ export default function NavBar() {
               <Image
                 src={downArrow}
                 alt=""
-                width={13}
-                height={13}
+                width={15}
+                height={15}
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />
+              <div className={styles.dropBg}>
+                <div class={styles.dropContent}>
+                  <ul>
+                    <li>
+                      <Link href="/">Blog</Link>
+                    </li>
+                    <li>
+                      <Link href="/">About Us</Link>
+                    </li>
+                    <li>
+                      <Link href="/">Join Our Team</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </span>
             <span className={styles.Links}>
               {" "}
@@ -70,11 +85,23 @@ export default function NavBar() {
               <Image
                 src={downArrow}
                 alt=""
-                width={13}
-                height={13}
+                width={15}
+                height={15}
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />
+              <div className={styles.dropBg}>
+                <div class={styles.dropContent}>
+                  <ul>
+                    <li>
+                      <Link href="/">FAQs</Link>
+                    </li>
+                    <li>
+                      <Link href="/">Contact Us</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </span>
           </div>
         </section>
