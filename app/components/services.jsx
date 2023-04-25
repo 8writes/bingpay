@@ -17,8 +17,6 @@ const space_grotesk = Space_Grotesk({
 });
 
 export default function Services() {
-  const isScreenLessThan768px = window.innerWidth < 768;
-
   const FadeInUp = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -31,7 +29,6 @@ export default function Services() {
 
   return (
     <div>
-      {!isScreenLessThan768px && (
         <section className={`${styles.services} ${space_grotesk.variable}`}>
           <motion.section
             ref={ref1}
@@ -236,7 +233,6 @@ export default function Services() {
             </motion.section>
           </section>
         </section>
-      )}
     </div>
   );
 }
