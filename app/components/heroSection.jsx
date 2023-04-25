@@ -22,6 +22,7 @@ const montserrat = Montserrat({
 });
 
 export default function HeroSection() {
+  
   const { ref, inView } = useInView({
     threshold: 0.5,
   });
