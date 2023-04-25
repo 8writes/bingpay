@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className={styles.bg}>
       <div>
-        <DownloadApp />
+       
       </div>
       <section className={styles.footer}>
         <div className={styles.footerIntro}>
