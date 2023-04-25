@@ -30,7 +30,7 @@
   border-radius: 20px;
 }
 
-.heading h1{
+.heading h1 {
   font-weight: 900;
   line-height: normal;
   color: rgb(184, 30, 148);
@@ -94,7 +94,7 @@
     width: 90vw;
     border-radius: 30px;
     font-size: 1em;
-     background-color: rgb(184, 30, 148);
+    background-color: rgb(184, 30, 148);
   }
 }
 
@@ -145,7 +145,7 @@
     width: 90vw;
     border-radius: 30px;
     font-size: 1em;
-     background-color: rgb(184, 30, 148);
+    background-color: rgb(184, 30, 148);
   }
 }
 
@@ -196,7 +196,7 @@
     width: 90vw;
     border-radius: 30px;
     font-size: 1em;
-     background-color: rgb(184, 30, 148);
+    background-color: rgb(184, 30, 148);
   }
 }
 
@@ -247,7 +247,7 @@
     width: 50vw;
     border-radius: 30px;
     font-size: 1em;
-     background-color: rgb(184, 30, 148);
+    background-color: rgb(184, 30, 148);
   }
 }
 
@@ -298,7 +298,7 @@
     width: 50vw;
     border-radius: 30px;
     font-size: 1em;
-     background-color: rgb(184, 30, 148);
+    background-color: rgb(184, 30, 148);
   }
 }
 
