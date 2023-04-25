@@ -22,7 +22,7 @@ export default function Services() {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: -50 },
-    ease: "easeOut",
+    ease: "easeIn",
   };
 
   const [ref1, inView1] = useInView({ threshold: 0 });
