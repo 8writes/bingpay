@@ -9,12 +9,14 @@ export default function Business() {
     hidden: { opacity: 0, x: 50 },
     visible: { opacity: 1, x: 0 },
     exit: { opacity: 0, x: -50 },
+    ease: "easeOut",
   };
 
   const FadeInRight = {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
     exit: { opacity: 0, x: 50 },
+    ease: "easeOut",
   };
 
   const [ref1, inView1] = useInView({ threshold: 0 });

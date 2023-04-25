@@ -17,6 +17,7 @@ const space_grotesk = Space_Grotesk({
 });
 
 export default function Services() {
+  
   const FadeInUp = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
