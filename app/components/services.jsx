@@ -41,7 +41,7 @@ export default function Services() {
           initial="offscreen"
           variants={FadeInUp}
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0 }}
+          viewport={{ once: false, amount: 0 }}
         >
           <div>
             <h1>Value for your money</h1>
@@ -59,7 +59,7 @@ export default function Services() {
             initial="offscreen"
             variants={FadeInUp}
             whileInView="onscreen"
-            viewport={{ once: true, amount: 0 }}
+            viewport={{ once: false, amount: 0 }}
           >
             <div>
               <Image
@@ -86,7 +86,7 @@ export default function Services() {
             initial="offscreen"
             variants={FadeInUp}
             whileInView="onscreen"
-            viewport={{ once: true, amount: 0 }}
+            viewport={{ once: false, amount: 0 }}
           >
             <div>
               <Image
@@ -113,7 +113,7 @@ export default function Services() {
             initial="offscreen"
             variants={FadeInUp}
             whileInView="onscreen"
-            viewport={{ once: true, amount: 0 }}
+            viewport={{ once: false, amount: 0 }}
           >
             <div>
               <Image
@@ -143,7 +143,7 @@ export default function Services() {
             initial="offscreen"
             variants={FadeInUp}
             whileInView="onscreen"
-            viewport={{ once: true, amount: 0 }}
+            viewport={{ once: false, amount: 0 }}
           >
             <div>
               <Image
@@ -170,7 +170,7 @@ export default function Services() {
             initial="offscreen"
             variants={FadeInUp}
             whileInView="onscreen"
-            viewport={{ once: true, amount: 0 }}
+            viewport={{ once: false, amount: 0 }}
           >
             <div>
               <Image
@@ -197,7 +197,7 @@ export default function Services() {
             initial="offscreen"
             variants={FadeInUp}
             whileInView="onscreen"
-            viewport={{ once: true, amount: 0 }}
+            viewport={{ once: false, amount: 0 }}
           >
             <div>
               <Image
