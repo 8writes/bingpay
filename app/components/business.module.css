@@ -305,7 +305,7 @@
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   .business {
-    padding: 100px 0 300px 0;
+    padding: 120px 0 300px 0;
     gap: 100px;
   }
 
