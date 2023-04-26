@@ -57,13 +57,10 @@ export default function Footer() {
         </div>
       </section>
       <section className={styles.footerBottom}>
-        <div>
           <span>
             © 2023 Bingpay.ng. Trilbertech Ltd (RC No.1832078). All rights
             reserved.
           </span>
-        </div>
-        <div></div>
       </section>
     </div>
   );
