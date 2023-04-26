@@ -268,6 +268,7 @@
     margin: auto;
     padding: 0 10px 0 10px;
   }
+  
   .intro {
     display: inline-block;
     padding: 7px 0 5px 20px;
@@ -307,14 +308,19 @@
 @media (min-width: 1440px) {
   .business {
     padding: 100px 0 100px 0;
-    gap: 100px;
   }
 
-  .businessContext {
-    max-width: 30vw;
+   .businessContext {
     text-align: start;
+    max-width: 50%;
+    margin: auto;
+     padding:  0 100px 0 0;
   }
-
+  .businessImg {
+    max-width: 40%;
+    margin: auto;
+    padding:  0 0 0 100px;
+  }
   .intro {
     display: inline-block;
     padding: 7px 0 5px 20px;
