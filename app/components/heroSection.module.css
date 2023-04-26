@@ -37,82 +37,12 @@
 .heroSocials {
   display: flex;
   gap: 10px;
-  height: 10vh;
-  width: fit-content;
 }
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
   .heroSection {
-    padding: 1vh 0 0 0;
-  }
-
-  .heroBg {
-    text-align: center;
-    padding: 0 5px 0 5px;
-  }
-
-  .heroSection h1 {
-    font-size: 8.8vw;
-  }
-
-  .heroSection p {
-    padding: 30px 0 0 0;
-    font-size: 0.8em;
-  }
-
-  .heroLeft {
-    margin: 15vh 0 0 0;
-  }
-
-  .heroSocials {
     padding: 50px 0 50px 0;
-    margin: 0 auto 0 auto;
-  }
-
-  .heroImage {
-    padding: 30px 0 30px 0;
-  }
-}
-
-/* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
-@media (min-width: 374px) {
-  .heroSection {
-    padding: 1vh 0 0 0;
-  }
-
-  .heroBg {
-    text-align: center;
-    padding: 0 5px 0 5px;
-  }
-
-  .heroSection p {
-    font-size: 1.1em;
-    padding: 30px 0 0 0;
-  }
-
-  .heroSection h1 {
-    font-size: 9vw;
-  }
-
-  .heroLeft {
-    margin: 15vh 0 0 0;
-  }
-
-  .heroSocials {
-    padding: 50px 0 50px 0;
-    margin: 0 auto 0 auto;
-  }
-
-  .heroImage {
-    padding: 30px 0 30px 0;
-  }
-}
-
-/* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
-@media (min-width: 425px) {
-  .heroSection {
-    padding: 1vh 0 0 0;
   }
 
   .heroBg {
@@ -121,31 +51,106 @@
   }
 
   .heroSection p {
-    font-size: 1.1em;
+    font-size: 0.7em;
   }
 
   .heroSection h1 {
-    font-size: 8.7vw;
+    font-size: 8.8vw;
+    padding: 20px 0 20px 0;
   }
 
   .heroLeft {
-    margin: 15vh 0 0 0;
+    margin: auto;
+    width: 50%;
+    padding: 100px 0 0 0;
   }
 
   .heroSocials {
     padding: 50px 0 50px 0;
-    margin: 0 auto 0 auto;
+    margin: auto;
   }
 
   .heroImage {
-    padding: 30px 0 30px 0;
+    padding: 0 0 100px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
+@media (min-width: 374px) {
+  .heroSection {
+    padding: 50px 0 50px 0;
+  }
+
+  .heroBg {
+    text-align: center;
+    padding: 0 10px 0 10px;
+  }
+
+  .heroSection p {
+    font-size: 0.9em;
+  }
+
+  .heroSection h1 {
+    font-size: 9vw;
+    padding: 20px 0 20px 0;
+  }
+
+  .heroLeft {
+    margin: auto;
+    width: 50%;
+    padding: 100px 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 50px 0 50px 0;
+    margin: auto;
+  }
+
+  .heroImage {
+    padding: 0 0 100px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
+@media (min-width: 425px) {
+  .heroSection {
+    padding: 50px 0 50px 0;
+  }
+
+  .heroBg {
+    text-align: center;
+    padding: 0 10px 0 10px;
+  }
+
+  .heroSection p {
+    font-size: 1em;
+  }
+
+  .heroSection h1 {
+    font-size: 9vw;
+    padding: 20px 0 20px 0;
+  }
+
+  .heroLeft {
+    margin: auto;
+    width: 50%;
+    padding: 100px 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 50px 0 50px 0;
+   margin: auto;
+  }
+
+  .heroImage {
+    padding: 0 0 100px 0;
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
   .heroSection {
-    padding: 1vh 0 0 0;
+    padding: 80px 10px 80px 10px;
   }
 
   .heroBg {
@@ -155,30 +160,34 @@
 
   .heroSection p {
     font-size: 1.3em;
+    padding: 20px 0 20px 0;
   }
 
   .heroSection h1 {
     font-size: 8vw;
+    padding: 20px 0 20px 0;
   }
 
   .heroLeft {
-    margin: 15vh 0 0 0;
+    margin: auto;
+    width: 50%;
+    padding: 100px 0 0 0;
   }
 
   .heroSocials {
-    margin: 0 auto 0 auto;
     padding: 50px 0 50px 0;
+   margin: auto;
   }
 
   .heroImage {
-    padding: 30px 0 30px 0;
+    padding: 0 0 100px 0;
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
   .heroSection {
-     padding: 80px 10px 80px 10px;
+    padding: 80px 10px 80px 10px;
   }
 
   .heroBg {
@@ -188,37 +197,46 @@
 
   .heroSection p {
     font-size: 1.2em;
-    width: 45vw;
+    width: 80%;
+    padding: 20px 0 20px 0;
   }
 
   .heroSection h1 {
     font-size: 4.4vw;
+    padding: 20px 0 20px 0;
   }
 
   .heroLeft {
     margin: auto;
     width: 50%;
+    padding: 0;
   }
 
   .heroSocials {
-    padding: 70px 0 50px 0;
-    margin: 0;
+    padding: 50px 0 50px 0;
+   margin: 0;
   }
   .heroImage {
     margin: auto;
     width: 50%;
+    padding: 0;
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   .heroSection {
-    padding: 80px 14px 80px 14px;
+    padding: 80px 10px 80px 10px;
+  }
+
+  .heroBg {
+    text-align: start;
+    padding: 0 20px 0 20px;
   }
 
   .heroSection p {
     font-size: 1.2em;
-    width: 35vw;
+    width: 80%;
   }
 
   .heroSection h1 {
@@ -231,8 +249,14 @@
     padding: 0 0 0 100px;
   }
 
+  .heroSocials {
+    padding: 70px 0 50px 0;
+   margin: 0;
+  }
+
   .heroImage {
     margin: auto;
     width: 50%;
+    padding: 0;
   }
 }
