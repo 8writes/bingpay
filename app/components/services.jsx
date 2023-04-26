@@ -26,7 +26,7 @@ export default function Services() {
       opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.4,
+        bounce: 0.6,
         duration: 0.9,
         ease: "easeInOut",
       },
