@@ -140,9 +140,6 @@ export default function Services() {
               </p>
             </div>
           </motion.div>
-        </section>
-
-        <section className={styles.servicesList}>
           <motion.div
             className={styles.servicesListGrid}
             initial="offscreen"
