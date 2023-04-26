@@ -31,6 +31,8 @@ export default function Home() {
       <MobileNav />
       <HeroSection />
       <Services />
+      <Business />
+      <Footer />
     </main>
   );
 }

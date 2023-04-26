@@ -4,7 +4,6 @@ import styles from "./business.module.css";
 import { motion } from "framer-motion";
 
 export default function Business() {
-
   const FadeInLeft = {
     offscreen: {
       x: -100,
@@ -22,7 +21,7 @@ export default function Business() {
       },
     },
   };
-  
+
   const FadeInRight = {
     offscreen: {
       x: 100,
@@ -41,22 +40,32 @@ export default function Business() {
     },
   };
 
+  const FadeInUp = {
+    offscreen: {
+      y: 50,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.3,
+        duration: 1,
+        delay: 0.2,
+        ease: [0, 0.71, 0.2, 1.01],
+      },
+    },
+  };
+
   return (
     <div>
       <div className={styles.bg}>
         <section className={styles.business}>
-          <motion.span
-            className={styles.introMobile}
+         
+          <motion.div className={styles.businessImg}
             initial="offscreen"
-            variants={FadeInLeft}
-            whileInView="onscreen"
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            <h1>Bingpay for Business 💸</h1>
-          </motion.span>
-          <motion.div
-            initial="offscreen"
-            variants={FadeInLeft}
+            variants={FadeInUp}
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.1 }}
           >
@@ -74,7 +83,7 @@ export default function Business() {
             <motion.span
               className={styles.intro}
               initial="offscreen"
-              variants={FadeInRight}
+              variants={FadeInUp}
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.1 }}
             >
@@ -83,7 +92,7 @@ export default function Business() {
             <motion.span
               className={styles.heading}
               initial="offscreen"
-              variants={FadeInRight}
+              variants={FadeInUp}
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.1 }}
             >
@@ -91,7 +100,7 @@ export default function Business() {
             </motion.span>
             <motion.span
               initial="offscreen"
-              variants={FadeInRight}
+              variants={FadeInUp}
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.1 }}
             >
@@ -104,7 +113,7 @@ export default function Business() {
             <motion.span
               className={styles.btn}
               initial="offscreen"
-              variants={FadeInRight}
+              variants={FadeInUp}
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.1 }}
             >

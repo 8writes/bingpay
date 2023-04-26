@@ -138,6 +138,27 @@
 
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
+   .services {
+    padding: 0 0 50px 0;
+  }
+  .serviceIntro {
+    padding: 100px 0 20px 0;
+  }
+
+  .serviceIntro h1 {
+    font-size: 3.5em;
+    padding: 0 0 10px 0;
+  }
+
+  .serviceIntro p {
+    font-size: 1.1em;
+    width: 50vw;
+  }
+
+  .servicesList {
+    max-width: 90vw;
+    padding: 50px 5px 50px 5px;
+  }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
