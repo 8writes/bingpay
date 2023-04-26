@@ -1,9 +1,6 @@
 import styles from "./heroSection.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useState } from "react";
-import { useEffect } from "react";
 import { Space_Grotesk, Montserrat } from "next/font/google";
 import BingHero from "/public/bing-hero.png";
 import GooglePlay from "/public/google-play.svg";
@@ -22,45 +19,53 @@ const montserrat = Montserrat({
 });
 
 export default function HeroSection() {
-  
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
-  const [hasLoaded, setHasLoaded] = useState(false);
-  const isAnimating = !hasLoaded;
-
-  useEffect(() => {
-    if (inView) {
-      setHasLoaded(true);
-    }
-  }, [isAnimating]);
-
   const FadeInUp = {
-    hidden: {
+    offscreen: {
+      y: 100,
       opacity: 0,
-      y: 50,
     },
-    visible: {
-      opacity: 1,
+    onscreen: {
       y: 0,
+      opacity: 1,
+
       transition: {
-        duration: 0.6,
-        ease: "easeOut",
+        type: "spring",
+        bounce: 0.5,
+        duration: 0.9,
       },
     },
   };
 
   const FadeInRight = {
-    hidden: {
-      opacity: 0,
+    offscreen: {
       x: 100,
+      opacity: 0,
     },
-    visible: {
-      opacity: 1,
+    onscreen: {
       x: 0,
+      opacity: 1,
       transition: {
-        duration: 0.6,
-        ease: "easeOut",
+        type: "spring",
+        bounce: 0.5,
+        duration: 0.9,
+        ease: "easeIn",
+      },
+    },
+  };
+
+  const FadeInDown = {
+    offscreen: {
+      y: -100,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.5,
+        duration: 0.9,
+        ease: "easeIn",
       },
     },
   };
@@ -72,7 +77,12 @@ export default function HeroSection() {
       >
         <div className={styles.heroBg}>
           <div className={styles.heroLeft}>
-            <div>
+            <motion.div
+              initial="offscreen"
+              variants={FadeInDown}
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.1 }}
+            >
               <h1>
                 Your one stop app for <br></br> everyday{" "}
                 <span className="">payments.</span>
@@ -82,67 +92,62 @@ export default function HeroSection() {
                 Utility bills, international and local phone refills, trade your
                 airtime, gift cards all in one app.
               </p>
-            </div>
+            </motion.div>
             <motion.div
-              ref={ref}
-              initial="hidden"
-              animate={isAnimating ? "visible" : "hidden"}
+              className={styles.heroSocials}
+              initial="offscreen"
               variants={FadeInUp}
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.1 }}
             >
-              <div className={styles.heroSocials}>
-                <div>
-                  {" "}
-                  <a
-                    href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}
-                  >
-                    <Image
-                      src={AppStore}
-                      alt="App Store"
-                      width={146}
-                      height={146}
-                      // blurDataURL="data:..." automatically provided
-                      // placeholder="blur" // Optional blur-up while loading
-                    />{" "}
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href={
-                      "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
-                    }
-                  >
-                    <Image
-                      src={GooglePlay}
-                      alt="Google Play"
-                      width={160}
-                      height={160}
-                      // blurDataURL="data:..." automatically provided
-                      // placeholder="blur" // Optional blur-up while loading
-                    />{" "}
-                  </a>
-                </div>{" "}
+              <div>
+                {" "}
+                <a href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}>
+                  <Image
+                    src={AppStore}
+                    alt="App Store"
+                    width={146}
+                    height={146}
+                    // blurDataURL="data:..." automatically provided
+                    // placeholder="blur" // Optional blur-up while loading
+                  />{" "}
+                </a>
               </div>
+              <div>
+                <a
+                  href={
+                    "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
+                  }
+                >
+                  <Image
+                    src={GooglePlay}
+                    alt="Google Play"
+                    width={160}
+                    height={160}
+                    // blurDataURL="data:..." automatically provided
+                    // placeholder="blur" // Optional blur-up while loading
+                  />{" "}
+                </a>
+              </div>{" "}
             </motion.div>
           </div>
 
-          <div className={styles.heroImage}>
-            {" "}
-            <motion.div
-              ref={ref}
-              initial="hidden"
-              animate={isAnimating ? "visible" : "hidden"}
-              variants={FadeInRight}
-            >
-              <Image
-                src={BingHero}
-                alt="Picture of the author"
-                width={650}
-                height={650}
-                // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
-              />{" "}
-            </motion.div>
-          </div>
+          <motion.div
+            className={styles.heroImage}
+            initial="offscreen"
+            variants={FadeInRight}
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.1 }}
+          >
+            <Image
+              src={BingHero}
+              alt="Picture of the author"
+              width={650}
+              height={650}
+              // blurDataURL="data:..." automatically provided
+              // placeholder="blur" // Optional blur-up while loading
+            />{" "}
+          </motion.div>
         </div>
       </section>
     </div>

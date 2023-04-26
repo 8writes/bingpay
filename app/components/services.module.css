@@ -131,10 +131,10 @@
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   .services {
-    padding: 30px 0 50px 0;
+    padding: 50px 0 50px 0;
   }
   .serviceIntro {
-    padding: 50px 0 50px 0;
+    padding: 0 0 50px 0;
   }
 
   .serviceIntro h1 {
