@@ -5,7 +5,7 @@
 }
 
 .heroBg {
-  background-color: rgb(244,242,251);
+  background-color: rgb(244, 242, 251);
   display: flex;
   justify-content: center;
   border-radius: 10px;
@@ -16,7 +16,7 @@
 .heroSection h1 {
   font-weight: 900;
   line-height: normal;
-  color: rgb(184,30,148);
+  color: rgb(184, 30, 148);
   font-family: var(--font-space_grotesk);
 }
 
@@ -178,7 +178,7 @@
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
   .heroSection {
-    padding: 10vh 5px 0 5px;
+     padding: 80px 10px 80px 10px;
   }
 
   .heroBg {
@@ -192,33 +192,28 @@
   }
 
   .heroSection h1 {
-    font-size: 4.7vw;
+    font-size: 4.4vw;
   }
 
   .heroLeft {
-    width: 40vw;
-    margin: 10vh 0 0 0;
+    margin: auto;
+    width: 50%;
   }
 
   .heroSocials {
     padding: 70px 0 50px 0;
-    margin: 0 0 0 0;
+    margin: 0;
   }
   .heroImage {
-    width: 45vw;
-    padding: 30px 0 30px 0;
+    margin: auto;
+    width: 50%;
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   .heroSection {
-    padding: 10.7vh 14px 30px 14px;
-  }
-
-  .heroBg {
-    text-align: start;
-    padding: 0 100px 0 100px;
+    padding: 80px 14px 80px 14px;
   }
 
   .heroSection p {
@@ -231,15 +226,13 @@
   }
 
   .heroLeft {
-    padding: 10vh 0 0 0;
-  }
-
-  .heroSocials {
-    margin: 0 0 0 0;
-    padding: 70px 0 50px 0; 
+    margin: auto;
+    width: 50%;
+    padding: 0 0 0 100px;
   }
 
   .heroImage {
-    padding: 20px 0 50px 0;
+    margin: auto;
+    width: 50%;
   }
 }

@@ -22,7 +22,7 @@ export default function Business() {
       },
     },
   };
-
+  
   const FadeInRight = {
     offscreen: {
       x: 100,
