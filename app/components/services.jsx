@@ -27,7 +27,7 @@ export default function Services() {
       transition: {
         type: "spring",
         bounce: 0.4,
-        duration: 0.8,
+        duration: 0.9,
         ease: "easeInOut",
       },
     },
