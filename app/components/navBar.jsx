@@ -32,7 +32,7 @@ export default function NavBar() {
 
   const FadeInUp = {
     offscreen: {
-      y: 50,
+      y: 10,
       opacity: 0,
     },
 
