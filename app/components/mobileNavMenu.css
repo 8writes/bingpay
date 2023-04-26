@@ -12,6 +12,7 @@
   height: 100vh;
   justify-content: space-between;
   padding: 18px 30px 18px 10px;
+  z-index: 999;
 }
 .menu-nav {
   display: flex;
