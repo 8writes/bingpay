@@ -21,9 +21,9 @@
 }
 
 .heroSection p {
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
-  color: rgba(25, 24, 24, 0.842);
+  color: rgb(61, 59, 59);
   font-family: var(--font-montserrat);
 }
 
