@@ -17,7 +17,7 @@ export default function Business() {
         type: "spring",
         bounce: 0.6,
         duration: 0.9,
-        ease: "easeIn",
+        ease: [0, 0.71, 0.2, 1.01],
       },
     },
   };
@@ -34,7 +34,7 @@ export default function Business() {
         type: "spring",
         bounce: 0.5,
         duration: 0.9,
-        ease: "easeIn",
+        ease: [0, 0.71, 0.2, 1.01],
       },
     },
   };

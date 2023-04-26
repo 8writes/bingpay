@@ -32,6 +32,8 @@ export default function HeroSection() {
         type: "spring",
         bounce: 0.5,
         duration: 0.9,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
       },
     },
   };
@@ -48,7 +50,8 @@ export default function HeroSection() {
         type: "spring",
         bounce: 0.5,
         duration: 0.9,
-        ease: "easeIn",
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
       },
     },
   };
@@ -65,7 +68,8 @@ export default function HeroSection() {
         type: "spring",
         bounce: 0.5,
         duration: 0.9,
-        ease: "easeIn",
+        ease: [0, 0.71, 0.2, 1.01],
+        delay: 0.5,
       },
     },
   };
