@@ -46,12 +46,17 @@ export default function Services() {
           <div>
             <h1>Value for your money</h1>
           </div>
-          <div>
+          <motion.div
+            initial="offscreen"
+            variants={FadeInUp}
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0 }}
+          >
             <p>
               Bingpay unlocks possibilities of making payments for millions of
               goods and services.
             </p>
-          </div>
+          </motion.div>
         </motion.section>
         <section className={styles.servicesList}>
           <motion.div
