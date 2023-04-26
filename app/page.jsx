@@ -27,10 +27,10 @@ const Business = dynamic(() => import("./components/business.jsx"), {
 export default function Home() {
   return (
     <main>
-     
-     
+      <NavBar />
+      <MobileNav />
       <HeroSection />
-     
+      <Services />
     </main>
   );
 }

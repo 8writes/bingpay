@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logoDark from "/public/logo-dark.webp";
 import downArrow from "/public/down-arrow.svg";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import styles from "./navBar.module.css";
 import { useEffect } from "react";
@@ -29,6 +30,25 @@ export default function NavBar() {
     };
   }, []);
 
+  const FadeInUp = {
+    offscreen: {
+      y: 50,
+      opacity: 0,
+    },
+
+    onscreen: {
+      y: 0,
+      opacity: 1,
+
+      transition: {
+        type: "spring",
+        bounce: 0.5,
+        duration: 0.9,
+        ease: [0, 0.71, 0.2, 1.01],
+      },
+    },
+  };
+
   return (
     <div>
       <div className={`${montserrat.variable}`}>
@@ -48,18 +68,20 @@ export default function NavBar() {
               {" "}
               <Link href="/">Business</Link>
             </span>
-            <span className={styles.Links}>
+            <motion.span
+              className={styles.Links}
+              whileHover="open"
+              whileTap="closed"
+            >
               {" "}
               <Link href="/">Company</Link>
-              <Image
-                src={downArrow}
-                alt=""
-                width={15}
-                height={15}
-                // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
-              />
-              <div className={styles.dropBg}>
+              <motion.div
+                className={styles.dropBg}
+                initial="offscreen"
+                variants={FadeInUp}
+                whileInView="onscreen"
+                viewport={{ once: false, amount: 0.1 }}
+              >
                 <div class={styles.dropContent}>
                   <ul>
                     <li>
@@ -73,8 +95,8 @@ export default function NavBar() {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </span>
+              </motion.div>
+            </motion.span>
             <span className={styles.Links}>
               {" "}
               <Link href="/">Developers</Link>
@@ -82,15 +104,13 @@ export default function NavBar() {
             <span className={styles.Links}>
               {" "}
               <Link href="/">Support</Link>
-              <Image
-                src={downArrow}
-                alt=""
-                width={15}
-                height={15}
-                // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
-              />
-              <div className={styles.dropBg}>
+              <motion.div
+                className={styles.dropBg}
+                initial="offscreen"
+                variants={FadeInUp}
+                whileInView="onscreen"
+                viewport={{ once: false, amount: 0.1 }}
+              >
                 <div class={styles.dropContent}>
                   <ul>
                     <li>
@@ -101,7 +121,7 @@ export default function NavBar() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </motion.div>
             </span>
           </div>
         </section>
