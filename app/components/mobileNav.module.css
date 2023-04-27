@@ -4,7 +4,6 @@
   background-color: white;
   width: 100%;
   justify-content: space-between;
-  padding: 18px 30px 18px 10px;
   z-index: 999;
 }
 
@@ -15,31 +14,36 @@
     0 6px 20px 0 rgba(202, 201, 206, 0.535);
 }
 
-.heroSocials {
-  display: flex;
-  gap: 10px;
-  height: 10vh;
-  width: fit-content;
-}
-
-.navSec {
-  display: grid;
-  gap: 40px;
-  font-size: medium;
-  font-weight: 600;
-  color: rgb(184,30,148);
-  font-family: var(--font-montserrat);
-}
-
-.Links {
-  display: flex;
-  cursor: pointer;
-  position: relative;
-  gap: 5px;
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .mobileNav {
     display: none;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
+@media (max-width: 373px) {
+   .mobileNav {
+    padding: 20px 30px 20px 15px;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
+@media (min-width: 374px) {
+   .mobileNav {
+    padding: 20px 30px 20px 15px;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
+@media (min-width: 425px) {
+   .mobileNav {
+    padding: 20px 30px 20px 15px;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
+@media (min-width: 768px) {
+  .mobileNav {
+    padding: 20px 30px 20px 30px;
   }
 }

@@ -73,6 +73,21 @@
   width: 150px;
   cursor: default;
 }
+
+
+/* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
+@media (min-width: 1024px) {
+  .navBar {
+  padding: 27px 100px 22px 50px;
+}
+}
+
+@media (min-width: 1440px) {
+  .navBar {
+  padding: 27px 150px 22px 100px;
+}
+}
+
 /*
 .Links::before,
 .Links::after {
