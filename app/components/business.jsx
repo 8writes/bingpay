@@ -62,6 +62,15 @@ export default function Business() {
     <div>
       <div className={styles.bg}>
         <section className={styles.business}>
+          <motion.span
+            className={styles.introMobile}
+            initial="offscreen"
+            variants={FadeInUp}
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.1 }}
+          >
+            <h1>Bingpay for Business 💸</h1>
+          </motion.span>
           <motion.div
             className={styles.businessImg}
             initial="offscreen"
