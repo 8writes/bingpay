@@ -19,9 +19,6 @@
   color: rgb(184, 30, 148);
 }
 
-.bg {
-  display: grid;
-}
 
 .footerContext {
   display: flex;
@@ -101,7 +98,7 @@
 @media (min-width: 374px) {
   .footer {
     padding: 250px 10px 50px 10px;
-    gap: 10vw;
+    gap: 0;
   }
 
   .footer h1 {
@@ -152,7 +149,7 @@
 @media (min-width: 425px) {
   .footer {
     padding: 400px 10px 50px 10px;
-    gap: 10vw;
+    gap: 0;
   }
 
   .footer h1 {
@@ -202,7 +199,7 @@
 @media (min-width: 768px) {
   .footer {
     padding: 400px 10px 50px 10px;
-    gap: 10vw;
+    gap: 0;
   }
 
   .footer h1 {
@@ -251,7 +248,8 @@
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
   .footer {
-    padding: 350px 10px 50px 10px;
+    padding: 50px 10px 50px 10px;
+    gap: 0;
   }
 
   .footer h1 {
@@ -298,7 +296,7 @@
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   .footer {
-    padding: 350px 0 50px 0;
+    padding: 0;
     gap: 0;
   }
 

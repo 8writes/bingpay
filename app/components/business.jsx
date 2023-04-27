@@ -63,7 +63,8 @@ export default function Business() {
       <div className={styles.bg}>
         <section className={styles.business}>
           <motion.span
-            className={styles.introMobile}
+            className={styles.introMobile
+            }
             initial="offscreen"
             variants={FadeInUp}
             whileInView="onscreen"

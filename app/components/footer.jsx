@@ -1,4 +1,11 @@
-import DownloadApp from "./downloadApp";
+"use client";
+
+import dynamic from "next/dynamic";
+
+const DownloadApp = dynamic(() => import("./downloadApp.jsx"), {
+  ssr: false,
+});
+
 import styles from "./footer.module.css";
 import logoDark from "/public/logo-dark.webp";
 import Image from "next/image";
@@ -6,8 +13,10 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className={styles.bg}>
-      <div></div>
+      {" "}
       <section className={styles.footer}>
+        {" "}
+        <DownloadApp />
         <div className={styles.footerContext}>
           <div className={styles.footerIntro}>
             <Image
