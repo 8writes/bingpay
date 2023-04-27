@@ -58,21 +58,26 @@
   }
 
   .footerIntro {
-    max-width: 100vw;
+    width: 100%;
+    padding: 0 5px 0 5px;
   }
 
   .footerIntro p {
-    padding: 20px 0 20px 0;
+    padding: 0;
   }
 
   .footerContext {
-    max-width: 100vw;
-    gap: 25vw;
+    width: 100%;
+    gap: 10vw;
     justify-content: start;
   }
 
   .footerContext img {
     padding: 0 0 20px 0;
+  }
+
+  .footerList {
+    width: 150px;
   }
 
   .footerList ul li {
@@ -104,21 +109,26 @@
   }
 
   .footerIntro {
-    max-width: 100vw;
+    width: 100%;
+    padding: 0 5px 0 5px;
   }
 
   .footerIntro p {
-    padding: 20px 0 20px 0;
+    padding: 0;
   }
 
   .footerContext {
-    max-width: 100vw;
-    gap: 25vw;
+    width: 100%;
+    gap: 10vw;
     justify-content: start;
   }
 
   .footerContext img {
     padding: 0 0 20px 0;
+  }
+
+  .footerList {
+    width: 150px;
   }
 
   .footerList ul li {
