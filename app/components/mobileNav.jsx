@@ -90,39 +90,8 @@ export default function mobileNav() {
             </div>
           </div>
           <div className="menu-body">
-            <div className={styles.navLinks}>
-              <span className={styles.Links}>
-                {" "}
-                <Link href="/">Business</Link>
-              </span>
-              <span className={styles.Links}>
-                {" "}
-                <Link href="/">Company</Link>
-                <Image
-                  src={downArrow}
-                  alt=""
-                  width={12}
-                  height={12}
-                  // blurDataURL="data:..." automatically provided
-                  // placeholder="blur" // Optional blur-up while loading
-                />
-              </span>
-              <span className={styles.Links}>
-                {" "}
-                <Link href="/">Developers</Link>
-              </span>
-              <span className={styles.Links}>
-                {" "}
-                <Link href="/">Support</Link>
-                <Image
-                  src={downArrow}
-                  alt=""
-                  width={12}
-                  height={12}
-                  // blurDataURL="data:..." automatically provided
-                  // placeholder="blur" // Optional blur-up while loading
-                />
-              </span>
+            <div className={styles.navSec}>
+             
             </div>
             <div>
               <div className={styles.heroSocials}>

@@ -22,7 +22,7 @@
   width: fit-content;
 }
 
-.navLinks {
+.navSec {
   display: grid;
   gap: 40px;
   font-size: medium;
