@@ -62,8 +62,8 @@ export default function Business() {
     <div>
       <div className={styles.bg}>
         <section className={styles.business}>
-         
-          <motion.div className={styles.businessImg}
+          <motion.div
+            className={styles.businessImg}
             initial="offscreen"
             variants={FadeInUp}
             whileInView="onscreen"
