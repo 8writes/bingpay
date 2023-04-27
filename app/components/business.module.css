@@ -50,7 +50,7 @@
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
   .business {
-    padding: 40px 10px 250px 10px;
+    padding: 40px 10px 160px 10px;
     margin: 0 auto;
   }
 
@@ -76,13 +76,13 @@
 
   .heading h1 {
     font-size: 1.6em;
-    padding: 50px 0 20px 0;
+    padding: 20px 5px 20px 5px;
   }
 
   .businessContext p {
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 2;
-    padding: 30px 0 30px 0;
+    padding: 20px 5px 20px 5px;
   }
 
   .btn {
@@ -101,7 +101,7 @@
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
   .business {
-    padding: 40px 10px 250px 10px;
+    padding: 40px 10px 150px 10px;
     margin: 0 auto;
   }
 
@@ -126,14 +126,14 @@
   }
 
   .heading {
-    font-size: 2em;
-    padding: 20px 0 20px 0;
+    font-size: 1.9em;
+    padding: 20px 5px 20px 5px;
   }
 
   .businessContext p {
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 2;
-    padding: 20px 0 20px 0;
+    padding: 20px 5px 20px 5px;
   }
 
   .btn {
@@ -152,7 +152,7 @@
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
   .business {
-    padding: 40px 10px 100px 10px;
+    padding: 40px 10px 150px 10px;
     margin: 0 auto;
   }
 
@@ -178,13 +178,13 @@
 
   .heading {
     font-size: 2.1em;
-    padding: 20px 0 20px 0;
+    padding: 20px 5px 20px 5px;
   }
 
   .businessContext p {
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 2;
-    padding: 20px 0 20px 0;
+    padding: 20px 5px 20px 5px;
   }
 
   .btn {
@@ -203,7 +203,7 @@
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
   .business {
-    padding: 40px 10px 100px 10px;
+    padding: 40px 10px 150px 10px;
     margin: 0 auto;
   }
 
@@ -228,14 +228,14 @@
   }
 
   .heading {
-    font-size: 2.1em;
-    padding: 20px 0 20px 0;
+    font-size: 3em;
+    padding: 20px 5px 20px 5px;
   }
 
   .businessContext p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 2;
-    padding: 20px 0 20px 0;
+    padding: 20px 40px 20px 40px;
   }
 
   .btn {
@@ -254,21 +254,21 @@
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
   .business {
-    padding: 100px 20px 130px 20px;
+    padding: 100px 20px 150px 20px;
   }
 
   .businessContext {
     text-align: start;
     width: 50%;
     margin: auto;
-     padding: 0 10px 0 10px;
+    padding: 0 10px 0 10px;
   }
   .businessImg {
     width: 50%;
     margin: auto;
     padding: 0 10px 0 10px;
   }
-  
+
   .intro {
     display: inline-block;
     padding: 7px 0 5px 20px;
@@ -310,16 +310,16 @@
     padding: 100px 0 210px 0;
   }
 
-   .businessContext {
+  .businessContext {
     text-align: start;
     max-width: 50%;
     margin: auto;
-     padding:  0 100px 0 0;
+    padding: 0 100px 0 0;
   }
   .businessImg {
     max-width: 40%;
     margin: auto;
-    padding:  0 0 0 100px;
+    padding: 0 0 0 100px;
   }
   .intro {
     display: inline-block;

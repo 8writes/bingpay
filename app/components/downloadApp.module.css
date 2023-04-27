@@ -40,42 +40,41 @@
     box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
-    bottom: 100px;
+    bottom: 60px;
     font-family: var(--font-space_grotesk);
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .downloadAppContext {
-    width: 60%;
+    width: 100%;
     margin: auto;
-    text-align: start;
-    padding: 10px 0 10px 15px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
   }
   .downloadImg {
-    width: 40%;
-    margin: auto;
+    display: none;
   }
 
   .downloadAppContext h1 {
     font-weight: 900;
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
     padding: 10px 0 10px 0;
   }
 
   .downloadAppContext p {
     font-weight: 500;
     color: white;
-    font-size: 1em;
-    max-width: 40vw;
-    padding: 10px 0 10px 0;
+    font-size: 0.8em;
+    max-width: 100%;
+    padding: 10px 10px 10px 10px;
   }
 
   .heroSocials {
     display: flex;
     gap: 10px;
     width: fit-content;
-    margin: 0 0 0 0;
+    margin: auto;
     padding: 20px 0 20px 0;
   }
 }
@@ -90,20 +89,16 @@
     box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
-    bottom: 100px;
+    bottom: 60px;
     font-family: var(--font-space_grotesk);
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .downloadAppContext {
-    width: 60%;
+    width: 100%;
     margin: auto;
-    text-align: start;
-    padding: 10px 0 10px 15px;
-  }
-  .downloadImg {
-    width: 40%;
-    margin: auto;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
   }
 
   .downloadAppContext h1 {
@@ -116,16 +111,16 @@
   .downloadAppContext p {
     font-weight: 500;
     color: white;
-    font-size: 1em;
-    max-width: 40vw;
-    padding: 10px 0 10px 0;
+    font-size: 0.9em;
+    max-width: 100%;
+    padding: 10px 10px 10px 10px;
   }
 
   .heroSocials {
     display: flex;
     gap: 10px;
     width: fit-content;
-    margin: 0 0 0 0;
+    margin: auto;
     padding: 20px 0 20px 0;
   }
 }
@@ -140,26 +135,22 @@
     box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
-    bottom: 100px;
+    bottom: 60px;
     font-family: var(--font-space_grotesk);
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .downloadAppContext {
-    width: 60%;
+    width: 100%;
     margin: auto;
-    text-align: start;
-    padding: 10px 0 10px 15px;
-  }
-  .downloadImg {
-    width: 40%;
-    margin: auto;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
   }
 
   .downloadAppContext h1 {
     font-weight: 900;
     color: white;
-    font-size: 3em;
+    font-size: 3.5em;
     padding: 10px 0 10px 0;
   }
 
@@ -167,22 +158,22 @@
     font-weight: 500;
     color: white;
     font-size: 1em;
-    max-width: 40vw;
-    padding: 10px 0 10px 0;
+    max-width: 100%;
+    padding: 10px 10px 10px 10px;
   }
 
   .heroSocials {
     display: flex;
     gap: 10px;
     width: fit-content;
-    margin: 0 0 0 0;
+    margin: auto;
     padding: 20px 0 20px 0;
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
-   .downloadApp {
+  .downloadApp {
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(184, 30, 148);
@@ -190,26 +181,22 @@
     box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
-    bottom: 100px;
+    bottom: 60px;
     font-family: var(--font-space_grotesk);
     max-width: 90%;
   }
 
   .downloadAppContext {
-    width: 60%;
+    width: 100%;
     margin: auto;
-    text-align: start;
-    padding: 10px 0 10px 15px;
-  }
-  .downloadImg {
-    width: 40%;
-    margin: auto;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
   }
 
   .downloadAppContext h1 {
     font-weight: 900;
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
     padding: 10px 0 10px 0;
   }
 
@@ -217,15 +204,15 @@
     font-weight: 500;
     color: white;
     font-size: 1em;
-    max-width: 40vw;
-    padding: 10px 0 10px 0;
+    max-width: 100%;
+    padding: 10px 100px 10px 100px;
   }
 
   .heroSocials {
     display: flex;
     gap: 10px;
     width: fit-content;
-    margin: 0 0 0 0;
+    margin: auto;
     padding: 20px 0 20px 0;
   }
 }
@@ -242,14 +229,13 @@
     position: relative;
     bottom: 120px;
     font-family: var(--font-space_grotesk);
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .downloadAppContext {
-    width: 60%;
+    width: 50%;
     margin: auto;
     text-align: start;
-    padding: 10px 0 10px 15px;
   }
   .downloadImg {
     width: 40%;
@@ -258,17 +244,17 @@
 
   .downloadAppContext h1 {
     font-weight: 900;
+    line-height: normal;
     color: white;
     font-size: 3em;
-    padding: 10px 0 10px 0;
   }
 
   .downloadAppContext p {
     font-weight: 500;
     color: white;
     font-size: 1em;
-    max-width: 40vw;
-    padding: 10px 0 10px 0;
+    max-width: 30vw;
+    padding: 20px 0 0 0;
   }
 
   .heroSocials {
@@ -276,7 +262,7 @@
     gap: 10px;
     width: fit-content;
     margin: 0 0 0 0;
-    padding: 20px 0 20px 0;
+    padding: 50px 0 50px 0;
   }
 }
 

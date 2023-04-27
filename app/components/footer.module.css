@@ -46,8 +46,8 @@
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
   .footer {
-    padding: 250px 10px 50px 10px;
-    gap: 20vw;
+    padding: 0 10px 50px 10px;
+    gap: 0;
   }
 
   .footer h1 {
@@ -97,7 +97,7 @@
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
   .footer {
-    padding: 250px 10px 50px 10px;
+    padding: 0 10px 50px 10px;
     gap: 0;
   }
 
@@ -148,7 +148,7 @@
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
   .footer {
-    padding: 400px 10px 50px 10px;
+    padding: 0 10px 50px 10px;
     gap: 0;
   }
 
@@ -198,7 +198,7 @@
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
   .footer {
-    padding: 400px 10px 50px 10px;
+    padding: 0 10px 50px 10px;
     gap: 0;
   }
 
