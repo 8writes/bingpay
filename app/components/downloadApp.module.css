@@ -55,16 +55,16 @@
   .downloadAppContext h1 {
     font-weight: 900;
     color: white;
-    font-size: 2.5em;
+    font-size: 2.6em;
     padding: 10px 0 10px 0;
   }
 
   .downloadAppContext p {
     font-weight: 500;
     color: white;
-    font-size: 0.9em;
+    font-size: 0.8em;
     max-width: 100%;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 0 10px 0;
   }
 
   .heroSocials {
@@ -72,7 +72,7 @@
     gap: 10px;
     width: fit-content;
     margin: auto;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 20px 20px 20px;
   }
 }
 
