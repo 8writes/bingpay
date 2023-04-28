@@ -40,6 +40,7 @@ export default function Footer() {
               <li>Blog</li>
               <li>About Us</li>
               <li>Join Our Team</li>
+              <li>Developers</li>
             </ul>
           </div>
           <div className={styles.footerList}>

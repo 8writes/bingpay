@@ -1,6 +1,6 @@
 import styles from "./services.module.css";
 import Image from "next/image";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
 import list from "/public/list.svg";
 import giftCard from "/public/gift-card.svg";

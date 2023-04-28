@@ -1,4 +1,13 @@
-.mobileNav {
+.MobileNav {
+  position: fixed;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 888;
+}
+
+.MobileNavInner {
   position: fixed;
   display: flex;
   background-color: white;
@@ -6,44 +15,147 @@
   justify-content: space-between;
   z-index: 999;
 }
-
-.scrollMobileNav {
+.ScrollMobileNav {
   width: 100%;
   justify-content: space-between;
   box-shadow: 40px 0px 0px 0px rgba(214, 212, 216, 0.501),
     0 6px 20px 0 rgba(202, 201, 206, 0.535);
 }
 
+.NavMenu {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  padding: 100px 0 0 0;
+  z-index: 998;
+  font-family: var(--font-space_grotesk);
+}
+
+.NavLinks {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: auto;
+}
+
+.NavMenu p {
+  color: #3b3b3b;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.NavMenu h1 {
+  font-weight: 900;
+  line-height: normal;
+  font-size: 1.3em;
+  color: rgb(184, 30, 148);
+}
+
+.NavMenu ul li {
+  color: #3b3b3b;
+  font-weight: 500;
+  line-height: 2;
+}
+.HeroSocials{
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  gap: 15px;
+  padding: 20px 0 20px 0;
+}
 @media (min-width: 1023px) {
-  .mobileNav {
+  .MobileNav {
+    display: none;
+  }
+  .NavMenu{
+    display: none;
+  }
+  .MobileNavInner{
     display: none;
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
-   .mobileNav {
+  .MobileNav {
     padding: 20px 30px 20px 15px;
   }
+  .MobileNavInner {
+    padding: 20px 30px 20px 15px;
+  }
+  
+.NavLinks {
+  padding: 0 10px 0 10px;
+  max-width: 90%;
+  margin: 0;
+  gap: 10px;
+}
+
+.NavList {
+  padding: 10px 20px 10px 20px;
+}
 }
 
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
-   .mobileNav {
+  .MobileNav {
     padding: 20px 30px 20px 15px;
   }
+  .MobileNavInner {
+    padding: 20px 30px 20px 15px;
+  }
+  
+.NavLinks {
+  padding: 0 10px 0 10px;
+  max-width: 90%;
+  margin: auto;
+  gap: 10px;
+}
+
+.NavList {
+  padding: 10px 20px 10px 20px;
+}
 }
 
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
-   .mobileNav {
+  .MobileNav {
     padding: 20px 30px 20px 15px;
   }
+  .MobileNavInner {
+    padding: 20px 30px 20px 15px;
+  }
+  
+.NavLinks {
+  padding: 0 10px 0 10px;
+  max-width: 90%;
+  margin: auto;
+  gap: 30px;
+}
+
+.NavList {
+  padding: 10px 20px 10px 20px;
+}
 }
 
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
-  .mobileNav {
+  .MobileNav {
     padding: 20px 30px 20px 30px;
   }
+  .MobileNavInner {
+    padding: 20px 30px 20px 30px;
+  }
+  
+.NavLinks {
+  padding: 0 10px 0 10px;
+  max-width: 70%;
+  margin: auto;
+  gap: 10px;
+}
+
+.NavList {
+  padding: 10px 20px 10px 20px;
+}
 }
