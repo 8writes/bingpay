@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import logoDark from "/public/logo-dark.webp";
 import GooglePlay from "/public/google-play.svg";
 import AppStore from "/public/app-store.svg";
@@ -14,7 +15,22 @@ const quicksand = Quicksand({
   variable: "--font-quicksand",
   display: "swap",
 });
-
+const FadeInUp = {
+  offscreen: {
+    y: 50,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.9,
+      ease: [0, 0.71, 0.2, 1.01],
+    },
+  },
+};
 export default function mobileNav() {
   useEffect(() => {
     const navBar = document.querySelector(`.${styles.MobileNav}`);
@@ -86,7 +102,13 @@ export default function mobileNav() {
               />
             </div>
           </div>
-          <div className={styles.NavMenu}>
+          <motion.div
+            className={styles.NavMenu}
+            initial="offscreen"
+            variants={FadeInUp}
+            whileInView="onscreen"
+            viewport={{ once: false, amount: 0 }}
+          >
             <div className={styles.NavLinks}>
               <div className={styles.NavList}>
                 <h1>Business</h1>
@@ -147,7 +169,7 @@ export default function mobileNav() {
                 </div>{" "}
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>

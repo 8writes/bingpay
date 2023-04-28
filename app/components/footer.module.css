@@ -94,7 +94,6 @@
   .Socials {
     width: 100%;
     position: relative;
-    left: 50%;
   }
 
   .Socials ul {
@@ -104,7 +103,7 @@
   }
 
   .footerBottom {
-    padding: 50px 0 50px 0;
+    padding: 10px 0 50px 0;
   }
 
   .footerBottom span {
@@ -156,7 +155,7 @@
   .Socials {
     width: 100%;
     position: relative;
-    left: 70%;
+    
   }
 
   .Socials ul {
@@ -166,7 +165,7 @@
   }
 
   .footerBottom {
-    padding: 50px 0 50px 0;
+   padding: 10px 0 50px 0;
   }
 
   .footerBottom span {
@@ -228,7 +227,7 @@
   }
 
   .footerBottom {
-    padding: 50px 0 50px 0;
+    padding: 10px 0 50px 0;
   }
 
   .footerBottom span {
@@ -289,7 +288,7 @@
   }
 
   .footerBottom {
-    padding: 50px 0 50px 0;
+   padding: 10px 0 50px 0;
   }
 
   .footerBottom span {
@@ -339,7 +338,7 @@
   }
 
   .footerBottom {
-    padding: 100px 0 50px 0;
+   padding: 10px 0 50px 0;
   }
 
   .footerBottom span {
@@ -386,7 +385,7 @@
   }
 
   .footerBottom {
-    padding: 90px 0 50px 0;
+   padding: 50px 0 50px 0;
   }
 
   .footerBottom span {
