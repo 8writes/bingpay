@@ -17,7 +17,7 @@ const Services = dynamic(() => import("./components/services.jsx"), {
 });
 
 const Footer = dynamic(() => import("./components/footer.jsx"), {
-  ssr: false,
+  ssr: true,
 });
 
 const Business = dynamic(() => import("./components/business.jsx"), {
