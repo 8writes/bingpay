@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const DownloadApp = dynamic(() => import("./downloadApp.jsx"), {
   ssr: false,
@@ -8,7 +9,9 @@ const DownloadApp = dynamic(() => import("./downloadApp.jsx"), {
 
 import styles from "./footer.module.css";
 import logoDark from "/public/logo-dark.webp";
-import Image from "next/image";
+import twitter from "/public/twitter.svg";
+import instagram from "/public/instagram.svg";
+import facebook from "/public/facebook.svg";
 
 export default function Footer() {
   return (
@@ -60,6 +63,43 @@ export default function Footer() {
               </li>
               <li>hello@bingpay.ng</li>
             </ul>
+            <div className={styles.Socials}>
+              <ul>
+                <li>
+                  {" "}
+                  <Image
+                    src={instagram}
+                    alt="list"
+                    width={34}
+                    height={0}
+                    // blurDataURL="data:..." automatically provided
+                    // placeholder="blur" // Optional blur-up while loading
+                  />
+                </li>
+                <li>
+                  {" "}
+                  <Image
+                    src={twitter}
+                    alt="list"
+                    width={30}
+                    height={0}
+                    // blurDataURL="data:..." automatically provided
+                    // placeholder="blur" // Optional blur-up while loading
+                  />
+                </li>
+                <li>
+                  {" "}
+                  <Image
+                    src={facebook}
+                    alt="list"
+                    width={30}
+                    height={0}
+                    // blurDataURL="data:..." automatically provided
+                    // placeholder="blur" // Optional blur-up while loading
+                  />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
