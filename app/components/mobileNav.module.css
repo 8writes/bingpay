@@ -1,4 +1,4 @@
-.MobileNav {
+.mobileNav {
   position: fixed;
   display: flex;
   background-color: white;
@@ -7,7 +7,7 @@
   z-index: 890;
 }
 
-.MobileNavInner {
+.mobileNavInner {
   position: fixed;
   display: flex;
   background-color: white;
@@ -15,14 +15,14 @@
   justify-content: space-between;
   z-index: 999;
 }
-.ScrollMobileNav {
+.scrollMobileNav {
   width: 100%;
   justify-content: space-between;
   box-shadow: 40px 0px 0px 0px rgba(214, 212, 216, 0.501),
     0 6px 20px 0 rgba(202, 201, 206, 0.535);
 }
 
-.NavMenu {
+.navMenu {
   background-color: white;
   width: 100%;
   height: 100%;
@@ -32,20 +32,20 @@
   font-family: var(--font-space_grotesk);
 }
 
-.NavLinks {
+.navLinks {
   display: flex;
   flex-wrap: wrap;
   max-width: 90%;
   margin: auto;
 }
 
-.NavMenu p {
+.navMenu p {
   color: #3b3b3b;
   font-weight: 500;
   line-height: 2;
 }
 
-.NavMenu h1 {
+.navMenu h1 {
   font-weight: 900;
   line-height: normal;
   font-size: 1.3em;
@@ -53,12 +53,12 @@
   padding: 0 0 14px 0;
 }
 
-.NavMenu ul li {
+.navMenu ul li {
   color: #3b3b3b;
   font-weight: 500;
   line-height: 2;
 }
-.HeroSocials {
+.heroSocials {
   display: flex;
   width: fit-content;
   margin: auto;
@@ -66,34 +66,34 @@
   padding: 20px 0 20px 0;
 }
 @media (min-width: 1023px) {
-  .MobileNav {
+  .mobileNav {
     display: none;
   }
-  .NavMenu {
+  .navMenu {
     display: none;
   }
-  .MobileNavInner {
+  .mobileNavInner {
     display: none;
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
-  .MobileNav {
+  .mobileNav {
     padding: 20px 30px 20px 15px;
   }
-  .MobileNavInner {
+  .mobileNavInner {
     padding: 20px 30px 20px 15px;
   }
 
-  .NavLinks {
+  .navLinks {
     padding: 0 10px 0 10px;
     max-width: 90%;
     margin: 0;
     gap: 50px;
   }
 
-  .HeroSocials {
+  .heroSocials {
     display: flex;
     width: fit-content;
     margin: auto;
@@ -104,21 +104,21 @@
 
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 373px) {
-  .MobileNav {
+  .mobileNav {
     padding: 20px 30px 20px 15px;
   }
-  .MobileNavInner {
+  .mobileNavInner {
     padding: 20px 30px 20px 15px;
   }
 
-  .NavLinks {
+  .navLinks {
     padding: 0 10px 0 10px;
     max-width: 90%;
     margin: auto;
     gap: 70px;
   }
 
-  .HeroSocials {
+  .heroSocials {
     display: flex;
     width: fit-content;
     margin: auto;
@@ -129,24 +129,24 @@
 
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
-  .MobileNav {
+  .mobileNav {
     padding: 20px 30px 20px 15px;
   }
-  .MobileNavInner {
+  .mobileNavInner {
     padding: 20px 30px 20px 15px;
   }
 
-  .NavLinks {
+  .navLinks {
     padding: 0 10px 0 10px;
     max-width: 90%;
     margin: auto;
     gap: 40px;
   }
 
-  .NavList {
+  .navList {
     padding: 10px 20px 10px 20px;
   }
-  .HeroSocials {
+  .heroSocials {
     display: flex;
     width: fit-content;
     margin: auto;
@@ -157,24 +157,24 @@
 
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
-  .MobileNav {
+  .mobileNav {
     padding: 20px 30px 20px 30px;
   }
-  .MobileNavInner {
+  .mobileNavInner {
     padding: 20px 30px 20px 30px;
   }
 
-  .NavLinks {
+  .navLinks {
     padding: 0 10px 0 10px;
     max-width: 70%;
     margin: auto;
     gap: 20px;
   }
 
-  .NavList {
+  .navList {
     padding: 10px 20px 10px 20px;
   }
-  .HeroSocials {
+  .heroSocials {
     display: flex;
     width: fit-content;
     margin: auto;

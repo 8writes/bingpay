@@ -64,12 +64,12 @@ export default function NavBar() {
             />
           </div>
           <div className={styles.navLinks}>
-            <span className={styles.Links}>
+            <span className={styles.links}>
               {" "}
               <Link href="/">Business</Link>
             </span>
             <motion.span
-              className={styles.Links}
+              className={styles.links}
               whileHover="open"
               whileTap="closed"
             >
@@ -97,11 +97,11 @@ export default function NavBar() {
                 </div>
               </motion.div>
             </motion.span>
-            <span className={styles.Links}>
+            <span className={styles.links}>
               {" "}
               <Link href="/">Developers</Link>
             </span>
-            <span className={styles.Links}>
+            <span className={styles.links}>
               {" "}
               <Link href="/">Support</Link>
               <motion.div

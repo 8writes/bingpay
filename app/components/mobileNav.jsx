@@ -31,15 +31,15 @@ const FadeInUp = {
     },
   },
 };
-export default function mobileNav() {
+export default function MobileNav() {
   useEffect(() => {
-    const navBar = document.querySelector(`.${styles.MobileNav}`);
+    const navBar = document.querySelector(`.${styles.mobileNav}`);
     // Add or remove the "scrollMobileNav" class based on the scroll position
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        navBar.classList.add(styles.ScrollMobileNav);
+        navBar.classList.add(styles.scrollMobileNav);
       } else {
-        navBar.classList.remove(styles.ScrollMobileNav);
+        navBar.classList.remove(styles.scrollMobileNav);
       }
     };
     document.addEventListener("scroll", handleScroll);
@@ -56,7 +56,7 @@ export default function mobileNav() {
 
   return (
     <div>
-      <section className={styles.MobileNav}>
+      <section className={styles.mobileNav}>
         <div>
           <Image
             src={logoDark}
@@ -79,8 +79,8 @@ export default function mobileNav() {
         </div>
       </section>
       <section id="ToggleNav" style={{ display: isVisible ? "block" : "none" }}>
-        <div className={styles.NavContents}>
-          <div className={styles.MobileNavInner}>
+        <div className={styles.navContents}>
+          <div className={styles.mobileNavInner}>
             <div>
               <Image
                 src={logoDark}
@@ -103,20 +103,20 @@ export default function mobileNav() {
             </div>
           </div>
           <motion.div
-            className={styles.NavMenu}
+            className={styles.navMenu}
             initial="offscreen"
             variants={FadeInUp}
             whileInView="onscreen"
             viewport={{ once: false, amount: 0 }}
           >
-            <div className={styles.NavLinks}>
-              <div className={styles.NavList}>
+            <div className={styles.navLinks}>
+              <div className={styles.navList}>
                 <h1>Business</h1>
                 <ul>
                   <li>Join Waitlist</li>
                 </ul>
               </div>{" "}
-              <div className={styles.NavList}>
+              <div className={styles.navList}>
                 {" "}
                 <h1>Company</h1>
                 <ul>
@@ -126,7 +126,7 @@ export default function mobileNav() {
                   <li>Developers</li>
                 </ul>
               </div>
-              <div className={styles.NavList}>
+              <div className={styles.navList}>
                 <h1>Support</h1>
                 <ul>
                   <li>FAQs</li>
@@ -135,7 +135,7 @@ export default function mobileNav() {
                   <li>AML/KYC Policy</li>
                 </ul>
               </div>
-              <div className={styles.HeroSocials}>
+              <div className={styles.heroSocials}>
                 <div>
                   {" "}
                   <a
