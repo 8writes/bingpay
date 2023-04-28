@@ -2,12 +2,12 @@ import styles from "./services.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "next/font/google";
-import list from "/public/list.svg";
-import giftCard from "/public/gift-card.svg";
-import exchange from "/public/exchange.svg";
-import ticket from "/public/ticket.svg";
-import topUp from "/public/top-up.svg";
-import flight from "/public/flight.svg";
+import list from "/public/images/list.svg";
+import giftCard from "/public/images/gift-card.svg";
+import exchange from "/public/images/exchange.svg";
+import ticket from "/public/images/ticket.svg";
+import topUp from "/public/images/top-up.svg";
+import flight from "/public/images/flight.svg";
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],

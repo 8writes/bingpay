@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import logoDark from "/public/logo-dark.webp";
-import GooglePlay from "/public/google-play.svg";
-import AppStore from "/public/app-store.svg";
-import OpenNav from "/public/mobile-menu-opn.svg";
-import CloseNav from "/public/mobile-menu-cls.svg";
+import logoDark from "/public/images/logo-dark.webp";
+import GooglePlay from "/public/images/google-play.svg";
+import AppStore from "/public/images/app-store.svg";
+import OpenNav from "/public/images/mobile-menu-opn.svg";
+import CloseNav from "/public/images/mobile-menu-cls.svg";
 import styles from "./mobileNav.module.css";
 import { useState, useEffect } from "react";
 import { Quicksand } from "next/font/google";

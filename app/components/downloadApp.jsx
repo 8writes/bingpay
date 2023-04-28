@@ -1,8 +1,8 @@
 import Image from "next/image";
-import GooglePlay from "/public/google-play.svg";
-import AppStore from "/public/app-store.svg";
+import GooglePlay from "/public/images/google-play.svg";
+import AppStore from "/public/images/app-store.svg";
 import styles from "./downloadApp.module.css";
-import Merchant from "/public/merchant.svg";
+import Merchant from "/public/images/merchant.svg";
 import { motion } from "framer-motion";
 
 export default function DownloadApp() {

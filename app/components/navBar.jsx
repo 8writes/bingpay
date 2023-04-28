@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logoDark from "/public/logo-dark.webp";
-import downArrow from "/public/down-arrow.svg";
+import logoDark from "/public/images/logo-dark.webp";
+import downArrow from "/public/images/down-arrow.svg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import styles from "./navBar.module.css";
@@ -54,14 +54,16 @@ export default function NavBar() {
       <div className={`${montserrat.variable}`}>
         <section className={styles.navBar}>
           <div>
-            <Image
-              src={logoDark}
-              alt="Bingpay logo"
-              width={120}
-              height={120}
-              // blurDataURL="data:..." automatically provided
-              // placeholder="blur" // Optional blur-up while loading
-            />
+            <Link href="/">
+              <Image
+                src={logoDark}
+                alt="Bingpay logo"
+                width={120}
+                height={120}
+                // blurDataURL="data:..." automatically provided
+                // placeholder="blur" // Optional blur-up while loading
+              />
+            </Link>
           </div>
           <div className={styles.navLinks}>
             <span className={styles.links}>
@@ -99,7 +101,7 @@ export default function NavBar() {
             </motion.span>
             <span className={styles.links}>
               {" "}
-              <Link href="/">Developers</Link>
+              <Link href="../developers">Developers</Link>
             </span>
             <span className={styles.links}>
               {" "}

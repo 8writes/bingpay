@@ -2,9 +2,9 @@ import styles from "./heroSection.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Space_Grotesk, Montserrat } from "next/font/google";
-import BingHero from "/public/bing-hero.png";
-import GooglePlay from "/public/google-play.svg";
-import AppStore from "/public/app-store.svg";
+import BingHero from "/public/images/bing-hero.png";
+import GooglePlay from "/public/images/google-play.svg";
+import AppStore from "/public/images/app-store.svg";
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],

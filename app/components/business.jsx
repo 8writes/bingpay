@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Merchant from "/public/merchant.svg";
+import Merchant from "/public/images/merchant.svg";
 import styles from "./business.module.css";
 import { motion } from "framer-motion";
 
@@ -63,8 +63,7 @@ export default function Business() {
       <div className={styles.bg}>
         <section className={styles.business}>
           <motion.span
-            className={styles.introMobile
-            }
+            className={styles.introMobile}
             initial="offscreen"
             variants={FadeInUp}
             whileInView="onscreen"
