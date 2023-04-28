@@ -26,7 +26,7 @@ const FadeInUp = {
     transition: {
       type: "spring",
       bounce: 0.4,
-      duration: 0.7,
+      duration: 0.5,
       ease: [0, 0.71, 0.2, 1.01],
     },
   },
