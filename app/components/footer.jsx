@@ -59,9 +59,11 @@ export default function Footer() {
             <h1>Contact Us</h1>
             <ul>
               <li>
-                11 Ada George Road, <br></br> Port Hacourt, NG 500027
+                11 Ada George Road, <br></br> Port Hacourt, NG 500027.
               </li>
-              <li>hello@bingpay.ng</li>
+              <li>
+                <a href="mailto:hello@bingpay.ng">hello@bingpay.ng</a>
+              </li>
             </ul>
             <div className={styles.Socials}>
               <ul>
