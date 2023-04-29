@@ -84,7 +84,7 @@ export default function MobileNav() {
         <div className={styles.navContents}>
           <div className={styles.mobileNavInner}>
             <div>
-              <Link href="/">
+              <Link href="/" onClick={toggleVisibility}>
                 <Image
                   src={logoDark}
                   alt="Bingpay Logo"
