@@ -67,36 +67,45 @@ export default function Footer() {
               <ul>
                 <li>
                   {" "}
-                  <Image
-                    src={instagram}
-                    alt="list"
-                    width={34}
-                    height={0}
-                    // blurDataURL="data:..." automatically provided
-                    // placeholder="blur" // Optional blur-up while loading
-                  />
+                  <a href="https://www.instagram.com/bingpay/" target="_blank">
+                    <Image
+                      src={instagram}
+                      alt="list"
+                      width={34}
+                      height={0}
+                      // blurDataURL="data:..." automatically provided
+                      // placeholder="blur" // Optional blur-up while loading
+                    />
+                  </a>
                 </li>
                 <li>
                   {" "}
-                  <Image
-                    src={twitter}
-                    alt="list"
-                    width={30}
-                    height={0}
-                    // blurDataURL="data:..." automatically provided
-                    // placeholder="blur" // Optional blur-up while loading
-                  />
+                  <a href="https://twitter.com/bingpayng" target="_blank">
+                    <Image
+                      src={twitter}
+                      alt="list"
+                      width={30}
+                      height={0}
+                      // blurDataURL="data:..." automatically provided
+                      // placeholder="blur" // Optional blur-up while loading
+                    />
+                  </a>
                 </li>
                 <li>
                   {" "}
-                  <Image
-                    src={facebook}
-                    alt="list"
-                    width={30}
-                    height={0}
-                    // blurDataURL="data:..." automatically provided
-                    // placeholder="blur" // Optional blur-up while loading
-                  />
+                  <a
+                    href="https://web.facebook.com/Bingpayng/?_rdc=1&_rdr"
+                    target="_blank"
+                  >
+                    <Image
+                      src={facebook}
+                      alt="list"
+                      width={30}
+                      height={0}
+                      // blurDataURL="data:..." automatically provided
+                      // placeholder="blur" // Optional blur-up while loading
+                    />
+                  </a>
                 </li>
               </ul>
             </div>
