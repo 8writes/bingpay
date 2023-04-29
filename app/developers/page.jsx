@@ -13,9 +13,7 @@ const Footer = dynamic(() => import("../components/footer.jsx"), {
 export default function Developers() {
   return (
     <main>
-      <NavBar />
-     
-      <Footer />
+      
     </main>
   );
 }

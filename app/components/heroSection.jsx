@@ -148,6 +148,7 @@ export default function HeroSection() {
               alt="Picture of the author"
               width={650}
               height={650}
+              priority
               // blurDataURL="data:..." automatically provided
               // placeholder="blur" // Optional blur-up while loading
             />{" "}
