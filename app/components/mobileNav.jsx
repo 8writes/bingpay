@@ -58,14 +58,16 @@ export default function MobileNav() {
     <div>
       <section className={styles.mobileNav}>
         <div>
-          <Image
-            src={logoDark}
-            alt="Bingpay Logo"
-            width={120}
-            height={120}
-            // blurDataURL="data:..." automatically provided
-            // placeholder="blur" // Optional blur-up while loading
-          />
+          <Link href="/">
+            <Image
+              src={logoDark}
+              alt="Bingpay Logo"
+              width={120}
+              height={120}
+              // blurDataURL="data:..." automatically provided
+              // placeholder="blur" // Optional blur-up while loading
+            />
+          </Link>
         </div>
         <div onClick={toggleVisibility}>
           <Image
@@ -82,14 +84,16 @@ export default function MobileNav() {
         <div className={styles.navContents}>
           <div className={styles.mobileNavInner}>
             <div>
-              <Image
-                src={logoDark}
-                alt="Bingpay Logo"
-                width={120}
-                height={120}
-                // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
-              />
+              <Link href="/">
+                <Image
+                  src={logoDark}
+                  alt="Bingpay Logo"
+                  width={120}
+                  height={120}
+                  // blurDataURL="data:..." automatically provided
+                  // placeholder="blur" // Optional blur-up while loading
+                />
+              </Link>
             </div>
             <div onClick={toggleVisibility} style={{ padding: "6px" }}>
               <Image
@@ -124,7 +128,9 @@ export default function MobileNav() {
                   <li>About Us</li>
                   <li>Join Our Team</li>
                   <li>
-                    <Link href="../developers">Developers</Link>
+                    <Link href="../developers" onClick={toggleVisibility}>
+                      Developers
+                    </Link>
                   </li>
                 </ul>
               </div>
