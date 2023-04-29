@@ -15,6 +15,7 @@ const Business = dynamic(() => import("./components/business.jsx"), {
 });
 
 export default function Home() {
+  
   return (
     <main>
       <HeroSection />
