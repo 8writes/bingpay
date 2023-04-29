@@ -89,7 +89,7 @@
   .navLinks {
     padding: 0 10px 0 10px;
     max-width: 90%;
-    margin: 0;
+    margin: auto;
     gap: 50px;
   }
 

@@ -123,7 +123,9 @@ export default function MobileNav() {
                   <li>Blog</li>
                   <li>About Us</li>
                   <li>Join Our Team</li>
-                  <li>Developers</li>
+                  <li>
+                    <Link href="../developers">Developers</Link>
+                  </li>
                 </ul>
               </div>
               <div className={styles.navList}>

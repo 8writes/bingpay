@@ -105,7 +105,7 @@ export default function Footer() {
       </section>
       <section className={styles.footerBottom}>
         <span>
-          © 2023 Bingpay.ng. Trilbertech Ltd (RC No.1832078). All rights
+          © 2021-2023 Bingpay.ng. Trilbertech Ltd (RC No.1832078). All rights
           reserved.
         </span>
       </section>
