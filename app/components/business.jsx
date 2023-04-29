@@ -4,41 +4,6 @@ import styles from "./business.module.css";
 import { motion } from "framer-motion";
 
 export default function Business() {
-  const FadeInLeft = {
-    offscreen: {
-      x: -100,
-      opacity: 0,
-    },
-    onscreen: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.6,
-        duration: 0.9,
-        delay: 0.2,
-        ease: [0, 0.71, 0.2, 1.01],
-      },
-    },
-  };
-
-  const FadeInRight = {
-    offscreen: {
-      x: 100,
-      opacity: 0,
-    },
-    onscreen: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.5,
-        duration: 0.9,
-        delay: 0.2,
-        ease: [0, 0.71, 0.2, 1.01],
-      },
-    },
-  };
 
   const FadeInUp = {
     offscreen: {
