@@ -35,7 +35,7 @@ export default function DownloadApp() {
       {" "}
       <div className={styles.downloadAppContext}>
         <span>
-          <h1>Download the Bingpay App.</h1>
+          <h1>Download the Bingpay Mobile App.</h1>
         </span>
         <span>
           <p>

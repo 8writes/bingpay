@@ -289,10 +289,11 @@
   }
 
   .downloadAppContext h1 {
-    font-weight: 900;
+    font-weight: 700;
     line-height: normal;
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
+    width: 35vw;
   }
 
   .downloadAppContext p {

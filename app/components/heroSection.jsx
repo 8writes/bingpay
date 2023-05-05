@@ -93,8 +93,8 @@ export default function HeroSection() {
               </h1>
 
               <p>
-                Utility bills, international and local phone refills, trade your
-                airtime, gift cards all in one app.
+                Recharge phones, Buy giftcards, Trade digital assets & Pay bills
+                in over 50 countries.
               </p>
             </motion.div>
             <motion.div
