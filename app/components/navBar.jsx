@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logoDark from "/public/images/logo-dark.webp";
+import logoDark from "/public/images/logo-dark.png";
 import downArrow from "/public/images/down-arrow.svg";
 import { motion } from "framer-motion";
 import Link from "next/link";

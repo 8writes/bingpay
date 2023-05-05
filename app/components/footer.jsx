@@ -8,7 +8,7 @@ const DownloadApp = dynamic(() => import("./downloadApp.jsx"), {
 });
 
 import styles from "./footer.module.css";
-import logoDark from "/public/images/logo-dark.webp";
+import logoDark from "/public/images/logo-dark.png";
 import twitter from "/public/images/twitter.svg";
 import instagram from "/public/images/instagram.svg";
 import facebook from "/public/images/facebook.svg";

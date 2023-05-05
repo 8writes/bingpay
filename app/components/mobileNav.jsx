@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import logoDark from "/public/images/logo-dark.webp";
+import logoDark from "/public/images/logo-dark.png";
 import GooglePlay from "/public/images/google-play.svg";
 import AppStore from "/public/images/app-store.svg";
 import OpenNav from "/public/images/mobile-menu-opn.svg";
