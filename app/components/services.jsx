@@ -81,8 +81,7 @@ export default function Services() {
             </div>
             <div>
               <p>
-                Pay Electricity bills, Internet bundles & Cable TV subscriptions
-                on bingpay.
+                Pay Electricity bills, Internet bundles & Cable TV subscriptions.
               </p>
             </div>
           </motion.div>
@@ -108,7 +107,7 @@ export default function Services() {
             </div>
             <div>
               <p>
-                Top-up airtime and data globally, spanning coverage of 50+
+                Top-up airtime and data globally, we cover over 50+
                 countries.
               </p>
             </div>
@@ -135,8 +134,7 @@ export default function Services() {
             </div>
             <div>
               <p>
-                Easily convert unused Airtime, Giftcards to cash on your bingpay
-                app.
+                Easily convert unused Airtime and Giftcards to cash!.
               </p>
             </div>
           </motion.div>
@@ -189,8 +187,7 @@ export default function Services() {
             </div>
             <div>
               <p>
-                Book international and domestic flights, hotels and holidays
-                with Bingpay.
+                Book international and domestic flights, hotels for holidays.
               </p>
             </div>
           </motion.div>
@@ -216,8 +213,7 @@ export default function Services() {
             </div>
             <div>
               <p>
-                Purchase tickets for your favorite shows & events easily from
-                your bingpay app.
+                Purchase tickets for your favorite shows & events easily.
               </p>
             </div>
           </motion.div>

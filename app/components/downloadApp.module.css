@@ -225,7 +225,6 @@
     width: 50%;
     margin: auto;
     text-align: start;
-    padding: 22px 0 0 0;
   }
   .downloadImg {
     width: 40%;
@@ -274,10 +273,9 @@
     width: 35%;
     margin: auto;
     text-align: start;
-    padding: 22px 0 0 0;
   }
   .downloadImg {
-    width: 35%;
+    width: 40%;
     margin: auto;
   }
 

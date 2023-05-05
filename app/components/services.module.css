@@ -11,7 +11,7 @@
 }
 
 .serviceIntro h1 {
-  font-weight: 900;
+  font-weight: 700;
   line-height: normal;
   color: rgb(184, 30, 148);
 }
@@ -27,7 +27,6 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  gap: 60px;
   margin: 0 auto;
 }
 
@@ -66,6 +65,7 @@
 
   .servicesList {
     padding: 50px 5px 50px 5px;
+    gap: 60px;
   }
 }
 
@@ -89,6 +89,7 @@
 
   .servicesList {
     padding: 50px 5px 50px 5px;
+    gap: 60px;
   }
 }
 
@@ -112,6 +113,7 @@
 
   .servicesList {
     padding: 50px 5px 50px 5px;
+    gap: 60px;
   }
 }
 
@@ -133,6 +135,7 @@
 
   .servicesList {
     padding: 50px 5px 50px 5px;
+    gap: 60px;
   }
 }
 
@@ -157,7 +160,8 @@
 
   .servicesList {
     max-width: 90vw;
-    padding: 50px 5px 50px 5px;
+    gap: 70px;
+    padding: 50px 0 50px 0;
   }
 }
 
@@ -182,6 +186,7 @@
 
   .servicesList {
     max-width: 80vw;
+    gap: 70px;
     padding: 50px 5px 50px 5px;
   }
 }
