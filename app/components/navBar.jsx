@@ -52,79 +52,82 @@ export default function NavBar() {
   return (
     <div>
       <div className={`${montserrat.variable}`}>
-        <section className={styles.navBar}>
-          <div>
-            <Link href="/">
-              <Image
-                src={logoDark}
-                alt="Bingpay logo"
-                width={120}
-                height={120}
-                // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
-              />
-            </Link>
-          </div>
-          <div className={styles.navLinks}>
-            <span className={styles.links}>
-              {" "}
-              <Link href="/">Business</Link>
-            </span>
-            <motion.span
-              className={styles.links}
-              whileHover="open"
-              whileTap="closed"
-            >
-              {" "}
-              <Link href="/">Company</Link>
-              <motion.div
-                className={styles.dropBg}
-                initial="offscreen"
-                variants={FadeInUp}
-                whileInView="onscreen"
-                viewport={{ once: false, amount: 0.1 }}
+        <section className={styles.navBarBg}>
+          {" "}
+          <div className={styles.navBar}>
+            <div>
+              <Link href="/">
+                <Image
+                  src={logoDark}
+                  alt="Bingpay logo"
+                  width={120}
+                  height={120}
+                  // blurDataURL="data:..." automatically provided
+                  // placeholder="blur" // Optional blur-up while loading
+                />
+              </Link>
+            </div>
+            <div className={styles.navLinks}>
+              <span className={styles.links}>
+                {" "}
+                <Link href="/">Business</Link>
+              </span>
+              <motion.span
+                className={styles.links}
+                whileHover="open"
+                whileTap="closed"
               >
-                <div class={styles.dropContent}>
-                  <ul>
-                    <li>
-                      <Link href="/">Blog</Link>
-                    </li>
-                    <li>
-                      <Link href="/">About Us</Link>
-                    </li>
-                    <li>
-                      <Link href="/">Join Our Team</Link>
-                    </li>
-                  </ul>
-                </div>
-              </motion.div>
-            </motion.span>
-            <span className={styles.links}>
-              {" "}
-              <Link href="../developers">Developers</Link>
-            </span>
-            <span className={styles.links}>
-              {" "}
-              <Link href="/">Support</Link>
-              <motion.div
-                className={styles.dropBg}
-                initial="offscreen"
-                variants={FadeInUp}
-                whileInView="onscreen"
-                viewport={{ once: false, amount: 0.1 }}
-              >
-                <div class={styles.dropContent}>
-                  <ul>
-                    <li>
-                      <Link href="/">FAQs</Link>
-                    </li>
-                    <li>
-                      <Link href="/">Contact Us</Link>
-                    </li>
-                  </ul>
-                </div>
-              </motion.div>
-            </span>
+                {" "}
+                <Link href="/">Company</Link>
+                <motion.div
+                  className={styles.dropBg}
+                  initial="offscreen"
+                  variants={FadeInUp}
+                  whileInView="onscreen"
+                  viewport={{ once: false, amount: 0.1 }}
+                >
+                  <div class={styles.dropContent}>
+                    <ul>
+                      <li>
+                        <Link href="/">Blog</Link>
+                      </li>
+                      <li>
+                        <Link href="/">About Us</Link>
+                      </li>
+                      <li>
+                        <Link href="/">Join Our Team</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </motion.div>
+              </motion.span>
+              <span className={styles.links}>
+                {" "}
+                <Link href="../developers">Developers</Link>
+              </span>
+              <span className={styles.links}>
+                {" "}
+                <Link href="/">Support</Link>
+                <motion.div
+                  className={styles.dropBg}
+                  initial="offscreen"
+                  variants={FadeInUp}
+                  whileInView="onscreen"
+                  viewport={{ once: false, amount: 0.1 }}
+                >
+                  <div class={styles.dropContent}>
+                    <ul>
+                      <li>
+                        <Link href="/">FAQs</Link>
+                      </li>
+                      <li>
+                        <Link href="/">Contact Us</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </motion.div>
+              </span>
+            </div>
           </div>
         </section>
       </div>

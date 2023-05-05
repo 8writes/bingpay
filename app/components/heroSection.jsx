@@ -81,60 +81,63 @@ export default function HeroSection() {
       >
         <div className={styles.heroBg}>
           <div className={styles.heroLeft}>
-            <motion.div
-              initial="offscreen"
-              variants={FadeInDown}
-              whileInView="onscreen"
-              viewport={{ once: true, amount: 0.1 }}
-            >
-              <h1>
-                Your one stop app for <br></br> everyday{" "}
-                <span className="">payments.</span>
-              </h1>
+           
+              <motion.div
+                initial="offscreen"
+                variants={FadeInDown}
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.1 }}
+              >
+                <h1>
+                  Your one stop app for <br></br> everyday{" "}
+                  <span className="">payments.</span>
+                </h1>
 
-              <p>
-                Recharge phones, Buy giftcards, Trade digital assets & Pay bills
-                in over 50 countries.
-              </p>
-            </motion.div>
-            <motion.div
-              className={styles.heroSocials}
-              initial="offscreen"
-              variants={FadeInUp}
-              whileInView="onscreen"
-              viewport={{ once: true, amount: 0.1 }}
-            >
-              <div>
-                {" "}
-                <a href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}>
-                  <Image
-                    src={AppStore}
-                    alt="App Store"
-                    width={146}
-                    height={146}
-                    // blurDataURL="data:..." automatically provided
-                    // placeholder="blur" // Optional blur-up while loading
-                  />{" "}
-                </a>
-              </div>
-              <div>
-                <a
-                  href={
-                    "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
-                  }
-                >
-                  <Image
-                    src={GooglePlay}
-                    alt="Google Play"
-                    width={160}
-                    height={160}
-                    // blurDataURL="data:..." automatically provided
-                    // placeholder="blur" // Optional blur-up while loading
-                  />{" "}
-                </a>
-              </div>{" "}
-            </motion.div>
-          </div>
+                <p>
+                  Recharge phones, Buy giftcards, Trade digital assets & Pay
+                  bills in over 50 countries.
+                </p>
+              </motion.div>
+              <motion.div
+                className={styles.heroSocials}
+                initial="offscreen"
+                variants={FadeInUp}
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.1 }}
+              >
+                <div>
+                  {" "}
+                  <a
+                    href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}
+                  >
+                    <Image
+                      src={AppStore}
+                      alt="App Store"
+                      width={146}
+                      height={146}
+                      // blurDataURL="data:..." automatically provided
+                      // placeholder="blur" // Optional blur-up while loading
+                    />{" "}
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={
+                      "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
+                    }
+                  >
+                    <Image
+                      src={GooglePlay}
+                      alt="Google Play"
+                      width={160}
+                      height={160}
+                      // blurDataURL="data:..." automatically provided
+                      // placeholder="blur" // Optional blur-up while loading
+                    />{" "}
+                  </a>
+                </div>{" "}
+              </motion.div>
+            </div>
 
           <motion.div
             className={styles.heroImage}

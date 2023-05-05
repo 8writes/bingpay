@@ -77,13 +77,16 @@
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
   .navBar {
-    padding: 27px 100px 22px 50px;
+    padding: 27px 150px 22px 90px;
   }
 }
 
 @media (min-width: 1440px) {
   .navBar {
-    padding: 40px 240px 30px 161px;
+    padding: 40px 230px 30px 161px;
+  }
+  .navBarBg{
+
   }
 }
 
