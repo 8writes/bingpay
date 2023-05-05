@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Merchant from "/public/images/merchant.svg";
+import Download from "/public/images/download.png";
 import styles from "./business.module.css";
 import { motion } from "framer-motion";
 
@@ -44,8 +44,8 @@ export default function Business() {
             viewport={{ once: true, amount: 0.1 }}
           >
             <Image
-              src={Merchant}
-              alt="App Store"
+              src={Download}
+              alt="Download Image"
               width={500}
               height={500}
               // blurDataURL="data:..." automatically provided

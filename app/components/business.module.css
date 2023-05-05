@@ -248,7 +248,7 @@
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
-@media (min-width: 1024px) {
+@media (min-width: 1021px) {
   .business {
     padding: 100px 20px 150px 20px;
   }

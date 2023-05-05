@@ -9,7 +9,7 @@
 }
 
 .downloadApp h1 {
-  font-weight: 900;
+  font-weight: 650;
   line-height: normal;
   color: white;
 }
@@ -53,8 +53,6 @@
   }
 
   .downloadAppContext h1 {
-    font-weight: 900;
-    color: white;
     font-size: 1.6em;
     padding: 10px 0 10px 0;
   }
@@ -99,8 +97,6 @@
   }
 
   .downloadAppContext h1 {
-    font-weight: 900;
-    color: white;
     font-size: 2em;
     padding: 10px 0 10px 0;
   }
@@ -145,8 +141,6 @@
   }
 
   .downloadAppContext h1 {
-    font-weight: 900;
-    color: white;
     font-size: 2.3em;
     padding: 10px 0 10px 0;
   }
@@ -191,8 +185,6 @@
   }
 
   .downloadAppContext h1 {
-    font-weight: 900;
-    color: white;
     font-size: 3em;
     padding: 10px 0 10px 0;
   }
@@ -226,13 +218,14 @@
     position: relative;
     bottom: 120px;
     font-family: var(--font-space_grotesk);
-    max-width: 100%;
+    max-width: 95%;
   }
 
   .downloadAppContext {
     width: 50%;
     margin: auto;
     text-align: start;
+    padding: 22px 0 0 0;
   }
   .downloadImg {
     width: 40%;
@@ -240,9 +233,7 @@
   }
 
   .downloadAppContext h1 {
-    font-weight: 900;
     line-height: normal;
-    color: white;
     font-size: 2.5em;
   }
 
@@ -250,7 +241,7 @@
     font-weight: 500;
     color: white;
     font-size: 1em;
-    max-width: 30vw;
+    max-width: 40vw;
     padding: 20px 0 0 0;
   }
 
@@ -279,19 +270,18 @@
   }
 
   .downloadAppContext {
-    width: 50%;
+    width: 35%;
     margin: auto;
     text-align: start;
+    padding: 22px 0 0 0;
   }
   .downloadImg {
-    width: 40%;
+    width: 35%;
     margin: auto;
   }
 
   .downloadAppContext h1 {
-    font-weight: 700;
     line-height: normal;
-    color: white;
     font-size: 2.5em;
     width: 35vw;
   }

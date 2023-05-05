@@ -2,7 +2,7 @@ import Image from "next/image";
 import GooglePlay from "/public/images/google-play.svg";
 import AppStore from "/public/images/app-store.svg";
 import styles from "./downloadApp.module.css";
-import Merchant from "/public/images/merchant.svg";
+import Download from "/public/images/download.png";
 import { motion } from "framer-motion";
 
 export default function DownloadApp() {
@@ -77,8 +77,8 @@ export default function DownloadApp() {
       </div>
       <div className={styles.downloadImg}>
         <Image
-          src={Merchant}
-          alt="App Store"
+          src={Download}
+          alt="Download image"
           width={500}
           height={500}
           // blurDataURL="data:..." automatically provided
