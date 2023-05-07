@@ -250,7 +250,7 @@
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1021px) {
   .business {
-    padding: 100px 20px 150px 20px;
+    padding: 100px 100px 150px 100px;
   }
 
   .businessContext {
@@ -279,7 +279,7 @@
 
   .heading {
     padding: 20px 0 20px 0;
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 
   .businessContext p {
