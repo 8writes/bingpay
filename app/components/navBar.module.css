@@ -21,7 +21,7 @@
 .navLinks {
   display: flex;
   gap: 40px;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 600;
   color: rgb(184, 30, 148);
   font-family: var(--font-montserrat);
@@ -77,13 +77,13 @@
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
   .navBar {
-    padding: 27px 140px 22px 90px;
+    padding: 27px 141px 22px 90px;
   }
 }
 
 @media (min-width: 1440px) {
   .navBar {
-    padding: 40px 230px 30px 161px;
+    padding: 40px 202px 30px 161px;
   }
 }
 
