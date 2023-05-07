@@ -3,16 +3,17 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 27px 150px 22px 120px;
   background-color: white;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition-duration: 100ms;
   z-index: 999;
 }
 
 .scrollNav {
   width: 100%;
   justify-content: space-between;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
   box-shadow: 40px 0px 0px 0px rgba(214, 212, 216, 0.501),
     0 6px 20px 0 rgba(202, 201, 206, 0.535);
   z-index: 999;
@@ -84,6 +85,9 @@
 @media (min-width: 1440px) {
   .navBar {
     padding: 40px 202px 30px 161px;
+  }
+  .scrollNav{
+     padding: 35px 202px 25px 161px;
   }
 }
 
