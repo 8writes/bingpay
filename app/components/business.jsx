@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Download from "/public/images/download.png";
+import Merchant from "/public/images/merchant.svg";
 import styles from "./business.module.css";
 import { motion } from "framer-motion";
 
@@ -44,7 +44,7 @@ export default function Business() {
             viewport={{ once: true, amount: 0.1 }}
           >
             <Image
-              src={Download}
+              src={Merchant}
               alt="Download Image"
               width={500}
               height={500}
