@@ -259,6 +259,7 @@
     margin: auto;
     padding: 0 10px 0 10px;
   }
+
   .businessImg {
     width: 50%;
     margin: auto;
@@ -278,7 +279,7 @@
   }
 
   .heading {
-    padding: 20px 0 20px 0;
+    padding: 20px 5px 20px 0;
     font-size: 2.2em;
   }
 
@@ -314,6 +315,7 @@
     margin: auto;
     padding: 0 220px 0 0;
   }
+
   .businessImg {
     max-width: 50%;
     margin: auto;
