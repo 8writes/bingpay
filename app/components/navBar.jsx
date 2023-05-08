@@ -32,7 +32,7 @@ export default function NavBar() {
 
   const FadeInUp = {
     offscreen: {
-      y: 10,
+      y: -10,
       opacity: 0,
     },
 
@@ -78,7 +78,15 @@ export default function NavBar() {
                 whileTap="closed"
               >
                 {" "}
-                <Link href="/">Company</Link>
+                <Link href="/">Company</Link>{" "}
+                <Image
+                  src={downArrow}
+                  alt="Bingpay logo"
+                  width={20}
+                  height={20}
+                  // blurDataURL="data:..." automatically provided
+                  // placeholder="blur" // Optional blur-up while loading
+                />
                 <motion.div
                   className={styles.dropBg}
                   initial="offscreen"
@@ -108,6 +116,14 @@ export default function NavBar() {
               <span className={styles.links}>
                 {" "}
                 <Link href="/">Support</Link>
+                <Image
+                  src={downArrow}
+                  alt="Bingpay logo"
+                  width={20}
+                  height={20}
+                  // blurDataURL="data:..." automatically provided
+                  // placeholder="blur" // Optional blur-up while loading
+                />
                 <motion.div
                   className={styles.dropBg}
                   initial="offscreen"
