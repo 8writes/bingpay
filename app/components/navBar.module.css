@@ -80,6 +80,9 @@
   .navBar {
     padding: 27px 141px 22px 90px;
   }
+   .scrollNav{
+     padding: 25px 141px 20px 90px;
+  }
 }
 
 @media (min-width: 1440px) {
