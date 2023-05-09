@@ -4,7 +4,7 @@ import React from "react";
 const FadeInUp = ({ children }) => {
   const FadeInUp = {
     offscreen: {
-      y: 100,
+      y: 30,
       opacity: 0,
     },
     onscreen: {
@@ -15,7 +15,7 @@ const FadeInUp = ({ children }) => {
         bounce: 0.5,
         duration: 0.9,
         ease: [0, 0.71, 0.2, 1.01],
-        delay: 0.5,
+        delay: 0.2,
       },
     },
   };
@@ -25,7 +25,7 @@ const FadeInUp = ({ children }) => {
       initial="offscreen"
       variants={FadeInUp}
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true, amount: 0 }}
     >
       {children}
     </motion.div>

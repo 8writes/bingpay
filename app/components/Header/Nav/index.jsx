@@ -1,10 +1,11 @@
+import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
+import { motion } from "framer-motion";
+import styles from "./index.module.css";
 import logoDark from "/public/images/logo-dark.png";
 import downArrow from "/public/images/down-arrow.svg";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import styles from "./index.module.css";
-import { useEffect } from "react";
+import FadeInDown from "./Framer/FadeInDown";
 
 export default function NavBar() {
   useEffect(() => {
@@ -22,25 +23,6 @@ export default function NavBar() {
       document.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const FadeInUp = {
-    offscreen: {
-      y: -10,
-      opacity: 0,
-    },
-
-    onscreen: {
-      y: 0,
-      opacity: 1,
-
-      transition: {
-        type: "spring",
-        bounce: 0.5,
-        duration: 0.9,
-        ease: [0, 0.71, 0.2, 1.01],
-      },
-    },
-  };
 
   return (
     <div>
@@ -71,7 +53,7 @@ export default function NavBar() {
                 whileTap="closed"
               >
                 {" "}
-                <Link href="/">Company</Link>{" "}
+                <span>Company</span>{" "}
                 <Image
                   src={downArrow}
                   alt="Bingpay logo"
@@ -80,27 +62,24 @@ export default function NavBar() {
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
-                <motion.div
-                  className={styles.dropBg}
-                  initial="offscreen"
-                  variants={FadeInUp}
-                  whileInView="onscreen"
-                  viewport={{ once: false, amount: 0.1 }}
-                >
-                  <div class={styles.dropContent}>
-                    <ul>
-                      <li>
-                        <Link href="/">Blog</Link>
-                      </li>
-                      <li>
-                        <Link href="/">About Us</Link>
-                      </li>
-                      <li>
-                        <Link href="/">Join Our Team</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </motion.div>
+                <div className={styles.dropBg}>
+                  {" "}
+                  <FadeInDown>
+                    <div class={styles.dropContent}>
+                      <ul>
+                        <li>
+                          <Link href="/">Blog</Link>
+                        </li>
+                        <li>
+                          <Link href="/">About Us</Link>
+                        </li>
+                        <li>
+                          <Link href="/">Join Our Team</Link>
+                        </li>
+                      </ul>
+                    </div>{" "}
+                  </FadeInDown>
+                </div>
               </motion.span>
               <span className={styles.links}>
                 {" "}
@@ -108,7 +87,7 @@ export default function NavBar() {
               </span>
               <span className={styles.links}>
                 {" "}
-                <Link href="/">Support</Link>
+                <span>Support</span>
                 <Image
                   src={downArrow}
                   alt="Bingpay logo"
@@ -117,24 +96,20 @@ export default function NavBar() {
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
-                <motion.div
-                  className={styles.dropBg}
-                  initial="offscreen"
-                  variants={FadeInUp}
-                  whileInView="onscreen"
-                  viewport={{ once: false, amount: 0.1 }}
-                >
-                  <div class={styles.dropContent}>
-                    <ul>
-                      <li>
-                        <Link href="/">FAQs</Link>
-                      </li>
-                      <li>
-                        <Link href="/">Contact Us</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </motion.div>
+                <div className={styles.dropBg}>
+                  <FadeInDown>
+                    <div class={styles.dropContent}>
+                      <ul>
+                        <li>
+                          <Link href="/">FAQs</Link>
+                        </li>
+                        <li>
+                          <Link href="/">Contact Us</Link>
+                        </li>
+                      </ul>
+                    </div>{" "}
+                  </FadeInDown>
+                </div>
               </span>
             </div>
           </div>

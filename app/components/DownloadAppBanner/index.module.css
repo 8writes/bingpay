@@ -173,8 +173,8 @@
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 60px;
-
-    max-width: 90%;
+    max-width: 100%;
+    margin: 0 20px 0 20px;
   }
 
   .downloadAppContext {
@@ -217,7 +217,7 @@
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 120px;
-    max-width: 85%;
+    max-width: 100%;
   }
 
   .downloadAppContext {
@@ -264,7 +264,6 @@
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 100px;
-
     max-width: 100%;
   }
 

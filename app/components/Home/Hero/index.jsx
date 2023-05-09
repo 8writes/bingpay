@@ -3,14 +3,14 @@ import styles from "./index.module.css";
 import BingHero from "/public/images/bing-hero.png";
 import GooglePlay from "/public/images/google-play.svg";
 import AppStore from "/public/images/app-store.svg";
-import FadeInUp from "../../Framer/FadeInUp.jsx";
-import FadeInDown from "../../Framer/FadeInDown.jsx";
-import FadeInRight from "../../Framer/FadeInRight";
+import FadeInUp from "./Framer/FadeInUp.jsx";
+import FadeInDown from "./Framer/FadeInDown.jsx";
+import FadeInRight from "./Framer/FadeInRight";
 
 export default function Hero() {
   return (
     <div>
-      <section className={`${styles.Hero}`}>
+      <section className={styles.Hero}>
         <div className={styles.heroBg}>
           <div className={styles.heroLeft}>
             <FadeInDown>
