@@ -26,10 +26,12 @@ export default function Hero() {
                 </p>
               </div>
             </FadeInDown>
-            <FadeInUp>
-              <div className={styles.heroSocials}>
-                <div>
-                  {" "}
+
+            <div className={styles.heroSocials}>
+              {" "}
+              <div>
+                {" "}
+                <FadeInUp>
                   <a
                     href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}
                   >
@@ -42,8 +44,10 @@ export default function Hero() {
                       // placeholder="blur" // Optional blur-up while loading
                     />{" "}
                   </a>
-                </div>
-                <div>
+                </FadeInUp>
+              </div>
+              <div>
+                <FadeInUp>
                   <a
                     href={
                       "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
@@ -58,9 +62,9 @@ export default function Hero() {
                       // placeholder="blur" // Optional blur-up while loading
                     />{" "}
                   </a>
-                </div>{" "}
-              </div>
-            </FadeInUp>
+                </FadeInUp>
+              </div>{" "}
+            </div>
           </div>
 
           <div className={styles.heroImage}>
