@@ -1,7 +1,7 @@
-/* MAIN STYLING DESIGN     */
-.heroSection {
+.Hero {
   width: 100%;
   background-color: white;
+  font-family: var(--font-space_grotesk);
 }
 
 .heroBg {
@@ -14,18 +14,16 @@
   margin: auto;
 }
 
-.heroSection h1 {
+.Hero h1 {
   font-weight: 900;
   line-height: normal;
   color: rgb(184, 30, 148);
-  font-family: var(--font-space_grotesk);
 }
 
-.heroSection p {
+.Hero p {
   font-weight: 600;
   line-height: normal;
   color: #3b3b3b;
-  font-family: var(--font-space_grotesk);
 }
 
 .heroLeft {
@@ -39,7 +37,7 @@
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
-  .heroSection {
+  .Hero {
     padding: 50px 0 0 0;
   }
 
@@ -48,11 +46,11 @@
     padding: 0 10px 0 10px;
   }
 
-  .heroSection p {
+  .Hero p {
     font-size: 0.8em;
   }
 
-  .heroSection h1 {
+  .Hero h1 {
     font-size: 8.8vw;
     padding: 20px 0 20px 0;
   }
@@ -75,7 +73,7 @@
 
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
-  .heroSection {
+  .Hero {
     padding: 50px 0 0 0;
   }
 
@@ -84,11 +82,11 @@
     padding: 0 10px 0 10px;
   }
 
-  .heroSection p {
+  .Hero p {
     font-size: 1em;
   }
 
-  .heroSection h1 {
+  .Hero h1 {
     font-size: 9vw;
     padding: 20px 0 20px 0;
   }
@@ -111,7 +109,7 @@
 
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
-  .heroSection {
+  .Hero {
     padding: 50px 0 0 0;
   }
 
@@ -120,11 +118,11 @@
     padding: 0 10px 0 10px;
   }
 
-  .heroSection p {
+  .Hero p {
     font-size: 1.1em;
   }
 
-  .heroSection h1 {
+  .Hero h1 {
     font-size: 9vw;
     padding: 20px 0 20px 0;
   }
@@ -147,7 +145,7 @@
 
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
-  .heroSection {
+  .Hero {
     padding: 75px 10px 0 10px;
   }
 
@@ -156,12 +154,12 @@
     padding: 0 50px 0 50px;
   }
 
-  .heroSection p {
+  .Hero p {
     font-size: 1.3em;
     padding: 20px 0 20px 0;
   }
 
-  .heroSection h1 {
+  .Hero h1 {
     font-size: 8vw;
     padding: 20px 0 20px 0;
   }
@@ -184,7 +182,7 @@
 
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
-  .heroSection {
+  .Hero {
     padding: 80px 10px 0 10px;
   }
 
@@ -193,13 +191,13 @@
     padding: 40px 0 40px 0;
   }
 
-  .heroSection p {
+  .Hero p {
     font-size: 1.5vw;
     width: 85%;
     padding: 20px 0 20px 0;
   }
 
-  .heroSection h1 {
+  .Hero h1 {
     font-size: 3.9vw;
     width: 100%;
     padding: 20px 0 20px 0;
@@ -230,7 +228,7 @@
 
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
-  .heroSection {
+  .Hero {
     padding: 100px 10px 0 10px;
   }
 
@@ -239,13 +237,13 @@
     padding: 40px 0 40px 0;
   }
 
-  .heroSection p {
+  .Hero p {
     font-size: 1.3vw;
     width: 75%;
     margin: 0;
   }
 
-  .heroSection h1 {
+  .Hero h1 {
     font-size: 3.5vw;
     margin: 0;
     width: 100%;

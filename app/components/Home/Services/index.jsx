@@ -1,19 +1,12 @@
-import styles from "./services.module.css";
+import styles from "./index.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Space_Grotesk } from "next/font/google";
 import list from "/public/images/list.svg";
 import giftCard from "/public/images/gift-card.svg";
 import exchange from "/public/images/exchange.svg";
 import ticket from "/public/images/ticket.svg";
 import topUp from "/public/images/top-up.svg";
 import flight from "/public/images/flight.svg";
-
-const space_grotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space_grotesk",
-  display: "swap",
-});
 
 export default function Services() {
   const FadeInUp = {
@@ -35,7 +28,7 @@ export default function Services() {
 
   return (
     <div>
-      <section className={`${styles.services} ${space_grotesk.variable}`}>
+      <section className={`${styles.services}`}>
         <motion.section
           className={styles.serviceIntro}
           initial="offscreen"

@@ -5,11 +5,11 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
     0 6px 20px 0 rgba(183, 182, 182, 0.224);
-  font-family: var(--font-space_grotesk);
+    font-family: var(--font-space_grotesk);
 }
 
 .downloadApp h1 {
-  font-weight: 650;
+  font-weight: 670;
   line-height: normal;
   color: white;
 }
@@ -41,7 +41,7 @@
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 60px;
-    font-family: var(--font-space_grotesk);
+
     max-width: 100%;
   }
 
@@ -85,7 +85,7 @@
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 60px;
-    font-family: var(--font-space_grotesk);
+
     max-width: 100%;
   }
 
@@ -129,7 +129,7 @@
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 60px;
-    font-family: var(--font-space_grotesk);
+
     max-width: 100%;
   }
 
@@ -173,7 +173,7 @@
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 60px;
-    font-family: var(--font-space_grotesk);
+
     max-width: 90%;
   }
 
@@ -217,7 +217,7 @@
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 120px;
-    font-family: var(--font-space_grotesk);
+
     max-width: 88%;
   }
 
@@ -265,7 +265,7 @@
       0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 100px;
-    font-family: var(--font-space_grotesk);
+
     max-width: 100%;
   }
 

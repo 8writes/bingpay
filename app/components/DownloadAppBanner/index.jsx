@@ -1,7 +1,7 @@
 import Image from "next/image";
 import GooglePlay from "/public/images/google-play.svg";
 import AppStore from "/public/images/app-store.svg";
-import styles from "./downloadApp.module.css";
+import styles from "./index.module.css";
 import Download from "/public/images/download.png";
 import { motion } from "framer-motion";
 

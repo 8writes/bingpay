@@ -2,23 +2,22 @@
 
 import dynamic from "next/dynamic";
 
-const HeroSection = dynamic(() => import("./components/heroSection.jsx"), {
+const Hero = dynamic(() => import("./components/Home/Hero/index"), {
   ssr: false,
 });
 
-const Services = dynamic(() => import("./components/services.jsx"), {
+const Services = dynamic(() => import("./components/Home/Services/index"), {
   ssr: false,
 });
 
-const Business = dynamic(() => import("./components/business.jsx"), {
+const Business = dynamic(() => import("./components/Home/Business/index"), {
   ssr: false,
 });
 
 export default function Home() {
-  
   return (
     <main>
-      <HeroSection />
+      <Hero />
       <Services />
       <Business />
     </main>

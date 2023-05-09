@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Merchant from "/public/images/merchant.svg";
-import styles from "./business.module.css";
+import styles from "./index.module.css";
 import { motion } from "framer-motion";
 
 export default function Business() {

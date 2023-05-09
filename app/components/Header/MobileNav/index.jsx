@@ -6,15 +6,9 @@ import GooglePlay from "/public/images/google-play.svg";
 import AppStore from "/public/images/app-store.svg";
 import OpenNav from "/public/images/mobile-menu-opn.svg";
 import CloseNav from "/public/images/mobile-menu-cls.svg";
-import styles from "./mobileNav.module.css";
+import styles from "./index.module.css";
 import { useState, useEffect } from "react";
-import { Quicksand } from "next/font/google";
 
-const quicksand = Quicksand({
-  subsets: ["latin"],
-  variable: "--font-quicksand",
-  display: "swap",
-});
 const FadeInUp = {
   offscreen: {
     y: 50,

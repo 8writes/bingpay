@@ -3,11 +3,11 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
-const DownloadApp = dynamic(() => import("./downloadApp.jsx"), {
+const DownloadApp = dynamic(() => import("../DownloadAppBanner/index"), {
   ssr: false,
 });
 
-import styles from "./footer.module.css";
+import styles from "./index.module.css";
 import logoDark from "/public/images/logo-dark.png";
 import twitter from "/public/images/twitter.svg";
 import instagram from "/public/images/instagram.svg";

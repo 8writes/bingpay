@@ -3,15 +3,8 @@ import logoDark from "/public/images/logo-dark.png";
 import downArrow from "/public/images/down-arrow.svg";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import styles from "./navBar.module.css";
+import styles from "./index.module.css";
 import { useEffect } from "react";
-import { Montserrat } from "next/font/google";
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-  display: "swap",
-});
 
 export default function NavBar() {
   useEffect(() => {
@@ -51,7 +44,7 @@ export default function NavBar() {
 
   return (
     <div>
-      <div className={`${montserrat.variable}`}>
+      <div>
         <section className={styles.navBarBg}>
           {" "}
           <div className={styles.navBar}>
