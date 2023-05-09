@@ -1,3 +1,7 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
 import Image from "next/image";
 import styles from "./index.module.css";
 import list from "/public/images/list.svg";
@@ -6,7 +10,10 @@ import exchange from "/public/images/exchange.svg";
 import ticket from "/public/images/ticket.svg";
 import topUp from "/public/images/top-up.svg";
 import flight from "/public/images/flight.svg";
-import FadeInUp from "./Framer/FadeInUp.jsx";
+
+const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
+  ssr: false,
+});
 
 export default function Services() {
   return (

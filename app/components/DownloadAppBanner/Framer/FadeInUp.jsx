@@ -13,7 +13,7 @@ const FadeInUp = ({ children }) => {
      transition: {
        type: "spring",
        bounce: 0.3,
-       duration: 0.9,
+       duration: 1.1,
        delay: 0.1,
        ease: [0, 0.71, 0.2, 1.01],
      },

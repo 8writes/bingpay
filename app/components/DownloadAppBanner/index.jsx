@@ -1,9 +1,16 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
 import Image from "next/image";
 import styles from "./index.module.css";
 import GooglePlay from "/public/images/google-play.svg";
 import AppStore from "/public/images/app-store.svg";
 import Download from "/public/images/download.png";
-import FadeInUp from "./Framer/FadeInUp";
+
+const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
+  ssr: false,
+});
 
 export default function DownloadApp() {
   return (

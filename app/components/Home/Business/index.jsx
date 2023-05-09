@@ -1,7 +1,14 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
 import Image from "next/image";
 import styles from "./index.module.css";
 import Merchant from "/public/images/merchant.svg";
-import FadeInUp from "./Framer/FadeInUp.jsx";
+
+const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
+  ssr: false,
+});
 
 export default function Business() {
   return (

@@ -1,11 +1,24 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
 import Image from "next/image";
 import styles from "./index.module.css";
 import BingHero from "/public/images/bing-hero.png";
 import GooglePlay from "/public/images/google-play.svg";
 import AppStore from "/public/images/app-store.svg";
-import FadeInUp from "./Framer/FadeInUp.jsx";
-import FadeInDown from "./Framer/FadeInDown.jsx";
-import FadeInRight from "./Framer/FadeInRight";
+
+const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
+  ssr: false,
+});
+
+const FadeInDown = dynamic(() => import("./Framer/FadeInDown"), {
+  ssr: false,
+});
+
+const FadeInRight = dynamic(() => import("./Framer/FadeInRight"), {
+  ssr: false,
+});
 
 export default function Hero() {
   return (

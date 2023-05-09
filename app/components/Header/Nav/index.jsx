@@ -1,11 +1,17 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
-import { motion } from "framer-motion";
 import styles from "./index.module.css";
 import logoDark from "/public/images/logo-dark.png";
 import downArrow from "/public/images/down-arrow.svg";
-import FadeInDown from "./Framer/FadeInDown";
+
+const FadeInDown = dynamic(() => import("./Framer/FadeInDown"), {
+  ssr: false,
+});
 
 export default function NavBar() {
   useEffect(() => {
@@ -47,11 +53,7 @@ export default function NavBar() {
                 {" "}
                 <Link href="/">Business</Link>
               </span>
-              <motion.span
-                className={styles.links}
-                whileHover="open"
-                whileTap="closed"
-              >
+              <span className={styles.links}>
                 {" "}
                 <span>Company</span>{" "}
                 <Image
@@ -80,7 +82,7 @@ export default function NavBar() {
                     </div>{" "}
                   </FadeInDown>
                 </div>
-              </motion.span>
+              </span>
               <span className={styles.links}>
                 {" "}
                 <Link href="../developers">Developers</Link>
