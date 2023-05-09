@@ -70,7 +70,9 @@ export default function NavBar() {
                     <div class={styles.dropContent}>
                       <ul>
                         <li>
-                          <Link href="/">Blog</Link>
+                          <Link href="https://blog.bingpay.ng/" target="_blank">
+                            Blog
+                          </Link>
                         </li>
                         <li>
                           <Link href="/">About Us</Link>
