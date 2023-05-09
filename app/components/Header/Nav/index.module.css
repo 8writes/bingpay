@@ -66,6 +66,11 @@
   display: block;
 }
 
+
+.dropContent ul li:hover {
+color: rgb(184, 30, 148);
+}
+
 .dropBg {
   display: none;
   position: absolute;
