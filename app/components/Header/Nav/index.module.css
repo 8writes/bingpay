@@ -79,10 +79,10 @@
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
   .navBar {
-    padding: 27px 141px 22px 90px;
+    padding: 27px 141px 22px 110px;
   }
    .scrollNav{
-     padding: 25px 141px 20px 90px;
+     padding: 25px 141px 20px 110px;
   }
 }
 

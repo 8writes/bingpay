@@ -35,6 +35,7 @@
   gap: 10px;
 }
 
+
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
   .Hero {
@@ -64,10 +65,6 @@
   .heroSocials {
     padding: 50px 0 50px 0;
     margin: auto;
-  }
-
-  .heroImage {
-    padding: 0 0 50px 0;
   }
 }
 
@@ -102,9 +99,6 @@
     margin: auto;
   }
 
-  .heroImage {
-    padding: 0 0 50px 0;
-  }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
@@ -138,9 +132,6 @@
     margin: auto;
   }
 
-  .heroImage {
-    padding: 0 0 50px 0;
-  }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
@@ -175,9 +166,6 @@
     margin: auto;
   }
 
-  .heroImage {
-    padding: 0 0 50px 0;
-  }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
@@ -188,7 +176,7 @@
 
   .heroBg {
     text-align: start;
-    padding: 40px 0 40px 0;
+    padding: 20px 20px 20px 20px;
   }
 
   .Hero p {
@@ -198,7 +186,7 @@
   }
 
   .Hero h1 {
-    font-size: 3.9vw;
+    font-size: 3.7vw;
     width: 100%;
     padding: 20px 0 20px 0;
   }
@@ -267,6 +255,7 @@
   }
 
   .heroImage img {
-    width: 75%;
+    width: 85%;
+    margin: auto;
   }
 }
