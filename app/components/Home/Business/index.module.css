@@ -78,6 +78,10 @@
     padding: 20px 5px 20px 5px;
   }
 
+  .businessImg {
+    padding: 20px 10px 20px 10px;
+  }
+
   .businessContext p {
     font-size: 0.8em;
     line-height: 2;
@@ -126,6 +130,10 @@
   .heading {
     font-size: 1.8em;
     padding: 20px 5px 20px 5px;
+  }
+
+  .businessImg {
+    padding: 30px 20px 30px 20px;
   }
 
   .businessContext p {
@@ -178,6 +186,10 @@
     padding: 20px 5px 20px 5px;
   }
 
+  .businessImg {
+    padding: 40px 20px 40px 20px;
+  }
+
   .businessContext p {
     font-size: 1em;
     line-height: 2;
@@ -222,6 +234,7 @@
   .intro {
     display: none;
   }
+ 
 
   .heading {
     font-size: 3em;
@@ -280,7 +293,7 @@
 
   .heading {
     padding: 20px 5px 20px 0;
-    font-size: 2.2em;
+    font-size: 2.1em;
   }
 
   .businessContext p {
