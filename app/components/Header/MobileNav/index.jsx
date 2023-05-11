@@ -112,13 +112,13 @@ export default function MobileNav() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="../../../pages/about-us">About Us</Link>
+                      <Link href="../../../about-us">About Us</Link>
                     </li>
                     <li>
                       <Link href="/">Join Our Team</Link>
                     </li>
                     <li>
-                      <Link href="../../../pages/developers">Developers</Link>
+                      <Link href="../../../developers">Developers</Link>
                     </li>
                   </ul>
                 </div>
@@ -126,10 +126,10 @@ export default function MobileNav() {
                   <h1>Support</h1>
                   <ul>
                     <li>
-                      <Link href="../../../pages/FAQs">FAQs</Link>
+                      <Link href="../../../FAQs">FAQs</Link>
                     </li>
                     <li>
-                      <Link href="../../../pages/contact-us">Contact Us</Link>
+                      <Link href="../../../contact-us">Contact Us</Link>
                     </li>
                   </ul>
                 </div>

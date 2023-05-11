@@ -1,6 +1,6 @@
 "use client";
 
-export default function Developers() {
+export default function AboutUs() {
   return (
     <main>
 

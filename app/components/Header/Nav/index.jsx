@@ -51,7 +51,7 @@ export default function NavBar() {
             <div className={styles.navLinks}>
               <span className={styles.links}>
                 {" "}
-                <Link href="../../../pages/business">Business</Link>
+                <Link href="../../../business">Business</Link>
               </span>
               <span className={styles.links}>
                 {" "}
@@ -75,7 +75,7 @@ export default function NavBar() {
                           </Link>
                         </li>
                         <li>
-                          <Link href="../../../pages/about-us">About Us</Link>
+                          <Link href="../../../about-us">About Us</Link>
                         </li>
                         <li>
                           <Link href="/">Join Our Team</Link>
@@ -87,7 +87,7 @@ export default function NavBar() {
               </span>
               <span className={styles.links}>
                 {" "}
-                <Link href="../../../pages/developers">Developers</Link>
+                <Link href="../../../developers">Developers</Link>
               </span>
               <span className={styles.links}>
                 {" "}
@@ -105,12 +105,10 @@ export default function NavBar() {
                     <div class={styles.dropContent}>
                       <ul>
                         <li>
-                          <Link href="../../../pages/FAQs">FAQs</Link>
+                          <Link href="../../../FAQs">FAQs</Link>
                         </li>
                         <li>
-                          <Link href="../../../pages/contact-us">
-                            Contact Us
-                          </Link>
+                          <Link href="../../../contact-us">Contact Us</Link>
                         </li>
                       </ul>
                     </div>{" "}

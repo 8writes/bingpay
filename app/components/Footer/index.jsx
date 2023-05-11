@@ -50,13 +50,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="../../pages/about-us">About Us</Link>
+                <Link href="../../about-us">About Us</Link>
               </li>
               <li>
                 <Link href="/">Join Our Team</Link>
               </li>
               <li>
-                <Link href="../../pages/developers">Developers</Link>
+                <Link href="../../developers">Developers</Link>
               </li>
             </ul>
           </div>
@@ -64,18 +64,18 @@ export default function Footer() {
             <h1>Support</h1>
             <ul>
               <li>
-                <Link href="../../pages/FAQs">FAQs</Link>
+                <Link href="../../FAQs">FAQs</Link>
               </li>
               <li>
-                <Link href="../../pages/privacy-policy">Privacy Policy</Link>
+                <Link href="../../privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="../../pages/terms&conditions">
+                <Link href="../../terms&conditions">
                   Terms & Conditions
                 </Link>
               </li>
               <li>
-                <Link href="../../pages/AML-KYC-policy">AML/KYC Policy</Link>
+                <Link href="../../AML-KYC-policy">AML/KYC Policy</Link>
               </li>
             </ul>
           </div>
