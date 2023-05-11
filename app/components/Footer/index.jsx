@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import Link from "next/link";
 
 const DownloadApp = dynamic(() => import("../DownloadAppBanner/index"), {
   ssr: false,
@@ -40,7 +41,12 @@ export default function Footer() {
             {" "}
             <h1>Company</h1>
             <ul>
-              <li>Blog</li>
+              <li className={styles.hover}>
+                {" "}
+                <Link href="https://blog.bingpay.ng/" target="_blank">
+                  Blog
+                </Link>
+              </li>
               <li>About Us</li>
               <li>Join Our Team</li>
               <li>Developers</li>
@@ -61,7 +67,7 @@ export default function Footer() {
               <li>
                 11 Ada George Road, <br></br> Port Hacourt, NG 500027.
               </li>
-              <li>
+              <li className={styles.hover}>
                 <a href="mailto:hello@bingpay.ng">hello@bingpay.ng</a>
               </li>
             </ul>

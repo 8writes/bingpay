@@ -51,7 +51,9 @@
   font-weight: 500;
   color: rgb(115, 115, 115);
 }
-
+.hover:hover {
+  color: rgb(184, 30, 148);
+}
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
   .footer {
