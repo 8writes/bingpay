@@ -23,14 +23,16 @@ export default function Footer() {
         <DownloadApp />
         <div className={styles.footerContext}>
           <div className={styles.footerIntro}>
-            <Image
-              src={logoDark}
-              alt="Picture of the author"
-              width={120}
-              height={120}
-              // blurDataURL="data:..." automatically provided
-              // placeholder="blur" // Optional blur-up while loading
-            />
+            <Link href="/">
+              <Image
+                src={logoDark}
+                alt="Picture of the author"
+                width={120}
+                height={120}
+                // blurDataURL="data:..." automatically provided
+                // placeholder="blur" // Optional blur-up while loading
+              />
+            </Link>
             <p>
               Bingpay.ng is a property of Trilbertech Limited, a company
               registered with RC Number: 1832078 under the Laws of the Federal
