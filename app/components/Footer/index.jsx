@@ -68,7 +68,7 @@ export default function Footer() {
                 <Link href="../../privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="../../terms&conditions" >Terms & Conditions</Link>
+                <Link href="../../terms" >Terms & Conditions</Link>
               </li>
               <li>
                 <Link href="../../AML-KYC-policy">AML/KYC Policy</Link>
