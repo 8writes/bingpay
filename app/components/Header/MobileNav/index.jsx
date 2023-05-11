@@ -98,30 +98,39 @@ export default function MobileNav() {
                 <div className={styles.navList}>
                   <h1>Business</h1>
                   <ul>
-                    <li>Join Waitlist</li>
+                    <Link href="/">Join Waitlist</Link>
                   </ul>
                 </div>{" "}
                 <div className={styles.navList}>
                   {" "}
                   <h1>Company</h1>
                   <ul>
-                    <li>Blog</li>
-                    <li>About Us</li>
-                    <li>Join Our Team</li>
                     <li>
-                      <Link href="../developers" onClick={toggleVisibility}>
-                        Developers
+                      {" "}
+                      <Link href="https://blog.bingpay.ng/" target="_blank">
+                        Blog
                       </Link>
+                    </li>
+                    <li>
+                      <Link href="../../../pages/about-us">About Us</Link>
+                    </li>
+                    <li>
+                      <Link href="/">Join Our Team</Link>
+                    </li>
+                    <li>
+                      <Link href="../../../pages/developers">Developers</Link>
                     </li>
                   </ul>
                 </div>
                 <div className={styles.navList}>
                   <h1>Support</h1>
                   <ul>
-                    <li>FAQs</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Conditions</li>
-                    <li>AML/KYC Policy</li>
+                    <li>
+                      <Link href="../../../pages/FAQs">FAQs</Link>
+                    </li>
+                    <li>
+                      <Link href="../../../pages/contact-us">Contact Us</Link>
+                    </li>
                   </ul>
                 </div>
                 <div className={styles.heroSocials}>

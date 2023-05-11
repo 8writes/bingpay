@@ -47,27 +47,44 @@ export default function Footer() {
                   Blog
                 </Link>
               </li>
-              <li>About Us</li>
-              <li>Join Our Team</li>
-              <li>Developers</li>
+              <li>
+                <Link href="../../pages/about-us">About Us</Link>
+              </li>
+              <li>
+                <Link href="/">Join Our Team</Link>
+              </li>
+              <li>
+                <Link href="../../pages/developers">Developers</Link>
+              </li>
             </ul>
           </div>
           <div className={styles.footerList}>
             <h1>Support</h1>
             <ul>
-              <li>FAQs</li>
-              <li>Privacy Policy</li>
-              <li>Terms & Conditions</li>
-              <li>AML/KYC Policy</li>
+              <li>
+                <Link href="../../pages/FAQs">FAQs</Link>
+              </li>
+              <li>
+                <Link href="../../pages/privacy-policy">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link href="../../pages/terms&conditions">
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link href="../../pages/AML-KYC-policy">AML/KYC Policy</Link>
+              </li>
             </ul>
           </div>
           <div className={styles.footerList}>
             <h1>Contact Us</h1>
+            <p>
+              {" "}
+              11 Ada George Road, <br></br> Port Hacourt, NG 500027.
+            </p>
             <ul>
               <li>
-                11 Ada George Road, <br></br> Port Hacourt, NG 500027.
-              </li>
-              <li className={styles.hover}>
                 <a href="mailto:hello@bingpay.ng">hello@bingpay.ng</a>
               </li>
             </ul>
