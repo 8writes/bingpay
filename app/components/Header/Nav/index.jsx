@@ -18,7 +18,7 @@ export default function NavBar() {
     const navBar = document.querySelector(`.${styles.navBar}`);
     // Add or remove the "scrollNav" class based on the scroll position
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 10) {
         navBar.classList.add(styles.scrollNav);
       } else {
         navBar.classList.remove(styles.scrollNav);
