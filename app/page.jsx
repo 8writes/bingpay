@@ -15,7 +15,6 @@ const Business = dynamic(() => import("./components/Home/Business/index"), {
 });
 
 export default function Home() {
-  
   return (
     <main>
       <Hero />

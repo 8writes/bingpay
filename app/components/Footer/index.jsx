@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 
-const DownloadApp = dynamic(() => import("../DownloadAppBanner/index"), {
+const DownloadApp = dynamic(() => import("./DownloadAppBanner/index"), {
   ssr: false,
 });
 
@@ -52,9 +52,7 @@ export default function Footer() {
               <li>
                 <Link href="../../about-us">About Us</Link>
               </li>
-              <li>
-                <Link href="/">Join Our Team</Link>
-              </li>
+              <li>Join Our Team</li>
               <li>
                 <Link href="../../developers">Developers</Link>
               </li>
@@ -70,9 +68,7 @@ export default function Footer() {
                 <Link href="../../privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="../../terms&conditions">
-                  Terms & Conditions
-                </Link>
+                <Link href="../../terms&conditions" >Terms & Conditions</Link>
               </li>
               <li>
                 <Link href="../../AML-KYC-policy">AML/KYC Policy</Link>

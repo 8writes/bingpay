@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-const FadeInUp = ({ children }) => {
-  const FadeInUp = {
+const FadeInDown = ({ children }) => {
+  const FadeInDown = {
     offscreen: {
-      y: 30,
+      y: -50,
       opacity: 0,
     },
     onscreen: {
@@ -13,9 +13,9 @@ const FadeInUp = ({ children }) => {
       transition: {
         type: "spring",
         bounce: 0.5,
-        duration: 1,
+        duration: 0.9,
         ease: [0, 0.71, 0.2, 1.01],
-        delay: 0.2,
+        delay: 0.3,
       },
     },
   };
@@ -23,13 +23,13 @@ const FadeInUp = ({ children }) => {
   return (
     <motion.div
       initial="offscreen"
-      variants={FadeInUp}
+      variants={FadeInDown}
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       {children}
     </motion.div>
   );
 };
 
-export default FadeInUp;
+export default FadeInDown;

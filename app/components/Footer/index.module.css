@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: white;
+
+  background-color: rgb(244, 242, 251);
   font-family: var(--font-space_grotesk);
 }
 
@@ -45,7 +46,7 @@
 }
 
 .footerBottom {
-  background-color: white;
+  background-color: rgb(244, 242, 251);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

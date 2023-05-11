@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgb(244, 242, 251);
+  background-color: white;
   font-family: var(--font-space_grotesk);
 }
 
@@ -263,7 +263,7 @@
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1021px) {
   .business {
-    padding: 100px 100px 150px 100px;
+    padding: 50px 100px 200px 100px;
   }
 
   .businessContext {
@@ -319,7 +319,7 @@
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   .business {
-    padding: 100px 0 210px 0;
+    padding: 50px 0 210px 0;
   }
 
   .businessContext {

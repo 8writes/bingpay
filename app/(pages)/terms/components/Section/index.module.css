@@ -1,0 +1,81 @@
+.section {
+  width: 100%;
+  background-color: white;
+  font-family: var(--font-space_grotesk);
+}
+.sectionContext {
+}
+
+.sectionContext h1 {
+  color: black;
+}
+
+/* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
+@media (max-width: 373px) {
+}
+
+/* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
+@media (min-width: 374px) {
+}
+
+/* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
+@media (min-width: 425px) {
+}
+
+/* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
+@media (min-width: 768px) {
+}
+
+/* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
+@media (min-width: 1024px) {
+  .section {
+    padding: 50px 20px 150px 20px;
+  }
+
+  .sectionContext {
+    padding: 50px 20px 100px 20px;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    text-align: start;
+  }
+
+  .sectionContext h1 {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 30px 0 5px 0;
+  }
+  
+  .sectionContext p {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 2;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
+@media (min-width: 1440px) {
+  .section {
+    padding: 50px 20px 150px 20px;
+  }
+
+  .sectionContext {
+    padding: 50px 20px 100px 20px;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    text-align: start;
+  }
+
+  .sectionContext h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 30px 0 5px 0;
+  }
+  
+  .sectionContext p {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 2;
+  }
+}
