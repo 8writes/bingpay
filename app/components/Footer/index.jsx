@@ -8,6 +8,15 @@ const DownloadApp = dynamic(() => import("./DownloadAppBanner/index"), {
   ssr: false,
 });
 
+const scrollToTop = () => {
+  setTimeout(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, 300); // Adjust the delay duration (in milliseconds) as needed
+};
+
 import styles from "./index.module.css";
 import logoDark from "/public/images/logo-dark.png";
 import twitter from "/public/images/twitter.svg";
@@ -29,6 +38,7 @@ export default function Footer() {
                 alt="Picture of the author"
                 width={120}
                 height={120}
+                onClick={scrollToTop}
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />
@@ -50,11 +60,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="../../about-us">About Us</Link>
-              </li>
+                <Link href="about-us">About Us</Link>
+              </li>{" "}
               <li>Join Our Team</li>
               <li>
-                <Link href="../../developers">Developers</Link>
+                <Link href="developers" onClick={scrollToTop}>
+                  Developers
+                </Link>
               </li>
             </ul>
           </div>
@@ -62,16 +74,24 @@ export default function Footer() {
             <h1>Support</h1>
             <ul>
               <li>
-                <Link href="../../FAQs">FAQs</Link>
+                <Link href="FAQs" onClick={scrollToTop}>
+                  FAQs
+                </Link>
               </li>
               <li>
-                <Link href="../../privacy-policy">Privacy Policy</Link>
+                <Link href="privacy-policy" onClick={scrollToTop}>
+                  Privacy Policy
+                </Link>
               </li>
               <li>
-                <Link href="../../terms" >Terms & Conditions</Link>
+                <Link href="terms" onClick={scrollToTop}>
+                  Terms & Conditions
+                </Link>
               </li>
               <li>
-                <Link href="../../AML-KYC-policy">AML/KYC Policy</Link>
+                <Link href="AML-KYC-policy" onClick={scrollToTop}>
+                  AML/KYC Policy
+                </Link>
               </li>
             </ul>
           </div>

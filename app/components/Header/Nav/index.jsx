@@ -13,6 +13,13 @@ const FadeInDown = dynamic(() => import("./Framer/FadeInDown"), {
   ssr: false,
 });
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 export default function NavBar() {
   useEffect(() => {
     const navBar = document.querySelector(`.${styles.navBar}`);
@@ -37,7 +44,7 @@ export default function NavBar() {
           {" "}
           <div className={styles.navBar}>
             <div>
-              <Link href="/">
+              <Link href="/" onClick={scrollToTop}>
                 <Image
                   src={logoDark}
                   alt="Bingpay logo"
@@ -51,7 +58,7 @@ export default function NavBar() {
             <div className={styles.navLinks}>
               <span className={styles.links}>
                 {" "}
-                <Link href="../../../business">Business</Link>
+                <Link href="business">Business</Link>
               </span>
               <span className={styles.links}>
                 {" "}
@@ -75,10 +82,10 @@ export default function NavBar() {
                           </Link>
                         </li>
                         <li>
-                          <Link href="../../../about-us">About Us</Link>
+                          <Link href="about-us">About Us</Link>
                         </li>
                         <li>
-                          <Link href="/">Join Our Team</Link>
+                          Join Our Team
                         </li>
                       </ul>
                     </div>{" "}
@@ -87,7 +94,7 @@ export default function NavBar() {
               </span>
               <span className={styles.links}>
                 {" "}
-                <Link href="../../../developers">Developers</Link>
+                <Link href="developers">Developers</Link>
               </span>
               <span className={styles.links}>
                 {" "}
@@ -105,10 +112,10 @@ export default function NavBar() {
                     <div class={styles.dropContent}>
                       <ul>
                         <li>
-                          <Link href="../../../FAQs">FAQs</Link>
+                          <Link href="FAQs">FAQs</Link>
                         </li>
                         <li>
-                          <Link href="../../../contact-us">Contact Us</Link>
+                          <Link href="contact-us">Contact Us</Link>
                         </li>
                       </ul>
                     </div>{" "}

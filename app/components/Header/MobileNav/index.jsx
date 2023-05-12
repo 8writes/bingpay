@@ -39,6 +39,15 @@ export default function MobileNav() {
     setIsVisible(!isVisible);
   }
 
+const scrollToTop = () => {
+  setTimeout(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, 300); // Adjust the delay duration (in milliseconds) as needed
+};
+
   return (
     <div>
       <section className={styles.mobileNav}>
@@ -49,6 +58,7 @@ export default function MobileNav() {
               alt="Bingpay Logo"
               width={120}
               height={120}
+              onClick={scrollToTop}
               // blurDataURL="data:..." automatically provided
               // placeholder="blur" // Optional blur-up while loading
             />
@@ -75,6 +85,7 @@ export default function MobileNav() {
                   alt="Bingpay Logo"
                   width={120}
                   height={120}
+                  onClick={scrollToTop}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
