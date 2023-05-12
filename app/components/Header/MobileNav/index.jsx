@@ -39,14 +39,14 @@ export default function MobileNav() {
     setIsVisible(!isVisible);
   }
 
-const scrollToTop = () => {
-  setTimeout(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, 300); // Adjust the delay duration (in milliseconds) as needed
-};
+  const scrollToTop = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 300); // Adjust the delay duration (in milliseconds) as needed
+  };
 
   return (
     <div>
@@ -123,13 +123,15 @@ const scrollToTop = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="../../../about-us">About Us</Link>
+                      <Link href="/about-us" onClick={toggleVisibility}>
+                        About Us
+                      </Link>
                     </li>
+                    <li>Join Our Team</li>
                     <li>
-                      <Link href="/">Join Our Team</Link>
-                    </li>
-                    <li>
-                      <Link href="../../../developers">Developers</Link>
+                      <Link href="/developers" onClick={toggleVisibility}>
+                        Developers
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -137,10 +139,14 @@ const scrollToTop = () => {
                   <h1>Support</h1>
                   <ul>
                     <li>
-                      <Link href="../../../FAQs">FAQs</Link>
+                      <Link href="/FAQs" onClick={toggleVisibility}>
+                        FAQs
+                      </Link>
                     </li>
                     <li>
-                      <Link href="../../../contact-us">Contact Us</Link>
+                      <Link href="/contact-us" onClick={toggleVisibility}>
+                        Contact Us
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -151,6 +157,7 @@ const scrollToTop = () => {
                       href={
                         "https://apps.apple.com/uy/app/bingpay/id1589089598"
                       }
+                      target="_blank"
                     >
                       <Image
                         src={AppStore}
@@ -167,6 +174,7 @@ const scrollToTop = () => {
                       href={
                         "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
                       }
+                      target="_blank"
                     >
                       <Image
                         src={GooglePlay}
