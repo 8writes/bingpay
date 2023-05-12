@@ -14,10 +14,12 @@ const FadeInDown = dynamic(() => import("./Framer/FadeInDown"), {
 });
 
 const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+  setTimeout(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, 400); // Adjust the delay duration (in milliseconds) as needed
 };
 
 export default function NavBar() {

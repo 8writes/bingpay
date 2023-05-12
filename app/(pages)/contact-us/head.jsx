@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Bingpay | Contact Us</title>
+      <title>Bingpay | Terms & Conditions </title>
     </>
   );
 }

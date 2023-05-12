@@ -3,8 +3,15 @@
   background-color: white;
   font-family: var(--font-space_grotesk);
 }
+
+
 .bannerContext {
-  background-color: rgb(244, 242, 251);
+   background-image: url('/images/bg-pages.svg');
+  background-color: rgb(219, 218, 224);
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-attachment: fixed;
+
 }
 
 .bannerContext h1 {

@@ -14,7 +14,7 @@ const scrollToTop = () => {
       top: 0,
       behavior: "smooth",
     });
-  }, 300); // Adjust the delay duration (in milliseconds) as needed
+  }, 400); // Adjust the delay duration (in milliseconds) as needed
 };
 
 import styles from "./index.module.css";
@@ -60,11 +60,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="about-us">About Us</Link>
+                <Link href="about-us">
+                  About Us
+                </Link>
               </li>{" "}
               <li>Join Our Team</li>
               <li>
-                <Link href="developers" onClick={scrollToTop}>
+                <Link href="developers">
                   Developers
                 </Link>
               </li>
@@ -74,22 +76,22 @@ export default function Footer() {
             <h1>Support</h1>
             <ul>
               <li>
-                <Link href="FAQs" onClick={scrollToTop}>
+                <Link href="FAQs">
                   FAQs
                 </Link>
               </li>
               <li>
-                <Link href="privacy-policy" onClick={scrollToTop}>
+                <Link href="privacy-policy">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="terms" onClick={scrollToTop}>
+                <Link href="terms">
                   Terms & Conditions
                 </Link>
               </li>
               <li>
-                <Link href="AML-KYC-policy" onClick={scrollToTop}>
+                <Link href="AML-KYC-policy">
                   AML/KYC Policy
                 </Link>
               </li>
