@@ -14,7 +14,7 @@ export default function Banner() {
     <div>
       <div className={styles.banner}>
         <div className={styles.bannerContext}>
-          <h1>Terms & Conditions </h1>
+          <h1>Contact Us</h1>
           <p></p>
         </div>
       </div>
