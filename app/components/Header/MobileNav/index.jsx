@@ -109,7 +109,7 @@ export default function MobileNav() {
                 <div className={styles.navList}>
                   <h1>Business</h1>
                   <ul>
-                    <Link href="/">Join Waitlist</Link>
+                    Join Waitlist
                   </ul>
                 </div>{" "}
                 <div className={styles.navList}>
