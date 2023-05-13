@@ -42,7 +42,7 @@ export default function Business() {
             </FadeInUp>
             <span className={styles.heading}>
               <FadeInUp>
-                <h1> Accept payments instantly with Bingpay!</h1>
+                <h1> Accept payments with Bingpay!</h1>
               </FadeInUp>
             </span>
             <span>
