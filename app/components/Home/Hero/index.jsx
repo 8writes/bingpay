@@ -7,12 +7,9 @@ import styles from "./index.module.css";
 import BingHero from "/public/images/bing-hero.png";
 import GooglePlay from "/public/images/google-play.svg";
 import AppStore from "/public/images/app-store.svg";
+import Link from "next/link";
 
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
-  ssr: false,
-});
-
-const FadeInDown = dynamic(() => import("./Framer/FadeInDown"), {
   ssr: false,
 });
 
@@ -26,26 +23,24 @@ export default function Hero() {
       <section className={styles.Hero}>
         <div className={styles.heroBg}>
           <div className={styles.heroLeft}>
-            <FadeInDown>
-              <div>
-                <h1>
-                  Your one stop app for <br></br> everyday{" "}
-                  <span className="">payments.</span>
-                </h1>
+            <div>
+              <h1>
+                Your one stop app for <br></br> everyday{" "}
+                <span className="">payments.</span>
+              </h1>
 
-                <p>
-                  Recharge phones, Buy giftcards, Trade digital assets & Pay
-                  bills in over 50 countries.
-                </p>
-              </div>
-            </FadeInDown>
+              <p>
+                Recharge phones, Buy giftcards, Trade digital assets & Pay bills
+                in over 50 countries.
+              </p>
+            </div>
 
             <div className={styles.heroSocials}>
               {" "}
               <div>
                 {" "}
                 <FadeInUp>
-                  <a
+                  <Link
                     href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}
                   >
                     <Image
@@ -56,12 +51,12 @@ export default function Hero() {
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />{" "}
-                  </a>
+                  </Link>
                 </FadeInUp>
               </div>
               <div>
                 <FadeInUp>
-                  <a
+                  <Link
                     href={
                       "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
                     }
@@ -74,7 +69,7 @@ export default function Hero() {
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />{" "}
-                  </a>
+                  </Link>
                 </FadeInUp>
               </div>{" "}
             </div>
