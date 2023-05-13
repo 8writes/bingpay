@@ -39,7 +39,7 @@
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
   .Hero {
-    padding: 50px 0 0 0;
+    padding: 75px 0 0 0;
   }
 
   .heroBg {
@@ -53,7 +53,7 @@
 
   .Hero h1 {
     font-size: 8.8vw;
-    padding: 20px 0 20px 0;
+    padding: 10px 0 20px 0;
   }
 
   .heroLeft {
@@ -71,7 +71,7 @@
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
   .Hero {
-    padding: 50px 0 0 0;
+    padding: 75px 0 0 0;
   }
 
   .heroBg {
@@ -85,7 +85,7 @@
 
   .Hero h1 {
     font-size: 9vw;
-    padding: 20px 0 20px 0;
+    padding: 10px 0 20px 0;
   }
 
   .heroLeft {
@@ -104,7 +104,7 @@
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
   .Hero {
-    padding: 50px 0 0 0;
+    padding: 75px 0 0 0;
   }
 
   .heroBg {
@@ -118,7 +118,7 @@
 
   .Hero h1 {
     font-size: 9vw;
-    padding: 20px 0 20px 0;
+    padding: 10px 0 20px 0;
   }
 
   .heroLeft {

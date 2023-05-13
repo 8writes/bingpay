@@ -24,8 +24,8 @@ export default function Business() {
               <Image
                 src={Merchant}
                 alt="Download Image"
-                width={500}
-                height={500}
+                width={480}
+                height={480}
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />{" "}
