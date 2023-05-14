@@ -15,10 +15,12 @@ export default function Business() {
     <div>
       <div className={styles.bg}>
         <section className={styles.business}>
-          <span className={styles.introMobile}>
-            <h1>Bingpay for Business 💸</h1>
-          </span>
-
+          <FadeInUp>
+            {" "}
+            <span className={styles.introMobile}>
+              <h1>Bingpay for Business 💸</h1>
+            </span>
+          </FadeInUp>
           <div className={styles.businessImg}>
             <FadeInUp>
               <Image
