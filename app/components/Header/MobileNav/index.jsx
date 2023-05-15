@@ -206,7 +206,7 @@ export default function MobileNav() {
                   <h1>Developers</h1>
                   <ul>
                     <li>
-                      <Link href="/FAQs" onClick={toggleVisibility}>
+                      <Link href="/developers" onClick={toggleVisibility}>
                         <Image
                           src={Text}
                           alt=""
@@ -219,7 +219,10 @@ export default function MobileNav() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/developers" onClick={toggleVisibility}>
+                      <Link
+                        href="https://documenter.getpostman.com/view/17112744/U16nKPpt" target="_blank"
+                        onClick={toggleVisibility}
+                      >
                         <Image
                           src={Code}
                           alt=""
