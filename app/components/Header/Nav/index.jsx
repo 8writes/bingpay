@@ -8,6 +8,11 @@ import { useEffect } from "react";
 import styles from "./index.module.css";
 import logoDark from "/public/images/logo-dark.png";
 import downArrow from "/public/images/down-arrow.svg";
+import Blogger from "/public/images/blogger.svg";
+import Note from "/public/images/note-2.svg";
+import Work from "/public/images/briefcase.svg";
+import Faq from "/public/images/message-search.svg";
+import Support from "/public/images/message-question.svg";
 
 const FadeInDown = dynamic(() => import("./Framer/FadeInDown"), {
   ssr: false,
@@ -67,7 +72,7 @@ export default function NavBar() {
                 <span>Company</span>{" "}
                 <Image
                   src={downArrow}
-                  alt="Bingpay logo"
+                  alt=""
                   width={20}
                   height={20}
                   // blurDataURL="data:..." automatically provided
@@ -78,17 +83,46 @@ export default function NavBar() {
                   <FadeInDown>
                     <div class={styles.dropContent}>
                       <ul>
-                        <li>
-                          <Link href="https://blog.bingpay.ng/" target="_blank">
-                            Blog
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="about-us">About Us</Link>
-                        </li>
-                        <li>
-                          Join Our Team
-                        </li>
+                        {" "}
+                        <Link href="https://blog.bingpay.ng/" target="_blank">
+                          <li>
+                            <Image
+                              src={Blogger}
+                              alt=""
+                              width={22}
+                              height={22}
+                              // blurDataURL="data:..." automatically provided
+                              // placeholder="blur" // Optional blur-up while loading
+                            />
+                            <span>Blog</span>
+                          </li>{" "}
+                        </Link>{" "}
+                        <Link href="about-us">
+                          <li>
+                            <Image
+                              src={Note}
+                              alt=""
+                              width={25}
+                              height={25}
+                              // blurDataURL="data:..." automatically provided
+                              // placeholder="blur" // Optional blur-up while loading
+                            />
+                            <span>About Us</span>
+                          </li>
+                        </Link>
+                        <Link href="/">
+                          <li>
+                            <Image
+                              src={Work}
+                              alt=""
+                              width={25}
+                              height={25}
+                              // blurDataURL="data:..." automatically provided
+                              // placeholder="blur" // Optional blur-up while loading
+                            />
+                            <span>Join Our Team</span>
+                          </li>
+                        </Link>
                       </ul>
                     </div>{" "}
                   </FadeInDown>
@@ -113,12 +147,33 @@ export default function NavBar() {
                   <FadeInDown>
                     <div class={styles.dropContent}>
                       <ul>
-                        <li>
-                          <Link href="FAQs">FAQs</Link>
-                        </li>
-                        <li>
-                          <Link href="contact-us">Contact Us</Link>
-                        </li>
+                        <Link href="FAQs">
+                          {" "}
+                          <li>
+                            <Image
+                              src={Faq}
+                              alt=""
+                              width={25}
+                              height={25}
+                              // blurDataURL="data:..." automatically provided
+                              // placeholder="blur" // Optional blur-up while loading
+                            />
+                            <span> FAQs</span>
+                          </li>
+                        </Link>
+                        <Link href="contact-us">
+                          <li>
+                            <Image
+                              src={Support}
+                              alt=""
+                              width={25}
+                              height={25}
+                              // blurDataURL="data:..." automatically provided
+                              // placeholder="blur" // Optional blur-up while loading
+                            />
+                            Contact Us
+                          </li>
+                        </Link>
                       </ul>
                     </div>{" "}
                   </FadeInDown>
