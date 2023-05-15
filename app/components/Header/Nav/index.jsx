@@ -12,7 +12,9 @@ import Blogger from "/public/images/blogger.svg";
 import Note from "/public/images/note-2.svg";
 import Work from "/public/images/briefcase.svg";
 import Faq from "/public/images/message-search.svg";
-import Support from "/public/images/message-question.svg";
+import Support from "/public/images/headset.svg";
+import Code from "/public/images/code.svg";
+import Text from "/public/images/textalign.svg";
 
 const FadeInDown = dynamic(() => import("./Framer/FadeInDown"), {
   ssr: false,
@@ -51,12 +53,13 @@ export default function NavBar() {
           {" "}
           <div className={styles.navBar}>
             <div>
-              <Link href="/" onClick={scrollToTop}>
+              <Link href="/">
                 <Image
                   src={logoDark}
                   alt="Bingpay logo"
                   width={120}
                   height={120}
+                  onClick={scrollToTop}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -110,13 +113,18 @@ export default function NavBar() {
                             <span>About Us</span>
                           </li>
                         </Link>
-                        <Link href="/">
+                        <Link
+                          href="/"
+                          className={styles.notAllowed}
+                          onClick={scrollToTop}
+                        >
                           <li>
                             <Image
                               src={Work}
                               alt=""
                               width={25}
                               height={25}
+
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
@@ -130,7 +138,50 @@ export default function NavBar() {
               </span>
               <span className={styles.links}>
                 {" "}
-                <Link href="developers">Developers</Link>
+                <span> Developers</span>
+                <Image
+                  src={downArrow}
+                  alt=""
+                  width={20}
+                  height={20}
+                  // blurDataURL="data:..." automatically provided
+                  // placeholder="blur" // Optional blur-up while loading
+                />
+                <div className={styles.dropBg}>
+                  <FadeInDown>
+                    <div class={styles.dropContent}>
+                      <ul>
+                        <Link href="/developers">
+                          {" "}
+                          <li>
+                            <Image
+                              src={Text}
+                              alt=""
+                              width={20}
+                              height={20}
+                              // blurDataURL="data:..." automatically provided
+                              // placeholder="blur" // Optional blur-up while loading
+                            />
+                            <span>Overview</span>
+                          </li>
+                        </Link>
+                        <Link href="https://documenter.getpostman.com/view/17112744/U16nKPpt" target="_blank">
+                          <li>
+                            <Image
+                              src={Code}
+                              alt=""
+                              width={25}
+                              height={25}
+                              // blurDataURL="data:..." automatically provided
+                              // placeholder="blur" // Optional blur-up while loading
+                            />
+                            Documentation
+                          </li>
+                        </Link>
+                      </ul>
+                    </div>{" "}
+                  </FadeInDown>
+                </div>
               </span>
               <span className={styles.links}>
                 {" "}
@@ -158,7 +209,7 @@ export default function NavBar() {
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
-                            <span> FAQs</span>
+                            <span>FAQs</span>
                           </li>
                         </Link>
                         <Link href="contact-us">
