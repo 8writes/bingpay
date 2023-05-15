@@ -11,6 +11,13 @@ import GooglePlay from "/public/images/google-play.svg";
 import AppStore from "/public/images/app-store.svg";
 import OpenNav from "/public/images/mobile-menu-opn.svg";
 import CloseNav from "/public/images/mobile-menu-cls.svg";
+import Blogger from "/public/images/blogger.svg";
+import Note from "/public/images/note-2.svg";
+import Work from "/public/images/briefcase.svg";
+import Faq from "/public/images/message-search.svg";
+import Support from "/public/images/headset.svg";
+import Code from "/public/images/code.svg";
+import Text from "/public/images/textalign.svg";
 
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
@@ -39,6 +46,9 @@ export default function MobileNav() {
     setIsVisible(!isVisible);
   }
 
+  function toggleVisibility() {
+    setIsVisible(!isVisible);
+  }
   const scrollToTop = () => {
     setTimeout(() => {
       window.scrollTo({
@@ -109,7 +119,9 @@ export default function MobileNav() {
                 <div className={styles.navList}>
                   <h1>Business</h1>
                   <ul>
-                    Join Waitlist
+                    <li>
+                      <Link href="/">Join Waitlist </Link>
+                    </li>
                   </ul>
                 </div>{" "}
                 <div className={styles.navList}>
@@ -119,18 +131,42 @@ export default function MobileNav() {
                     <li>
                       {" "}
                       <Link href="https://blog.bingpay.ng/" target="_blank">
-                        Blog
+                        <Image
+                          src={Blogger}
+                          alt=""
+                          width={22}
+                          height={22}
+                          // blurDataURL="data:..." automatically provided
+                          // placeholder="blur" // Optional blur-up while loading
+                        />
+                        <span> Blog</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="/about-us" onClick={toggleVisibility}>
-                        About Us
+                        <Image
+                          src={Note}
+                          alt=""
+                          width={25}
+                          height={25}
+                          // blurDataURL="data:..." automatically provided
+                          // placeholder="blur" // Optional blur-up while loading
+                        />{" "}
+                        <span> About Us</span>
                       </Link>
                     </li>
-                    <li>Join Our Team</li>
+
                     <li>
-                      <Link href="/developers" onClick={toggleVisibility}>
-                        Developers
+                      <Link href="/" onClick={toggleVisibility}>
+                        <Image
+                          src={Work}
+                          alt=""
+                          width={25}
+                          height={25}
+                          // blurDataURL="data:..." automatically provided
+                          // placeholder="blur" // Optional blur-up while loading
+                        />
+                        <span>Join Our Team</span>{" "}
                       </Link>
                     </li>
                   </ul>
@@ -140,12 +176,59 @@ export default function MobileNav() {
                   <ul>
                     <li>
                       <Link href="/FAQs" onClick={toggleVisibility}>
+                        <Image
+                          src={Faq}
+                          alt=""
+                          width={25}
+                          height={25}
+                          // blurDataURL="data:..." automatically provided
+                          // placeholder="blur" // Optional blur-up while loading
+                        />
                         FAQs
                       </Link>
                     </li>
                     <li>
                       <Link href="/contact-us" onClick={toggleVisibility}>
+                        <Image
+                          src={Support}
+                          alt=""
+                          width={25}
+                          height={25}
+                          // blurDataURL="data:..." automatically provided
+                          // placeholder="blur" // Optional blur-up while loading
+                        />
                         Contact Us
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className={styles.navList}>
+                  <h1>Developers</h1>
+                  <ul>
+                    <li>
+                      <Link href="/FAQs" onClick={toggleVisibility}>
+                        <Image
+                          src={Faq}
+                          alt=""
+                          width={25}
+                          height={25}
+                          // blurDataURL="data:..." automatically provided
+                          // placeholder="blur" // Optional blur-up while loading
+                        />
+                        Overview
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/contact-us" onClick={toggleVisibility}>
+                        <Image
+                          src={Support}
+                          alt=""
+                          width={25}
+                          height={25}
+                          // blurDataURL="data:..." automatically provided
+                          // placeholder="blur" // Optional blur-up while loading
+                        />
+                        Documentation
                       </Link>
                     </li>
                   </ul>

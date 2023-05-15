@@ -26,11 +26,17 @@
 
 .navMenu {
   background-color: white;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   padding: 100px 0 0 0;
   z-index: 900;
+  overflow-x: scroll;
+}
+
+body.navMenu {
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .navLinks {
@@ -56,10 +62,16 @@
 }
 
 .navMenu ul li {
-  color: #3b3b3b;
-  font-weight: 500;
+  color: rgb(152, 41, 126);
+  font-weight: 700;
   line-height: 2;
 }
+
+.navMenu ul li a {
+  display: flex;
+  gap: 10px;
+}
+
 .heroSocials {
   display: flex;
   width: fit-content;
@@ -92,7 +104,7 @@
     padding: 0 10px 0 10px;
     max-width: 90%;
     margin: auto;
-    gap: 60px;
+    gap: 70px;
   }
 
   .heroSocials {
@@ -117,7 +129,7 @@
     padding: 0 10px 0 10px;
     max-width: 90%;
     margin: auto;
-    gap: 70px;
+    gap: 80px;
   }
 
   .heroSocials {
@@ -142,7 +154,7 @@
     padding: 0 10px 0 10px;
     max-width: 90%;
     margin: auto;
-    gap: 40px;
+    gap: 70px;
   }
 
   .navList {
@@ -168,9 +180,9 @@
 
   .navLinks {
     padding: 0 10px 0 10px;
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
-    gap: 20px;
+    gap: 90px;
   }
 
   .navList {
