@@ -208,7 +208,7 @@ export default function MobileNav() {
                     <li>
                       <Link href="/FAQs" onClick={toggleVisibility}>
                         <Image
-                          src={Faq}
+                          src={Text}
                           alt=""
                           width={25}
                           height={25}
@@ -219,9 +219,9 @@ export default function MobileNav() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/contact-us" onClick={toggleVisibility}>
+                      <Link href="/developers" onClick={toggleVisibility}>
                         <Image
-                          src={Support}
+                          src={Code}
                           alt=""
                           width={25}
                           height={25}
