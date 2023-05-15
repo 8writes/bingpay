@@ -34,13 +34,8 @@
   overflow-x: scroll;
 }
 
-body.navMenu {
-  height: 100vh;
-  overflow-y: hidden;
-}
-
 .navLinks {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   max-width: 90%;
   margin: auto;
@@ -101,10 +96,11 @@ body.navMenu {
   }
 
   .navLinks {
+    display: grid;
     padding: 0 10px 0 10px;
     max-width: 90%;
     margin: auto;
-    gap: 70px;
+    gap: 50px;
   }
 
   .heroSocials {
@@ -126,10 +122,11 @@ body.navMenu {
   }
 
   .navLinks {
+    display: grid;
     padding: 0 10px 0 10px;
     max-width: 90%;
     margin: auto;
-    gap: 80px;
+    gap: 50px;
   }
 
   .heroSocials {
@@ -151,10 +148,11 @@ body.navMenu {
   }
 
   .navLinks {
+    display: grid;
     padding: 0 10px 0 10px;
     max-width: 90%;
     margin: auto;
-    gap: 70px;
+    gap: 40px;
   }
 
   .navList {
@@ -179,10 +177,11 @@ body.navMenu {
   }
 
   .navLinks {
+    display: flex;
     padding: 0 10px 0 10px;
     max-width: 80%;
     margin: auto;
-    gap: 90px;
+    gap: 50px;
   }
 
   .navList {
@@ -190,8 +189,9 @@ body.navMenu {
   }
   .heroSocials {
     display: flex;
-    width: fit-content;
+    width: 100%;
     margin: auto;
+    justify-content: center;
     gap: 15px;
     padding: 20px 0 20px 0;
   }
