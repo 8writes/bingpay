@@ -70,10 +70,9 @@
   gap: 10px;
 }
 
-
 .dropContent ul li:hover {
-background-color: rgba(224, 184, 219, 0.625);
-border-radius: 10px;
+  background-color: rgba(224, 184, 219, 0.625);
+  border-radius: 10px;
 }
 
 .dropBg {
@@ -91,26 +90,26 @@ border-radius: 10px;
   .navBar {
     padding: 27px 141px 22px 110px;
   }
-   .scrollNav{
-     padding: 26px 141px 21px 110px;
+  .scrollNav {
+    padding: 26px 141px 21px 110px;
   }
-  
-.dropContent {
-  margin: 6px 5px 5px 5px;
-}
+
+  .dropContent {
+    margin: 6px 5px 5px 5px;
+  }
 }
 
 @media (min-width: 1440px) {
   .navBar {
     padding: 40px 202px 30px 161px;
   }
-  .scrollNav{
-     padding: 35px 202px 25px 161px;
+  .scrollNav {
+    padding: 38px 202px 28px 161px;
   }
-  
-.dropContent {
-  margin: 10px 5px 5px 5px;
-}
+
+  .dropContent {
+    margin: 13px 5px 5px 5px;
+  }
 }
 
 /*
