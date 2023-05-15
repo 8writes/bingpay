@@ -51,7 +51,7 @@
 .navMenu h1 {
   font-weight: 700;
   line-height: normal;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: rgb(184, 30, 148);
   padding: 0 0 14px 0;
 }
@@ -60,6 +60,7 @@
   color: rgb(152, 41, 126);
   font-weight: 700;
   line-height: 2;
+  font-size: 1.1em;
 }
 
 .navMenu ul li a {
@@ -108,7 +109,7 @@
     width: fit-content;
     margin: auto;
     gap: 15px;
-    padding: 20px 0 20px 0;
+    padding: 40px 0 100px 0;
   }
 }
 
@@ -134,7 +135,7 @@
     width: fit-content;
     margin: auto;
     gap: 15px;
-    padding: 20px 0 20px 0;
+     padding: 40px 0 100px 0;
   }
 }
 
@@ -163,7 +164,7 @@
     width: fit-content;
     margin: auto;
     gap: 15px;
-    padding: 20px 0 20px 0;
+    padding: 40px 0 100px 0;
   }
 }
 
