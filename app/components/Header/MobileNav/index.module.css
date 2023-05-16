@@ -7,6 +7,7 @@
   justify-content: space-between;
   z-index: 890;
   font-family: var(--font-space_grotesk);
+  overflow: hidden;
 }
 
 .mobileNavInner {
@@ -36,7 +37,7 @@
   position: fixed;
   padding: 100px 0 0 0;
   z-index: 900;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .navLinks {
@@ -80,6 +81,7 @@
   gap: 15px;
   padding: 20px 0 20px 0;
 }
+
 @media (min-width: 1023px) {
   .mobileNav {
     display: none;
