@@ -1,3 +1,4 @@
+
 .mobileNav {
   position: fixed;
   display: flex;
@@ -17,6 +18,10 @@
   z-index: 999;
 }
 
+.disableScroll {
+  overflow: hidden;
+}
+
 .scrollMobileNav {
   width: 100%;
   justify-content: space-between;
@@ -31,7 +36,7 @@
   position: fixed;
   padding: 100px 0 0 0;
   z-index: 900;
-  overflow-x: scroll;
+  overflow: scroll;
 }
 
 .navLinks {

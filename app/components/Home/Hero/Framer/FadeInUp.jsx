@@ -25,7 +25,7 @@ const FadeInUp = ({ children }) => {
       initial="offscreen"
       variants={FadeInUp}
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true, amount: 0 }}
     >
       {children}
     </motion.div>

@@ -65,7 +65,9 @@
   display: flex;
   gap: 10px;
 }
-
+.noscroll{
+  overflow: hidden;
+}
 .dropContent ul li:hover {
   background-color: rgba(224, 184, 219, 0.625);
   border-radius: 10px;

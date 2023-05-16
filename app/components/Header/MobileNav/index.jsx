@@ -19,6 +19,9 @@ import Support from "/public/images/headset.svg";
 import Code from "/public/images/code.svg";
 import Text from "/public/images/textalign.svg";
 
+import "./index.css";
+import Script from "next/script";
+
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
 });
@@ -68,18 +71,22 @@ export default function MobileNav() {
               alt="Bingpay Logo"
               width={120}
               height={120}
-              onClick={scrollToTop}
+
               // blurDataURL="data:..." automatically provided
               // placeholder="blur" // Optional blur-up while loading
             />
           </Link>
         </div>
-        <div onClick={toggleVisibility}>
+        <div
+          id="disableButton"
+          
+        >
           <Image
             src={OpenNav}
             alt="Open Nav"
             width={35}
             height={35}
+            onClick={toggleVisibility}
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
           />
@@ -101,7 +108,11 @@ export default function MobileNav() {
                 />
               </Link>
             </div>
-            <div onClick={toggleVisibility} style={{ padding: "6px" }}>
+            <div
+              id="enableButton"
+              onClick={toggleVisibility}
+              style={{ padding: "6px" }}
+            >
               <Image
                 src={CloseNav}
                 alt="Close Nav"
@@ -115,6 +126,7 @@ export default function MobileNav() {
 
           <div className={styles.navMenu}>
             <FadeInUp>
+              {" "}
               <div className={styles.navLinks}>
                 <div className={styles.navList}>
                   <h1>Business</h1>
@@ -220,7 +232,8 @@ export default function MobileNav() {
                     </li>
                     <li>
                       <Link
-                        href="https://documenter.getpostman.com/view/17112744/U16nKPpt" target="_blank"
+                        href="https://documenter.getpostman.com/view/17112744/U16nKPpt"
+                        target="_blank"
                         onClick={toggleVisibility}
                       >
                         <Image
@@ -275,6 +288,15 @@ export default function MobileNav() {
                 </div>
               </div>{" "}
             </FadeInUp>
+            <Script id="disable-scroll">
+              {`document.getElementById("disableButton").addEventListener("click", function() {
+      document.body.classList.add("disable-scroll");
+    });
+
+    document.getElementById("enableButton").addEventListener("click", function() {
+      document.body.classList.remove("disable-scroll");
+    });`}
+            </Script>
           </div>
         </div>
       </section>
