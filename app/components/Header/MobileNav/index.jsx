@@ -63,17 +63,17 @@ export default function MobileNav() {
   const [isScrollDisabled, setScrollDisabled] = useState(false);
 
   const disableScroll = () => {
-    document.body.classList.add("disable-scroll");
+    document.documentElement.classList.add("disable-scroll");
     setScrollDisabled(true);
   };
 
   const enableScroll = () => {
-    document.body.classList.remove("disable-scroll");
+    document.documentElement.classList.remove("disable-scroll");
     setScrollDisabled(false);
   };
 
   return (
-    <div>
+    <div className={styles.main}>
       <section className={styles.mobileNav}>
         <div>
           <Link href="/">
@@ -88,7 +88,7 @@ export default function MobileNav() {
             />
           </Link>
         </div>
-        <div>
+        <div className={styles.openNav}>
           <Image
             src={OpenNav}
             alt="Open Nav"
@@ -103,7 +103,9 @@ export default function MobileNav() {
           />
         </div>
       </section>
-      <section style={{ display: isVisible ? "block" : "none" }}>
+      <section
+        style={{ display: isVisible ? "block" : "none"}}
+      >
         <div className={styles.navContents}>
           <div className={styles.mobileNavInner}>
             <div>

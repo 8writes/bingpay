@@ -8,6 +8,7 @@
   transition-duration: 100ms;
   z-index: 999;
   font-family: var(--font-space_grotesk);
+   overflow-x: hidden;
 }
 
 .scrollNav {
