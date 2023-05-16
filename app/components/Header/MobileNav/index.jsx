@@ -97,7 +97,6 @@ export default function MobileNav() {
             onClick={() => {
               toggleVisibility();
               disableScroll();
-              scrollToTop();
             }}
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
@@ -126,13 +125,16 @@ export default function MobileNav() {
                 />
               </Link>
             </div>
-            <div onClick={toggleVisibility} style={{ padding: "6px" }}>
+            <div style={{ padding: "6px" }}>
               <Image
                 src={CloseNav}
                 alt="Close Nav"
                 width={20}
                 height={20}
-                onClick={enableScroll}
+                onClick={() => {
+                  toggleVisibility();
+                  enableScroll();
+                }}
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />
