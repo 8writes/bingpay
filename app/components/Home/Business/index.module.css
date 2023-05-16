@@ -1,7 +1,4 @@
 .business {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   background-color: white;
   font-family: var(--font-space_grotesk);
 }
@@ -50,6 +47,9 @@
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
   .business {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 40px 10px 150px 10px;
     margin: 0 auto;
   }
@@ -104,6 +104,9 @@
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
   .business {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 40px 7px 150px 7px;
     margin: 0 auto;
   }
@@ -129,7 +132,7 @@
 
   .heading {
     font-size: 2.5em;
-    padding: 20px 5px 20px 5px; 
+    padding: 20px 5px 20px 5px;
   }
 
   .businessImg {
@@ -159,6 +162,9 @@
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
   .business {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 70px 10px 150px 10px;
     margin: 0 auto;
   }
@@ -213,8 +219,15 @@
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
   .business {
+   display: grid;
+    justify-content: center;
     padding: 40px 10px 150px 10px;
-    margin: 0 auto;
+    margin: auto;
+  }
+
+  .businessImg img {
+    width: 90%;
+    margin: auto;
   }
 
   .businessContext {
@@ -228,6 +241,7 @@
     display: inline-block;
     padding: 5px 20px 5px 20px;
     width: 50%;
+    margin: auto;
     text-align: center;
     font-size: 1.1em;
   }
@@ -235,7 +249,6 @@
   .intro {
     display: none;
   }
- 
 
   .heading {
     font-size: 4em;
@@ -264,7 +277,10 @@
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media only screen and (min-width: 1021px) {
   .business {
-    padding: 30px 110px 230px 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 100px 230px 100px;
   }
 
   .businessContext {
@@ -275,7 +291,7 @@
   }
 
   .businessImg {
-    width: 47%;
+    width: 50%;
     margin: auto;
     padding: 0 20px 0 20px;
   }
@@ -293,7 +309,7 @@
   }
 
   .heading {
-    padding:50px 5px 30px 0;
+    padding: 50px 5px 30px 0;
     font-size: 2.1em;
   }
 
@@ -320,6 +336,8 @@
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   .business {
+    display: flex;
+    flex-wrap: wrap;
     padding: 40px 0 240px 0;
   }
 

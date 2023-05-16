@@ -102,16 +102,16 @@
   }
 
   .navLinks h1 {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
 
   .navLinks p {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .navLinks {
     display: grid;
-    padding: 0 10px 0 10px;
+     padding: 10px 10px 10px 10px;
     max-width: 100%;
     margin: auto;
     gap: 40px;
@@ -135,9 +135,18 @@
     padding: 20px 30px 20px 15px;
   }
 
+  .navLinks h1 {
+    font-size: 1.5em;
+  }
+
+  .navLinks p {
+    font-size: 1em;
+  }
+
+
   .navLinks {
     display: flex;
-    padding: 0 10px 0 10px;
+    padding: 20px 10px 20px 10px;
     max-width: 100%;
     margin: auto;
     gap: 50px;
@@ -168,7 +177,7 @@
 
   .navLinks {
     display: flex;
-    padding: 0 10px 0 10px;
+     padding: 20px 10px 20px 10px;
     max-width: 100%;
     margin: auto;
     gap: 50px;
@@ -198,7 +207,7 @@
 
   .navLinks {
     display: flex;
-    padding: 0 10px 0 10px;
+     padding: 50px 10px 50px 10px;
     max-width: 80%;
     margin: auto;
     gap: 50px;
