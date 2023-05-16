@@ -18,6 +18,7 @@ import Faq from "/public/images/message-search.svg";
 import Support from "/public/images/headset.svg";
 import Code from "/public/images/code.svg";
 import Text from "/public/images/textalign.svg";
+import People from "/public/images/people.svg";
 
 import "./index.css";
 
@@ -51,6 +52,7 @@ export default function MobileNav() {
   function toggleVisibility() {
     setIsVisible(!isVisible);
   }
+  
   const scrollToTop = () => {
     setTimeout(() => {
       window.scrollTo({
@@ -103,9 +105,7 @@ export default function MobileNav() {
           />
         </div>
       </section>
-      <section
-        style={{ display: isVisible ? "block" : "none"}}
-      >
+      <section style={{ display: isVisible ? "block" : "none" }}>
         <div className={styles.navContents}>
           <div className={styles.mobileNavInner}>
             <div>
@@ -151,7 +151,21 @@ export default function MobileNav() {
                   <h1>Business</h1>
                   <ul>
                     <li>
-                      <Link href="/" onClick={enableScroll}>
+                      <Link
+                        href="/business"
+                        onClick={() => {
+                          toggleVisibility();
+                          enableScroll();
+                        }}
+                      >
+                        <Image
+                          src={People}
+                          alt=""
+                          width={22}
+                          height={22}
+                          // blurDataURL="data:..." automatically provided
+                          // placeholder="blur" // Optional blur-up while loading
+                        />
                         Join Waitlist{" "}
                       </Link>
                     </li>
