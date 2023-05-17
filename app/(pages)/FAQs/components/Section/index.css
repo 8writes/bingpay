@@ -5,6 +5,7 @@ summary {
 summary::marker {
   content: none;
 }
+
 summary::before,
 summary::after {
   content: "";
@@ -53,8 +54,12 @@ summary {
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
-  summary::before,
-  summary::after {
+    
+summary::marker {
+  content: none;
+}
+ 
+  summary {
     padding: 1.5rem 1em 1.5rem 0;
     font-size: 1.1rem;
   }
@@ -65,6 +70,11 @@ summary {
 
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
+    
+summary::marker {
+  content: none;
+}
+
   summary {
     padding: 1.5rem 1em 1.5rem 0;
     font-size: 1.2rem;
@@ -76,6 +86,11 @@ summary {
 
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
+    
+summary::marker {
+  content: none;
+}
+
   summary {
     padding: 1.5rem 2em 1.5rem 0;
     font-size: 1.3rem;
