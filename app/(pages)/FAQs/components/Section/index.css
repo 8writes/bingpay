@@ -2,34 +2,8 @@
 summary {
   position: relative;
 }
-
-summary::marker {
-  content: none;
-}
-
-summary::before,
-summary::after {
-  content: "";
-}
-summary::before,
-summary::after {
-  width: 0.7em;
-  height: 0;
-  font-size: 1.5em;
-  color: rgb(184, 30, 148);
-  border: 1.5px solid;
-  position: absolute;
-  top: calc(50% - 1px);
-  right: 0;
-  transform: translateY(-50%);
-}
-summary::after {
-  transform: rotate(90deg);
-  transform-origin: 50% 50%;
-  transition: 200ms;
-}
-[open] summary::after {
-  transform: rotate(0deg);
+summary::marker{
+   content: "ㅤ";
 }
 
 details {
@@ -56,9 +30,6 @@ summary {
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
     
-summary::marker {
-  content: none;
-}
  
   summary {
     padding: 1.5rem 1em 1.5rem 0;
@@ -72,9 +43,6 @@ summary::marker {
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
     
-summary::marker {
-  content: none;
-}
 
   summary {
     padding: 1.5rem 1em 1.5rem 0;
@@ -88,9 +56,6 @@ summary::marker {
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
     
-summary::marker {
-  content: none;
-}
 
   summary {
     padding: 1.5rem 2em 1.5rem 0;
