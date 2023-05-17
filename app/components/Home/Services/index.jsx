@@ -20,7 +20,6 @@ export default function Services() {
   return (
     <div>
       <section className={styles.services}>
-     
         <FadeInUp>
           <section className={styles.serviceIntro}>
             <div>

@@ -36,7 +36,7 @@
   max-width: 350px;
   gap: 15px;
   background-image: url("/images/bg-list.png");
-  background-color: rgb(246, 245, 251);
+  background-color: rgba(238, 238, 238, 0.309);
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 20px;

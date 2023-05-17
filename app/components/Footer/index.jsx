@@ -112,7 +112,7 @@ export default function Footer() {
               <ul>
                 <li>
                   {" "}
-                  <a href="https://www.instagram.com/bingpay/" target="_blank">
+                  <Link href="https://www.instagram.com/bingpay/" target="_blank">
                     <Image
                       src={instagram}
                       alt="list"
@@ -121,11 +121,11 @@ export default function Footer() {
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="https://twitter.com/bingpayng" target="_blank">
+                  <Link href="https://twitter.com/bingpayng" target="_blank">
                     <Image
                       src={twitter}
                       alt="list"
@@ -134,11 +134,11 @@ export default function Footer() {
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   {" "}
-                  <a
+                  <Link
                     href="https://web.facebook.com/Bingpayng/?_rdc=1&_rdr"
                     target="_blank"
                   >
@@ -150,7 +150,7 @@ export default function Footer() {
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
