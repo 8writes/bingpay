@@ -23,7 +23,7 @@ export default function Services() {
         <FadeInUp>
           <section className={styles.serviceIntro}>
             <div>
-              <h1>Value for money</h1>
+              <h1>Our Products</h1>
             </div>
             <FadeInUp>
               <div>
