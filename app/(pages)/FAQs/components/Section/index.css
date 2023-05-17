@@ -50,3 +50,70 @@ summary {
   cursor: pointer;
   color: rgb(184, 30, 148);
 }
+
+/* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
+@media (max-width: 373px) {
+  summary::before,
+  summary::after {
+    padding: 1.5rem 1em 1.5rem 0;
+    font-size: 1.1rem;
+  }
+  details {
+    padding: 0 0.5rem;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
+@media (min-width: 374px) {
+  summary {
+    padding: 1.5rem 1em 1.5rem 0;
+    font-size: 1.2rem;
+  }
+  details {
+    padding: 0 1rem;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
+@media (min-width: 425px) {
+  summary {
+    padding: 1.5rem 2em 1.5rem 0;
+    font-size: 1.3rem;
+  }
+  details {
+    padding: 0 1rem;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
+@media (min-width: 768px) {
+  summary {
+    padding: 1.5rem 1em 1.5rem 0;
+    font-size: 1.4rem;
+  }
+  details {
+    padding: 0 2rem;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
+@media (min-width: 1024px) {
+  summary {
+    padding: 1.5rem 1em 1.5rem 0;
+    font-size: 1.4rem;
+  }
+  details {
+    padding: 0 2rem;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
+@media (min-width: 1440px) {
+  summary {
+    padding: 1.5rem 1em 1.5rem 0;
+    font-size: 1.5rem;
+  }
+  details {
+    padding: 0 2rem;
+  }
+}
