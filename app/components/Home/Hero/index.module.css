@@ -12,6 +12,8 @@
   flex-wrap: wrap;
   width: 100%;
   margin: auto;
+  
+  background-image: url("/images/bg-pages.svg");
 }
 
 .Hero h1 {

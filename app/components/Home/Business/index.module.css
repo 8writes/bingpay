@@ -34,7 +34,7 @@
 }
 
 .businessContext p {
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   color: #4b494b;
 }
@@ -140,7 +140,7 @@
   }
 
   .businessContext p {
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 2;
     text-align: start;
     padding: 20px 15px 20px 15px;
@@ -280,7 +280,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 30px 100px 230px 100px;
+    padding: 30px 50px 230px 50px;
   }
 
   .businessContext {
@@ -338,7 +338,7 @@
   .business {
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 0 240px 0;
+    padding: 80px 0 250px 0;
   }
 
   .businessContext {

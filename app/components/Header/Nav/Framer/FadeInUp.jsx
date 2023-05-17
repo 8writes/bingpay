@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 
 const FadeInUp = ({ children }) => {
   const FadeInUp = {
@@ -21,14 +22,16 @@ const FadeInUp = ({ children }) => {
   };
 
   return (
-    <motion.div
-      initial="offscreen"
-      variants={FadeInUp}
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0 }}
-    >
-      {children}
-    </motion.div>
+    <LazyMotion features={domAnimation}>
+      <motion.div
+        initial="offscreen"
+        variants={FadeInUp}
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0 }}
+      >
+        {children}
+      </motion.div>
+    </LazyMotion>
   );
 };
 

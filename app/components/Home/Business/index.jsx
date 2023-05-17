@@ -52,7 +52,7 @@ export default function Business() {
             <span>
               <FadeInUp>
                 <p>
-                  With Bingpay business, you can accept payment with your
+                  Bingpay business allows you can accept payments with your
                   merchant ID, make bulk transactions with discounts, get access
                   to our developer APIs and reach more audience with SMS
                   marketing.
