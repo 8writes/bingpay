@@ -7,6 +7,7 @@
   z-index: 888;
   font-family: var(--font-space_grotesk);
   overflow-x: hidden !important;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
 
 .mobileNavInner {
