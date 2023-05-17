@@ -2,9 +2,6 @@
 summary {
   position: relative;
 }
-summary::marker{
-   content: "ㅤ";
-}
 
 details {
   box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.153),
@@ -91,7 +88,7 @@ summary {
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   summary {
-    padding: 1.5rem 1em 1.5rem 0;
+    padding: 2rem 1rem 2rem 0;
     font-size: 1.5rem;
   }
   details {
