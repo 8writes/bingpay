@@ -1,11 +1,23 @@
 .downloadApp {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(184, 30, 148);
+  background: rgb(184, 30, 148); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(180, 41, 148),
+    rgb(184, 30, 148),
+    rgb(138, 14, 109)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgb(173, 40, 142),
+    rgb(148, 25, 119),
+    rgb(128, 10, 100)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
-    0 6px 20px 0 rgba(183, 182, 182, 0.224);
-    font-family: var(--font-space_grotesk);
+  box-shadow: 0 4px 8px 0 rgba(173, 173, 173, 0.501),
+    0 6px 20px 0 rgba(222, 222, 222, 0.312);
+  font-family: var(--font-space_grotesk);
 }
 
 .downloadApp h1 {
@@ -37,8 +49,6 @@
     flex-wrap: wrap;
     background-color: rgb(184, 30, 148);
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
-      0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 60px;
 
@@ -81,8 +91,6 @@
     flex-wrap: wrap;
     background-color: rgb(184, 30, 148);
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
-      0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 60px;
 
@@ -125,8 +133,6 @@
     flex-wrap: wrap;
     background-color: rgb(184, 30, 148);
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
-      0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 60px;
 
@@ -169,8 +175,6 @@
     flex-wrap: wrap;
     background-color: rgb(184, 30, 148);
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
-      0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 60px;
     max-width: 100%;
@@ -213,8 +217,6 @@
     flex-wrap: wrap;
     background-color: rgb(184, 30, 148);
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
-      0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 120px;
     max-width: 100%;
@@ -260,8 +262,6 @@
     flex-wrap: wrap;
     background-color: rgb(184, 30, 148);
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(157, 155, 155, 0.401),
-      0 6px 20px 0 rgba(183, 182, 182, 0.224);
     position: relative;
     bottom: 100px;
     max-width: 100%;
