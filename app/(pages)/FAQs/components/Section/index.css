@@ -1,6 +1,7 @@
 summary {
   position: relative;
 }
+
 summary::marker {
   content: none;
 }
@@ -114,5 +115,12 @@ summary {
   }
   details {
     padding: 0 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  summary::before,
+  summary::after {
+    display: none; /* Hide the marker on mobile */
   }
 }
