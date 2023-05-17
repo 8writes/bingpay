@@ -70,6 +70,7 @@
 .navMenu ul li a {
   display: flex;
   gap: 10px;
+  padding: 6px 0 6px 0;
 }
 
 .heroSocials {
@@ -139,10 +140,10 @@
     font-size: 1.5em;
   }
 
-  .navLinks p {
-    font-size: 1em;
-  }
 
+.navMenu ul li a {
+  font-size: 1rem;
+}
 
   .navLinks {
     display: flex;
@@ -153,7 +154,7 @@
   }
 
   .navList {
-    padding: 0 5px 0 5px;
+    padding: 5px 5px 5px 5px;
   }
 
   .heroSocials {
