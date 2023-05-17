@@ -4,8 +4,8 @@ summary {
 }
 
 details {
-  box-shadow: 4px 4px 8px 4px rgba(164, 164, 164, 0.153),
-    4px 6px 20px 4px rgba(183, 182, 182, 0.073);
+  box-shadow: 4px 4px 8px 4px rgba(194, 194, 194, 0.086),
+    4px 6px 20px 4px rgba(202, 202, 202, 0.059);
   background: white;
   border-radius: 5px;
   margin: 0 0 20px 0;
@@ -30,10 +30,10 @@ summary {
  
   summary {
     padding: 1.7rem 1em 1.7rem 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   details {
-    padding: 0 0.5rem;
+    padding: 0 1rem;
   }
 }
 
@@ -46,7 +46,7 @@ summary {
     font-size: 1.2rem;
   }
   details {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 }
 
@@ -59,7 +59,7 @@ summary {
     font-size: 1.3rem;
   }
   details {
-    padding: 0 1rem;
+    padding: 0 1.4rem;
   }
 }
 
@@ -67,10 +67,10 @@ summary {
 @media (min-width: 768px) {
   summary {
     padding: 1.7rem 1em 1.7rem 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   details {
-    padding: 0 2rem;
+    padding: 0 2.5rem;
   }
 }
 
@@ -78,10 +78,10 @@ summary {
 @media (min-width: 1024px) {
   summary {
     padding: 1.7rem 1em 1.7rem 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   details {
-    padding: 0 2rem;
+    padding: 0 2.5rem;
   }
 }
 
@@ -92,6 +92,6 @@ summary {
     font-size: 1.5rem;
   }
   details {
-    padding: 0 2rem;
+    padding: 0 2.5rem;
   }
 }

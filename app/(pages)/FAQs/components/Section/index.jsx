@@ -30,7 +30,7 @@ export default function Section() {
             <FadeInUp>
               <details>
                 <summary>
-                  How safe is my Money and Personal information ?
+                 Is my Money safe?
                 </summary>
                 <p>
                   Bingpay do not give database access to third parties. This
