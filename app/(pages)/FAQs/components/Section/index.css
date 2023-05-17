@@ -119,8 +119,8 @@ summary {
 }
 
 @media (max-width: 767px) {
-  summary::before,
-  summary::after {
+  summary::marker::before,
+  summary::marker::after {
     display: none; /* Hide the marker on mobile */
   }
 }
