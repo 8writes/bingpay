@@ -40,7 +40,19 @@
 }
 
 .btn button {
-  background-color: rgb(184, 30, 148);
+  background: rgb(184, 30, 148); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(184, 43, 151),
+    rgb(184, 38, 150),
+    rgb(153, 34, 126)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgb(173, 40, 142),
+    rgb(163, 35, 134),
+    rgb(173, 33, 141)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
 
@@ -219,7 +231,7 @@
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
   .business {
-   display: grid;
+    display: grid;
     justify-content: center;
     padding: 40px 10px 150px 10px;
     margin: auto;
@@ -328,8 +340,19 @@
   }
 
   .btn button:hover {
-    background-color: rgb(139, 70, 123);
-    color: white;
+    background: rgb(184, 30, 148); /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(163, 36, 133),
+      rgb(154, 33, 126),
+      rgb(169, 46, 141)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgb(154, 35, 126),
+      rgb(168, 38, 138),
+      rgb(169, 46, 141)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
 
@@ -378,15 +401,27 @@
 
   .btn button {
     background-color: rgb(184, 30, 148);
-    padding: 10px 0 10px 0;
-    width: 14.5vw;
+    padding: 15px 20px 15px 20px;
+    width: 12vw;
     margin: 20px 0 10px 0;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 1em;
+    font-weight: 700;
   }
 
   .btn button:hover {
-    background-color: rgb(139, 70, 123);
-    color: white;
+    background: rgb(184, 30, 148); /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(163, 36, 133),
+      rgb(154, 33, 126),
+      rgb(169, 46, 141)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgb(154, 35, 126),
+      rgb(168, 38, 138),
+      rgb(169, 46, 141)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
