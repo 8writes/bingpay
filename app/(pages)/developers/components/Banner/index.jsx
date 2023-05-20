@@ -26,7 +26,7 @@ export default function Hero() {
               <h1>Seamless Integrations with Bingpay APIs.</h1>
 
               <p>
-                Our well-documented APIs lets you create and launch simple or
+                Our well-documented APIs lets you build and launch simple or
                 complex financial products.
               </p>
             </div>
