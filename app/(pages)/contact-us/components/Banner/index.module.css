@@ -5,16 +5,15 @@
 }
 
 .bannerContext {
-  background-image: url("/images/bg-pages.svg");
-  background-color: rgb(219, 218, 224);
+  background-color: #F4F2FB;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: cover; 
 }
 
 .bannerContext h1 {
   color: rgb(184, 30, 148);
 }
+
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
