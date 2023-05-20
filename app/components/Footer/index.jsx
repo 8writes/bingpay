@@ -64,7 +64,7 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>{" "}
-              <li>Join Our Team</li>
+    
               <li>
                 <Link href="developers">
                   Developers

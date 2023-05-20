@@ -52,7 +52,7 @@ export default function MobileNav() {
   function toggleVisibility() {
     setIsVisible(!isVisible);
   }
-  
+
   const scrollToTop = () => {
     setTimeout(() => {
       window.scrollTo({
@@ -210,26 +210,6 @@ export default function MobileNav() {
                           // placeholder="blur" // Optional blur-up while loading
                         />{" "}
                         <span> About Us</span>
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        href="/"
-                        onClick={() => {
-                          toggleVisibility();
-                          enableScroll();
-                        }}
-                      >
-                        <Image
-                          src={Work}
-                          alt=""
-                          width={25}
-                          height={25}
-                          // blurDataURL="data:..." automatically provided
-                          // placeholder="blur" // Optional blur-up while loading
-                        />
-                        <span>Join Our Team</span>{" "}
                       </Link>
                     </li>
                   </ul>

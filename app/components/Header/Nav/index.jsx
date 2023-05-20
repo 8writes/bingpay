@@ -113,24 +113,7 @@ export default function NavBar() {
                             <span>About Us</span>
                           </li>
                         </Link>
-                        <Link
-                          href="/"
-                          className={styles.notAllowed}
-                          onClick={scrollToTop}
-                        >
-                          <li>
-                            <Image
-                              src={Work}
-                              alt=""
-                              width={25}
-                              height={25}
-
-                              // blurDataURL="data:..." automatically provided
-                              // placeholder="blur" // Optional blur-up while loading
-                            />
-                            <span>Join Our Team</span>
-                          </li>
-                        </Link>
+                       
                       </ul>
                     </div>{" "}
                   </FadeInDown>
