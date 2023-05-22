@@ -4,246 +4,503 @@
   font-family: var(--font-space_grotesk);
 }
 
-.sectionContext h1 {
-  color: black;
+.sectionListL {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  justify-content: center;
 }
 
+.sectionListR {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.sectionContextL h1 {
+  font-weight: 800;
+  color: rgb(184, 30, 148);
+  line-height: 1.5;
+}
+
+.sectionContextL p {
+  font-weight: 500;
+  color: #3b3b3b;
+  line-height: 1.9;
+}
+
+.sectionContextR h1 {
+  font-weight: 800;
+  color: rgb(184, 30, 148);
+  line-height: 1.5;
+}
+
+.sectionContextR p {
+  font-weight: 500;
+  color: #3b3b3b;
+  line-height: 1.9;
+}
+
+.sectionLink p {
+  font-weight: 600;
+  text-decoration: underline;
+  color: rgb(184, 30, 148);
+}
+
+.sectionLink {
+  display: flex;
+}
+
+.sectionIntro {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.sectionIntro h1 {
+  font-weight: 800;
+  color: rgb(184, 30, 148);
+  line-height: 1.5;
+}
+
+.sectionIntro p {
+  font-weight: 500;
+  color: #3b3b3b;
+  line-height: 1.9;
+}
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
   .section {
-    padding: 50px 15px 100px 15px;
+    padding: 0 0 50px 0;
   }
 
-  .sectionContext {
-    padding: 25px 0 40px 0;
+  .sectionListL {
+    gap: 5px;
+    padding: 0px 10px 100px 10px;
+  }
+
+  .sectionListR {
+    gap: 5px;
+    padding: 0px 10px 100px 10px;
+  }
+
+  .sectionImgL {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .sectionContextL {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .sectionContextL h1 {
+    font-size: 1.7rem;
+    padding: 5px 0 5px 20px;
+  }
+
+  .sectionContextL p {
+    font-size: 1rem;
+    padding: 5px 5px 5px 20px;
+  }
+
+  .sectionImgR {
+    max-width: 100%;
+  }
+
+  .sectionContextR {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sectionContextR h1 {
+    font-size: 1.7rem;
+    padding: 5px 0 5px 20px;
+  }
+
+  .sectionContextR p {
+    font-size: 1rem;
+    padding: 5px 5px 5px 20px;
+  }
+
+  .sectionLink {
     width: 100%;
-    height: 50%;
-    margin: auto;
-    text-align: start;
+  }
+  .sectionIntro {
+    padding: 50px 0 100px 0;
   }
 
-  .sectionContext ol {
-    list-style-type: lower-alpha;
-    padding: 10px 0 0 30px;
+  .sectionIntro h1 {
+    font-size: 2rem;
   }
 
-  .sectionContext h1 {
-    font-size: 1.4em;
-    font-weight: 700;
-    padding: 30px 0 5px 0;
+  .sectionIntro p {
+    font-size: 0.9rem;
+    padding: 0 10px 0 10px;
   }
-
-  .sectionContext p {
-    font-size: 1em;
-    font-weight: 600;
-    line-height: 2;
-  }
-
-  
-  .alert{
-     padding: 100px 0 200px 0;
-  }
-  
-  .alert img{
-    width: 75%;
-    margin: auto;
-  }
-
 }
 
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
- .section {
-    padding: 50px 20px 100px 20px;
+  .section {
+    padding: 0 0 50px 0;
   }
 
-  .sectionContext {
-    padding: 25px 0 40px 0;
+  .sectionListL {
+    gap: 5px;
+    padding: 0px 20px 100px 20px;
+  }
+
+  .sectionListR {
+    gap: 5px;
+    padding: 0px 20px 100px 20px;
+  }
+
+  .sectionImgL {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .sectionContextL {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .sectionContextL h1 {
+    font-size: 1.7rem;
+    padding: 5px 0 5px 20px;
+  }
+
+  .sectionContextL p {
+    font-size: 1rem;
+    padding: 5px 5px 5px 20px;
+  }
+
+  .sectionImgR {
+    max-width: 100%;
+  }
+
+  .sectionContextR {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sectionContextR h1 {
+    font-size: 1.7rem;
+    padding: 5px 0 5px 20px;
+  }
+
+  .sectionContextR p {
+    font-size: 1rem;
+    padding: 5px 5px 5px 20px;
+  }
+
+  .sectionLink {
     width: 100%;
-    height: 50%;
-    margin: auto;
-    text-align: start;
+  }
+  .sectionIntro {
+    padding: 50px 0 100px 0;
   }
 
-  .sectionContext ol {
-    list-style-type: lower-alpha;
-    padding: 10px 0 0 30px;
+  .sectionIntro h1 {
+    font-size: 2rem;
   }
 
-  .sectionContext h1 {
-    font-size: 1.4em;
-    font-weight: 700;
-    padding: 30px 0 5px 0;
+  .sectionIntro p {
+    font-size: 0.9rem;
+    padding: 0 10px 0 10px;
   }
-
-  .sectionContext p {
-    font-size: 1em;
-    font-weight: 600;
-    line-height: 2;
-  }
-
-  .alert{
-     padding: 100px 0 200px 0;
-  }
-  
-  .alert img{
-    width: 75%;
-    margin: auto;
-  }
-
 }
 
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
- .section {
-    padding: 50px 20px 100px 20px;
+  .section {
+    padding: 0 0 50px 0;
   }
 
-  .sectionContext {
-    padding: 25px 0 40px 0;
+  .sectionListL {
+    gap: 5px;
+    padding: 0px 20px 100px 20px;
+  }
+
+  .sectionListR {
+    gap: 5px;
+    padding: 0px 20px 100px 20px;
+  }
+
+  .sectionImgL {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .sectionContextL {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .sectionContextL h1 {
+    font-size: 1.7rem;
+    padding: 5px 0 5px 20px;
+  }
+
+  .sectionContextL p {
+    font-size: 1rem;
+    padding: 5px 5px 5px 20px;
+  }
+
+  .sectionImgR {
+    max-width: 100%;
+  }
+
+  .sectionContextR {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sectionContextR h1 {
+    font-size: 1.7rem;
+    padding: 5px 0 5px 20px;
+  }
+
+  .sectionContextR p {
+    font-size: 1rem;
+    padding: 5px 5px 5px 20px;
+  }
+
+  .sectionLink {
     width: 100%;
-    height: 50%;
-    margin: auto;
-    text-align: start;
+  }
+  .sectionIntro {
+    padding: 50px 0 100px 0;
   }
 
-  .sectionContext ol {
-    list-style-type: lower-alpha;
-    padding: 10px 0 0 30px;
+  .sectionIntro h1 {
+    font-size: 2rem;
   }
 
-  .sectionContext h1 {
-    font-size: 1.4em;
-    font-weight: 700;
-    padding: 30px 0 5px 0;
-  }
-
-  .sectionContext p {
-    font-size: 1em;
-    font-weight: 600;
-    line-height: 2;
-  }
-
-  .alert{
-     padding: 100px 0 200px 0;
-  }
-  
-  .alert img{
-    width: 60%;
-    margin: auto;
+  .sectionIntro p {
+    font-size: 0.9rem;
+    padding: 0 10px 0 10px;
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
   .section {
-    padding: 50px 20px 100px 20px;
+    padding: 0 0 50px 0;
   }
 
-  .sectionContext {
-    padding: 25px 20px 40px 20px;
+  .sectionListL {
+    gap: 5px;
+    padding: 0px 20px 100px 20px;
+  }
+
+  .sectionListR {
+    gap: 5px;
+    padding: 0px 20px 100px 20px;
+  }
+
+  .sectionImgL {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .sectionContextL {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .sectionContextL h1 {
+    font-size: 1.7rem;
+    padding: 5px 0 5px 20px;
+  }
+
+  .sectionContextL p {
+    font-size: 1rem;
+    padding: 5px 5px 5px 20px;
+  }
+
+  .sectionImgR {
+    max-width: 100%;
+  }
+
+  .sectionContextR {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sectionContextR h1 {
+    font-size: 1.7rem;
+    padding: 5px 0 5px 20px;
+  }
+
+  .sectionContextR p {
+    font-size: 1rem;
+    padding: 5px 5px 5px 20px;
+  }
+
+  .sectionLink {
     width: 100%;
-    height: 50%;
-    margin: auto;
-    text-align: start;
+  }
+  .sectionIntro {
+    padding: 50px 0 100px 0;
   }
 
-  .sectionContext ol {
-    list-style-type: lower-alpha;
-    padding: 10px 0 0 30px;
+  .sectionIntro h1 {
+    font-size: 2rem;
   }
 
-  .sectionContext h1 {
-    font-size: 1.4em;
-    font-weight: 700;
-    padding: 30px 0 5px 0;
-  }
-
-  .sectionContext p {
-    font-size: 1em;
-    font-weight: 600;
-    line-height: 2;
-  }
-
-  .alert{
-     padding: 100px 0 200px 0;
-  }
-  
-  .alert img{
-    width: 40%;
-    margin: auto;
+  .sectionIntro p {
+    font-size: 0.9rem;
+    padding: 0 10px 0 10px;
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
   .section {
-    padding: 50px 20px 100px 20px;
+    padding: 0 0 100px 0;
   }
 
-  .sectionContext {
-    padding: 50px 20px 100px 20px;
-    width: 80%;
-    height: 50%;
-    margin: auto;
-    text-align: start;
+  .sectionListL {
+    gap: 150px;
+    padding: 50px 0 50px 0;
   }
 
-  .sectionContext h1 {
-    font-size: 1.4em;
-    font-weight: 700;
-    padding: 30px 0 5px 0;
+  .sectionListR {
+    gap: 150px;
   }
 
-  .sectionContext p {
-    font-size: 1em;
-    font-weight: 600;
-    line-height: 2;
+  .sectionImgL {
+    max-width: 50%;
+    margin: 0;
   }
 
-  .alert{
-     padding: 100px 0 200px 0;
-  }
-  
-  .alert img{
-    width: 25%;
-    margin: auto;
+  .sectionContextL {
+    max-width: 30%;
+    padding: 50px 0 0 0;
   }
 
+  .sectionContextL h1 {
+    font-size: 2.7vw;
+    padding: 0;
+  }
+
+  .sectionContextL p {
+    font-size: 1rem;
+    padding: 5px 0 5px 0;
+  }
+
+  .sectionImgR {
+    max-width: 50%;
+  }
+
+  .sectionContextR {
+    max-width: 30%;
+    margin: 0;
+    padding: 70px 0 0 0;
+  }
+
+  .sectionContextR h1 {
+    font-size: 2.7vw;
+    padding: 0;
+  }
+
+  .sectionContextR p {
+    font-size: 1rem;
+    padding: 5px 0 5px 0;
+  }
+
+  .sectionLink {
+    width: 100%;
+  }
+  .sectionIntro {
+    padding: 50px 0 50px 0;
+  }
+
+  .sectionIntro h1 {
+    font-size: 3vw;
+  }
+
+  .sectionIntro p {
+    font-size: 1rem;
+  }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
   .section {
-    padding: 50px 20px 100px 20px;
+    padding: 0 0 100px 0;
+    flex-direction: row;
   }
 
-  .sectionContext {
-    padding: 50px 20px 100px 20px;
-    width: 80%;
-    height: 50%;
-    margin: auto;
-    text-align: start;
+  .sectionListL {
+    gap: 200px;
+    padding: 50px 0 50px 0;
   }
 
-  .sectionContext h1 {
-    font-size: 1.5em;
-    font-weight: 600;
-    padding: 30px 0 5px 0;
+  .sectionListR {
+    gap: 200px;
   }
 
-  .sectionContext p {
-    font-size: 1em;
-    font-weight: 600;
-    line-height: 2;
-  }
-  
-  .alert{
-     padding: 100px 0 200px 0;
+  .sectionImgL {
+    max-width: 50%;
+    margin: 0;
   }
 
-  .alert img{
-    width: 25%;
-    margin: auto;
+  .sectionContextL {
+    max-width: 30%;
+    padding: 50px 0 0 0;
+  }
+
+  .sectionContextL h1 {
+    font-size: 2.7vw;
+    padding: 0;
+  }
+
+  .sectionContextL p {
+    font-size: 1rem;
+    padding: 5px 0 5px 0;
+  }
+
+  .sectionImgR {
+    max-width: 50%;
+  }
+
+  .sectionContextR {
+    max-width: 30%;
+    margin: 0;
+    padding: 70px 0 0 0;
+  }
+
+  .sectionContextR h1 {
+    font-size: 2.7vw;
+    padding: 0;
+  }
+
+  .sectionContextR p {
+    font-size: 1rem;
+    padding: 5px 0 5px 0;
+  }
+
+  .sectionLink {
+    width: 100%;
+  }
+  .sectionIntro {
+    padding: 50px 0 50px 0;
+  }
+
+  .sectionIntro h1 {
+    font-size: 3vw;
+  }
+
+  .sectionIntro p {
+    font-size: 1.1rem;
+    padding: 5px 0 5px 0;
   }
 }

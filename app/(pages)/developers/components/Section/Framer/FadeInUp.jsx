@@ -12,9 +12,9 @@ const FadeInUp = ({ children }) => {
      opacity: 1,
      transition: {
        type: "spring",
-       bounce: 0.3,
+       bounce: 0,
        duration: 1.1,
-       delay: 0.1,
+       delay: 0.2,
        ease: [0, 0.71, 0.2, 1.01],
      },
    },
