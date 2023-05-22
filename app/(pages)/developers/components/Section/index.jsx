@@ -50,7 +50,7 @@ export default function Section() {
             <picture className={styles.sectionImgL}>
               <FadeInLeft>
                 <Image
-                  src={Cash}
+                  src={Bills}
                   alt="bills image"
                   width={350}
                   height={350}

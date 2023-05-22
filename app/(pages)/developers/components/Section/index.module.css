@@ -374,6 +374,7 @@
 
   .sectionListR {
     gap: 150px;
+    padding: 40px 0 40px 0;
   }
 
   .sectionImgL {
@@ -383,7 +384,7 @@
 
   .sectionContextL {
     max-width: 30%;
-    padding: 50px 0 0 0;
+    padding: 60px 0 0 0;
   }
 
   .sectionContextL h1 {
@@ -446,6 +447,7 @@
 
   .sectionListR {
     gap: 200px;
+    padding: 40px 0 40px 0;
   }
 
   .sectionImgL {
