@@ -52,6 +52,9 @@
   font-weight: 500;
   color: rgb(115, 115, 115);
 }
+.link {
+  text-decoration: underline;
+}
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
@@ -345,7 +348,7 @@
   .footerList ul li:hover {
     color: rgb(184, 30, 148);
   }
-  
+
   .footerBottom {
     padding: 10px 0 50px 0;
   }

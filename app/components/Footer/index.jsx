@@ -104,7 +104,7 @@ export default function Footer() {
               11 Ada George Road, <br></br> Port Hacourt, NG 500027.
             </p>
             <ul>
-              <li>
+              <li className={styles.link}>
                 <a href="mailto:hello@bingpay.ng">hello@bingpay.ng</a>
               </li>
             </ul>
