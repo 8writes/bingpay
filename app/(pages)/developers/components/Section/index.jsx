@@ -41,7 +41,7 @@ export default function Section() {
               {" "}
               <h1>What do we Offer?</h1>
               <p>
-                We Simplify, secure and speed up your backend processes with our
+                Simplify, secure and speed up your backend processes with our
                 API library.
               </p>
             </FadeInUp>
