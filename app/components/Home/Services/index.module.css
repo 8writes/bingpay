@@ -17,7 +17,7 @@
 }
 
 .serviceIntro p {
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   color: #4b494b;
 }
@@ -45,8 +45,9 @@
 }
 
 .servicesListGrid h1 {
-  font-size: large;
+  font-size: 1.3rem;
   font-weight: 700;
+  color: #4b494b;
 }
 
 .servicesListGrid p {
