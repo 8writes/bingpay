@@ -12,7 +12,7 @@ const FadeInRight = ({ children }) => {
       opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.5,
+
         duration: 0.9,
         ease: [0, 0.71, 0.2, 1.01],
         delay: 0.3,

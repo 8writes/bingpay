@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import React from "react";
 
 const FadeInDown = ({ children }) => {
-  
   const FadeInDown = {
     offscreen: {
       y: -10,
@@ -15,7 +14,7 @@ const FadeInDown = ({ children }) => {
 
       transition: {
         type: "spring",
-        bounce: 0.5,
+
         duration: 0.9,
         ease: [0, 0.71, 0.2, 1.01],
       },
