@@ -43,7 +43,7 @@ export default function Services() {
                 <Image
                   src={list}
                   alt="list"
-                  width={70}
+                  width={60}
                   height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
@@ -66,7 +66,7 @@ export default function Services() {
                 <Image
                   src={topUp}
                   alt="topup"
-                  width={70}
+                  width={60}
                   height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
@@ -88,7 +88,7 @@ export default function Services() {
                 <Image
                   src={exchange}
                   alt="exchange"
-                  width={70}
+                  width={60}
                   height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
@@ -108,7 +108,7 @@ export default function Services() {
                 <Image
                   src={giftCard}
                   alt="giftcard"
-                  width={70}
+                  width={60}
                   height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
@@ -131,7 +131,7 @@ export default function Services() {
                 <Image
                   src={flight}
                   alt="flight"
-                  width={70}
+                  width={60}
                   height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
@@ -153,7 +153,7 @@ export default function Services() {
                 <Image
                   src={ticket}
                   alt="ticket"
-                  width={70}
+                  width={60}
                   height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
