@@ -4,8 +4,6 @@ import dynamic from "next/dynamic";
 
 import Image from "next/image";
 import styles from "./index.module.css";
-import Developer from "/public/images/developer.png";
-import ArrowRight from "/public/images/arrow-up-right.svg";
 import Link from "next/link";
 
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
@@ -32,9 +30,7 @@ export default function Hero() {
             </div>
 
             <div className={styles.heroSocials}>
-              {" "}
               <div>
-                {" "}
                 <span className={styles.btn}>
                   <FadeInUp>
                     <Link
@@ -42,16 +38,16 @@ export default function Hero() {
                       target="_blank"
                     >
                       <button>
-                        Documentation{" "}
+                        Documentation
                         <Image
-                          src={ArrowRight}
+                          src="/caret-right.svg"
                           alt="Picture of the author"
                           width={20}
                           height={20}
                           priority
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
-                        />{" "}
+                        />
                       </button>
                     </Link>
                   </FadeInUp>
@@ -63,14 +59,14 @@ export default function Hero() {
           <div className={styles.heroImage}>
             <FadeInUp>
               <Image
-                src={Developer}
+                src="/developer.png"
                 alt="Picture of the author"
                 width={300}
                 height={300}
                 priority
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
-              />{" "}
+              />
             </FadeInUp>
           </div>
         </div>

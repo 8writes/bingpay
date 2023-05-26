@@ -3,7 +3,6 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
-
 const DownloadApp = dynamic(() => import("./DownloadAppBanner/index"), {
   ssr: false,
 });
@@ -18,24 +17,18 @@ const scrollToTop = () => {
 };
 
 import styles from "./index.module.css";
-import logoDark from "/public/images/logo-dark.png";
-import twitter from "/public/images/twitter.svg";
-import instagram from "/public/images/instagram.svg";
-import facebook from "/public/images/facebook.svg";
 
 export default function Footer() {
   return (
     <div className={styles.bg}>
-      {" "}
       <section className={styles.footer}>
-        {" "}
         <DownloadApp />
         <div className={styles.footerContext}>
-          <div className={styles.footerIntro}>
+          <hgroup className={styles.footerIntro}>
             <Link href="/">
               <Image
-                src={logoDark}
-                alt="Picture of the author"
+                src="/logo-dark.png"
+                alt="bingpay logo"
                 width={120}
                 height={120}
                 onClick={scrollToTop}
@@ -48,22 +41,20 @@ export default function Footer() {
               registered with RC Number: 1832078 under the Laws of the Federal
               Republic of Nigeria.
             </p>
-          </div>
+          </hgroup>
           <div className={styles.footerList}>
-            {" "}
             <h1>Company</h1>
             <ul>
               <li className={styles.hover}>
-                {" "}
                 <Link href="https://blog.bingpay.ng/" target="_blank">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="about-us">About Us</Link>
-              </li>{" "}
+                <Link href="/about-us">About Us</Link>
+              </li>
               <li>
-                <Link href="developers">Developers</Link>
+                <Link href="/developers">Developers</Link>
               </li>
             </ul>
           </div>
@@ -71,23 +62,22 @@ export default function Footer() {
             <h1>Support</h1>
             <ul>
               <li>
-                <Link href="help-center">Help Center</Link>
+                <Link href="/help-center">Help Center</Link>
               </li>
               <li>
-                <Link href="privacy-policy">Privacy Policy</Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="terms">Terms & Conditions</Link>
+                <Link href="/terms">Terms & Conditions</Link>
               </li>
               <li>
-                <Link href="aml-kyc-policy">AML/KYC Policy</Link>
+                <Link href="/aml-kyc-policy">AML/KYC Policy</Link>
               </li>
             </ul>
           </div>
           <div className={styles.footerList}>
             <h1>Contact Us</h1>
             <p>
-              {" "}
               11 Ada George Road, <br></br> Port Hacourt, NG 500027.
             </p>
             <ul>
@@ -98,45 +88,42 @@ export default function Footer() {
             <div className={styles.Socials}>
               <ul>
                 <li>
-                  {" "}
                   <Link
                     href="https://www.instagram.com/bingpay/"
                     target="_blank"
                   >
                     <Image
-                      src={instagram}
-                      alt="list"
+                      src="/instagram.svg"
+                      alt="instagram"
                       width={34}
-                      height={0}
+                      height={34}
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
                   </Link>
                 </li>
                 <li>
-                  {" "}
                   <Link href="https://twitter.com/bingpayng" target="_blank">
                     <Image
-                      src={twitter}
-                      alt="list"
+                      src="/twitter.svg"
+                      alt="twitter"
                       width={30}
-                      height={0}
+                      height={30}
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
                   </Link>
                 </li>
                 <li>
-                  {" "}
                   <Link
                     href="https://web.facebook.com/Bingpayng/?_rdc=1&_rdr"
                     target="_blank"
                   >
                     <Image
-                      src={facebook}
-                      alt="list"
+                      src="/facebook.svg"
+                      alt="facebook"
                       width={30}
-                      height={0}
+                      height={30}
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />

@@ -14,12 +14,7 @@ export default function Banner() {
     <div>
       <div className={styles.banner}>
         <div className={styles.bannerContext}>
-          {" "}
-        
-            <h1>
-             Help Center
-            </h1>{" "}
-          
+          <h1>Help Center</h1>
         </div>
       </div>
     </div>

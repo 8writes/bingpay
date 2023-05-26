@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 
 import Image from "next/image";
 import styles from "./index.module.css";
-import Merchant from "/public/images/merchant.svg";
 
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
@@ -17,7 +16,6 @@ export default function Business() {
         <section className={styles.business}>
           <div>
             <FadeInUp>
-              {" "}
               <span className={styles.introMobile}>
                 <h1>Bingpay for Business 💸</h1>
               </span>
@@ -26,23 +24,21 @@ export default function Business() {
           <div className={styles.businessImg}>
             <FadeInUp>
               <Image
-                src={Merchant}
+                src="/merchant.svg"
                 alt="Download Image"
                 width={480}
                 height={480}
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
-              />{" "}
+              />
             </FadeInUp>
           </div>
 
           <div className={styles.businessContext}>
-            {" "}
             <FadeInUp>
               <span className={styles.intro}>
-                {" "}
-                <h1>Bingpay for Business 💸</h1>{" "}
-              </span>{" "}
+                <h1>Bingpay for Business 💸</h1>
+              </span>
             </FadeInUp>
             <span className={styles.heading}>
               <FadeInUp>

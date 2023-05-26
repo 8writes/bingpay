@@ -1,15 +1,12 @@
 "use client";
 
 import dynamic from "next/dynamic";
-
 const NavBar = dynamic(() => import("./components/Header/Nav/index"), {
   ssr: false,
 });
-
 const MobileNav = dynamic(() => import("./components/Header/MobileNav/index"), {
   ssr: false,
 });
-
 const Footer = dynamic(() => import("./components/Footer/index"), {
   ssr: false,
 });
@@ -29,8 +26,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={space_grotesk.variable}>
         <NavBar />
-        <MobileNav /> {children}
-        <Footer />{" "}
+        <MobileNav />
+        {children}
+        <Footer />
       </body>
     </html>
   );

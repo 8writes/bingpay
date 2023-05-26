@@ -26,8 +26,12 @@ export default function Section() {
           <h1>Bingpay Privacy Policy</h1>
           <p>
             Bingpay’s position on the privacy of its clients and visitors to
-            this website can be found in the Bingpay's{" "}
-            <Link href="privacy-policy"> <span className={styles.focus}>Privacy Policy</span> </Link>.
+            this website can be found in the Bingpay's
+            <Link href="privacy-policy">
+              {" "}
+              <span className={styles.focus}>Privacy Policy</span>{" "}
+            </Link>
+            .
           </p>
           <h1>Use of contents - Copyright</h1>
           <p>

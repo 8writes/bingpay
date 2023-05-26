@@ -6,14 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.css";
 
-import Bills from "/public/images/postpaid-bill.png";
-import GiftCard from "/public/images/gift-card.webp";
-import Identity from "/public/images/identity.webp";
-import Cash from "/public/images/cash.webp";
-import Swap from "/public/images/swap.webp";
-import MobileChat from "/public/images/mobile-chat.webp";
-import ArrowRight from "/public/images/caret-right.svg";
-
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
 });
@@ -34,11 +26,9 @@ export default function Section() {
   return (
     <>
       <main className={styles.section}>
-        {" "}
         <section className={styles.sectionContent}>
           <hgroup className={styles.sectionIntro}>
             <FadeInUp>
-              {" "}
               <h1>What do we Offer?</h1>
               <p>
                 Simplify, secure and speed up your backend processes with our
@@ -50,14 +40,14 @@ export default function Section() {
             <picture className={styles.sectionImgL}>
               <FadeInLeft>
                 <Image
-                  src={Bills}
+                  src="/postpaid-bill.png"
                   alt="bills image"
                   width={350}
                   height={350}
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
-                />{" "}
+                />
               </FadeInLeft>
             </picture>
             <div className={styles.sectionContextL}>
@@ -75,14 +65,14 @@ export default function Section() {
                   <span className={styles.sectionLink}>
                     <p>Explore Our APIs </p>
                     <Image
-                      src={ArrowRight}
+                      src="/caret-right.svg"
                       alt="arrow right"
                       width={42}
                       height={42}
                       priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
-                    />{" "}
+                    />
                   </span>
                 </Link>
               </FadeInUp>
@@ -104,14 +94,14 @@ export default function Section() {
                   <span className={styles.sectionLink}>
                     <p>Explore Our APIs </p>
                     <Image
-                      src={ArrowRight}
+                      src="/caret-right.svg"
                       alt="arrow right"
                       width={42}
                       height={42}
                       priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
-                    />{" "}
+                    />
                   </span>
                 </Link>
               </FadeInUp>
@@ -119,14 +109,14 @@ export default function Section() {
             <picture className={styles.sectionImgR}>
               <FadeInRight>
                 <Image
-                  src={GiftCard}
+                  src="/gift-card.webp"
                   alt="gift-card image"
                   width={350}
                   height={350}
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
-                />{" "}
+                />
               </FadeInRight>
             </picture>
           </section>
@@ -134,14 +124,14 @@ export default function Section() {
             <picture className={styles.sectionImgL}>
               <FadeInLeft>
                 <Image
-                  src={Identity}
+                  src="/identity.webp"
                   alt="identity image"
                   width={350}
                   height={350}
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
-                />{" "}
+                />
               </FadeInLeft>
             </picture>
             <div className={styles.sectionContextL}>
@@ -159,14 +149,14 @@ export default function Section() {
                   <span className={styles.sectionLink}>
                     <p>Explore Our APIs </p>
                     <Image
-                      src={ArrowRight}
+                      src="/caret-right.svg"
                       alt="arrow right"
                       width={42}
                       height={42}
                       priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
-                    />{" "}
+                    />
                   </span>
                 </Link>
               </FadeInUp>
@@ -188,14 +178,14 @@ export default function Section() {
                   <span className={styles.sectionLink}>
                     <p>Explore Our APIs </p>
                     <Image
-                      src={ArrowRight}
+                      src="/caret-right.svg"
                       alt="arrow right"
                       width={42}
                       height={42}
                       priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
-                    />{" "}
+                    />
                   </span>
                 </Link>
               </FadeInUp>
@@ -203,14 +193,14 @@ export default function Section() {
             <picture className={styles.sectionImgR}>
               <FadeInRight>
                 <Image
-                  src={Cash}
+                  src="/cash.webp"
                   alt="cash image"
                   width={350}
                   height={350}
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
-                />{" "}
+                />
               </FadeInRight>
             </picture>
           </section>
@@ -218,14 +208,14 @@ export default function Section() {
             <picture className={styles.sectionImgL}>
               <FadeInLeft>
                 <Image
-                  src={Swap}
+                  src="/swap.webp"
                   alt="swap image"
                   width={350}
                   height={350}
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
-                />{" "}
+                />
               </FadeInLeft>
             </picture>
             <div className={styles.sectionContextL}>
@@ -243,14 +233,14 @@ export default function Section() {
                   <span className={styles.sectionLink}>
                     <p>Explore Our APIs </p>
                     <Image
-                      src={ArrowRight}
+                      src="/caret-right.svg"
                       alt="arrow right"
                       width={42}
                       height={42}
                       priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
-                    />{" "}
+                    />
                   </span>
                 </Link>
               </FadeInUp>
@@ -272,14 +262,14 @@ export default function Section() {
                   <span className={styles.sectionLink}>
                     <p>Explore Our APIs </p>
                     <Image
-                      src={ArrowRight}
+                      src="/caret-right.svg"
                       alt="arrow right"
                       width={42}
                       height={42}
                       priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
-                    />{" "}
+                    />
                   </span>
                 </Link>
               </FadeInUp>
@@ -287,14 +277,14 @@ export default function Section() {
             <picture className={styles.sectionImgR}>
               <FadeInRight>
                 <Image
-                  src={MobileChat}
+                  src="/mobile-chat.webp"
                   alt="mobile chat image"
                   width={350}
                   height={350}
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
-                />{" "}
+                />
               </FadeInRight>
             </picture>
           </section>

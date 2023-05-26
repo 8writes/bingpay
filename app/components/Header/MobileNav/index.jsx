@@ -6,21 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.css";
 import { useState, useEffect } from "react";
-import logoDark from "/public/images/logo-dark.png";
-import GooglePlay from "/public/images/google-play.svg";
-import AppStore from "/public/images/app-store.svg";
-import OpenNav from "/public/images/mobile-menu-opn.svg";
-import CloseNav from "/public/images/mobile-menu-cls.svg";
-import Blogger from "/public/images/blogger.svg";
-import Note from "/public/images/note-2.svg";
-import Work from "/public/images/briefcase.svg";
-import Faq from "/public/images/message-search.svg";
-import Support from "/public/images/headset.svg";
-import Code from "/public/images/code.svg";
-import Text from "/public/images/textalign.svg";
-import People from "/public/images/people.svg";
-
-import "./index.css";
 
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
@@ -77,11 +62,11 @@ export default function MobileNav() {
   return (
     <div className={styles.main}>
       <section className={styles.mobileNav}>
-        <div>
+        <picture>
           <Link href="/">
             <Image
-              src={logoDark}
-              alt="Bingpay Logo"
+              src="/logo-dark.png"
+              alt="bingpay logo"
               width={120}
               height={120}
               onClick={scrollToTop}
@@ -89,10 +74,10 @@ export default function MobileNav() {
               // placeholder="blur" // Optional blur-up while loading
             />
           </Link>
-        </div>
+        </picture>
         <div className={styles.openNav}>
           <Image
-            src={OpenNav}
+            src="/mobile-menu-opn.svg"
             alt="Open Nav"
             width={35}
             height={35}
@@ -118,7 +103,7 @@ export default function MobileNav() {
                 }}
               >
                 <Image
-                  src={logoDark}
+                  src="/logo-dark.png"
                   alt="Bingpay Logo"
                   width={120}
                   height={120}
@@ -129,7 +114,7 @@ export default function MobileNav() {
             </div>
             <div style={{ padding: "6px" }}>
               <Image
-                src={CloseNav}
+                src="/mobile-menu-cls.svg"
                 alt="Close Nav"
                 width={20}
                 height={20}
@@ -145,7 +130,6 @@ export default function MobileNav() {
 
           <div className={styles.navMenu}>
             <FadeInUp>
-              {" "}
               <div className={styles.navLinks}>
                 <div className={styles.navList}>
                   <h1>Business</h1>
@@ -159,31 +143,29 @@ export default function MobileNav() {
                         }}
                       >
                         <Image
-                          src={People}
+                          src="/people.svg"
                           alt=""
                           width={22}
                           height={22}
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
-                        Join Waitlist{" "}
+                        Join Waitlist
                       </Link>
                     </li>
                   </ul>
-                </div>{" "}
+                </div>
                 <div className={styles.navList}>
-                  {" "}
                   <h1>Company</h1>
                   <ul>
                     <li>
-                      {" "}
                       <Link
                         href="https://blog.bingpay.ng/"
                         target="_blank onClick={enableScroll}"
                         onClick={enableScroll}
                       >
                         <Image
-                          src={Blogger}
+                          src="/blogger.svg"
                           alt=""
                           width={22}
                           height={22}
@@ -202,13 +184,13 @@ export default function MobileNav() {
                         }}
                       >
                         <Image
-                          src={Note}
+                          src="/note-2.svg"
                           alt=""
                           width={25}
-                          height={25}
+                          height={0}
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
-                        />{" "}
+                        />
                         <span> About Us</span>
                       </Link>
                     </li>
@@ -226,10 +208,10 @@ export default function MobileNav() {
                         }}
                       >
                         <Image
-                          src={Faq}
+                          src="/message-search.svg"
                           alt=""
                           width={25}
-                          height={25}
+                          height={0}
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -245,10 +227,10 @@ export default function MobileNav() {
                         }}
                       >
                         <Image
-                          src={Support}
+                          src="/headset.svg"
                           alt=""
                           width={25}
-                          height={25}
+                          height={0}
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -269,10 +251,10 @@ export default function MobileNav() {
                         }}
                       >
                         <Image
-                          src={Text}
+                          src="/textalign.svg"
                           alt=""
                           width={25}
-                          height={25}
+                          height={0}
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -289,10 +271,10 @@ export default function MobileNav() {
                         }}
                       >
                         <Image
-                          src={Code}
-                          alt=""
+                          src="/code.svg"
+                          alt="code"
                           width={25}
-                          height={25}
+                          height={0}
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -302,8 +284,7 @@ export default function MobileNav() {
                   </ul>
                 </div>
                 <div className={styles.heroSocials}>
-                  <div>
-                    {" "}
+                  <picture>
                     <a
                       href={
                         "https://apps.apple.com/uy/app/bingpay/id1589089598"
@@ -311,16 +292,16 @@ export default function MobileNav() {
                       target="_blank"
                     >
                       <Image
-                        src={AppStore}
+                        src="/app-store.svg"
                         alt="App Store"
                         width={146}
                         height={146}
                         // blurDataURL="data:..." automatically provided
                         // placeholder="blur" // Optional blur-up while loading
-                      />{" "}
+                      />
                     </a>
-                  </div>
-                  <div>
+                  </picture>
+                  <picture>
                     <a
                       href={
                         "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
@@ -328,17 +309,17 @@ export default function MobileNav() {
                       target="_blank"
                     >
                       <Image
-                        src={GooglePlay}
+                        src="/google-play.svg"
                         alt="Google Play"
                         width={160}
                         height={160}
                         // blurDataURL="data:..." automatically provided
                         // placeholder="blur" // Optional blur-up while loading
-                      />{" "}
+                      />
                     </a>
-                  </div>{" "}
+                  </picture>
                 </div>
-              </div>{" "}
+              </div>
             </FadeInUp>
           </div>
         </div>

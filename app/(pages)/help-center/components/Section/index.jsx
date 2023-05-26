@@ -39,7 +39,6 @@ export default function Section() {
           <div>
             {activeTab === 0 && (
               <div>
-                {" "}
                 <div class={styles.container}>
                   <FadeInUp>
                     <details>
@@ -92,7 +91,6 @@ export default function Section() {
             )}
             {activeTab === 1 && (
               <div>
-                {" "}
                 <div class={styles.container}>
                   <FadeInUp>
                     <details>

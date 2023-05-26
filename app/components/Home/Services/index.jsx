@@ -1,27 +1,18 @@
 "use client";
 
 import dynamic from "next/dynamic";
-
 import Image from "next/image";
 import styles from "./index.module.css";
-import list from "/public/images/list.svg";
-import giftCard from "/public/images/gift-card.svg";
-import exchange from "/public/images/exchange.svg";
-import ticket from "/public/images/ticket.svg";
-import topUp from "/public/images/top-up.svg";
-import flight from "/public/images/flight.svg";
-
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
 });
 
 export default function Services() {
- 
   return (
-    <div>
-      <section className={styles.services}>
+    <>
+      <main className={styles.services}>
         <FadeInUp>
-          <section className={styles.serviceIntro}>
+          <hgroup className={styles.serviceIntro}>
             <div>
               <h1>Our Products</h1>
             </div>
@@ -33,22 +24,21 @@ export default function Services() {
                 </p>
               </div>
             </FadeInUp>
-          </section>
+          </hgroup>
         </FadeInUp>
         <section className={styles.servicesList}>
-          {" "}
           <FadeInUp>
             <div className={styles.servicesListGrid}>
-              <div>
+              <picture>
                 <Image
-                  src={list}
+                  src="/list.svg"
                   alt="list"
                   width={50}
-                  height={0}
+                  height={50}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
-              </div>
+              </picture>
               <div>
                 <h1>Utility Bills</h1>
               </div>
@@ -58,20 +48,20 @@ export default function Services() {
                   subscriptions.
                 </p>
               </div>
-            </div>{" "}
+            </div>
           </FadeInUp>
           <FadeInUp>
             <div className={styles.servicesListGrid}>
-              <div>
+              <picture>
                 <Image
-                  src={topUp}
+                  src="/top-up.svg"
                   alt="topup"
                   width={50}
-                  height={0}
+                  height={50}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
-              </div>
+              </picture>
               <div>
                 <h1>Global Mobile Top-Up</h1>
               </div>
@@ -81,39 +71,39 @@ export default function Services() {
                 </p>
               </div>
             </div>
-          </FadeInUp>{" "}
+          </FadeInUp>
           <FadeInUp>
             <div className={styles.servicesListGrid}>
-              <div>
+              <picture>
                 <Image
-                  src={exchange}
+                  src="/exchange.svg"
                   alt="exchange"
                   width={50}
-                  height={0}
+                  height={50}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
-              </div>
+              </picture>
               <div>
                 <h1>Trade Digital Assets</h1>
               </div>
               <div>
                 <p>Easily convert unused Airtime and Giftcards to cash!.</p>
               </div>
-            </div>{" "}
-          </FadeInUp>{" "}
+            </div>
+          </FadeInUp>
           <FadeInUp>
             <div className={styles.servicesListGrid}>
-              <div>
+              <picture>
                 <Image
-                  src={giftCard}
+                  src="/gift-card.svg"
                   alt="giftcard"
                   width={50}
-                  height={0}
+                  height={50}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
-              </div>
+              </picture>
               <div>
                 <h1>Vouchers</h1>
               </div>
@@ -127,16 +117,16 @@ export default function Services() {
           </FadeInUp>
           <FadeInUp>
             <div className={styles.servicesListGrid}>
-              <div>
+              <picture>
                 <Image
-                  src={flight}
+                  src="/flight.svg"
                   alt="flight"
                   width={50}
-                  height={0}
+                  height={50}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
-              </div>
+              </picture>
               <div>
                 <h1>Flight & Hotels</h1>
               </div>
@@ -149,26 +139,26 @@ export default function Services() {
           </FadeInUp>
           <FadeInUp>
             <div className={styles.servicesListGrid}>
-              <div>
+              <picture>
                 <Image
-                  src={ticket}
+                  src="/ticket.svg"
                   alt="ticket"
                   width={50}
-                  height={0}
+                  height={50}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
-              </div>
+              </picture>
               <div>
                 <h1>Event Tickets</h1>
               </div>
               <div>
                 <p>Purchase tickets for your favorite shows & events easily.</p>
               </div>
-            </div>{" "}
+            </div>
           </FadeInUp>
         </section>
-      </section>
-    </div>
+      </main>
+    </>
   );
 }

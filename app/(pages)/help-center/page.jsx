@@ -13,8 +13,8 @@ const Section = dynamic(() => import("./components/Section/index"), {
 export default function Faq() {
   return (
     <main>
-      <Banner />
-      <Section />
+        <Banner />
+        <Section />
     </main>
   );
 }
