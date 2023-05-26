@@ -60,15 +60,10 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="about-us">
-                  About Us
-                </Link>
+                <Link href="about-us">About Us</Link>
               </li>{" "}
-    
               <li>
-                <Link href="developers">
-                  Developers
-                </Link>
+                <Link href="developers">Developers</Link>
               </li>
             </ul>
           </div>
@@ -76,24 +71,16 @@ export default function Footer() {
             <h1>Support</h1>
             <ul>
               <li>
-                <Link href="FAQs">
-                  FAQs
-                </Link>
+                <Link href="help-center">Help Center</Link>
               </li>
               <li>
-                <Link href="privacy-policy">
-                  Privacy Policy
-                </Link>
+                <Link href="privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="terms">
-                  Terms & Conditions
-                </Link>
+                <Link href="terms">Terms & Conditions</Link>
               </li>
               <li>
-                <Link href="AML-KYC-policy">
-                  AML/KYC Policy
-                </Link>
+                <Link href="aml-kyc-policy">AML/KYC Policy</Link>
               </li>
             </ul>
           </div>
@@ -112,7 +99,10 @@ export default function Footer() {
               <ul>
                 <li>
                   {" "}
-                  <Link href="https://www.instagram.com/bingpay/" target="_blank">
+                  <Link
+                    href="https://www.instagram.com/bingpay/"
+                    target="_blank"
+                  >
                     <Image
                       src={instagram}
                       alt="list"
