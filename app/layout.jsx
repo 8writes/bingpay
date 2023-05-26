@@ -29,9 +29,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={space_grotesk.variable}>
         <NavBar />
-        <MobileNav />
-        {children}
-        <Footer />
+        <MobileNav /> {children}
+        <Footer />{" "}
       </body>
     </html>
   );

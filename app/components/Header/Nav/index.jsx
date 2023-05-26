@@ -181,7 +181,7 @@ export default function NavBar() {
                   <FadeInDown>
                     <div class={styles.dropContent}>
                       <ul>
-                        <Link href="FAQs">
+                        <Link href="help-center">
                           {" "}
                           <li>
                             <Image
