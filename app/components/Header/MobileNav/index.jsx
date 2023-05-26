@@ -233,7 +233,7 @@ export default function MobileNav() {
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
-                        FAQs
+                        Help Center
                       </Link>
                     </li>
                     <li>

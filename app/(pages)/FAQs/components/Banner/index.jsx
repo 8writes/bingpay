@@ -17,7 +17,7 @@ export default function Banner() {
           {" "}
         
             <h1>
-              Frequently <br></br>Asked Questions
+             Help Center
             </h1>{" "}
           
         </div>

@@ -192,7 +192,7 @@ export default function NavBar() {
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
-                            <span>FAQs</span>
+                            <span>Help Center</span>
                           </li>
                         </Link>
                         <Link href="contact-us">
@@ -205,7 +205,7 @@ export default function NavBar() {
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
-                          <span>  Contact Us</span>
+                          <span> Contact Us</span>
                           </li>
                         </Link>
                       </ul>

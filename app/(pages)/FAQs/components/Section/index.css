@@ -10,7 +10,8 @@ details {
   border-radius: 5px;
   margin: 0 0 20px 0;
   transition: 100ms;
-  color: #4b494b;
+  
+  color: rgb(184, 30, 148);
   font-size: 1rem;
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
@@ -23,8 +24,9 @@ details[open] {
 summary {
   font-weight: bold;
   cursor: pointer;
-  color: rgb(184, 30, 148);
+  color: #4b494b;
 }
+
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
     
