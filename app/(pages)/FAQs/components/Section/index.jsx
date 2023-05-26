@@ -29,8 +29,7 @@ export default function Section() {
                 key={index}
                 onClick={() => handleTabClick(index)}
                 style={{
-                  backgroundColor:
-                    index === activeTab ? "rgb(244, 244, 244)" : "white",
+                  backgroundColor: index === activeTab ? "#F4F2FB" : "white",
                 }}
               >
                 {title}
