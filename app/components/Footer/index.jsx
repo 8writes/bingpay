@@ -32,6 +32,7 @@ export default function Footer() {
                 width={120}
                 height={120}
                 onClick={scrollToTop}
+                priority
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />
@@ -97,6 +98,7 @@ export default function Footer() {
                       alt="instagram"
                       width={34}
                       height={34}
+                      priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
@@ -109,6 +111,7 @@ export default function Footer() {
                       alt="twitter"
                       width={30}
                       height={30}
+                      priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
@@ -124,6 +127,7 @@ export default function Footer() {
                       alt="facebook"
                       width={30}
                       height={30}
+                      priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />

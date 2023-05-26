@@ -41,6 +41,7 @@ export default function Section() {
                   width={350}
                   height={350}
                   priority
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -65,6 +66,7 @@ export default function Section() {
                       alt="arrow right"
                       width={42}
                       height={42}
+                      priority
                       priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
@@ -95,6 +97,7 @@ export default function Section() {
                       width={42}
                       height={42}
                       priority
+                      priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
@@ -110,6 +113,7 @@ export default function Section() {
                   width={350}
                   height={350}
                   priority
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -124,6 +128,7 @@ export default function Section() {
                   alt="identity image"
                   width={350}
                   height={350}
+                  priority
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
@@ -149,6 +154,7 @@ export default function Section() {
                       alt="arrow right"
                       width={42}
                       height={42}
+                      priority
                       priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
@@ -179,6 +185,7 @@ export default function Section() {
                       width={42}
                       height={42}
                       priority
+                      priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
@@ -194,6 +201,7 @@ export default function Section() {
                   width={350}
                   height={350}
                   priority
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -208,6 +216,7 @@ export default function Section() {
                   alt="swap image"
                   width={350}
                   height={350}
+                  priority
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
@@ -233,6 +242,7 @@ export default function Section() {
                       alt="arrow right"
                       width={42}
                       height={42}
+                      priority
                       priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
@@ -263,6 +273,7 @@ export default function Section() {
                       width={42}
                       height={42}
                       priority
+                      priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
@@ -277,6 +288,7 @@ export default function Section() {
                   alt="mobile chat image"
                   width={350}
                   height={350}
+                  priority
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading

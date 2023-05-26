@@ -28,6 +28,7 @@ export default function Business() {
                 alt="Download Image"
                 width={480}
                 height={480}
+                priority
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />

@@ -70,6 +70,7 @@ export default function MobileNav() {
               width={120}
               height={120}
               onClick={scrollToTop}
+              priority
               // blurDataURL="data:..." automatically provided
               // placeholder="blur" // Optional blur-up while loading
             />
@@ -85,6 +86,7 @@ export default function MobileNav() {
               toggleVisibility();
               disableScroll();
             }}
+            priority
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
           />
@@ -107,6 +109,7 @@ export default function MobileNav() {
                   alt="Bingpay Logo"
                   width={120}
                   height={120}
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -122,6 +125,7 @@ export default function MobileNav() {
                   toggleVisibility();
                   enableScroll();
                 }}
+                priority
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />
@@ -147,6 +151,7 @@ export default function MobileNav() {
                           alt=""
                           width={22}
                           height={22}
+                          priority
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -169,6 +174,7 @@ export default function MobileNav() {
                           alt=""
                           width={22}
                           height={22}
+                          priority
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -188,6 +194,7 @@ export default function MobileNav() {
                           alt=""
                           width={25}
                           height={0}
+                          priority
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -212,6 +219,7 @@ export default function MobileNav() {
                           alt=""
                           width={25}
                           height={0}
+                          priority
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -231,6 +239,7 @@ export default function MobileNav() {
                           alt=""
                           width={25}
                           height={0}
+                          priority
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -255,6 +264,7 @@ export default function MobileNav() {
                           alt=""
                           width={25}
                           height={0}
+                          priority
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -275,6 +285,7 @@ export default function MobileNav() {
                           alt="code"
                           width={25}
                           height={0}
+                          priority
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -296,6 +307,7 @@ export default function MobileNav() {
                         alt="App Store"
                         width={146}
                         height={146}
+                        priority
                         // blurDataURL="data:..." automatically provided
                         // placeholder="blur" // Optional blur-up while loading
                       />
@@ -313,6 +325,7 @@ export default function MobileNav() {
                         alt="Google Play"
                         width={160}
                         height={160}
+                        priority
                         // blurDataURL="data:..." automatically provided
                         // placeholder="blur" // Optional blur-up while loading
                       />

@@ -48,6 +48,7 @@ export default function NavBar() {
                   width={115}
                   height={0}
                   onClick={scrollToTop}
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -64,6 +65,7 @@ export default function NavBar() {
                   alt=""
                   width={15}
                   height={0}
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -78,6 +80,7 @@ export default function NavBar() {
                               alt=""
                               width={25}
                               height={0}
+                              priority
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
@@ -91,6 +94,7 @@ export default function NavBar() {
                               alt=""
                               width={26}
                               height={0}
+                              priority
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
@@ -109,6 +113,7 @@ export default function NavBar() {
                   alt=""
                   width={15}
                   height={15}
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -123,6 +128,7 @@ export default function NavBar() {
                               alt=""
                               width={20}
                               height={20}
+                              priority
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
@@ -139,6 +145,7 @@ export default function NavBar() {
                               alt=""
                               width={25}
                               height={0}
+                              priority
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
@@ -157,6 +164,7 @@ export default function NavBar() {
                   alt="Bingpay logo"
                   width={15}
                   height={15}
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -171,6 +179,7 @@ export default function NavBar() {
                               alt=""
                               width={25}
                               height={0}
+                              priority
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
@@ -184,6 +193,7 @@ export default function NavBar() {
                               alt=""
                               width={25}
                               height={0}
+                              priority
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />

@@ -38,6 +38,7 @@ export default function Hero() {
                           alt="right arrow"
                           width={20}
                           height={0}
+                          priority
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -56,6 +57,7 @@ export default function Hero() {
                 alt="Picture of the author"
                 width={300}
                 height={300}
+                priority
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />

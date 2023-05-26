@@ -35,6 +35,7 @@ export default function Services() {
                   alt="list"
                   width={50}
                   height={0}
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -58,6 +59,7 @@ export default function Services() {
                   alt="top up"
                   width={50}
                   height={0}
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -80,6 +82,7 @@ export default function Services() {
                   alt="exchange"
                   width={50}
                   height={0}
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -100,6 +103,7 @@ export default function Services() {
                   alt="giftcard"
                   width={50}
                   height={0}
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -123,6 +127,7 @@ export default function Services() {
                   alt="flight"
                   width={50}
                   height={0}
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -145,6 +150,7 @@ export default function Services() {
                   alt="ticket"
                   width={50}
                   height={0}
+                  priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />

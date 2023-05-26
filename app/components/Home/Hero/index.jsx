@@ -21,15 +21,16 @@ export default function Hero() {
         <section className={styles.heroBg}>
           <div className={styles.heroLeft}>
             <FadeInLeft>
-            <hgroup>
-              <h1>
-                Your one stop app for <br></br> everyday payments.
-              </h1>
-              <p>
-                Recharge phones, Buy Giftcards, Trade digital assets & Pay bills
-                in over 50 countries.
-              </p>
-            </hgroup></FadeInLeft>
+              <hgroup>
+                <h1>
+                  Your one stop app for <br></br> everyday payments.
+                </h1>
+                <p>
+                  Recharge phones, Buy Giftcards, Trade digital assets & Pay
+                  bills in over 50 countries.
+                </p>
+              </hgroup>
+            </FadeInLeft>
             <div className={styles.heroSocials}>
               <picture>
                 <FadeInUp>
@@ -41,6 +42,7 @@ export default function Hero() {
                       alt="App Store"
                       width={146}
                       height={0}
+                      priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
@@ -59,6 +61,7 @@ export default function Hero() {
                       alt="Google Play"
                       width={160}
                       height={0}
+                      priority
                       // blurDataURL="data:..." automatically provided
                       // placeholder="blur" // Optional blur-up while loading
                     />
@@ -74,6 +77,7 @@ export default function Hero() {
                 alt="bing hero"
                 width={650}
                 height={0}
+                priority
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />

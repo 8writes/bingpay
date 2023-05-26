@@ -30,6 +30,7 @@ export default function DownloadApp() {
                     alt="App Store"
                     width={146}
                     height={146}
+                    priority
                     // blurDataURL="data:..." automatically provided
                     // placeholder="blur" // Optional blur-up while loading
                   />
@@ -46,6 +47,7 @@ export default function DownloadApp() {
                     alt="Google Play"
                     width={160}
                     height={160}
+                    priority
                     // blurDataURL="data:..." automatically provided
                     // placeholder="blur" // Optional blur-up while loading
                   />
@@ -59,6 +61,7 @@ export default function DownloadApp() {
               alt="Download image"
               width={500}
               height={500}
+              priority
               // blurDataURL="data:..." automatically provided
               // placeholder="blur" // Optional blur-up while loading
             />
