@@ -57,8 +57,8 @@ export default function NavBar() {
                 <Image
                   src={logoDark}
                   alt="Bingpay logo"
-                  width={120}
-                  height={120}
+                  width={115}
+                  height={115}
                   onClick={scrollToTop}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
@@ -76,8 +76,8 @@ export default function NavBar() {
                 <Image
                   src={downArrow}
                   alt=""
-                  width={20}
-                  height={20}
+                  width={15}
+                  height={15}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -92,8 +92,8 @@ export default function NavBar() {
                             <Image
                               src={Blogger}
                               alt=""
-                              width={22}
-                              height={22}
+                              width={25}
+                              height={25}
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
@@ -105,7 +105,7 @@ export default function NavBar() {
                             <Image
                               src={Note}
                               alt=""
-                              width={25}
+                              width={26}
                               height={25}
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
@@ -125,8 +125,8 @@ export default function NavBar() {
                 <Image
                   src={downArrow}
                   alt=""
-                  width={20}
-                  height={20}
+                  width={15}
+                  height={15}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -158,7 +158,7 @@ export default function NavBar() {
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
-                            Documentation
+                          <span>Documentation</span>  
                           </li>
                         </Link>
                       </ul>
@@ -172,8 +172,8 @@ export default function NavBar() {
                 <Image
                   src={downArrow}
                   alt="Bingpay logo"
-                  width={20}
-                  height={20}
+                  width={15}
+                  height={15}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -205,7 +205,7 @@ export default function NavBar() {
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
                             />
-                            Contact Us
+                          <span>  Contact Us</span>
                           </li>
                         </Link>
                       </ul>
