@@ -18,10 +18,6 @@ const FadeInLeft = dynamic(() => import("./Framer/FadeInLeft"), {
   ssr: false,
 });
 
-const FadeInDown = dynamic(() => import("./Framer/FadeInDown"), {
-  ssr: false,
-});
-
 export default function Section() {
   return (
     <>

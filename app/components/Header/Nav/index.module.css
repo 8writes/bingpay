@@ -66,6 +66,7 @@
   font-weight: 900;
   display: flex;
   gap: 13px;
+  border: solid 1px transparent;
 }
 
 .dropContent ul a li span {
@@ -73,8 +74,7 @@
 }
 
 .dropContent ul li:hover {
-  background-color: rgba(224, 184, 219, 0.132);
-  border-radius: 10px;
+  border: solid 1px rgb(184, 30, 148);
 }
 
 .dropBg {
@@ -103,13 +103,13 @@
   .dropContent {
     margin: 6px 5px 5px 5px;
   }
-  .navLinks{
+  .navLinks {
     font-size: 0.9rem;
   }
-  
-.dropContent ul a li {
-  font-size: 0.9em;
-}
+
+  .dropContent ul a li {
+    font-size: 0.9em;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -123,13 +123,13 @@
   .dropContent {
     margin: 13px 5px 5px 5px;
   }
-  .navLinks{
+  .navLinks {
     font-size: 1rem;
   }
-  
-.dropContent ul a li {
-  font-size: 1em;
-}
+
+  .dropContent ul a li {
+    font-size: 1em;
+  }
 }
 
 /*

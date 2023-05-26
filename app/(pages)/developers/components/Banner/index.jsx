@@ -1,16 +1,10 @@
 "use client";
 
 import dynamic from "next/dynamic";
-
 import Image from "next/image";
-import styles from "./index.module.css";
 import Link from "next/link";
-
+import styles from "./index.module.css";
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
-  ssr: false,
-});
-
-const FadeInRight = dynamic(() => import("./Framer/FadeInRight"), {
   ssr: false,
 });
 
@@ -40,11 +34,10 @@ export default function Hero() {
                       <button>
                         Documentation
                         <Image
-                          src="/caret-right.svg"
-                          alt="Picture of the author"
+                          src="/arrow-up-right.svg"
+                          alt="right arrow"
                           width={20}
-                          height={20}
-                          priority
+                          height={0}
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
@@ -63,7 +56,6 @@ export default function Hero() {
                 alt="Picture of the author"
                 width={300}
                 height={300}
-                priority
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />

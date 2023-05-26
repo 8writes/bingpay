@@ -12,8 +12,8 @@ const FadeInLeft = ({ children }) => {
       opacity: 1,
       transition: {
         type: "spring",
-
-        duration: 0.9,
+        damping: 20,
+        duration: 0.8,
         ease: [0, 0.71, 0.2, 1.01],
         delay: 0.3,
       },

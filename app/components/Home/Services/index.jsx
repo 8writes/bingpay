@@ -34,20 +34,20 @@ export default function Services() {
                   src="/list.svg"
                   alt="list"
                   width={50}
-                  height={50}
+                  height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
               </picture>
-              <div>
+              <span>
                 <h1>Utility Bills</h1>
-              </div>
-              <div>
+              </span>
+              <span>
                 <p>
                   Pay Electricity bills, Internet bundles & Cable TV
                   subscriptions.
                 </p>
-              </div>
+              </span>
             </div>
           </FadeInUp>
           <FadeInUp>
@@ -55,21 +55,21 @@ export default function Services() {
               <picture>
                 <Image
                   src="/top-up.svg"
-                  alt="topup"
+                  alt="top up"
                   width={50}
-                  height={50}
+                  height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
               </picture>
-              <div>
+              <span>
                 <h1>Global Mobile Top-Up</h1>
-              </div>
-              <div>
+              </span>
+              <span>
                 <p>
                   Top-up airtime and data globally, we cover over 50+ countries.
                 </p>
-              </div>
+              </span>
             </div>
           </FadeInUp>
           <FadeInUp>
@@ -79,17 +79,17 @@ export default function Services() {
                   src="/exchange.svg"
                   alt="exchange"
                   width={50}
-                  height={50}
+                  height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
               </picture>
-              <div>
+              <span>
                 <h1>Trade Digital Assets</h1>
-              </div>
-              <div>
+              </span>
+              <span>
                 <p>Easily convert unused Airtime and Giftcards to cash!.</p>
-              </div>
+              </span>
             </div>
           </FadeInUp>
           <FadeInUp>
@@ -99,7 +99,7 @@ export default function Services() {
                   src="/gift-card.svg"
                   alt="giftcard"
                   width={50}
-                  height={50}
+                  height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
@@ -107,12 +107,12 @@ export default function Services() {
               <div>
                 <h1>Vouchers</h1>
               </div>
-              <div>
+              <span>
                 <p>
                   Thousands of brands to buy Giftcards directly from your
                   Bingpay wallet.
                 </p>
-              </div>
+              </span>
             </div>
           </FadeInUp>
           <FadeInUp>
@@ -122,19 +122,19 @@ export default function Services() {
                   src="/flight.svg"
                   alt="flight"
                   width={50}
-                  height={50}
+                  height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
               </picture>
-              <div>
+              <span>
                 <h1>Flight & Hotels</h1>
-              </div>
-              <div>
+              </span>
+              <span>
                 <p>
                   Book international and domestic flights, hotels for holidays.
                 </p>
-              </div>
+              </span>
             </div>
           </FadeInUp>
           <FadeInUp>
@@ -144,17 +144,17 @@ export default function Services() {
                   src="/ticket.svg"
                   alt="ticket"
                   width={50}
-                  height={50}
+                  height={0}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                 />
               </picture>
-              <div>
+              <span>
                 <h1>Event Tickets</h1>
-              </div>
-              <div>
+              </span>
+              <span>
                 <p>Purchase tickets for your favorite shows & events easily.</p>
-              </div>
+              </span>
             </div>
           </FadeInUp>
         </section>
