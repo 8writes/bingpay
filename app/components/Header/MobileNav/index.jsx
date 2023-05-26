@@ -219,7 +219,7 @@ export default function MobileNav() {
                   <ul>
                     <li>
                       <Link
-                        href="/FAQs"
+                        href="/help-center"
                         onClick={() => {
                           toggleVisibility();
                           enableScroll();
