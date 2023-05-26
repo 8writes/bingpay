@@ -14,14 +14,10 @@
 
 .tab button {
   border: solid 1px transparent;
-  border-radius: 5px;
   padding: 5px 10px 5px 10px;
   color: rgb(184, 30, 148);
   font-weight: bold;
-}
-
-.tab button:hover {
-  border: solid 1px rgba(179, 179, 179, 0.259);
+    border: solid 1px rgba(179, 179, 179, 0.259);
 }
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
@@ -70,8 +66,7 @@
     text-align: start;
     margin: 0 0 50px 0;
   }
-  .tab button {
-    margin-right: 5px;
+    .tab button {
     font-size: 0.8rem;
   }
 }
@@ -119,13 +114,11 @@
   .tab {
     width: 100%;
     margin: auto;
-    text-align: center;
+    text-align: start;
     margin: 0 0 50px 0;
   }
   .tab button {
-    margin-right: 1px;
     font-size: 1rem;
-    border: solid 1px rgba(179, 179, 179, 0.259);
   }
 }
 
@@ -174,9 +167,8 @@
     text-align: center;
     margin: 0 0 50px 0;
   }
-  .tab button {
-    margin-right: 5px;
-    font-size: 1.1rem;
+    .tab button {
+    font-size: 1.2rem;
     border: solid 1px rgba(179, 179, 179, 0.259);
   }
 }
@@ -273,8 +265,7 @@
     text-align: center;
     margin: 0 0 50px 0; 
   }
-  .tab button {
-    margin-right: 5px;
+    .tab button {
     font-size: 1.2rem;
     border: solid 1px rgba(179, 179, 179, 0.259);
   }
@@ -320,8 +311,7 @@
     text-align: center;
     margin: 0 0 50px 0; 
   }
-  .tab button {
-    margin-right: 5px;
+    .tab button {
     font-size: 1.5rem;
     border: solid 1px rgba(179, 179, 179, 0.259);
   }

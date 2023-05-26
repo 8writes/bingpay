@@ -83,7 +83,7 @@ export default function Section() {
                 <FadeInUp>
                   <details>
                     <summary>
-                      What is Visa Virtual Card and How do I use it ?
+                      What is Visa Virtual Card?
                     </summary>
                     <p>
                       MTN SME Data Share is a prepaid service that allows
@@ -125,7 +125,7 @@ export default function Section() {
                   <FadeInUp>
                     <details>
                       <summary>
-                        How do I purchase Gift Cards (Vouchers) ?
+                        How do I purchase Gift Cards ?
                       </summary>
                       <p>
                         MTN SME Data Share is a prepaid service that allows
