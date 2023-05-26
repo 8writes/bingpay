@@ -24,15 +24,13 @@ export default function Section() {
       <div className={styles.section}>
         <div className={styles.sectionContext}>
           <div className={styles.tab}>
-            {["Frequently Asked Questions", "How To ?"].map((title, index) => (
+            {["F.A.Qs", "How To ?"].map((title, index) => (
               <button
                 key={index}
                 onClick={() => handleTabClick(index)}
                 style={{
                   backgroundColor:
-                    index === activeTab
-                      ? "rgb(244, 244, 244)"
-                      : "white",
+                    index === activeTab ? "rgb(244, 244, 244)" : "white",
                 }}
               >
                 {title}
@@ -82,9 +80,7 @@ export default function Section() {
                 </div>
                 <FadeInUp>
                   <details>
-                    <summary>
-                      What is Visa Virtual Card?
-                    </summary>
+                    <summary>What is Visa Virtual Card?</summary>
                     <p>
                       MTN SME Data Share is a prepaid service that allows
                       business firms like us to buy data bundles and share with
@@ -101,7 +97,7 @@ export default function Section() {
                 <div class={styles.container}>
                   <FadeInUp>
                     <details>
-                      <summary>How do I Create a Bingpay Account ?</summary>
+                      <summary>How to Create an Account ?</summary>
                       <p>
                         To purchase all bingpay services ranging from Data to
                         Airtime & Bills. You just have to fund your account.
@@ -112,7 +108,7 @@ export default function Section() {
                   </FadeInUp>
                   <FadeInUp>
                     <details>
-                      <summary>How do I update my Personal Info?</summary>
+                      <summary>How to update my Personal Info?</summary>
                       <p>
                         Bingpay do not give database access to third parties.
                         This means that all your account details, Credit cards
@@ -124,9 +120,18 @@ export default function Section() {
                   </FadeInUp>
                   <FadeInUp>
                     <details>
-                      <summary>
-                        How do I purchase Gift Cards ?
-                      </summary>
+                      <summary>How to Change password ?</summary>
+                      <p>
+                        To purchase all bingpay services ranging from Data to
+                        Airtime & Bills. You just have to fund your account.
+                        Navigate to Deposit Input the amount you wish to deposit
+                        and click on the "Deposit" button.
+                      </p>
+                    </details>
+                  </FadeInUp>
+                  <FadeInUp>
+                    <details>
+                      <summary>How to purchase Gift Cards ?</summary>
                       <p>
                         MTN SME Data Share is a prepaid service that allows
                         business firms like us to buy data bundles and share
