@@ -120,7 +120,7 @@ export default function Section() {
                   </FadeInUp>
                   <FadeInUp>
                     <details>
-                      <summary>How to Change password ?</summary>
+                      <summary>How to Change my password ?</summary>
                       <p>
                         To purchase all bingpay services ranging from Data to
                         Airtime & Bills. You just have to fund your account.
