@@ -13,7 +13,7 @@ const scrollToTop = () => {
       top: 0,
       behavior: "smooth",
     });
-  }, 400); // Adjust the delay duration (in milliseconds) as needed
+  }, 500); // Adjust the delay duration (in milliseconds) as needed
 };
 
 import styles from "./index.module.css";
@@ -30,7 +30,7 @@ export default function Footer() {
                 src="/logo-dark.png"
                 alt="bingpay logo"
                 width={120}
-                height={120}
+                height={0}
                 onClick={scrollToTop}
                 priority
                 // blurDataURL="data:..." automatically provided
@@ -52,10 +52,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about-us">About Us</Link>
+                <Link href="/about-us" onClick={scrollToTop}>
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link href="/developers">Developers</Link>
+                <Link href="/developers" onClick={scrollToTop}>
+                  Developers
+                </Link>
               </li>
             </ul>
           </div>
@@ -63,17 +67,25 @@ export default function Footer() {
             <h1>Support</h1>
             <ul>
               <li>
-                <Link href="/help-center">Help Center</Link>
+                <Link href="/help-center" onClick={scrollToTop}>
+                  Help Center
+                </Link>
               </li>
               <li>
-                <Link href="/privacy-policy">Privacy Policy</Link>
+                <Link href="/privacy-policy" onClick={scrollToTop}>
+                  Privacy Policy
+                </Link>
               </li>
               <li>
-                <Link href="/terms">Terms & Conditions</Link>
+                <Link href="/terms" onClick={scrollToTop}>
+                  Terms & Conditions
+                </Link>
               </li>
               <li>
-                <Link href="/aml-policy">AML/KYC Policy</Link>
-              </li> 
+                <Link href="/aml-policy" onClick={scrollToTop}>
+                  AML/KYC Policy
+                </Link>
+              </li>
             </ul>
           </div>
           <div className={styles.footerList}>

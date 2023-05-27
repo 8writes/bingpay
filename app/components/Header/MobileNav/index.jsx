@@ -68,7 +68,7 @@ export default function MobileNav() {
               src="/logo-dark.png"
               alt="bingpay logo"
               width={120}
-              height={120}
+              height={0}
               onClick={scrollToTop}
               priority
               // blurDataURL="data:..." automatically provided
@@ -108,7 +108,7 @@ export default function MobileNav() {
                   src="/logo-dark.png"
                   alt="Bingpay Logo"
                   width={120}
-                  height={120}
+                  height={0}
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
