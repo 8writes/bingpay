@@ -5,15 +5,14 @@
 }
 
 .bannerContext {
-  background-color: #F4F2FB;
+  background-color: #f4f2fb;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .bannerContext h1 {
   color: rgb(184, 30, 148);
 }
-
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
@@ -22,7 +21,7 @@
   }
 
   .bannerContext {
-     padding: 100px 10px 100px 10px;
+    padding: 100px 10px 100px 10px;
     width: 100%;
     height: 50%;
     margin: auto;
@@ -48,7 +47,7 @@
   }
 
   .bannerContext {
-    padding: 100px 10px 100px 10px;
+   padding: 100px 10px 100px 10px;
     width: 100%;
     height: 50%;
     margin: auto;
@@ -100,7 +99,7 @@
   }
 
   .bannerContext {
-     padding: 100px 10px 100px 10px;
+    padding: 100px 10px 100px 10px;
     width: 100%;
     height: 50%;
     margin: auto;
@@ -126,7 +125,7 @@
   }
 
   .bannerContext {
-    padding: 142px 10px 142px 10px;
+    padding: 100px 10px 100px 10px;
     width: 100%;
     height: 50%;
     margin: auto;
@@ -152,7 +151,7 @@
   }
 
   .bannerContext {
-    padding: 142px 10px 142px 10px;
+    padding: 100px 10px 100px 10px;
     width: 100%;
     height: 50%;
     margin: auto;
