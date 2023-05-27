@@ -54,11 +54,11 @@
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
   .Hero {
-    padding: 60px 10px 0 10px;
+    padding: 60px 20px 20px 20px;
   }
 
   .heroBg {
-    text-align: center;
+    text-align: start;
     padding: 0;
   }
 
@@ -70,7 +70,7 @@
   }
 
   .Hero h1 {
-    font-size: 8.7vw;
+    font-size: 8.8vw;
     padding: 20px 0 20px 0;
   }
 
@@ -82,7 +82,7 @@
 
   .heroSocials {
     padding: 40px 0 30px 0;
-    margin: auto;
+    margin: 0;
   }
 
   .heroImage {
@@ -124,11 +124,11 @@
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
   .Hero {
-    padding: 60px 7px 0 7px;
+    padding: 60px 20px 0 20px;
   }
 
   .heroBg {
-    text-align: center;
+    text-align: start;
     padding: 0;
   }
 
@@ -151,8 +151,8 @@
   }
 
   .heroSocials {
-    padding: 40px 0 30px 0;
-    margin: auto;
+    padding: 40px 0 40px 0;
+    margin: 0;
   }
 
   .heroImage {
@@ -194,11 +194,11 @@
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
   .Hero {
-    padding: 60px 10px 0 10px;
+    padding: 60px 20px 0 20px;
   }
 
   .heroBg {
-    text-align: center;
+    text-align: start;
     padding: 0;
   }
 
@@ -221,8 +221,8 @@
   }
 
   .heroSocials {
-    padding: 40px 0 30px 0;
-    margin: auto;
+    padding: 40px 0 50px 0;
+    margin: 0;
   }
 
   .heroImage {

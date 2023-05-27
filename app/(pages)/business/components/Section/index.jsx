@@ -13,6 +13,7 @@ export default function Section() {
   return (
     <div>
       <div className={styles.section}>
+        <div className={styles.sectionContext}></div>
       </div>
     </div>
   );
