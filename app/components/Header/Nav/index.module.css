@@ -74,7 +74,8 @@
 }
 
 .dropContent ul li:hover {
-  border: solid 1px rgb(184, 30, 148);
+  background-color:rgba(197, 55, 164, 0.164);
+  border-radius: 5px;
 }
 
 .dropBg {
