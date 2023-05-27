@@ -18,24 +18,19 @@ export default function Hero() {
               <h1>Accept payments with Bingpay!.</h1>
 
               <p>
-                Bingpay business allows you accept payments with your
-                merchant ID, make bulk transactions with discounts, get access
-                to our developer APIs and reach more audience with SMS
-                marketing.
+                Bingpay business allows you accept payments with your merchant
+                ID, make bulk transactions with discounts, get access to our
+                developer APIs and reach more audience with SMS marketing.
               </p>
             </div>
 
             <div className={styles.heroSocials}>
               <div>
                 <span className={styles.btn}>
-                  <FadeInUp>
-                    <Link
-                      href="https://documenter.getpostman.com/view/17112744/U16nKPpt"
-                      target="_blank"
-                    >
+                  
+                    <Link href="/">
                       <button>Join Waitlist</button>
                     </Link>
-                  </FadeInUp>
                 </span>
               </div>
             </div>
