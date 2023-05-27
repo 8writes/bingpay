@@ -4,20 +4,67 @@
   font-family: var(--font-space_grotesk);
 }
 
+.sectionContext {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
 .sectionContext h1 {
   color: black;
 }
 
+.Socials {
+  width: 100%;
+}
+
+.Socials ul {
+  display: inline-flex;
+  gap: 20px;
+  margin: 30px 0 50px 0;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.sectionList h1 {
+  color: rgb(184, 30, 148);
+  font-weight: 900;
+}
+
+.sectionList p {
+  font-weight: 500;
+  color: rgb(70, 70, 70);
+}
+
+.sectionForm {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(173, 173, 173, 0.501),
+    0 6px 20px 0 rgba(222, 222, 222, 0.312);
+}
+
+.sectionForm p {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  color: rgb(74, 74, 74);
+}
+
+.liveChat {
+  margin: 30px 0 0 0;
+  display: inline-flex;
+  gap: 10px;
+  color: rgb(184, 30, 148);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
   .section {
-    padding: 50px 15px 100px 15px;
+    padding: 30px 15px 50px 15px;
   }
 
   .sectionContext {
     padding: 25px 0 40px 0;
     width: 100%;
-    height: 50%;
     margin: auto;
     text-align: start;
   }
@@ -38,29 +85,32 @@
     font-weight: 600;
     line-height: 2;
   }
-
   
-  .alert{
-     padding: 100px 0 200px 0;
+  .sectionList {
+    width: 100%;
+    margin: 50px 0 0 0;
   }
-  
-  .alert img{
-    width: 75%;
-    margin: auto;
+
+  .sectionList h1 {
+    font-size: 1.7em;
+  }
+
+  .sectionList p {
+    font-size: 0.9em;
+    margin: 10px 0 20px 0;
   }
 
 }
 
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
- .section {
-    padding: 50px 20px 100px 20px;
+  .section {
+    padding: 50px 20px 50px 20px;
   }
 
   .sectionContext {
     padding: 25px 0 40px 0;
     width: 100%;
-    height: 50%;
     margin: auto;
     text-align: start;
   }
@@ -82,27 +132,30 @@
     line-height: 2;
   }
 
-  .alert{
-     padding: 100px 0 200px 0;
-  }
-  
-  .alert img{
-    width: 75%;
-    margin: auto;
+  .sectionList {
+    width: 100%;
+    margin: 50px 0 0 0;
   }
 
+  .sectionList h1 {
+    font-size: 1.7em;
+  }
+
+  .sectionList p {
+    font-size: 0.9em;
+    margin: 10px 0 20px 0;
+  }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
- .section {
-    padding: 50px 20px 100px 20px;
+  .section {
+    padding: 50px 20px 50px 20px;
   }
 
   .sectionContext {
     padding: 25px 0 40px 0;
     width: 100%;
-    height: 50%;
     margin: auto;
     text-align: start;
   }
@@ -124,13 +177,18 @@
     line-height: 2;
   }
 
-  .alert{
-     padding: 100px 0 200px 0;
+ .sectionList {
+    width: 100%;
+    margin: 50px 0 0 0;
   }
-  
-  .alert img{
-    width: 60%;
-    margin: auto;
+
+  .sectionList h1 {
+    font-size: 1.7em;
+  }
+
+  .sectionList p {
+    font-size: 0.9em;
+    margin: 10px 0 20px 0;
   }
 }
 
@@ -143,7 +201,6 @@
   .sectionContext {
     padding: 25px 20px 40px 20px;
     width: 100%;
-    height: 50%;
     margin: auto;
     text-align: start;
   }
@@ -165,28 +222,38 @@
     line-height: 2;
   }
 
-  .alert{
-     padding: 100px 0 200px 0;
+  .sectionList {
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+
+  .sectionList h1 {
+    font-size: 1.7em;
+  }
+
+  .sectionList p {
+    font-size: 0.9em;
+    margin: 10px 0 20px 0;
   }
   
-  .alert img{
-    width: 40%;
-    margin: auto;
+  .sectionForm {
+    width: 100%;
+    margin: 0 0 50px 0;
+    padding: 40px 0 0 0;
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
   .section {
-    padding: 50px 20px 100px 20px;
+    padding: 30px 20px 100px 20px;
   }
 
   .sectionContext {
-    padding: 50px 20px 100px 20px;
-    width: 80%;
-    height: 50%;
+    padding: 30px 20px 100px 20px;
+    width: 100%;
     margin: auto;
-    text-align: start;
+    gap: 20px;
   }
 
   .sectionContext h1 {
@@ -200,16 +267,27 @@
     font-weight: 600;
     line-height: 2;
   }
-
-  .alert{
-     padding: 100px 0 200px 0;
-  }
   
-  .alert img{
+  .sectionList {
     width: 25%;
-    margin: auto;
+    margin: 0 0 0 70px;
   }
 
+  .sectionList h1 {
+    font-size: 1.8em;
+  }
+
+  .sectionList p {
+    font-size: 1em;
+    margin: 10px 0 20px 0;
+  }
+
+  
+  .sectionForm {
+    width: 60%;
+    margin: 0;
+    padding: 40px 0 0 0;
+  }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
@@ -219,11 +297,10 @@
   }
 
   .sectionContext {
-    padding: 50px 20px 100px 20px;
-    width: 80%;
-    height: 50%;
+    padding: 0 0 100px 0;
+    width: 100%;
     margin: auto;
-    text-align: start;
+    justify-content: center;
   }
 
   .sectionContext h1 {
@@ -237,13 +314,24 @@
     font-weight: 600;
     line-height: 2;
   }
-  
-  .alert{
-     padding: 100px 0 200px 0;
+
+  .sectionList {
+    width: 30%;
+    margin: 0 0 0 20px;
   }
 
-  .alert img{
-    width: 25%;
-    margin: auto;
+  .sectionList h1 {
+    font-size: 2em;
+  }
+
+  .sectionList p {
+    font-size: 1.1em;
+    margin: 10px 0 20px 0;
+  }
+
+  .sectionForm {
+    width: 50%;
+    margin: 0 0 50px 0;
+    padding: 40px 0 0 0;
   }
 }
