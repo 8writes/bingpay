@@ -124,7 +124,7 @@
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
   .Hero {
-    padding: 60px 20px 0 20px;
+    padding: 60px 15px 0 15px;
   }
 
   .heroBg {
@@ -136,7 +136,7 @@
     font-size: 1rem;
     width: 100%;
     margin: 0;
-    padding: 0 3px 0 3px;
+    padding: 0;
   }
 
   .Hero h1 {
