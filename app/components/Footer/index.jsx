@@ -72,8 +72,8 @@ export default function Footer() {
                 <Link href="/terms">Terms & Conditions</Link>
               </li>
               <li>
-                <Link href="/aml-kyc-policy">AML/KYC Policy</Link>
-              </li>
+                <Link href="/aml-policy">AML/KYC Policy</Link>
+              </li> 
             </ul>
           </div>
           <div className={styles.footerList}>
