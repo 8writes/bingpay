@@ -1,10 +1,9 @@
 "use client";
 
 import dynamic from "next/dynamic";
-
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./index.module.css";
-
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
 });
@@ -49,16 +48,17 @@ export default function Business() {
             <span>
               <FadeInUp>
                 <p>
-                  Bingpay business allows you accept payments with your
-                  merchant ID, make bulk transactions with discounts, get access
-                  to our developer APIs and reach more audience with SMS
-                  marketing.
+                  Bingpay business allows you accept payments with your merchant
+                  ID, make bulk transactions with discounts, get access to our
+                  developer APIs and reach more audience with SMS marketing.
                 </p>
               </FadeInUp>
             </span>
             <span className={styles.btn}>
               <FadeInUp>
-                <button>Join Waitlist</button>
+                <Link href="/business">
+                  <button>Get Started</button>
+                </Link>
               </FadeInUp>
             </span>
           </div>

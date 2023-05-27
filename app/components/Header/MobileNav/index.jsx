@@ -155,7 +155,7 @@ export default function MobileNav() {
                           // blurDataURL="data:..." automatically provided
                           // placeholder="blur" // Optional blur-up while loading
                         />
-                        Join Waitlist
+                        Overview
                       </Link>
                     </li>
                   </ul>
