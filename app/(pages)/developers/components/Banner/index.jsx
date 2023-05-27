@@ -10,18 +10,17 @@ const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
 
 export default function Hero() {
   return (
-    <div>
-      <section className={styles.Hero}>
-        <div className={styles.heroBg}>
+    <>
+      <main className={styles.Hero}>
+        <section className={styles.heroBg}>
           <div className={styles.heroLeft}>
-            <div>
+            <hgroup>
               <h1>Seamless Integrations with Bingpay APIs.</h1>
-
               <p>
                 Our well-documented APIs lets you build and launch simple or
                 complex financial products.
               </p>
-            </div>
+            </hgroup>
 
             <div className={styles.heroSocials}>
               <div>
@@ -49,12 +48,11 @@ export default function Hero() {
               </div>
             </div>
           </div>
-
-          <div className={styles.heroImage}>
+          <picture className={styles.heroImage}>
             <FadeInUp>
               <Image
                 src="/developer.png"
-                alt="Picture of the author"
+                alt="developer"
                 width={300}
                 height={300}
                 priority
@@ -62,9 +60,9 @@ export default function Hero() {
                 // placeholder="blur" // Optional blur-up while loading
               />
             </FadeInUp>
-          </div>
-        </div>
-      </section>
-    </div>
+          </picture>
+        </section>
+      </main>
+    </>
   );
 }

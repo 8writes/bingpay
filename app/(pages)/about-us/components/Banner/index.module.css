@@ -138,12 +138,12 @@
   }
 
   .bannerContext h1 {
-    font-size: 3.5em;
+    font-size: 3.3em;
     font-weight: 600;
   }
 
   .bannerContext p {
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 600;
   }
 }

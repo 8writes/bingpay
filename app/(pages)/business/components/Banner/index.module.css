@@ -1,175 +1,481 @@
-.banner {
+.Hero {
   width: 100%;
   background-color: white;
   font-family: var(--font-space_grotesk);
 }
 
-.bannerContext {
-  background-color: #F4F2FB;
-  background-repeat: no-repeat;
-  background-size: cover; 
+.heroBg {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
 }
 
-.bannerContext h1 {
+.Hero h1 {
+  font-weight: 900;
+  line-height: normal;
   color: rgb(184, 30, 148);
 }
 
-.bannerContext p{
-  color: #505050;
+.Hero p {
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+.heroLeft {
+  display: grid;
+}
+
+.heroSocials {
+  display: flex;
+  gap: 10px;
+}
+
+.btn button {
+  background: rgb(184, 30, 148); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(184, 43, 151),
+    rgb(184, 38, 150),
+    rgb(153, 34, 126)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgb(173, 40, 142),
+    rgb(163, 35, 134),
+    rgb(173, 33, 141)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+   border-radius: 5px;
 }
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
 @media (max-width: 373px) {
-  .banner {
-    padding: 80px 10px 0 10px;
+  .Hero {
+    padding: 60px 10px 0 10px;
   }
 
-  .bannerContext {
-    padding: 100px 10px 100px 10px;
-    width: 100%;
-    height: 50%;
-    margin: auto;
-    border-radius: 10px;
+  .heroBg {
     text-align: center;
+    padding: 0;
   }
 
-  .bannerContext h1 {
-    font-size: 2em;
-    font-weight: 600;
+   .Hero p {
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  .bannerContext p {
-    font-size: 0.9em;
-    font-weight: 600;
+  .Hero h1 {
+    font-size: 8.7vw;
+    padding: 20px 0 20px 0;
+  }
+
+  .heroLeft {
+    margin: 0;
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 40px 0 30px 0;
+    margin: auto;
+  }
+
+  .heroImage {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+
+  .heroImage img {
+    width: 100%;
+    margin: auto;
+  }
+  .btn button {
+    display: inline-flex;
+    background-color: rgb(184, 30, 148);
+    margin: auto;
+    width: 100%;
+    padding: 10px 25px 10px 25px;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+
+  .btn button:hover {
+    background: rgb(184, 30, 148); /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(163, 36, 133),
+      rgb(154, 33, 126),
+      rgb(169, 46, 141)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgb(154, 35, 126),
+      rgb(168, 38, 138),
+      rgb(169, 46, 141)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
-  .banner {
-    padding: 80px 10px 0 10px;
+  .Hero {
+    padding: 60px 7px 0 7px;
   }
 
-  .bannerContext {
-    padding: 100px 10px 100px 10px;
-    width: 100%;
-    height: 50%;
-    margin: auto;
-    border-radius: 10px;
+  .heroBg {
     text-align: center;
+    padding: 0;
   }
 
-  .bannerContext h1 {
-    font-size: 2.5em;
-    font-weight: 600;
+  .Hero p {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 0 5px 0 5px;
   }
 
-  .bannerContext p {
-    font-size: 0.9em;
-    font-weight: 600;
+  .Hero h1 {
+    font-size: 9vw;
+    padding: 20px 0 20px 0;
+  }
+
+  .heroLeft {
+    margin: 0;
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 40px 0 30px 0;
+    margin: auto;
+  }
+
+  .heroImage {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+
+  .heroImage img {
+    width: 100%;
+    margin: auto;
+  }
+  .btn button {
+    display: inline-flex;
+    background-color: rgb(184, 30, 148);
+    margin: auto;
+    width: 100%;
+    padding: 10px 25px 10px 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .btn button:hover {
+    background: rgb(184, 30, 148); /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(163, 36, 133),
+      rgb(154, 33, 126),
+      rgb(169, 46, 141)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgb(154, 35, 126),
+      rgb(168, 38, 138),
+      rgb(169, 46, 141)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
-  .banner {
-    padding: 80px 10px 0 10px;
+  .Hero {
+    padding: 60px 10px 0 10px;
   }
 
-  .bannerContext {
-    padding: 100px 10px 100px 10px;
-    width: 100%;
-    height: 50%;
-    margin: auto;
-    border-radius: 10px;
+  .heroBg {
     text-align: center;
+    padding: 0;
   }
 
-  .bannerContext h1 {
-    font-size: 2.9em;
-    font-weight: 600;
+   .Hero p {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  .bannerContext p {
-    font-size: 0.9em;
-    font-weight: 600;
+  .Hero h1 {
+    font-size: 8.6vw;
+    padding: 20px 0 20px 0;
+  }
+
+  .heroLeft {
+    margin: 0;
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 40px 0 30px 0;
+    margin: auto;
+  }
+
+  .heroImage {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+
+  .heroImage img {
+    width: 100%;
+    margin: auto;
+  }
+  .btn button {
+    display: inline-flex;
+    background-color: rgb(184, 30, 148);
+    margin: auto;
+    width: 100%;
+    padding: 10px 25px 10px 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .btn button:hover {
+    background: rgb(184, 30, 148); /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(163, 36, 133),
+      rgb(154, 33, 126),
+      rgb(169, 46, 141)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgb(154, 35, 126),
+      rgb(168, 38, 138),
+      rgb(169, 46, 141)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
 @media (min-width: 768px) {
-  .banner {
-    padding: 80px 10px 0 10px;
+  .Hero {
+    padding: 75px 10px 0 10px;
   }
 
-  .bannerContext {
-    padding: 100px 10px 100px 10px;
-    width: 100%;
-    height: 50%;
-    margin: auto;
-    border-radius: 10px;
+  .heroBg {
     text-align: center;
+    padding: 0 50px 0 50px;
   }
 
-  .bannerContext h1 {
-    font-size: 3.5em;
-    font-weight: 600;
+  .Hero p {
+    font-size: 1.1rem;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px 20px 20px;
   }
 
-  .bannerContext p {
-    font-size: 1.1em;
-    font-weight: 600;
+  .Hero h1 {
+    font-size: 3.5rem;
+    padding: 20px 0 20px 0;
+  }
+
+  .heroLeft {
+    margin: 0;
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+
+  .heroSocials {
+    padding: 30px 0 30px 0;
+    margin: auto;
+  }
+
+  .heroImage {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+
+  .heroImage img {
+    width: 60%;
+    margin: auto;
+  }
+  .btn button {
+    display: inline-flex;
+    background-color: rgb(184, 30, 148);
+    margin: auto;
+    width: 100%;
+    padding: 10px 25px 10px 25px;
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+
+  .btn button:hover {
+    background: rgb(184, 30, 148); /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(163, 36, 133),
+      rgb(154, 33, 126),
+      rgb(169, 46, 141)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgb(154, 35, 126),
+      rgb(168, 38, 138),
+      rgb(169, 46, 141)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
-  .banner {
-    padding: 80px 10px 0 10px;
+  .Hero {
+    padding: 100px 10px 0 10px;
   }
 
-  .bannerContext {
-    padding: 100px 10px 100px 10px;
-    width: 100%;
-    height: 50%;
+  .heroBg {
+    text-align: start;
+    padding: 60px 0 40px 0;
+  }
+
+  .Hero p {
+    font-size: 1.3vw;
+    width: 90%;
+    margin: 0;
+    padding: 10px 0 20px 0;
+  }
+
+  .Hero h1 {
+    font-size: 3.3vw;
     margin: auto;
-    border-radius: 10px;
-    text-align: center;
+    width: 100%;
+    padding: 10px 0 10px 0;
   }
 
-  .bannerContext h1 {
-    font-size: 3.5em;
+  .heroLeft {
+    margin: auto;
+    width: 50%;
+    padding: 30px 0 0 88px;
+  }
+
+  .heroSocials {
+    padding: 15px 0 50px 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .heroImage {
+    width: 48%;
+    padding: 0 0 0 0;
+  }
+
+  .heroImage img {
+    width: 60%;
+    margin: auto;
+  }
+
+  .btn button {
+    display: inline-flex;
+    background-color: rgb(184, 30, 148);
+    margin: auto;
+    width: 100%;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    font-size: 1em;
     font-weight: 600;
   }
 
-  .bannerContext p {
-    font-size: 1.3em;
-    font-weight: 600;
+  .btn button:hover {
+    background: rgb(184, 30, 148); /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(163, 36, 133),
+      rgb(154, 33, 126),
+      rgb(169, 46, 141)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgb(154, 35, 126),
+      rgb(168, 38, 138),
+      rgb(169, 46, 141)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
 @media (min-width: 1440px) {
-  .banner {
-    padding: 100px 10px 10px 10px;
+  .Hero {
+    padding: 100px 10px 0 10px;
   }
 
-  .bannerContext {
-    padding: 100px 10px 100px 10px;
+  .heroBg {
+    text-align: start;
+    padding: 100px 0 0 0;
+  }
+
+  .Hero p {
+    font-size: 1.2vw;
     width: 100%;
-    height: 100%;
+    margin: 0;
+    padding: 10px 0 10px 0;
+  }
+
+  .Hero h1 {
+    font-size: 3.3vw;
     margin: auto;
-    border-radius: 10px;
-    text-align: center;
+    width: 100%;
+    padding: 10px 0 10px 0;
   }
 
-  .bannerContext h1 {
-    font-size: 3.5em;
-    font-weight: 600;
+  .heroLeft {
+    margin: auto;
+    width: 50%;
+    padding: 30px 0 0 130px;
   }
 
-  .bannerContext p {
-    font-size: 1.3em;
-    font-weight: 600;
+  .heroSocials {
+    padding: 30px 0 50px 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .heroImage {
+    width: 47%;
+    padding: 0 0 0 0;
+  }
+
+  .heroImage img {
+    width: 60%;
+    margin: auto;
+  }
+
+  .btn button {
+    display: inline-flex;
+    background-color: rgb(184, 30, 148);
+    margin: auto;
+    width: 100%;
+    padding: 10px 25px 10px 25px;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .btn button:hover {
+    background: rgb(184, 30, 148); /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(163, 36, 133),
+      rgb(154, 33, 126),
+      rgb(169, 46, 141)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgb(154, 35, 126),
+      rgb(168, 38, 138),
+      rgb(169, 46, 141)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }

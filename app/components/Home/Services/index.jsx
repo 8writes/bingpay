@@ -109,7 +109,7 @@ export default function Services() {
                 />
               </picture>
               <div>
-                <h1>Vouchers</h1>
+                <h1>Gift Cards</h1>
               </div>
               <span>
                 <p>

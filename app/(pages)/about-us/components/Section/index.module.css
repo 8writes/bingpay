@@ -4,8 +4,16 @@
   font-family: var(--font-space_grotesk);
 }
 
+.sectionContext {
+  display: grid;
+}
+
 .sectionContext h1 {
-  color: black;
+  color: rgb(184, 30, 148);
+}
+
+.sectionContext p {
+  color: #505050;
 }
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
@@ -39,21 +47,19 @@
     line-height: 2;
   }
 
-  
-  .alert{
-     padding: 100px 0 200px 0;
+  .alert {
+    padding: 100px 0 200px 0;
   }
-  
-  .alert img{
+
+  .alert img {
     width: 75%;
     margin: auto;
   }
-
 }
 
 /* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
 @media (min-width: 374px) {
- .section {
+  .section {
     padding: 50px 20px 100px 20px;
   }
 
@@ -82,20 +88,19 @@
     line-height: 2;
   }
 
-  .alert{
-     padding: 100px 0 200px 0;
+  .alert {
+    padding: 100px 0 200px 0;
   }
-  
-  .alert img{
+
+  .alert img {
     width: 75%;
     margin: auto;
   }
-
 }
 
 /* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
 @media (min-width: 425px) {
- .section {
+  .section {
     padding: 50px 20px 100px 20px;
   }
 
@@ -124,11 +129,11 @@
     line-height: 2;
   }
 
-  .alert{
-     padding: 100px 0 200px 0;
+  .alert {
+    padding: 100px 0 200px 0;
   }
-  
-  .alert img{
+
+  .alert img {
     width: 60%;
     margin: auto;
   }
@@ -165,11 +170,11 @@
     line-height: 2;
   }
 
-  .alert{
-     padding: 100px 0 200px 0;
+  .alert {
+    padding: 100px 0 200px 0;
   }
-  
-  .alert img{
+
+  .alert img {
     width: 40%;
     margin: auto;
   }
@@ -178,38 +183,28 @@
 /* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
 @media (min-width: 1024px) {
   .section {
-    padding: 50px 20px 100px 20px;
+    padding: 20px 20px 90px 20px;
   }
 
   .sectionContext {
-    padding: 50px 20px 100px 20px;
+    padding: 20px 20px 90px 20px;
     width: 80%;
-    height: 50%;
+    gap: 30px;
     margin: auto;
     text-align: start;
   }
 
   .sectionContext h1 {
-    font-size: 1.4em;
+    font-size: 1.8rem;
     font-weight: 700;
     padding: 30px 0 5px 0;
   }
 
   .sectionContext p {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 2;
   }
-
-  .alert{
-     padding: 100px 0 200px 0;
-  }
-  
-  .alert img{
-    width: 25%;
-    margin: auto;
-  }
-
 }
 
 /* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
@@ -221,29 +216,20 @@
   .sectionContext {
     padding: 50px 20px 100px 20px;
     width: 80%;
-    height: 50%;
+    gap: 30px;
     margin: auto;
     text-align: start;
   }
 
   .sectionContext h1 {
-    font-size: 1.5em;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 900;
     padding: 30px 0 5px 0;
   }
 
   .sectionContext p {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 600;
     line-height: 2;
-  }
-  
-  .alert{
-     padding: 100px 0 200px 0;
-  }
-
-  .alert img{
-    width: 25%;
-    margin: auto;
   }
 }

@@ -8,7 +8,6 @@
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
-  border-radius: 10px;
   flex-wrap: wrap;
   width: 100%;
   margin: auto;
@@ -49,6 +48,7 @@
     rgb(173, 33, 141)
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
+   border-radius: 5px;
 }
 
 /* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
@@ -100,7 +100,7 @@
     margin: auto;
     width: 100%;
     padding: 12px 14px 12px 14px;
-    border-radius: 10px;
+
     font-size: 1.1em;
     font-weight: 700;
   }
@@ -171,7 +171,7 @@
     margin: auto;
     width: 100%;
     padding: 12px 14px 12px 14px;
-    border-radius: 10px;
+
     font-size: 1.2rem;
     font-weight: 700;
   }
@@ -242,7 +242,7 @@
     margin: auto;
     width: 100%;
     padding: 12px 14px 12px 14px;
-    border-radius: 10px;
+
     font-size: 1.2em;
     font-weight: 700;
   }
@@ -313,7 +313,7 @@
     margin: auto;
     width: 100%;
     padding: 12px 14px 12px 14px;
-    border-radius: 10px;
+
     font-size: 1.3em;
     font-weight: 700;
   }
@@ -388,7 +388,7 @@
     margin: auto;
     width: 100%;
     padding: 12px 14px 12px 14px;
-    border-radius: 10px;
+
     font-size: 1em;
     font-weight: 700;
   }
@@ -463,7 +463,7 @@
     margin: auto;
     width: 100%;
     padding: 12px 14px 12px 14px;
-    border-radius: 10px;
+
     font-size: 1em;
     font-weight: 700;
   }
