@@ -1,11 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
-
 import styles from "./index.module.css";
-
 import React, { useState } from "react";
-
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
 });
@@ -75,18 +72,19 @@ export default function Section() {
                       </p>
                     </details>
                   </FadeInUp>
+                  <FadeInUp>
+                    <details>
+                      <summary>What is Visa Virtual Card?</summary>
+                      <p>
+                        MTN SME Data Share is a prepaid service that allows
+                        business firms like us to buy data bundles and share
+                        with you. Its Validity is 90 days and its assumed to be
+                        Cheaper & Faster than Direct Data but a bit more
+                        consuming.
+                      </p>
+                    </details>
+                  </FadeInUp>
                 </div>
-                <FadeInUp>
-                  <details>
-                    <summary>What is Visa Virtual Card?</summary>
-                    <p>
-                      MTN SME Data Share is a prepaid service that allows
-                      business firms like us to buy data bundles and share with
-                      you. Its Validity is 90 days and its assumed to be Cheaper
-                      & Faster than Direct Data but a bit more consuming.
-                    </p>
-                  </details>
-                </FadeInUp>
               </div>
             )}
             {activeTab === 1 && (
