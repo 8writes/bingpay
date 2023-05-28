@@ -27,10 +27,11 @@ export default function Hero() {
             <div className={styles.heroSocials}>
               <div>
                 <span className={styles.btn}>
-                  
+                  <FadeInUp>
                     <Link href="/">
                       <button>Join Waitlist</button>
                     </Link>
+                  </FadeInUp>
                 </span>
               </div>
             </div>

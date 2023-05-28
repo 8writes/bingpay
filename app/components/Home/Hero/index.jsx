@@ -20,17 +20,16 @@ export default function Hero() {
       <main className={styles.Hero}>
         <section className={styles.heroBg}>
           <div className={styles.heroLeft}>
-            <FadeInLeft>
-              <hgroup>
-                <h1>
-                  Your one stop app for <br></br> everyday payments.
-                </h1>
-                <p>
-                  Recharge phones, Buy Giftcards, Trade digital assets & Pay
-                  bills in over 50 countries.
-                </p>
-              </hgroup>
-            </FadeInLeft>
+            <hgroup>
+              <h1>
+                Your one stop app for <br></br> everyday payments.
+              </h1>
+              <p>
+                Recharge phones, Buy Giftcards, Trade digital assets & Pay bills
+                in over 50 countries.
+              </p>
+            </hgroup>
+
             <div className={styles.heroSocials}>
               <picture>
                 <FadeInUp>
@@ -71,7 +70,7 @@ export default function Hero() {
             </div>
           </div>
           <picture className={styles.heroImage}>
-            <FadeInRight>
+            <FadeInUp>
               <Image
                 src="/bing-hero.png"
                 alt="bing hero"
@@ -81,7 +80,7 @@ export default function Hero() {
                 // blurDataURL="data:..." automatically provided
                 // placeholder="blur" // Optional blur-up while loading
               />
-            </FadeInRight>
+            </FadeInUp>
           </picture>
         </section>
       </main>
