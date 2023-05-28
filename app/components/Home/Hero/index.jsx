@@ -39,7 +39,7 @@ export default function Hero() {
                     src="/app-store.svg"
                     alt="App Store"
                     width={146}
-                    height={0}
+                    height={146}
                     priority
                     // blurDataURL="data:..." automatically provided
                     // placeholder="blur" // Optional blur-up while loading
@@ -56,7 +56,7 @@ export default function Hero() {
                     src="/google-play.svg"
                     alt="Google Play"
                     width={160}
-                    height={0}
+                    height={160}
                     priority
                     // blurDataURL="data:..." automatically provided
                     // placeholder="blur" // Optional blur-up while loading
@@ -70,7 +70,7 @@ export default function Hero() {
               src="/bing-hero.png"
               alt="bing hero"
               width={650}
-              height={0}
+              height={650}
               priority
               // blurDataURL="data:..." automatically provided
               // placeholder="blur" // Optional blur-up while loading
