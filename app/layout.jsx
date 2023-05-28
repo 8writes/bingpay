@@ -12,7 +12,6 @@ const Footer = dynamic(() => import("./components/Footer/index"), {
 });
 
 import "./globals.css";
-
 import { Space_Grotesk } from "next/font/google";
 
 const space_grotesk = Space_Grotesk({

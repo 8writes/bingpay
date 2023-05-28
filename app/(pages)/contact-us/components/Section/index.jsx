@@ -4,15 +4,14 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./index.module.css";
-
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
 });
 
 export default function Section() {
   return (
-    <div>
-      <div className={styles.section}>
+    <>
+      <section className={styles.section}>
         <div className={styles.sectionContext}>
           <div className={styles.sectionList}>
             <FadeInUp>
@@ -95,8 +94,9 @@ export default function Section() {
               </FadeInUp>
             </div>
           </div>
-          
-            <div className={styles.sectionForm}><FadeInUp>
+
+          <section className={styles.sectionForm}>
+            <FadeInUp>
               <p>Get in touch! We look forward to hearing from you.</p>
               <iframe
                 title="Contact Form"
@@ -106,11 +106,11 @@ export default function Section() {
                 width="100%"
                 height="600px"
                 frameborder="0"
-              ></iframe></FadeInUp>
-            </div>
-          
+              ></iframe>
+            </FadeInUp>
+          </section>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

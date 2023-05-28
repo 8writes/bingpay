@@ -1,18 +1,9 @@
-"use client";
-
-import dynamic from "next/dynamic";
-
-import Image from "next/image";
 import styles from "./index.module.css";
-
-const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
-  ssr: false,
-});
 
 export default function Section() {
   return (
-    <div>
-      <div className={styles.section}>
+    <>
+      <section className={styles.section}>
         <div className={styles.sectionContext}>
           <p>
             Money laundering is the process of making money earned from criminal
@@ -92,7 +83,7 @@ export default function Section() {
             monitored and probed.
           </p>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

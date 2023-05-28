@@ -1,18 +1,10 @@
-"use client";
-
-import dynamic from "next/dynamic";
-
 import styles from "./index.module.css";
 import Link from "next/link";
 
-const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
-  ssr: false,
-});
-
 export default function Section() {
   return (
-    <div>
-      <div className={styles.section}>
+    <>
+      <section className={styles.section}>
         <div className={styles.sectionContext}>
           <p>
             Copyright © 2021. Triber inc. This site is protected by copyright
@@ -154,7 +146,7 @@ export default function Section() {
             posted on this page.
           </p>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

@@ -13,7 +13,6 @@ const FadeInUp = ({ children }) => {
       transition: {
         bounce: 0.3,
         duration: 1.1,
-        delay: 0.1,
         ease: [0, 0.71, 0.2, 1.01],
         delay: 0.3,
       },

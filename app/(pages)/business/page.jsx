@@ -10,9 +10,9 @@ const Section = dynamic(() => import("./components/Section/index"), {
 
 export default function Business() {
   return (
-    <main>
+    <>
       <Banner />
       <Section />
-    </main>
+    </>
   );
 }

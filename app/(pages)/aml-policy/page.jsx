@@ -10,9 +10,9 @@ const Section = dynamic(() => import("./components/Section/index"), {
 
 export default function AmlKyc() {
   return (
-    <main>
+    <>
       <Banner />
       <Section />
-    </main>
+    </>
   );
 }

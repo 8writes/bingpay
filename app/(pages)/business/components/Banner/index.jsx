@@ -8,36 +8,31 @@ const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
 });
 
-export default function Hero() {
+export default function Banner() {
   return (
-    <div>
+    <>
       <section className={styles.Hero}>
         <div className={styles.heroBg}>
           <div className={styles.heroLeft}>
-            <div>
+            <hgroup>
               <h1>Accept payments with Bingpay!.</h1>
-
               <p>
                 Bingpay business allows you accept payments with your merchant
                 ID, make bulk transactions with discounts, get access to our
                 developer APIs and reach more audience with SMS marketing.
               </p>
-            </div>
-
+            </hgroup>
             <div className={styles.heroSocials}>
-              <div>
-                <span className={styles.btn}>
-                  <FadeInUp>
-                    <Link href="/">
-                      <button>Join Waitlist</button>
-                    </Link>
-                  </FadeInUp>
-                </span>
-              </div>
+              <span className={styles.btn}>
+                <FadeInUp>
+                  <Link href="/">
+                    <button>Join Waitlist</button>
+                  </Link>
+                </FadeInUp>
+              </span>
             </div>
           </div>
-
-          <div className={styles.heroImage}>
+          <picture className={styles.heroImage}>
             <FadeInUp>
               <Image
                 src="/merchant.svg"
@@ -49,9 +44,9 @@ export default function Hero() {
                 // placeholder="blur" // Optional blur-up while loading
               />
             </FadeInUp>
-          </div>
+          </picture>
         </div>
       </section>
-    </div>
+    </>
   );
 }

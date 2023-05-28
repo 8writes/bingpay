@@ -17,8 +17,8 @@ const FadeInLeft = dynamic(() => import("./Framer/FadeInLeft"), {
 export default function Section() {
   return (
     <>
-      <main className={styles.section}>
-        <section className={styles.sectionContent}>
+      <section className={styles.section}>
+        <div className={styles.sectionContent}>
           <hgroup className={styles.sectionIntro}>
             <FadeInUp>
               <h1>What do we Offer?</h1>
@@ -280,8 +280,8 @@ export default function Section() {
               </FadeInRight>
             </picture>
           </section>
-        </section>
-      </main>
+        </div>
+      </section>
     </>
   );
 }

@@ -1,8 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import styles from "./index.module.css";
 import React, { useState } from "react";
+import styles from "./index.module.css";
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
 });
@@ -17,8 +17,8 @@ export default function Section() {
   };
 
   return (
-    <div>
-      <div className={styles.section}>
+    <>
+      <section className={styles.section}>
         <div className={styles.sectionContext}>
           <div className={styles.tab}>
             {["F.A.Qs", "How To ?"].map((title, index) => (
@@ -142,7 +142,7 @@ export default function Section() {
             {activeTab === 2 && <div>Content for Tab 3</div>}
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

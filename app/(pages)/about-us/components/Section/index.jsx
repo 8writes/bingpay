@@ -1,10 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-
-import Image from "next/image";
 import styles from "./index.module.css";
-
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
 });
