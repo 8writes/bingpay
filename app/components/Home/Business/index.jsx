@@ -16,7 +16,9 @@ export default function Business() {
           <div>
             <FadeInUp>
               <span className={styles.introMobile}>
-                <h1>Bingpay for Business 💸</h1>
+                <h1 className={styles.introMobileBg}>
+                  Bingpay for Business 💸
+                </h1>
               </span>
             </FadeInUp>
           </div>

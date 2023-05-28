@@ -13,9 +13,9 @@ const FadeInRight = ({ children }) => {
       transition: {
         type: "spring",
         damping: 20,
-
         duration: 1,
         ease: [0, 0.71, 0.2, 1.01],
+        delay: 0.3,
         delay: 0.3,
       },
     },

@@ -13,9 +13,8 @@ const FadeInDown = ({ children }) => {
       opacity: 1,
 
       transition: {
-        type: "spring",
-        duration: 0.8,
-        ease: [0, 0.71, 0.2, 1.01],
+        duration: 0.2,
+        delay: 0,
       },
     },
   };

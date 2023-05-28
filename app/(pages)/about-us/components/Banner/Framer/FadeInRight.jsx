@@ -4,7 +4,7 @@ import React from "react";
 const FadeInRight = ({ children }) => {
   const FadeInRight = {
     offscreen: {
-      x: 50,
+      x: 30,
       opacity: 0,
     },
     onscreen: {
@@ -13,8 +13,7 @@ const FadeInRight = ({ children }) => {
       transition: {
         type: "spring",
         damping: 20,
-
-        duration: 1,
+        duration: 0.9,
         ease: [0, 0.71, 0.2, 1.01],
         delay: 0.3,
       },

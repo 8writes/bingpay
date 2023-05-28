@@ -150,11 +150,16 @@
     padding: 20px 10px 20px 10px;
     max-width: 100%;
     margin: auto;
-    gap: 50px;
+    gap: 20px;
+    
+  }
+  
+  .navList:first-child{
+    margin: 0 22px 0 0;
   }
 
   .navList {
-    padding: 5px 5px 5px 5px;
+    padding: 0 10px 0 10px;
   }
 
   .heroSocials {

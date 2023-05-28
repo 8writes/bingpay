@@ -11,11 +11,10 @@ const FadeInLeft = ({ children }) => {
       x: 0,
       opacity: 1,
       transition: {
-        type: "spring",
-        damping: 20,
         bounce: 0,
-        duration: 1,
+        duration: 0.9,
         ease: [0, 0.71, 0.2, 1.01],
+        delay: 0.3,
         delay: 0.5,
       },
     },

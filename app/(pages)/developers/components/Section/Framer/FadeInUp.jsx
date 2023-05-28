@@ -11,12 +11,11 @@ const FadeInUp = ({ children }) => {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
-        damping: 20,
         bounce: 0,
         duration: 1.1,
         delay: 0.2,
         ease: [0, 0.71, 0.2, 1.01],
+        delay: 0.3,
       },
     },
   };
