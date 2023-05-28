@@ -36,11 +36,10 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div>
-      <div>
+    <>
         <section className={styles.navBarBg}>
           <div className={styles.navBar}>
-            <div>
+            <picture>
               <Link href="/">
                 <Image
                   src="/logo-dark.png"
@@ -53,7 +52,7 @@ export default function NavBar() {
                   // placeholder="blur" // Optional blur-up while loading
                 />
               </Link>
-            </div>
+            </picture>
             <div className={styles.navLinks}>
               <span className={styles.links}>
                 <Link href="business">Business</Link>
@@ -87,7 +86,7 @@ export default function NavBar() {
                             <span>Blog</span>
                           </li>
                         </Link>
-                        <Link href="about-us">
+                        <Link href="/about-us" onClick={scrollToTop}>
                           <li>
                             <Image
                               src="/note-2.svg"
@@ -112,7 +111,7 @@ export default function NavBar() {
                   src="/down-arrow.svg"
                   alt=""
                   width={15}
-                  height={15}
+                  height={0}
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
@@ -121,13 +120,13 @@ export default function NavBar() {
                   <FadeInDown>
                     <div class={styles.dropContent}>
                       <ul>
-                        <Link href="/developers">
+                        <Link href="/developers" onClick={scrollToTop}>
                           <li>
                             <Image
                               src="/textalign.svg"
                               alt=""
                               width={20}
-                              height={20}
+                              height={0}
                               priority
                               // blurDataURL="data:..." automatically provided
                               // placeholder="blur" // Optional blur-up while loading
@@ -161,9 +160,9 @@ export default function NavBar() {
                 <span>Support</span>
                 <Image
                   src="/down-arrow.svg"
-                  alt="Bingpay logo"
+                  alt=""
                   width={15}
-                  height={15}
+                  height={0}
                   priority
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
@@ -172,7 +171,7 @@ export default function NavBar() {
                   <FadeInDown>
                     <div class={styles.dropContent}>
                       <ul>
-                        <Link href="help-center">
+                        <Link href="/help-center" onClick={scrollToTop}>
                           <li>
                             <Image
                               src="/message-search.svg"
@@ -186,7 +185,7 @@ export default function NavBar() {
                             <span>Help Center</span>
                           </li>
                         </Link>
-                        <Link href="contact-us">
+                        <Link href="/contact-us" onClick={scrollToTop}>
                           <li>
                             <Image
                               src="/headset.svg"
@@ -208,7 +207,6 @@ export default function NavBar() {
             </div>
           </div>
         </section>
-      </div>
-    </div>
+    </>
   );
 }
