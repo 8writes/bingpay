@@ -32,55 +32,49 @@ export default function Hero() {
 
             <div className={styles.heroSocials}>
               <picture>
-                <FadeInUp>
-                  <Link
-                    href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}
-                  >
-                    <Image
-                      src="/app-store.svg"
-                      alt="App Store"
-                      width={146}
-                      height={0}
-                      priority
-                      // blurDataURL="data:..." automatically provided
-                      // placeholder="blur" // Optional blur-up while loading
-                    />
-                  </Link>
-                </FadeInUp>
+                <Link
+                  href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}
+                >
+                  <Image
+                    src="/app-store.svg"
+                    alt="App Store"
+                    width={146}
+                    height={0}
+                    priority
+                    // blurDataURL="data:..." automatically provided
+                    // placeholder="blur" // Optional blur-up while loading
+                  />
+                </Link>
               </picture>
               <picture>
-                <FadeInUp>
-                  <Link
-                    href={
-                      "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
-                    }
-                  >
-                    <Image
-                      src="/google-play.svg"
-                      alt="Google Play"
-                      width={160}
-                      height={0}
-                      priority
-                      // blurDataURL="data:..." automatically provided
-                      // placeholder="blur" // Optional blur-up while loading
-                    />
-                  </Link>
-                </FadeInUp>
+                <Link
+                  href={
+                    "https://play.google.com/store/apps/details?id=com.bingpay.bing_pay"
+                  }
+                >
+                  <Image
+                    src="/google-play.svg"
+                    alt="Google Play"
+                    width={160}
+                    height={0}
+                    priority
+                    // blurDataURL="data:..." automatically provided
+                    // placeholder="blur" // Optional blur-up while loading
+                  />
+                </Link>
               </picture>
             </div>
           </div>
           <picture className={styles.heroImage}>
-            <FadeInUp>
-              <Image
-                src="/bing-hero.png"
-                alt="bing hero"
-                width={650}
-                height={0}
-                priority
-                // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
-              />
-            </FadeInUp>
+            <Image
+              src="/bing-hero.png"
+              alt="bing hero"
+              width={650}
+              height={0}
+              priority
+              // blurDataURL="data:..." automatically provided
+              // placeholder="blur" // Optional blur-up while loading
+            />
           </picture>
         </section>
       </main>

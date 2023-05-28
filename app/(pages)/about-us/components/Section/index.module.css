@@ -64,7 +64,7 @@
   }
 
   .sectionContext {
-    padding: 25px 0 40px 0;
+    padding: 10px 0 40px 0;
     width: 100%;
     margin: auto;
     text-align: start;
@@ -78,7 +78,7 @@
   .sectionContext h1 {
     font-size: 2rem;
     font-weight: 700;
-    padding: 30px 0 5px 0;
+    padding: 20px 0 5px 0;
   }
 
   .sectionContext p {
@@ -104,7 +104,7 @@
   }
 
   .sectionContext {
-    padding: 25px 0 40px 0;
+    padding: 20px 0 40px 0;
     width: 100%;
     margin: auto;
     text-align: start;
@@ -144,7 +144,7 @@
   }
 
   .sectionContext {
-    padding: 25px 20px 40px 20px;
+    padding: 20px 20px 40px 20px;
     width: 100%;
     margin: auto;
     text-align: start;

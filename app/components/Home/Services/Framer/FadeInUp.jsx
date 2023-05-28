@@ -4,7 +4,7 @@ import React from "react";
 const FadeInUp = ({ children }) => {
   const FadeInUp = {
     offscreen: {
-      y: 30,
+      y: 35,
       opacity: 0,
     },
     onscreen: {
@@ -15,7 +15,6 @@ const FadeInUp = ({ children }) => {
         damping: 20,
         duration: 0.9,
         ease: [0, 0.71, 0.2, 1.01],
-        delay: 0.3,
         delay: 0.2,
       },
     },

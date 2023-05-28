@@ -112,7 +112,7 @@
 
   .navLinks {
     display: grid;
-     padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     max-width: 100%;
     margin: auto;
     gap: 40px;
@@ -140,21 +140,19 @@
     font-size: 1.5em;
   }
 
-
-.navMenu ul li a {
-  font-size: 1rem;
-}
+  .navMenu ul li a {
+    font-size: 1.1rem;
+  }
 
   .navLinks {
     display: flex;
     padding: 20px 10px 20px 10px;
     max-width: 100%;
     margin: auto;
-    gap: 20px;
-    
+    gap: 10px;
   }
-  
-  .navList:first-child{
+
+  .navList:first-child {
     margin: 0 22px 0 0;
   }
 
@@ -165,10 +163,8 @@
   .heroSocials {
     display: flex;
     width: 100%;
-    margin: auto;
     gap: 15px;
-    padding: 40px 0 100px 0;
-    justify-content: center;
+    margin: 40px 10px 100px 10px;
   }
 }
 
@@ -183,9 +179,9 @@
 
   .navLinks {
     display: flex;
-     padding: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
     max-width: 100%;
-    margin: auto;
+    margin: 0;
     gap: 50px;
   }
 
@@ -199,6 +195,7 @@
     margin: auto;
     gap: 15px;
     padding: 40px 0 100px 0;
+    justify-content: center;
   }
 }
 
@@ -213,7 +210,7 @@
 
   .navLinks {
     display: flex;
-     padding: 50px 10px 50px 10px;
+    padding: 50px 10px 50px 10px;
     max-width: 80%;
     margin: auto;
     gap: 50px;
