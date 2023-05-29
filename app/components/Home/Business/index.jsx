@@ -8,6 +8,15 @@ const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
 });
 
+const scrollToTop = () => {
+  setTimeout(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, 500); // Adjust the delay duration (in milliseconds) as needed
+};
+
 export default function Business() {
   return (
     <div>
@@ -58,7 +67,7 @@ export default function Business() {
             </span>
             <span className={styles.btn}>
               <FadeInUp>
-                <Link href="/business">
+                <Link href="/business" onClick={scrollToTop}>
                   <button>Get Started</button>
                 </Link>
               </FadeInUp>
