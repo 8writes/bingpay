@@ -85,6 +85,7 @@ export default function MobileNav() {
             onClick={() => {
               toggleVisibility();
               disableScroll();
+              scrollToTop();
             }}
             priority
             // blurDataURL="data:..." automatically provided
@@ -144,6 +145,7 @@ export default function MobileNav() {
                         onClick={() => {
                           toggleVisibility();
                           enableScroll();
+                          scrollToTop();
                         }}
                       >
                         <Image
@@ -167,7 +169,11 @@ export default function MobileNav() {
                       <Link
                         href="https://blog.bingpay.ng/"
                         target="_blank onClick={enableScroll}"
-                        onClick={enableScroll}
+                        onClick={() => {
+                          toggleVisibility();
+                          enableScroll();
+                          scrollToTop();
+                        }}
                       >
                         <Image
                           src="/blogger.svg"
@@ -187,6 +193,7 @@ export default function MobileNav() {
                         onClick={() => {
                           toggleVisibility();
                           enableScroll();
+                          scrollToTop();
                         }}
                       >
                         <Image
@@ -210,8 +217,9 @@ export default function MobileNav() {
                       <Link
                         href="/help-center"
                         onClick={() => {
-                          toggleVisibility();
-                          enableScroll();
+                         toggleVisibility();
+                         enableScroll();
+                         scrollToTop();
                         }}
                       >
                         <Image
@@ -230,8 +238,9 @@ export default function MobileNav() {
                       <Link
                         href="/contact-us"
                         onClick={() => {
-                          toggleVisibility();
-                          enableScroll();
+                         toggleVisibility();
+                         enableScroll();
+                         scrollToTop();
                         }}
                       >
                         <Image
@@ -255,8 +264,9 @@ export default function MobileNav() {
                       <Link
                         href="/developers"
                         onClick={() => {
-                          toggleVisibility();
-                          enableScroll();
+                         toggleVisibility();
+                         enableScroll();
+                         scrollToTop();
                         }}
                       >
                         <Image
@@ -278,6 +288,7 @@ export default function MobileNav() {
                         onClick={() => {
                           toggleVisibility();
                           enableScroll();
+                          scrollToTop();
                         }}
                       >
                         <Image
