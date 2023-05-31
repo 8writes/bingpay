@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.css";
+import Developers from "/public/developer.png";
 
 const Button = dynamic(() => import("../../components/Button"), {
   ssr: false,
@@ -64,7 +65,7 @@ export default function Banner() {
           <picture className={styles.heroImage}>
             <FadeInUp>
               <Image
-                src="/developer.png"
+                src={Developers}
                 alt="developer"
                 width={300}
                 height={300}

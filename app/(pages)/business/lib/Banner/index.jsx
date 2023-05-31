@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import styles from "./index.module.css";
+import Merchant from "/public/merchant.svg";
 
 const Button = dynamic(() => import("../../components/Button"), {
   ssr: false,
@@ -22,7 +23,6 @@ const FadeInRight = dynamic(
 const FadeInUp = dynamic(() => import("../../components/Framer/FadeInUp"), {
   ssr: false,
 });
-
 
 export default function Banner() {
   return (
@@ -47,7 +47,7 @@ export default function Banner() {
           <picture className={styles.heroImage}>
             <FadeInUp>
               <Image
-                src="/merchant.svg"
+                src={Merchant}
                 alt="business"
                 width={300}
                 height={300}
