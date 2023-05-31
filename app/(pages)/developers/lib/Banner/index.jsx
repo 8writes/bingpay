@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.css";
 import Developers from "/public/developer.png";
-
+import Arrow from "/public/arrow-up-right.svg";
 const Button = dynamic(() => import("../../components/Button"), {
   ssr: false,
 });
@@ -48,7 +48,7 @@ export default function Banner() {
                     <Button>
                       Documentation
                       <Image
-                        src="/arrow-up-right.svg"
+                        src={Arrow}
                         alt="right arrow"
                         width={20}
                         height={0}
