@@ -3,6 +3,10 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import styles from "./index.module.css";
+import AppImg from "/public/download.png";
+import AppStore from "/public/app-store.svg";
+import PlayStore from "/public/google-play.svg";
+
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
   ssr: false,
 });
@@ -26,7 +30,7 @@ export default function DownloadApp() {
               <picture>
                 <a href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}>
                   <Image
-                    src="/app-store.svg"
+                    src={AppStore}
                     alt="App Store"
                     width={146}
                     height={146}
@@ -43,7 +47,7 @@ export default function DownloadApp() {
                   }
                 >
                   <Image
-                    src="/google-play.svg"
+                    src={PlayStore}
                     alt="Google Play"
                     width={160}
                     height={160}
@@ -57,7 +61,7 @@ export default function DownloadApp() {
           </div>
           <picture className={styles.downloadImg}>
             <Image
-              src="/download.png"
+              src={AppImg}
               alt="Download image"
               width={500}
               height={500}

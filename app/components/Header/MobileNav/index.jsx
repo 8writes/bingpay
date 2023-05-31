@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.css";
+import Logo from "/public/logo-dark.png";
 import { useState, useEffect } from "react";
 
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
@@ -65,7 +66,7 @@ export default function MobileNav() {
         <picture>
           <Link href="/">
             <Image
-              src="/logo-dark.png"
+              src={Logo}
               alt="bingpay logo"
               width={120}
               height={0}
@@ -106,7 +107,7 @@ export default function MobileNav() {
                 }}
               >
                 <Image
-                  src="/logo-dark.png"
+                  src={Logo}
                   alt="Bingpay Logo"
                   width={120}
                   height={0}

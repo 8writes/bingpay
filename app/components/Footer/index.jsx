@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+
 const DownloadApp = dynamic(() => import("./DownloadAppBanner/index"), {
   ssr: false,
 });

@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.css";
 import BingHero from "/public/bing-hero.png";
+import AppleStore from "/public/app-store.svg";
+import PlayStore from "/public/google-play.svg";
 
 const FadeInLeft = dynamic(() => import("../../components/Framer/FadeInLeft"), {
   ssr: false,
@@ -43,7 +45,7 @@ export default function Hero() {
                   href={"https://apps.apple.com/uy/app/bingpay/id1589089598"}
                 >
                   <Image
-                    src="/app-store.svg"
+                    src={AppleStore}
                     alt="App Store"
                     width={146}
                     height={146}
@@ -60,7 +62,7 @@ export default function Hero() {
                   }
                 >
                   <Image
-                    src="/google-play.svg"
+                    src={PlayStore}
                     alt="Google Play"
                     width={160}
                     height={160}
