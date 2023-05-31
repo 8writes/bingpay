@@ -4,14 +4,18 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.css";
+import BingHero from "/public/bing-hero.png";
 
 const FadeInLeft = dynamic(() => import("../../components/Framer/FadeInLeft"), {
   ssr: false,
 });
 
-const FadeInRight = dynamic(() => import("../../components/Framer/FadeInRight"), {
-  ssr: false,
-});
+const FadeInRight = dynamic(
+  () => import("../../components/Framer/FadeInRight"),
+  {
+    ssr: false,
+  }
+);
 
 const FadeInUp = dynamic(() => import("../../components/Framer/FadeInUp"), {
   ssr: false,
@@ -70,7 +74,7 @@ export default function Hero() {
           </div>
           <picture className={styles.heroImage}>
             <Image
-              src="/bing-hero.png"
+              src={BingHero}
               alt="bing hero"
               width={650}
               height={650}
