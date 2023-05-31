@@ -2,20 +2,22 @@
 
 import dynamic from "next/dynamic";
 
-const Hero = dynamic(() => import("./components/Home/Hero/index"), {
+const Banner = dynamic(() => import("./lib/Banner/index"), {
   ssr: false,
 });
-const Services = dynamic(() => import("./components/Home/Services/index"), {
+
+const Services = dynamic(() => import("./lib/Services/index"), {
   ssr: false,
 });
-const Business = dynamic(() => import("./components/Home/Business/index"), {
+
+const Business = dynamic(() => import("./lib/Business/index"), {
   ssr: false,
 });
 
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Banner />
       <Services />
       <Business />
     </>

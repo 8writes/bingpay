@@ -1,0 +1,89 @@
+.button button {
+  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 700;
+  background: rgb(184, 30, 148); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(184, 43, 151),
+    rgb(184, 38, 150),
+    rgb(153, 34, 126)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgb(173, 40, 142),
+    rgb(163, 35, 134),
+    rgb(173, 33, 141)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.button button:hover {
+  background: rgb(184, 30, 148); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(163, 36, 133),
+    rgb(154, 33, 126),
+    rgb(169, 46, 141)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgb(154, 35, 126),
+    rgb(168, 38, 138),
+    rgb(169, 46, 141)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* >>>>>> RESPONSIVE DESIGN TO 373px SCREEN DOWN <<<<<<    */
+@media (max-width: 373px) {
+  .button button {
+    width: 90%;
+   padding: 14px 25px 14px 25px;
+    margin: 20px 0 10px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 374px GOING UP 425px <<<<<<    */
+@media (min-width: 374px) {
+  .button button {
+    width: 90%;
+   padding: 14px 25px 14px 25px;
+    margin: 20px 0 10px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 425px UP TO 768px <<<<<<    */
+@media (min-width: 425px) {
+  .button button {
+    width: 90%;
+   padding: 14px 25px 14px 25px;
+    margin: 20px 0 10px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 768px UP TO 1024px <<<<<<    */
+@media (min-width: 768px) {
+  .button button {
+    width: 50%;
+   padding: 14px 25px 14px 25px;
+    margin: 20px 0 10px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 1024px UP TO 1440px <<<<<<    */
+@media (min-width: 1024px) {
+  .button button {
+    width: 15vw;
+   padding: 14px 25px 14px 25px;
+    margin: 20px 0 10px 0;
+  }
+}
+
+/* >>>>>> RESPONSIVE DESIGN 1440px <<<<<<    */
+@media (min-width: 1440px) {
+  .button button {
+    width: 12vw;
+   padding: 14px 25px 14px 25px;
+    margin: 20px 0 10px 0;
+  }
+}

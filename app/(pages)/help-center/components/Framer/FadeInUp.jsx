@@ -11,7 +11,8 @@ const FadeInUp = ({ children }) => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 1.2,
+        bounce: 0.3,
+        duration: 1.1,
         ease: [0, 0.71, 0.2, 1.01],
       },
     },

@@ -2,10 +2,10 @@
 
 import dynamic from "next/dynamic";
 
-const Banner = dynamic(() => import("./components/Banner/index"), {
+const Banner = dynamic(() => import("./lib/Banner"), {
   ssr: false,
 });
-const Section = dynamic(() => import("./components/Section/index"), {
+const Section = dynamic(() => import("./lib/Section"), {
   ssr: false,
 });
 
