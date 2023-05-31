@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.css";
 import Logo from "/public/logo-dark.png";
+import NavIconOpn from "/public/mobile-menu-opn.svg";
+import NavIconCls from "/public/mobile-menu-cls.svg";
 import { useState, useEffect } from "react";
 
 const FadeInUp = dynamic(() => import("./Framer/FadeInUp"), {
@@ -79,7 +81,7 @@ export default function MobileNav() {
         </picture>
         <div className={styles.openNav}>
           <Image
-            src="/mobile-menu-opn.svg"
+            src={NavIconOpn}
             alt="Open Nav"
             width={35}
             height={35}
@@ -119,7 +121,7 @@ export default function MobileNav() {
             </div>
             <div style={{ padding: "6px" }}>
               <Image
-                src="/mobile-menu-cls.svg"
+                src={NavIconCls}
                 alt="Close Nav"
                 width={20}
                 height={20}
