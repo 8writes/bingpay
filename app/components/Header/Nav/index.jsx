@@ -77,7 +77,7 @@ export default function NavBar() {
                             <Image
                               src="/blogger.svg"
                               alt=""
-                              width={25}
+                              width={23}
                               height={0}
                               priority
                               // blurDataURL="data:..." automatically provided
@@ -91,7 +91,7 @@ export default function NavBar() {
                             <Image
                               src="/note-2.svg"
                               alt=""
-                              width={26}
+                              width={25}
                               height={0}
                               priority
                               // blurDataURL="data:..." automatically provided
@@ -125,7 +125,7 @@ export default function NavBar() {
                             <Image
                               src="/textalign.svg"
                               alt=""
-                              width={20}
+                              width={17}
                               height={0}
                               priority
                               // blurDataURL="data:..." automatically provided
@@ -142,7 +142,7 @@ export default function NavBar() {
                             <Image
                               src="/code.svg"
                               alt=""
-                              width={25}
+                              width={22}
                               height={0}
                               priority
                               // blurDataURL="data:..." automatically provided
@@ -176,7 +176,7 @@ export default function NavBar() {
                             <Image
                               src="/message-search.svg"
                               alt=""
-                              width={25}
+                              width={23}
                               height={0}
                               priority
                               // blurDataURL="data:..." automatically provided
@@ -190,7 +190,7 @@ export default function NavBar() {
                             <Image
                               src="/headset.svg"
                               alt=""
-                              width={25}
+                              width={23}
                               height={0}
                               priority
                               // blurDataURL="data:..." automatically provided
