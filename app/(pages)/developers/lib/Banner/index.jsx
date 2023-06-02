@@ -6,6 +6,7 @@ import Link from "next/link";
 import styles from "./index.module.css";
 import Developers from "/public/developer.png";
 import Arrow from "/public/arrow-up-right.svg";
+
 const Button = dynamic(() => import("../../components/Button"), {
   ssr: false,
 });

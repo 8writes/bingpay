@@ -16,10 +16,12 @@ const Business = dynamic(() => import("./lib/Business/index"), {
 
 export default function Home() {
   return (
-    <>
-      <Banner />
-      <Services />
-      <Business />
-    </>
+    <div>
+      <div>
+        <Banner />
+        <Services />
+        <Business />
+      </div>
+    </div>
   );
 }
