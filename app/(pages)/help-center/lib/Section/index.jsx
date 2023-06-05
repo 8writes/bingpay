@@ -51,53 +51,47 @@ export default function Section() {
                 <div class={styles.container}>
                   <FadeInUp>
                     <details>
-                      <summary>Why did my BVN verification Fail ?</summary>
+                      <summary>BVN verification Failed ?</summary>
                       <p>
                         This is because the names on your bingpay account
-                        doesn't match the data on your BVN, if you feel it's
-                        correct, please contact our support for assistance.
+                        doesn't match the data on your BVN. Please contact our
+                        support for further assistance.
                       </p>
                     </details>
                   </FadeInUp>
                   <FadeInUp>
                     <details>
-                      <summary>What is Bingtag?</summary>
+                      <summary>Where is my username ?</summary>
                       <p>
-                        Bingtag is a unique username-like code given to you
-                        after registration. You can use this tag to request or
-                        send out cash on bingpay.
-                      </p>
-                    </details>
-                  </FadeInUp>
-                  <FadeInUp>
-                    <details>
-                      <summary>What is MTN (SME) DATA ?</summary>
-                      <p>
-                        MTN SME Data Share is a prepaid service that allows
-                        business firms like us to buy data bundles and share
-                        with you. Its Validity is 90 days and its assumed to be
-                        Cheaper & Faster than Direct Data but a bit more
-                        consuming.
+                        Your Username is located in your Account, Personal
+                        Information.
                       </p>
                     </details>
                   </FadeInUp>
                   <FadeInUp>
                     <details>
                       <summary>
-                        How long does transaction takes to reflect?
+                        How long does withdrawals takes to reflect ?
                       </summary>
                       <p>
-                        Our Airtime, Data, Bills and Peer to peer money transfer
-                        system are automated and instant. If you do not recieve
-                        your payment instantly, this could be your network
-                        problem else contact support for assistance.
+                        Withdrawals will reflect within 3 to 6 working hours.
                       </p>
                     </details>
                   </FadeInUp>
                   <FadeInUp>
                     <details>
                       <summary>
-                        I was debited but wasn't credited on bingpay
+                        How long does Airtime to cash transactions take to reflect ?
+                      </summary>
+                      <p>
+                        Airtime to cash transaction are processed within 1 working hour.
+                      </p>
+                    </details>
+                  </FadeInUp>
+                  <FadeInUp>
+                    <details>
+                      <summary>
+                        I was debited but wasn't credited on bingPay.
                       </summary>
                       <p>
                         Kindly Contact our Support team via Live chat or any of
@@ -126,8 +120,8 @@ export default function Section() {
                       <summary>How to fund my Account ?</summary>
                       <p>
                         Navigate to Fund Wallet, choose from the option,
-                        Transfer or Fund with debit card , Input the amount you wish to deposit and
-                        follow the steps.
+                        Transfer or Fund with debit card , Input the amount you
+                        wish to deposit and follow the steps.
                       </p>
                     </details>
                   </FadeInUp>
