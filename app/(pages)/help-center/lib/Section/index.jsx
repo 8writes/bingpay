@@ -125,15 +125,15 @@ export default function Section() {
                     <details>
                       <summary>How to fund my Account ?</summary>
                       <p>
-                        Navigate to Deposit, choose from the option card or
-                        transfer, Input the amount you wish to deposit and
+                        Navigate to Fund Wallet, choose from the option,
+                        Transfer or Fund with debit card , Input the amount you wish to deposit and
                         follow the steps.
                       </p>
                     </details>
                   </FadeInUp>
                   <FadeInUp>
                     <details>
-                      <summary>How to update Personal Information ?</summary>
+                      <summary>How to update my personal details ?</summary>
                       <p>
                         Navigate to Deposit, choose from the option card or
                         transfer, Input the amount you wish to deposit and
