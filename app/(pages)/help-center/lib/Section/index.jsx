@@ -129,9 +129,7 @@ export default function Section() {
                     <details>
                       <summary>How to update my personal details ?</summary>
                       <p>
-                        Navigate to Deposit, choose from the option card or
-                        transfer, Input the amount you wish to deposit and
-                        follow the steps.
+                        Kindly contact support in Live Chat to update your personal details.
                       </p>
                     </details>
                   </FadeInUp>
