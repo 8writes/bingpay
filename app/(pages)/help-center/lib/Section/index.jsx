@@ -123,10 +123,18 @@ export default function Section() {
                   </FadeInUp>
                   <FadeInUp>
                     <details>
-                      <summary>How do I deposit?</summary>
+                      <summary>How to fund my Account ?</summary>
                       <p>
-                        To purchase all bingpay services ranging from Data to
-                        Airtime & Bills. You just have to fund your account.
+                        Navigate to Deposit, choose from the option card or
+                        transfer, Input the amount you wish to deposit and
+                        follow the steps.
+                      </p>
+                    </details>
+                  </FadeInUp>
+                  <FadeInUp>
+                    <details>
+                      <summary>How to update Personal Information ?</summary>
+                      <p>
                         Navigate to Deposit, choose from the option card or
                         transfer, Input the amount you wish to deposit and
                         follow the steps.
