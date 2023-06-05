@@ -73,18 +73,18 @@ export default function Section() {
                       <summary>
                         How long does a withdrawal takes to reflect ?
                       </summary>
-                      <p>
-                        Withdrawals will reflect within 30 minutes.
-                      </p>
+                      <p>Withdrawals will reflect within 30 minutes.</p>
                     </details>
                   </FadeInUp>
                   <FadeInUp>
                     <details>
                       <summary>
-                        How long does airtime to cash transactions take to reflect ?
+                        How long does airtime to cash transactions take to
+                        reflect ?
                       </summary>
                       <p>
-                        Airtime to cash transactions are processed within 1 to 2 working hour.
+                        Airtime to cash transactions are processed within 1 to 2
+                        working hour.
                       </p>
                     </details>
                   </FadeInUp>
@@ -94,9 +94,10 @@ export default function Section() {
                         I was debited but wasn't credited on BingPay.
                       </summary>
                       <p>
-                        Kindly Contact our Support team via Live chat or any of
-                        our social handles for futher assistance. Your account
-                        will be credited as soon as we verify the payment.
+                        Kindly contact our Support team via the BingPay App or
+                        any of our social handles for futher assistance. Your
+                        account will be credited as soon as we verify the
+                        payment.
                       </p>
                     </details>
                   </FadeInUp>
@@ -129,7 +130,8 @@ export default function Section() {
                     <details>
                       <summary>How to update my personal details ?</summary>
                       <p>
-                        Kindly contact support in Live Chat to update your personal details.
+                        Kindly contact our Support team via the BingPay App to
+                        update your personal details.
                       </p>
                     </details>
                   </FadeInUp>
