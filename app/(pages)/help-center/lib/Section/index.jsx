@@ -8,10 +8,12 @@ const FadeInLeft = dynamic(() => import("../../components/Framer/FadeInLeft"), {
   ssr: false,
 });
 
-const FadeInRight = dynamic(() => import("../../components/Framer/FadeInRight"), {
-  ssr: false,
-});
-
+const FadeInRight = dynamic(
+  () => import("../../components/Framer/FadeInRight"),
+  {
+    ssr: false,
+  }
+);
 
 const FadeInUp = dynamic(() => import("../../components/Framer/FadeInUp"), {
   ssr: false,
@@ -51,22 +53,19 @@ export default function Section() {
                     <details>
                       <summary>Why did my BVN verification Fail ?</summary>
                       <p>
-                        To purchase all bingpay services ranging from Data to
-                        Airtime & Bills. You just have to fund your account.
-                        Navigate to Deposit Input the amount you wish to deposit
-                        and click on the "Deposit" button.
+                        This is because the names on your bingpay account
+                        doesn't match the data on your BVN, if you feel it's
+                        correct, please contact our support for assistance.
                       </p>
                     </details>
                   </FadeInUp>
                   <FadeInUp>
                     <details>
-                      <summary>Can I withdraw deposited funds ?</summary>
+                      <summary>What is Bingtag?</summary>
                       <p>
-                        Bingpay do not give database access to third parties.
-                        This means that all your account details, Credit cards
-                        and purchase history is safe with us. Your money will be
-                        kept on your account as long as the account is still
-                        with us, and you wont be debited for no reason.
+                        Bingtag is a unique username-like code given to you
+                        after registration. You can use this tag to request or
+                        send out cash on bingpay.
                       </p>
                     </details>
                   </FadeInUp>
@@ -84,13 +83,26 @@ export default function Section() {
                   </FadeInUp>
                   <FadeInUp>
                     <details>
-                      <summary>What is Visa Virtual Card?</summary>
+                      <summary>
+                        How long does transaction takes to reflect?
+                      </summary>
                       <p>
-                        MTN SME Data Share is a prepaid service that allows
-                        business firms like us to buy data bundles and share
-                        with you. Its Validity is 90 days and its assumed to be
-                        Cheaper & Faster than Direct Data but a bit more
-                        consuming.
+                        Our Airtime, Data, Bills and Peer to peer money transfer
+                        system are automated and instant. If you do not recieve
+                        your payment instantly, this could be your network
+                        problem else contact support for assistance.
+                      </p>
+                    </details>
+                  </FadeInUp>
+                  <FadeInUp>
+                    <details>
+                      <summary>
+                        I was debited but wasn't credited on bingpay
+                      </summary>
+                      <p>
+                        Kindly Contact our Support team via Live chat or any of
+                        our social handles for futher assistance. Your account
+                        will be credited as soon as we verify the payment.
                       </p>
                     </details>
                   </FadeInUp>
@@ -103,23 +115,18 @@ export default function Section() {
                   <FadeInUp>
                     <details>
                       <summary>How to Create an Account ?</summary>
-                      <p>
-                        To purchase all bingpay services ranging from Data to
-                        Airtime & Bills. You just have to fund your account.
-                        Navigate to Deposit Input the amount you wish to deposit
-                        and click on the "Deposit" button.
-                      </p>
+                      <p>Download the bingPay Mobile app, select create an account, fill in out your information and proceed. </p>
                     </details>
                   </FadeInUp>
                   <FadeInUp>
                     <details>
-                      <summary>How to update my Personal Info?</summary>
+                      <summary>How do I deposit?</summary>
                       <p>
-                        Bingpay do not give database access to third parties.
-                        This means that all your account details, Credit cards
-                        and purchase history is safe with us. Your money will be
-                        kept on your account as long as the account is still
-                        with us, and you wont be debited for no reason.
+                        To purchase all bingpay services ranging from Data to
+                        Airtime & Bills. You just have to fund your account.
+                        Navigate to Deposit, choose from the option card or
+                        transfer, Input the amount you wish to deposit and
+                        follow the steps.
                       </p>
                     </details>
                   </FadeInUp>
@@ -127,22 +134,30 @@ export default function Section() {
                     <details>
                       <summary>How to Change my password ?</summary>
                       <p>
-                        To purchase all bingpay services ranging from Data to
-                        Airtime & Bills. You just have to fund your account.
-                        Navigate to Deposit Input the amount you wish to deposit
-                        and click on the "Deposit" button.
+                        Navigate to Account, change password, Input old password
+                        and new password.
                       </p>
                     </details>
                   </FadeInUp>
                   <FadeInUp>
                     <details>
-                      <summary>How to purchase Gift Cards ?</summary>
+                      <summary>How to Change my Transaction Pin ?</summary>
                       <p>
-                        MTN SME Data Share is a prepaid service that allows
-                        business firms like us to buy data bundles and share
-                        with you. Its Validity is 90 days and its assumed to be
-                        Cheaper & Faster than Direct Data but a bit more
-                        consuming.
+                        Navigate to Account, change Transaction Pin, Input
+                        password and new pin.
+                      </p>
+                    </details>
+                  </FadeInUp>
+                  <FadeInUp>
+                    <details>
+                      <summary>How to access my Sim Services ?</summary>
+                      <p>
+                        Use the updated codes that has been approved by the NCC
+                        under the new harmonized short-codes regime. <br></br>
+                        Check Airtime balance — 310
+                        <br></br> Data plan — 312 <br></br> Share services — 321{" "}
+                        <br></br>
+                        Data plan balance — 323
                       </p>
                     </details>
                   </FadeInUp>
