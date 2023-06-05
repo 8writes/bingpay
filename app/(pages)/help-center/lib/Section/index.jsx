@@ -115,7 +115,10 @@ export default function Section() {
                   <FadeInUp>
                     <details>
                       <summary>How to Create an Account ?</summary>
-                      <p>Download the bingPay Mobile app, select create an account, fill in out your information and proceed. </p>
+                      <p>
+                        Download the bingPay Mobile app, select create an
+                        account, fill in out your information and proceed.{" "}
+                      </p>
                     </details>
                   </FadeInUp>
                   <FadeInUp>
@@ -152,8 +155,6 @@ export default function Section() {
                     <details>
                       <summary>How to access my Sim Services ?</summary>
                       <p>
-                        Use the updated codes that has been approved by the NCC
-                        under the new harmonized short-codes regime. <br></br>
                         Check Airtime balance — 310
                         <br></br> Data plan — 312 <br></br> Share services — 321{" "}
                         <br></br>
