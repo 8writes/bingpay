@@ -54,8 +54,16 @@ export default function Section() {
                       <summary>BVN verification failed ?</summary>
                       <p>
                         This is because the names on your bingpay account
-                        doesn't match the data on your BVN. Please contact our
-                        support for further assistance.
+                        doesn't match the data on your BVN. Kindly contact our
+                        Support team via the BingPay App for further assistance.
+                      </p>
+                    </details>
+                  </FadeInUp>
+                  <FadeInUp>
+                    <details>
+                      <summary>I forgot My Password </summary>
+                      <p>
+                       Navigate to the Sign In page, select Reset Password and follow the steps.
                       </p>
                     </details>
                   </FadeInUp>
@@ -73,7 +81,11 @@ export default function Section() {
                       <summary>
                         How long does a withdrawal takes to reflect ?
                       </summary>
-                      <p>Withdrawals will reflect within 30 minutes.</p>
+                      <p>
+                        Withdrawals will reflect within 30 minutes. Otherwise,
+                        kindly contact our Support team via the BingPay App or
+                        any of our social handles for further assistance.
+                      </p>
                     </details>
                   </FadeInUp>
                   <FadeInUp>
@@ -84,7 +96,9 @@ export default function Section() {
                       </summary>
                       <p>
                         Airtime to cash transactions are processed within 1 to 2
-                        working hour.
+                        working hour. Otherwise, kindly contact our Support team
+                        via the BingPay App or any of our social handles for
+                        further assistance.
                       </p>
                     </details>
                   </FadeInUp>
@@ -94,10 +108,10 @@ export default function Section() {
                         I was debited but wasn't credited on BingPay.
                       </summary>
                       <p>
-                        Kindly contact our Support team via the BingPay App or
-                        any of our social handles for futher assistance. Your
-                        account will be credited as soon as we verify the
-                        payment.
+                        Your account will be credited as soon as we verify the
+                        payment. Otherwise, kindly contact our Support team via
+                        the BingPay App or any of our social handles for further
+                        assistance.
                       </p>
                     </details>
                   </FadeInUp>
@@ -111,8 +125,8 @@ export default function Section() {
                     <details>
                       <summary>How to create an account ?</summary>
                       <p>
-                        Download the bingPay Mobile app, select create an
-                        account, fill in out your information and proceed.{" "}
+                        Download the bingPay Mobile app, select Sign Up Account,
+                        fill in your information and Sign Up Account.{" "}
                       </p>
                     </details>
                   </FadeInUp>

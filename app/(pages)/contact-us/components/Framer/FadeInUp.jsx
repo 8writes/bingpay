@@ -4,18 +4,18 @@ import React from "react";
 const FadeInUp = ({ children }) => {
   const FadeInUp = {
     offscreen: {
-      y: 80,
+      y: 50,
       opacity: 0,
     },
     onscreen: {
       y: 0,
       opacity: 1,
       transition: {
-        bounce: 0.3,
-        duration: 1.1,
-
+        type: "spring",
+        damping: 20,
+        duration: 0.9,
         ease: [0, 0.71, 0.2, 1.01],
-        delay: 0.3,
+        delay: 0,
       },
     },
   };

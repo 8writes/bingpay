@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import styles from "./index.module.css";
 
-
 const FadeInLeft = dynamic(() => import("../../components/Framer/FadeInLeft"), {
   ssr: false,
 });
@@ -29,14 +28,13 @@ export default function Services() {
             <div>
               <h1>Our Products</h1>
             </div>
-            <FadeInUp>
-              <div>
-                <p>
-                  Bingpay unlocks possibilities of making payments for millions
-                  of goods and services.
-                </p>
-              </div>
-            </FadeInUp>
+
+            <div>
+              <p>
+                Bingpay unlocks possibilities of making payments for millions of
+                goods and services.
+              </p>
+            </div>
           </hgroup>
         </FadeInUp>
         <section className={styles.servicesList}>

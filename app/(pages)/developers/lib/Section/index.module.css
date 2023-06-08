@@ -134,6 +134,7 @@
 
   .sectionIntro h1 {
     font-size: 2rem;
+    padding: 0 0 10px 0;
   }
 
   .sectionIntro p {
@@ -207,6 +208,7 @@
 
   .sectionIntro h1 {
     font-size: 2rem;
+    padding: 0 0 10px 0;
   }
 
   .sectionIntro p {
@@ -280,6 +282,7 @@
 
   .sectionIntro h1 {
     font-size: 2rem;
+    padding: 0 0 10px 0;
   }
 
   .sectionIntro p {
@@ -353,6 +356,7 @@
 
   .sectionIntro h1 {
     font-size: 2rem;
+    padding: 0 0 20px 0;
   }
 
   .sectionIntro p {
@@ -503,6 +507,5 @@
 
   .sectionIntro p {
     font-size: 1.1rem;
-    padding: 5px 0 5px 0;
   }
 }

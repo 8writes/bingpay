@@ -61,7 +61,7 @@
 
   .serviceIntro h1 {
     font-size: 2.2em;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 10px 20px;
   }
 
   .serviceIntro p {
@@ -88,12 +88,12 @@
   .serviceIntro h1 {
     font-size: 2.6em;
     line-height: 0.9;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 10px 20px;
   }
 
   .serviceIntro p {
     font-size: 1em;
-    padding: 20px 19px 20px 19px;
+    padding: 10px 19px 20px 19px;
   }
 
   .servicesList {
@@ -115,7 +115,7 @@
   .serviceIntro h1 {
     font-size: 3em;
     line-height: 0.9;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 10px 20px;
   }
 
   .serviceIntro p {
