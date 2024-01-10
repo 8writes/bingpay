@@ -44,7 +44,7 @@ export default function MobileNav() {
   const scrollToTop = () => {
     setTimeout(() => {
       window.scrollTo({
-        top: 0,
+        
         behavior: "smooth",
       });
     }, 300); // Adjust the delay duration (in milliseconds) as needed
